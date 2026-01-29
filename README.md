@@ -38,9 +38,9 @@ If you use **MariaDB** instead of MySQL:
 ## Reproduce results
 To run our program copy and paste the following command in your terminal:
 ```
-git clone https://github.com/KDMG/ReLIGn-tool/
-cd ReLIGn-tool
+git clone https://github.com/KDMG/PatternRepair/
+cd PatternRepair/scripts
 
-python ReLIGn.py
+python scripts/PatternRepair.py --dataset dataset_name --pattern pattern_id
 ```
 In the [`data`](https://github.com/KDMG/ReLIGn-tool/tree/main/data) folder you can find some data to test the tool.
