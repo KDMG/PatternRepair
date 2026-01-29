@@ -4252,7 +4252,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                    db, loop_all, created_eventually_for):
     remaining_connections = []
     repaired_loops = {}
-    for subA, subB, _ in links_in_pattern:
 
     for (subA, subB, relationType) in links_in_pattern:
         if relationType != 'interleaving' and (subA not in interleaving and subB not in interleaving):
@@ -4333,7 +4332,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     sub1_skipped = True
                 min_common_loop = pick_max_loop(loops, common_loops)
                 write_outputfile("Common loop found between " + subA + " and " + subB, experiment, pattern, "a")
-                if set.union(set(loops_subA), set(loops_subB)) != common_loops:
                 if sub1_skipped:
                     min_loopA = min_common_loop
                     min_loopB = min_common_loop
