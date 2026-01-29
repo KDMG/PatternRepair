@@ -1,0 +1,3 @@
+v 1 SUB_54
+v 2 T05Printandsendconfirmationofreceipt
+d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication

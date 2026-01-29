@@ -1,0 +1,384 @@
+S
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+v 5 T05Printandsendconfirmationofreceipt
+v 6 T06Determinenecessityofstopadvice
+v 7 T10Determinenecessitytostopindication
+v 8 T11CreatedocumentXrequestunlicensed
+v 9 T12CheckdocumentXrequestunlicensed
+v 10 T14DeterminedocumentXrequestunlicensed
+v 11 T15PrintdocumentXrequestunlicensed
+v 12 END
+d 1 2 START__Confirmationofreceipt
+d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+d 4 6 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 5 6 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 6 7 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+d 9 10 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 10 11 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+d 11 12 T15PrintdocumentXrequestunlicensed__END
+d 7 8 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+d 8 9 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+S
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+d 1 2 START__Confirmationofreceipt
+d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+S
+v 1 T10Determinenecessitytostopindication
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T11CreatedocumentXrequestunlicensed
+v 4 T12CheckdocumentXrequestunlicensed
+v 5 T14DeterminedocumentXrequestunlicensed
+v 6 T15PrintdocumentXrequestunlicensed
+v 7 END
+d 1 2 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+d 1 4 T10Determinenecessitytostopindication__T12CheckdocumentXrequestunlicensed
+d 4 5 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 5 6 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+d 6 7 T15PrintdocumentXrequestunlicensed__END
+d 3 5 T11CreatedocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 2 3 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+
+S
+v 1 T06Determinenecessityofstopadvice
+v 2 T10Determinenecessitytostopindication
+v 3 T11CreatedocumentXrequestunlicensed
+v 4 T12CheckdocumentXrequestunlicensed
+v 5 T14DeterminedocumentXrequestunlicensed
+v 6 T15PrintdocumentXrequestunlicensed
+v 7 END
+d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+d 4 5 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 5 6 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+d 6 7 T15PrintdocumentXrequestunlicensed__END
+d 2 3 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+d 3 4 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+S
+v 1 SUB_2
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T06Determinenecessityofstopadvice
+v 4 T10Determinenecessitytostopindication
+v 5 T16Reportreasonstoholdrequest
+v 6 T17CheckreportYtostopindication
+v 7 T18AdjustreportYtostopindicition
+v 8 T17CheckreportYtostopindication
+v 9 T18AdjustreportYtostopindicition
+v 10 T17CheckreportYtostopindication
+v 11 T19DeterminereportYtostopindication
+v 12 T20PrintreportYtostopindication
+v 13 END
+d 1 5 T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest
+d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 3 4 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+d 4 13 T10Determinenecessitytostopindication__END
+d 5 6 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+d 5 8 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+d 5 10 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+d 10 11 T17CheckreportYtostopindication__T19DeterminereportYtostopindication
+d 11 12 T19DeterminereportYtostopindication__T20PrintreportYtostopindication
+d 7 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+d 6 7 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+d 9 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+d 8 9 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+S
+v 1 SUB_2
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T06Determinenecessityofstopadvice
+d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+S
+v 1 T06Determinenecessityofstopadvice
+v 2 T10Determinenecessitytostopindication
+d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_7
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T11CreatedocumentXrequestunlicensed
+v 4 END
+d 1 2 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+d 2 3 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+d 3 4 T11CreatedocumentXrequestunlicensed__END
+
+S
+v 1 SUB_7
+v 2 SUB_2
+v 3 T05Printandsendconfirmationofreceipt
+v 4 END
+d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+d 1 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+d 3 4 T05Printandsendconfirmationofreceipt__END
+
+S
+v 1 SUB_3
+v 2 T06Determinenecessityofstopadvice
+d 2 1 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+S
+v 1 T11CreatedocumentXrequestunlicensed
+v 2 T12CheckdocumentXrequestunlicensed
+v 3 T14DeterminedocumentXrequestunlicensed
+v 4 T15PrintdocumentXrequestunlicensed
+v 5 END
+d 2 3 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 3 4 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+d 4 5 T15PrintdocumentXrequestunlicensed__END
+d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+S
+v 1 T07-3Draftinternadviceholdforaspect3
+v 2 T07-2Draftinternadviceaspect2
+v 3 T06Determinenecessityofstopadvice
+d 2 3 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+d 1 3 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_7
+v 2 END
+d 1 2 T10Determinenecessitytostopindication__END
+
+S
+v 1 SUB_10
+v 2 SUB_2
+d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+
+S
+v 1 SUB_8
+v 2 SUB_2
+d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_9
+v 2 T06Determinenecessityofstopadvice
+v 3 T07-4Draftinternaladvicetoholdfortype4
+d 2 3 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+d 3 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+S
+v 1 T03Adjustconfirmationofreceipt
+v 2 T02Checkconfirmationofreceipt
+d 1 2 T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+
+S
+v 1 SUB_2
+v 2 T06Determinenecessityofstopadvice
+d 2 1 T06Determinenecessityofstopadvice__T02Checkconfirmationofreceipt
+
+S
+v 1 SUB_13
+v 2 T07-4Draftinternaladvicetoholdfortype4
+d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_4
+v 2 T05Printandsendconfirmationofreceipt
+d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_2
+v 2 T12CheckdocumentXrequestunlicensed
+d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+S
+v 1 T06Determinenecessityofstopadvice
+v 2 T06Determinenecessityofstopadvice
+d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_13
+v 2 T07-3Draftinternadviceholdforaspect3
+d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_6
+v 2 T07-1Draftinternadviceaspect1
+d 1 2 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+S
+v 1 T05Printandsendconfirmationofreceipt
+v 2 T13AdjustdocumentXrequestunlicensed
+d 1 2 T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed
+
+S
+v 1 T17CheckreportYtostopindication
+v 2 T18AdjustreportYtostopindicition
+d 1 2 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+S
+v 1 SUB_6
+v 2 T10Determinenecessitytostopindication
+d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_24
+v 2 SUB_19
+d 1 2 T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+
+S
+v 1 SUB_22
+v 2 SUB_16
+d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_10
+v 2 SUB_2
+d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_20
+v 2 SUB_2
+d 2 1 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_23
+v 2 T07-2Draftinternadviceaspect2
+d 2 1 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_8
+v 2 SUB_2
+d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+
+S
+v 1 SUB_18
+v 2 SUB_3
+d 1 2 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_20
+v 2 SUB_2
+d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_19
+v 2 SUB_6
+d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+S
+v 1 SUB_4
+v 2 T07-1Draftinternadviceaspect1
+d 2 1 T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_23
+v 2 T07-2Draftinternadviceaspect2
+d 2 1 T07-2Draftinternadviceaspect2__T07-3Draftinternadviceholdforaspect3
+
+S
+v 1 SUB_38
+v 2 SUB_12
+d 2 1 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+S
+v 1 SUB_27
+v 2 T11CreatedocumentXrequestunlicensed
+d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+S
+v 1 SUB_40
+v 2 END
+d 1 2 T11CreatedocumentXrequestunlicensed__END
+
+S
+v 1 T06Determinenecessityofstopadvice
+v 2 T07-3Draftinternadviceholdforaspect3
+d 1 2 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+S
+v 1 SUB_37
+v 2 T06Determinenecessityofstopadvice
+d 2 1 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+S
+v 1 T07-3Draftinternadviceholdforaspect3
+v 2 T07-4Draftinternaladvicetoholdfortype4
+d 1 2 T07-3Draftinternadviceholdforaspect3__T07-4Draftinternaladvicetoholdfortype4
+
+S
+v 1 SUB_25
+v 2 END
+d 1 2 T13AdjustdocumentXrequestunlicensed__END
+
+S
+v 1 SUB_22
+v 2 END
+d 1 2 T06Determinenecessityofstopadvice__END
+
+S
+v 1 SUB_46
+v 2 T06Determinenecessityofstopadvice
+d 2 1 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+S
+v 1 SUB_44
+v 2 T07-5Draftinternadviceaspect5
+d 2 1 T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3
+
+S
+v 1 SUB_24
+v 2 SUB_17
+d 2 1 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+S
+v 1 T09-1Processorreceiveexternaladvicefromparty1
+v 2 T07-3Draftinternadviceholdforaspect3
+d 1 2 T09-1Processorreceiveexternaladvicefromparty1__T07-3Draftinternadviceholdforaspect3
+
+S
+v 1 SUB_7
+v 2 T11CreatedocumentXrequestunlicensed
+d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+S
+v 1 SUB_6
+v 2 T08Draftandsendrequestforadvice
+d 1 2 T06Determinenecessityofstopadvice__T08Draftandsendrequestforadvice
+
+S
+v 1 SUB_4
+v 2 T05Printandsendconfirmationofreceipt
+d 2 1 T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed
+
+S
+v 1 SUB_11
+v 2 T10Determinenecessitytostopindication
+d 2 1 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+S
+v 1 SUB_54
+v 2 T05Printandsendconfirmationofreceipt
+d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+S
+v 1 SUB_52
+v 2 T07-1Draftinternadviceaspect1
+d 1 2 T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1
+
+S
+v 1 T09-4Processorreceiveexternaladvicefromparty4
+v 2 T07-2Draftinternadviceaspect2
+d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+S
+v 1 SUB_51
+v 2 SUB_21
+d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+S
+v 1 SUB_26
+v 2 SUB_5
+d 2 1 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+

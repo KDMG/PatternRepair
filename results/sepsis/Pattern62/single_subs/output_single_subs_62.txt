@@ -1,0 +1,38 @@
+Selected Pattern: 62
+Number of graphs in which the pattern occurs: 108
+Subgraph:  ['Instance', '1:', 'v', '9', 'IVAntibiotics', 'v', '10', 'AdmissionNC', 'd', '9', '10', 'IVAntibiotics__AdmissionNC', 'Found', '1', 'instances.']
+Repairing sub: 16
+Subgraph:  ['Instance', '1:', 'v', '9', 'IVAntibiotics', 'v', '10', 'AdmissionNC', 'd', '9', '10', 'IVAntibiotics__AdmissionNC', 'Found', '1', 'instances.']
+Initial sub:  ['IVAntibiotics', 'AdmissionNC']
+Trace:  PMA
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[M-REAL]CRP', '[L/M]ERSepsisTriage', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]LacticAcid', '[L/M]IVLiquid', '[L]IVAntibiotics', '[L]AdmissionNC', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]Leucocytes', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '9', 'IVAntibiotics', 'v', '10', 'AdmissionNC', 'd', '9', '10', 'IVAntibiotics__AdmissionNC', 'Found', '1', 'instances.']
+Simplified sub:  ['IVAntibiotics', 'AdmissionNC']
+Start:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9166666666666666, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n30, 'ERSepsisTriage'), (n31, 'Leucocytes'), (n38, None), (n39, None), (n45, None), (n50, None), (n27, 'IVLiquid')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 12, 'remaining_tokens': 1, 'produced_tokens': 12}]
+Reached Marking:  ['n7']
+End:  10
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9166666666666666, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n30, 'ERSepsisTriage'), (n31, 'Leucocytes'), (n38, None), (n39, None), (n45, None), (n50, None), (n27, 'IVLiquid')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 12, 'remaining_tokens': 1, 'produced_tokens': 12}]
+Reached Marking:  ['n7']
+Added:  IVAntibiotics s1 --> n53
+Added:  n53 --> AdmissionNC s2
+Added: n7 -- > (s1, 'IVAntibiotics') s1
+Added: (s2, 'AdmissionNC') s2 -- > n7
+Subgraph:  ['Instance', '1:', 'v', '14', 'CRP', 'v', '15', 'ReleaseA', 'v', '16', 'END', 'd', '15', '16', 'ReleaseA__END', 'd', '14', '15', 'CRP__ReleaseA', 'Found', '1', 'instances.']
+Repairing sub: 42
+Subgraph:  ['Instance', '1:', 'v', '14', 'CRP', 'v', '15', 'ReleaseA', 'v', '16', 'END', 'd', '15', '16', 'ReleaseA__END', 'd', '14', '15', 'CRP__ReleaseA', 'Found', '1', 'instances.']
+Initial sub:  ['CRP', 'ReleaseA', 'END']
+Trace:  PMA
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[M-REAL]CRP', '[L/M]ERSepsisTriage', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]LacticAcid', '[L/M]IVLiquid', '[L]IVAntibiotics', '[L]AdmissionNC', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]Leucocytes', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '14', 'CRP', 'v', '15', 'ReleaseA', 'd', '14', '15', 'CRP__ReleaseA', 'Found', '1', 'instances.']
+Simplified sub:  ['CRP', 'ReleaseA']
+Start:  14
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9333333333333333, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n30, 'ERSepsisTriage'), (n31, 'Leucocytes'), (n38, None), (n39, None), (n45, None), (n50, None), (n27, 'IVLiquid'), (n28, 'CRP'), (n29, None), (n31, 'Leucocytes')], 'reached_marking': ['n11:1'], 'enabled_transitions_in_marking': {(n32, 'IVAntibiotics'), (n48, 'ReleaseD'), (n46, 'ReleaseA'), (n42, 'AdmissionNC'), (n47, 'ReleaseC'), (n44, 'ReleaseB'), (n26, 'ERTriage'), (n27, 'IVLiquid'), (n52, 'END'), (n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 15, 'remaining_tokens': 1, 'produced_tokens': 15}]
+Reached Marking:  ['n11']
+End:  15
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9333333333333333, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n30, 'ERSepsisTriage'), (n31, 'Leucocytes'), (n38, None), (n39, None), (n45, None), (n50, None), (n27, 'IVLiquid'), (n28, 'CRP'), (n29, None), (n31, 'Leucocytes')], 'reached_marking': ['n11:1'], 'enabled_transitions_in_marking': {(n32, 'IVAntibiotics'), (n47, 'ReleaseC'), (n42, 'AdmissionNC'), (n48, 'ReleaseD'), (n46, 'ReleaseA'), (n44, 'ReleaseB'), (n26, 'ERTriage'), (n27, 'IVLiquid'), (n52, 'END'), (n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 15, 'remaining_tokens': 1, 'produced_tokens': 15}]
+Reached Marking:  ['n11']
+Added:  CRP s3 --> n54
+Added:  n54 --> ReleaseA s4
+Added: n11 -- > (s3, 'CRP') s3
+Added: (s4, 'ReleaseA') s4 -- > n11

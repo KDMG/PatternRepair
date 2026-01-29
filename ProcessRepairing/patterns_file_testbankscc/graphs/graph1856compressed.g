@@ -1,0 +1,6 @@
+v 1 MHRRPC
+v 2 SUB_678
+
+e 1 2 MHRRPC__HRRR
+e 2 1 HRRAN__MHRRPC
+

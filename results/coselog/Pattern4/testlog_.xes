@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<trace>
+		<string key="concept:name" value="case-4553" />
+		<string key="variant" value="Variant 61" />
+		<int key="variant-index" value="61" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource02" />
+		<string key="department" value="General" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-03T15:05:12.402000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-2122" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-06T12:02:58.683000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-2736" />
+			<string key="org:resource" value="Resource04" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-06T12:56:23.729000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-2877" />
+			<string key="org:resource" value="Resource10" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-06T16:11:57.194000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-2966" />
+			<string key="org:resource" value="admin1" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:51:15.058000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-2737" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:52:55.750000+00:00" />
+			<string key="org:group" value="Group 13" />
+			<string key="concept:instance" value="task-3900" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="T07-1Draftinternadviceaspect1" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:53:31.919000+00:00" />
+			<string key="org:group" value="Group 12" />
+			<string key="concept:instance" value="task-3901" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="T07-4Draftinternaladvicetoholdfortype4" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:55:22.347000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-3906" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:55:53.481000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-3909" />
+			<string key="org:resource" value="Resource02" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-13T13:55:54.481000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-4771" />
+		<string key="variant" value="Variant 65" />
+		<int key="variant-index" value="65" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource15" />
+		<string key="department" value="General" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-17T11:17:03.921000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-4226" />
+			<string key="org:resource" value="Resource10" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-17T11:27:20.636000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-4767" />
+			<string key="org:resource" value="Resource10" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-17T11:38:48.972000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-4816" />
+			<string key="org:resource" value="Resource10" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-12-30T14:07:43.684000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-4849" />
+			<string key="org:resource" value="admin1" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-04T11:24:29.864000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-4768" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-11T11:24:48.073000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-6660" />
+			<string key="org:resource" value="Resource35" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-11T16:14:25.680000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-6661" />
+			<string key="org:resource" value="Resource33" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:07:20.473000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-7779" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:07:45.604000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-8070" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:07:57.393000+00:00" />
+			<string key="org:group" value="Group 15" />
+			<string key="concept:instance" value="task-8071" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:08:12.119000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-8073" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:08:28.915000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-8074" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:08:39.178000+00:00" />
+			<string key="org:group" value="Group 15" />
+			<string key="concept:instance" value="task-8075" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:09:01.790000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-8076" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:09:20.055000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-8078" />
+			<string key="org:resource" value="Resource15" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-01-13T12:09:21.055000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-6335" />
+		<string key="variant" value="Variant 85" />
+		<int key="variant-index" value="85" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource11" />
+		<string key="department" value="General" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-03-24T11:45:41.418000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-15433" />
+			<string key="org:resource" value="Resource01" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-03-24T11:46:01.784000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-17540" />
+			<string key="org:resource" value="Resource01" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-03-24T11:46:13.946000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-17542" />
+			<string key="org:resource" value="Resource01" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-03-24T11:46:24.024000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-17543" />
+			<string key="org:resource" value="Resource01" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T12:06:24.073000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-17541" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T12:07:15.367000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19232" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:14:40.223000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19233" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T16Reportreasonstoholdrequest" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:15:18.808000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-19323" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:15:31.424000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19324" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:16:10.658000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-19325" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:16:29.966000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19326" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:17:22.246000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-19327" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:17:34.132000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19328" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:19:08.597000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-19329" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:19:25.491000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-19330" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:19:39.722000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-19331" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:19:53.076000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-19332" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T19DeterminereportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:20:03.916000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-19333" />
+			<string key="org:resource" value="Resource11" />
+			<string key="concept:name" value="T20PrintreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-04-06T16:20:04.916000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-7815" />
+		<string key="variant" value="Variant 96" />
+		<int key="variant-index" value="96" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource05" />
+		<string key="department" value="General" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:47:31.708000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-27193" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:47:46.563000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-27677" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:48:04.553000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-27679" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:48:19.723000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-27680" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:49:04.495000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-27678" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:49:41.978000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-27681" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:56:09.998000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-27683" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T16Reportreasonstoholdrequest" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:56:39.135000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-27686" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:57:01.276000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-27687" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:57:15.624000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-27688" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:57:34.132000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-27689" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T18AdjustreportYtostopindicition" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:58:04.754000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-27690" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T17CheckreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:58:44.603000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-27691" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T19DeterminereportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:59:06.434000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-27692" />
+			<string key="org:resource" value="Resource05" />
+			<string key="concept:name" value="T20PrintreportYtostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-06-06T11:59:07.434000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-8989" />
+		<string key="variant" value="Variant 105" />
+		<int key="variant-index" value="105" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource12" />
+		<string key="department" value="General" />
+		<string key="group" value="Group 5" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:25:17.524000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-35555" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:26:04.791000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-36294" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:26:51.380000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-36296" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:27:52.790000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-36297" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:33:07.403000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-36295" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:35:16.881000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-36299" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:45:44.795000+00:00" />
+			<string key="org:group" value="Group 15" />
+			<string key="concept:instance" value="task-36300" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:46:35.333000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-36301" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:47:03.653000+00:00" />
+			<string key="org:group" value="Group 15" />
+			<string key="concept:instance" value="task-36303" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:47:22.767000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-36302" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:47:46.348000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-36304" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:48:34.970000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-36305" />
+			<string key="org:resource" value="Resource12" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-08-11T16:48:35.970000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-3984" />
+		<string key="variant" value="Variant 45" />
+		<int key="variant-index" value="45" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource09" />
+		<string key="department" value="General" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-25T17:57:54.249000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-301" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-25T18:13:31.442000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-479" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-26T11:38:40.195000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-485" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T07-5Draftinternadviceaspect5" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-26T11:39:17.902000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-481" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T07-1Draftinternadviceaspect1" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-26T11:41:04.891000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-480" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T08Draftandsendrequestforadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-10-26T11:42:16.765000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-493" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T09-1Processorreceiveexternaladvicefromparty1" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-02T16:47:29.459000+00:00" />
+			<string key="org:group" value="Group 14" />
+			<string key="concept:instance" value="task-482" />
+			<string key="org:resource" value="Resource35" />
+			<string key="concept:name" value="T07-3Draftinternadviceholdforaspect3" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T10:07:41.168000+00:00" />
+			<string key="org:group" value="Group 12" />
+			<string key="concept:instance" value="task-484" />
+			<string key="org:resource" value="Resource32" />
+			<string key="concept:name" value="T07-4Draftinternaladvicetoholdfortype4" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T10:12:24.545000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-483" />
+			<string key="org:resource" value="Resource32" />
+			<string key="concept:name" value="T07-2Draftinternadviceaspect2" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T10:34:05.717000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-478" />
+			<string key="org:resource" value="Resource19" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T10:37:44.329000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-844" />
+			<string key="org:resource" value="Resource19" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T14:41:14.073000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-845" />
+			<string key="org:resource" value="Resource27" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T14:56:19.742000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-839" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T14:56:48.479000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-938" />
+			<string key="org:resource" value="Resource09" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2010-11-04T14:56:49.479000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case-9916" />
+		<string key="variant" value="Variant 114" />
+		<int key="variant-index" value="114" />
+		<string key="creator" value="Fluxicon Disco" />
+		<string key="responsible" value="Resource11" />
+		<string key="department" value="General" />
+		<string key="group" value="Group 8" />
+		<string key="channel" value="Internet" />
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-11T13:37:39.876000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-41746" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="Confirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-11T13:38:07.852000+00:00" />
+			<string key="org:group" value="Group 4" />
+			<string key="concept:instance" value="task-42864" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T02Checkconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-11T13:38:32.571000+00:00" />
+			<string key="org:group" value="Group 3" />
+			<string key="concept:instance" value="task-42866" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T04Determineconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-11T13:38:48.265000+00:00" />
+			<string key="org:group" value="Group 2" />
+			<string key="concept:instance" value="task-42867" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T05Printandsendconfirmationofreceipt" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-11T13:39:12.189000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-42865" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-18T11:59:35.030000+00:00" />
+			<string key="org:group" value="EMPTY" />
+			<string key="concept:instance" value="task-42869" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T07-4Draftinternaladvicetoholdfortype4" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-18T11:59:53.419000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-43595" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T06Determinenecessityofstopadvice" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-18T12:00:35.042000+00:00" />
+			<string key="org:group" value="Group 1" />
+			<string key="concept:instance" value="task-43596" />
+			<string key="org:resource" value="Resource03" />
+			<string key="concept:name" value="T10Determinenecessitytostopindication" />
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2011-10-18T12:00:36.042000+00:00" />
+			<string key="org:resource" value="" />
+			<string key="concept:name" value="END" />
+		</event>
+	</trace>
+</log>

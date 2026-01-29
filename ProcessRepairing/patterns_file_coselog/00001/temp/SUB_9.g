@@ -1,0 +1,7 @@
+v 1 SUB_7
+v 2 SUB_2
+v 3 T05Printandsendconfirmationofreceipt
+v 4 END
+d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+d 1 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+d 3 4 T05Printandsendconfirmationofreceipt__END

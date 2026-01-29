@@ -1,0 +1,8 @@
+v 1 SRPP
+v 2 RBPC
+v 3 REPC
+v 4 FRPP
+d 1 2 SRPP__RBPC
+d 1 3 SRPP__REPC
+d 2 4 RBPC__FRPP
+d 3 4 REPC__FRPP

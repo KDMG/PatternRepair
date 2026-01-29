@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<trace>
+		<string key="concept:name" value="trace_357" />
+		<event>
+			<string key="concept:name" value="START" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.143945" />
+		</event>
+		<event>
+			<string key="concept:name" value="SRP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.143974" />
+		</event>
+		<event>
+			<string key="concept:name" value="FRPP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.143983" />
+		</event>
+		<event>
+			<string key="concept:name" value="RBPC" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.143992" />
+		</event>
+		<event>
+			<string key="concept:name" value="RIBPC" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144000" />
+		</event>
+		<event>
+			<string key="concept:name" value="REPC" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144009" />
+		</event>
+		<event>
+			<string key="concept:name" value="SRPP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144017" />
+		</event>
+		<event>
+			<string key="concept:name" value="EPP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144025" />
+		</event>
+		<event>
+			<string key="concept:name" value="SLRRP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144034" />
+		</event>
+		<event>
+			<string key="concept:name" value="LRIRV" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144042" />
+		</event>
+		<event>
+			<string key="concept:name" value="LRIRV" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144050" />
+		</event>
+		<event>
+			<string key="concept:name" value="LRERV" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144059" />
+		</event>
+		<event>
+			<string key="concept:name" value="FLRRP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144067" />
+		</event>
+		<event>
+			<string key="concept:name" value="FRP" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144075" />
+		</event>
+		<event>
+			<string key="concept:name" value="END" />
+			<date key="time:timestamp" value="2025-12-04T10:10:48.144084" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,192 @@
+generazione nuovi pattern terminata
+sub 56 and sub 170 in relation 3 in graph 12
+sub 56 and sub 170 in relation 3 in graph 13
+sub 56 and sub 170 in relation 10 in graph 13
+generazione nuovi pattern terminata
+riga pattern2 scritta 
+generazione nuovi pattern terminata
+sub 36 and sub 56 in relation 3 in graph 11
+sub 36 and sub 56 in relation 3 in graph 5
+sub 36 and sub 56 in relation 13 in graph 5
+generazione nuovi pattern terminata
+riga pattern4 scritta 
+generazione nuovi pattern terminata
+sub 56 and sub 78 in relation 3 in graph 10
+sub 56 and sub 78 in relation 10 in graph 10
+sub 56 and sub 78 in relation 3 in graph 11
+sub 56 and sub 78 in relation 6 in graph 13
+sub 56 and sub 78 in relation 3 in graph 13
+sub 56 and sub 78 in relation 2 in graph 13
+sub 56 and sub 78 in relation 9 in graph 13
+generazione nuovi pattern terminata
+riga pattern6 scritta 
+generazione nuovi pattern terminata
+sub 49 and sub 53 in relation 3 in graph 16
+sub 49 and sub 53 in relation 3 in graph 18
+generazione nuovi pattern terminata
+riga pattern8 scritta 
+generazione nuovi pattern terminata
+sub 14 and sub 56 in relation 3 in graph 12
+sub 14 and sub 56 in relation 3 in graph 3
+sub 14 and sub 56 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern10 scritta 
+sub 14 and sub 34 in relation 3 in graph 12
+sub 14 and sub 34 in relation 3 in graph 3
+sub 14 and sub 34 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern11 scritta 
+sub 14 and sub 34 in relation 3 in graph 12
+sub 14 and sub 56 in relation 3 in graph 12
+sub 34 and sub 56 in relation 2 in graph 12
+sub 14 and sub 34 in relation 3 in graph 3
+sub 14 and sub 56 in relation 3 in graph 3
+sub 34 and sub 56 in relation 2 in graph 3
+sub 14 and sub 34 in relation 3 in graph 4
+sub 14 and sub 56 in relation 3 in graph 4
+sub 34 and sub 56 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern12 scritta 
+sub 14 and sub 32 in relation 3 in graph 12
+sub 14 and sub 32 in relation 3 in graph 3
+sub 14 and sub 32 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern13 scritta 
+sub 14 and sub 32 in relation 3 in graph 12
+sub 14 and sub 56 in relation 3 in graph 12
+sub 32 and sub 56 in relation 5 in graph 12
+sub 14 and sub 32 in relation 3 in graph 3
+sub 14 and sub 56 in relation 3 in graph 3
+sub 32 and sub 56 in relation 6 in graph 3
+sub 14 and sub 32 in relation 3 in graph 4
+sub 14 and sub 56 in relation 3 in graph 4
+sub 32 and sub 56 in relation 6 in graph 4
+generazione nuovi pattern terminata
+riga pattern14 scritta 
+sub 14 and sub 32 in relation 3 in graph 12
+sub 14 and sub 34 in relation 3 in graph 12
+sub 32 and sub 34 in relation 6 in graph 12
+sub 14 and sub 32 in relation 3 in graph 3
+sub 14 and sub 34 in relation 3 in graph 3
+sub 32 and sub 34 in relation 6 in graph 3
+sub 14 and sub 32 in relation 3 in graph 4
+sub 14 and sub 34 in relation 3 in graph 4
+sub 32 and sub 34 in relation 6 in graph 4
+generazione nuovi pattern terminata
+riga pattern15 scritta 
+sub 14 and sub 32 in relation 3 in graph 12
+sub 14 and sub 34 in relation 3 in graph 12
+sub 14 and sub 56 in relation 3 in graph 12
+sub 32 and sub 34 in relation 6 in graph 12
+sub 32 and sub 56 in relation 5 in graph 12
+sub 34 and sub 56 in relation 2 in graph 12
+sub 14 and sub 32 in relation 3 in graph 3
+sub 14 and sub 34 in relation 3 in graph 3
+sub 14 and sub 56 in relation 3 in graph 3
+sub 32 and sub 34 in relation 6 in graph 3
+sub 32 and sub 56 in relation 6 in graph 3
+sub 34 and sub 56 in relation 2 in graph 3
+sub 14 and sub 32 in relation 3 in graph 4
+sub 14 and sub 34 in relation 3 in graph 4
+sub 14 and sub 56 in relation 3 in graph 4
+sub 32 and sub 34 in relation 6 in graph 4
+sub 32 and sub 56 in relation 6 in graph 4
+sub 34 and sub 56 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern16 scritta 
+generazione nuovi pattern terminata
+generazione nuovi pattern terminata
+sub 32 and sub 56 in relation 5 in graph 12
+sub 32 and sub 56 in relation 6 in graph 3
+sub 32 and sub 56 in relation 6 in graph 4
+generazione nuovi pattern terminata
+riga pattern19 scritta 
+sub 32 and sub 34 in relation 6 in graph 12
+sub 32 and sub 34 in relation 6 in graph 3
+sub 32 and sub 34 in relation 6 in graph 4
+generazione nuovi pattern terminata
+riga pattern20 scritta 
+sub 32 and sub 34 in relation 6 in graph 12
+sub 32 and sub 56 in relation 5 in graph 12
+sub 34 and sub 56 in relation 2 in graph 12
+sub 32 and sub 34 in relation 6 in graph 3
+sub 32 and sub 56 in relation 6 in graph 3
+sub 34 and sub 56 in relation 2 in graph 3
+sub 32 and sub 34 in relation 6 in graph 4
+sub 32 and sub 56 in relation 6 in graph 4
+sub 34 and sub 56 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern21 scritta 
+generazione nuovi pattern terminata
+sub 3 and sub 10 in relation 2 in graph 23
+sub 3 and sub 10 in relation 2 in graph 25
+generazione nuovi pattern terminata
+riga pattern23 scritta 
+generazione nuovi pattern terminata
+sub 34 and sub 56 in relation 3 in graph 1
+sub 34 and sub 56 in relation 12 in graph 1
+sub 34 and sub 56 in relation 2 in graph 12
+sub 34 and sub 56 in relation 3 in graph 15
+sub 34 and sub 56 in relation 12 in graph 15
+sub 34 and sub 56 in relation 13 in graph 15
+sub 34 and sub 56 in relation 2 in graph 3
+sub 34 and sub 56 in relation 3 in graph 4
+sub 34 and sub 56 in relation 3 in graph 6
+sub 34 and sub 56 in relation 12 in graph 6
+sub 34 and sub 56 in relation 13 in graph 6
+generazione nuovi pattern terminata
+riga pattern25 scritta 
+sub 3 and sub 34 in relation 3 in graph 1
+sub 3 and sub 34 in relation 3 in graph 15
+sub 3 and sub 34 in relation 3 in graph 20
+sub 3 and sub 34 in relation 3 in graph 24
+sub 3 and sub 34 in relation 3 in graph 3
+sub 3 and sub 34 in relation 3 in graph 6
+generazione nuovi pattern terminata
+riga pattern26 scritta 
+sub 3 and sub 34 in relation 3 in graph 1
+sub 3 and sub 56 in relation 3 in graph 1
+sub 3 and sub 56 in relation 12 in graph 1
+sub 34 and sub 56 in relation 2 in graph 1
+sub 34 and sub 56 in relation 1 in graph 1
+sub 34 and sub 56 in relation 12 in graph 1
+sub 3 and sub 34 in relation 3 in graph 15
+sub 3 and sub 56 in relation 3 in graph 15
+sub 3 and sub 56 in relation 12 in graph 15
+sub 3 and sub 56 in relation 13 in graph 15
+sub 34 and sub 56 in relation 2 in graph 15
+sub 34 and sub 56 in relation 6 in graph 15
+sub 34 and sub 56 in relation 12 in graph 15
+sub 34 and sub 56 in relation 13 in graph 15
+sub 3 and sub 34 in relation 3 in graph 3
+sub 3 and sub 56 in relation 3 in graph 3
+sub 34 and sub 56 in relation 2 in graph 3
+sub 3 and sub 34 in relation 3 in graph 6
+sub 3 and sub 56 in relation 3 in graph 6
+sub 3 and sub 56 in relation 12 in graph 6
+sub 3 and sub 56 in relation 13 in graph 6
+sub 34 and sub 56 in relation 2 in graph 6
+sub 34 and sub 56 in relation 12 in graph 6
+sub 34 and sub 56 in relation 13 in graph 6
+generazione nuovi pattern terminata
+riga pattern27 scritta 
+generazione nuovi pattern terminata
+sub 3 and sub 56 in relation 3 in graph 1
+sub 3 and sub 56 in relation 12 in graph 1
+sub 3 and sub 56 in relation 3 in graph 10
+sub 3 and sub 56 in relation 13 in graph 10
+sub 3 and sub 56 in relation 3 in graph 15
+sub 3 and sub 56 in relation 12 in graph 15
+sub 3 and sub 56 in relation 13 in graph 15
+sub 3 and sub 56 in relation 3 in graph 3
+sub 3 and sub 56 in relation 3 in graph 6
+sub 3 and sub 56 in relation 12 in graph 6
+sub 3 and sub 56 in relation 13 in graph 6
+generazione nuovi pattern terminata
+riga pattern29 scritta 
+generazione nuovi pattern terminata
+file nuovi patterns in chiusura
+file nuovi patterns chiuso
+generazione nuovi pattern terminata
+file dot dei nuovi patterns terminato
+patterns visualizzati

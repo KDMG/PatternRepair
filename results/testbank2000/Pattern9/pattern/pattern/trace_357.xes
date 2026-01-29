@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<trace>
+		<string key="concept:name" value="trace_357" />
+		<event>
+			<string key="concept:name" value="START" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720335" />
+		</event>
+		<event>
+			<string key="concept:name" value="SRP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720406" />
+		</event>
+		<event>
+			<string key="concept:name" value="SRPP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720407" />
+		</event>
+		<event>
+			<string key="concept:name" value="RBPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720408" />
+		</event>
+		<event>
+			<string key="concept:name" value="RIBPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720409" />
+		</event>
+		<event>
+			<string key="concept:name" value="REPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720410" />
+		</event>
+		<event>
+			<string key="concept:name" value="FRPP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720410" />
+		</event>
+		<event>
+			<string key="concept:name" value="EPP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720411" />
+		</event>
+		<event>
+			<string key="concept:name" value="SHRRP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720412" />
+		</event>
+		<event>
+			<string key="concept:name" value="SHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720413" />
+		</event>
+		<event>
+			<string key="concept:name" value="AHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720414" />
+		</event>
+		<event>
+			<string key="concept:name" value="HRHA" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720414" />
+		</event>
+		<event>
+			<string key="concept:name" value="FHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720415" />
+		</event>
+		<event>
+			<string key="concept:name" value="RHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720416" />
+		</event>
+		<event>
+			<string key="concept:name" value="SHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720417" />
+		</event>
+		<event>
+			<string key="concept:name" value="AHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720418" />
+		</event>
+		<event>
+			<string key="concept:name" value="HRRAN" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720418" />
+		</event>
+		<event>
+			<string key="concept:name" value="FHRRPC" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720419" />
+		</event>
+		<event>
+			<string key="concept:name" value="HRRR" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720420" />
+		</event>
+		<event>
+			<string key="concept:name" value="FHRRP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720421" />
+		</event>
+		<event>
+			<string key="concept:name" value="FRP" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720422" />
+		</event>
+		<event>
+			<string key="concept:name" value="END" />
+			<date key="time:timestamp" value="2025-12-04T10:20:37.720422" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,8 @@
+v 1 SUB_102
+v 2 SUB_82
+v 3 EPP
+v 4 HRRAN
+d 3 1 EPP__HRHA
+d 3 4 EPP__HRRAN
+d 2 3 SRPP__EPP
+d 4 1 HRRAN__EPP

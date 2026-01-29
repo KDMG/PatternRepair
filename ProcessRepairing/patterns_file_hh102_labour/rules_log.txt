@@ -1,0 +1,134 @@
+generazione nuovi pattern terminata
+sub 20 and sub 139 in relation 3 in graph 1
+sub 20 and sub 139 in relation 10 in graph 1
+generazione nuovi pattern terminata
+riga pattern2 scritta 
+generazione nuovi pattern terminata
+sub 28 and sub 129 in relation 3 in graph 10
+generazione nuovi pattern terminata
+riga pattern4 scritta 
+generazione nuovi pattern terminata
+sub 41 and sub 118 in relation 3 in graph 12
+generazione nuovi pattern terminata
+riga pattern6 scritta 
+sub 20 and sub 118 in relation 2 in graph 12
+generazione nuovi pattern terminata
+riga pattern7 scritta 
+sub 20 and sub 41 in relation 4 in graph 12
+sub 20 and sub 118 in relation 2 in graph 12
+sub 41 and sub 118 in relation 2 in graph 12
+generazione nuovi pattern terminata
+riga pattern8 scritta 
+generazione nuovi pattern terminata
+sub 41 and sub 100 in relation 3 in graph 13
+generazione nuovi pattern terminata
+riga pattern10 scritta 
+generazione nuovi pattern terminata
+sub 41 and sub 95 in relation 3 in graph 6
+generazione nuovi pattern terminata
+riga pattern12 scritta 
+sub 28 and sub 95 in relation 6 in graph 6
+generazione nuovi pattern terminata
+riga pattern13 scritta 
+sub 28 and sub 41 in relation 6 in graph 6
+sub 28 and sub 95 in relation 6 in graph 6
+sub 41 and sub 95 in relation 6 in graph 6
+generazione nuovi pattern terminata
+riga pattern14 scritta 
+generazione nuovi pattern terminata
+sub 18 and sub 79 in relation 3 in graph 8
+generazione nuovi pattern terminata
+riga pattern16 scritta 
+generazione nuovi pattern terminata
+sub 20 and sub 77 in relation 3 in graph 14
+generazione nuovi pattern terminata
+riga pattern18 scritta 
+sub 28 and sub 77 in relation 2 in graph 14
+sub 28 and sub 77 in relation 0 in graph 14
+sub 28 and sub 77 in relation 9 in graph 14
+generazione nuovi pattern terminata
+riga pattern19 scritta 
+sub 20 and sub 28 in relation 6 in graph 14
+sub 20 and sub 28 in relation 0 in graph 14
+sub 20 and sub 28 in relation 13 in graph 14
+sub 20 and sub 77 in relation 2 in graph 14
+sub 28 and sub 77 in relation 2 in graph 14
+sub 28 and sub 77 in relation 0 in graph 14
+sub 28 and sub 77 in relation 9 in graph 14
+generazione nuovi pattern terminata
+riga pattern20 scritta 
+generazione nuovi pattern terminata
+sub 41 and sub 53 in relation 3 in graph 3
+generazione nuovi pattern terminata
+riga pattern22 scritta 
+sub 10 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern23 scritta 
+sub 10 and sub 41 in relation 2 in graph 3
+sub 10 and sub 53 in relation 2 in graph 3
+sub 41 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern24 scritta 
+sub 21 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern25 scritta 
+sub 21 and sub 41 in relation 6 in graph 3
+sub 21 and sub 53 in relation 2 in graph 3
+sub 41 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern26 scritta 
+sub 10 and sub 21 in relation 2 in graph 3
+sub 10 and sub 53 in relation 2 in graph 3
+sub 21 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern27 scritta 
+sub 10 and sub 21 in relation 2 in graph 3
+sub 10 and sub 41 in relation 2 in graph 3
+sub 10 and sub 53 in relation 2 in graph 3
+sub 21 and sub 41 in relation 6 in graph 3
+sub 21 and sub 53 in relation 2 in graph 3
+sub 41 and sub 53 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern28 scritta 
+generazione nuovi pattern terminata
+sub 21 and sub 41 in relation 6 in graph 3
+generazione nuovi pattern terminata
+riga pattern30 scritta 
+sub 10 and sub 21 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern31 scritta 
+sub 10 and sub 21 in relation 2 in graph 3
+sub 10 and sub 41 in relation 2 in graph 3
+sub 21 and sub 41 in relation 6 in graph 3
+generazione nuovi pattern terminata
+riga pattern32 scritta 
+generazione nuovi pattern terminata
+sub 10 and sub 41 in relation 2 in graph 3
+generazione nuovi pattern terminata
+riga pattern34 scritta 
+sub 10 and sub 18 in relation 3 in graph 7
+generazione nuovi pattern terminata
+riga pattern35 scritta 
+generazione nuovi pattern terminata
+sub 28 and sub 41 in relation 6 in graph 6
+generazione nuovi pattern terminata
+riga pattern37 scritta 
+sub 20 and sub 28 in relation 6 in graph 14
+sub 20 and sub 28 in relation 0 in graph 14
+sub 20 and sub 28 in relation 13 in graph 14
+generazione nuovi pattern terminata
+riga pattern38 scritta 
+generazione nuovi pattern terminata
+sub 18 and sub 20 in relation 3 in graph 5
+generazione nuovi pattern terminata
+riga pattern40 scritta 
+generazione nuovi pattern terminata
+sub 20 and sub 41 in relation 4 in graph 12
+generazione nuovi pattern terminata
+riga pattern42 scritta 
+generazione nuovi pattern terminata
+file nuovi patterns in chiusura
+file nuovi patterns chiuso
+generazione nuovi pattern terminata
+file dot dei nuovi patterns terminato
+patterns visualizzati

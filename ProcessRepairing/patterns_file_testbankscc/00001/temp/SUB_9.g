@@ -1,0 +1,5 @@
+v 1 SRP
+v 2 SRPP
+v 3 RIBPC
+d 1 2 SRP__SRPP
+d 2 3 SRPP__RIBPC

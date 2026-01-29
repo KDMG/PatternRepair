@@ -1,0 +1,2376 @@
+
+S
+v 1 washing
+v 2 grooming
+d 1 2 washing__grooming
+ 
+S
+v 1 washing
+v 2 toilet
+d 1 2 washing__toilet
+ 
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+d 1 2 watchingtv__snack
+d 2 3 snack__watchingtv
+ 
+S
+v 1 Start
+v 10 eatingBreakfast
+v 45 watchingtv
+v 46 End
+d 1 10 Start__eatingBreakfast
+d 10 46 eatingBreakfast__End
+d 45 46 watchingtv__End
+ 
+S
+v 1 watchingtv
+v 2 toilet
+d 1 2 watchingtv__toilet
+ 
+S
+v 1 watchingtv
+v 2 prepareLunch
+v 3 eatingLunch
+d 1 2 watchingtv__prepareLunch
+d 2 3 prepareLunch__eatingLunch
+ 
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+d 1 2 sleeping__toilet
+d 2 3 toilet__prepareBreakfast
+ 
+S
+v 1 watchingtv
+v 2 washing
+d 1 2 watchingtv__washing
+ 
+S
+v 1 Start
+v 7 eatingBreakfast
+v 8 washing
+v 21 End
+d 1 7 Start__eatingBreakfast
+d 8 21 washing__End
+d 7 8 eatingBreakfast__washing
+ 
+S
+v 1 watchingtv
+v 2 outdoors
+d 1 2 watchingtv__outdoors
+ 
+S
+v 1 sleeping
+v 2 toilet
+v 3 washing
+v 4 shower
+v 5 prepareBreakfast
+d 1 2 sleeping__toilet
+d 4 5 shower__prepareBreakfast
+d 1 3 sleeping__washing
+d 3 5 washing__prepareBreakfast
+ 
+S
+v 1 washing
+v 2 toilet
+v 3 watchingtv
+ e 1 2 washing__toilet
+ e 3 1 watchingtv__washing
+
+S
+v 1 watchingtv
+v 2 snack
+d 1 2 watchingtv__snack
+ 
+S
+v 1 washing
+v 2 grooming
+v 3 grooming
+ e 1 2 washing__grooming
+ e 3 1 grooming__washing
+
+S
+v 1 washing
+v 2 toilet
+v 3 Start
+v 4 eatingBreakfast
+v 5 End
+ e 1 2 washing__toilet
+ e 3 1 Start__washing
+ e 3 4 Start__eatingBreakfast
+ e 4 5 eatingBreakfast__End
+
+S
+v 1 watchingtv
+v 2 prepareDinner
+v 3 eatingDinner
+d 1 2 watchingtv__prepareDinner
+d 2 3 prepareDinner__eatingDinner
+ 
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+
+S
+v 1 washing
+v 2 grooming
+v 3 toilet
+ e 1 2 washing__grooming
+ e 3 1 toilet__washing
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 washing
+ e 1 2 watchingtv__toilet
+ e 3 1 washing__watchingtv
+
+S
+v 1 prepareLunch
+v 2 eatingLunch
+d 1 2 prepareLunch__eatingLunch
+ 
+S
+v 1 sleeping
+v 2 prepareBreakfast
+d 1 2 sleeping__prepareBreakfast
+ 
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 shower
+ e 1 2 watchingtv__washing
+ e 2 3 washing__shower
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 outdoors
+ e 1 2 watchingtv__washing
+ e 2 3 washing__outdoors
+
+S
+v 1 washing
+v 2 toilet
+v 3 grooming
+ e 1 2 washing__toilet
+ e 2 3 toilet__grooming
+
+S
+v 1 washing
+v 2 watchingtv
+d 1 2 washing__watchingtv
+ 
+S
+v 1 eatingBreakfast
+v 2 End
+d 1 2 eatingBreakfast__End
+ 
+S
+v 1 sleeping
+v 2 toilet
+d 1 2 sleeping__toilet
+ 
+S
+v 1 outdoors
+v 2 toilet
+v 3 snack
+d 1 2 outdoors__toilet
+d 2 3 toilet__snack
+ 
+S
+v 1 watchingtv
+v 2 toilet
+v 3 outdoors
+v 4 washing
+ e 1 2 watchingtv__toilet
+ e 3 1 outdoors__watchingtv
+ e 4 3 washing__outdoors
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 washing
+v 5 washing
+v 6 toilet
+v 7 grooming
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 3 4 prepareBreakfast__washing
+ e 5 6 washing__toilet
+ e 7 5 grooming__washing
+ e 4 7 washing__grooming
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 outdoors
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__outdoors
+
+S
+v 1 washing
+v 2 toilet
+v 3 prepareBreakfast
+v 4 shower
+ e 1 2 washing__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 4 3 shower__prepareBreakfast
+ e 1 4 washing__shower
+
+S
+v 1 washing
+v 2 shower
+d 1 2 washing__shower
+ 
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 watchingtv
+v 4 End
+v 5 washing
+ e 1 2 Start__eatingBreakfast
+ e 2 4 eatingBreakfast__End
+ e 3 4 watchingtv__End
+ e 1 5 Start__washing
+
+S
+v 1 Start
+v 8 eatingBreakfast
+v 9 shower
+v 20 End
+d 1 8 Start__eatingBreakfast
+d 9 20 shower__End
+d 8 9 eatingBreakfast__shower
+ 
+S
+v 1 grooming
+v 2 washing
+v 3 grooming
+v 4 Start
+ e 2 3 washing__grooming
+ e 1 2 grooming__washing
+ e 4 1 Start__grooming
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+v 4 washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+ e 3 4 toilet__washing
+
+S
+v 1 washing
+v 2 toilet
+v 3 shower
+v 4 prepareBreakfast
+v 5 sleeping
+ e 2 4 toilet__prepareBreakfast
+ e 3 4 shower__prepareBreakfast
+ e 1 2 washing__toilet
+ e 1 3 washing__shower
+ e 5 1 sleeping__washing
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 watchingtv
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 3 4 prepareBreakfast__watchingtv
+
+S
+v 1 prepareDinner
+v 2 eatingDinner
+d 1 2 prepareDinner__eatingDinner
+ 
+S
+v 1 snack
+v 2 toilet
+d 1 2 snack__toilet
+ 
+S
+v 1 watchingtv
+v 2 washing
+v 3 shower
+v 4 prepareBreakfast
+v 5 sleeping
+v 6 toilet
+ e 1 2 watchingtv__washing
+ e 2 3 washing__shower
+ e 4 1 prepareBreakfast__watchingtv
+ e 5 6 sleeping__toilet
+ e 6 4 toilet__prepareBreakfast
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 shower
+v 4 washing
+v 5 grooming
+ e 1 2 watchingtv__washing
+ e 2 3 washing__shower
+ e 3 4 shower__washing
+ e 4 5 washing__grooming
+
+S
+v 1 washing
+v 2 watchingtv
+v 3 toilet
+v 4 Start
+v 5 eatingBreakfast
+v 6 watchingtv
+v 7 End
+ e 1 2 washing__watchingtv
+ e 2 3 watchingtv__toilet
+ e 4 1 Start__washing
+ e 4 5 Start__eatingBreakfast
+ e 5 7 eatingBreakfast__End
+ e 6 7 watchingtv__End
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 washing
+v 5 grooming
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__washing
+ e 4 5 washing__grooming
+
+S
+v 1 Start
+v 2 washing
+v 3 toilet
+v 4 eatingBreakfast
+v 5 End
+v 6 washing
+ e 1 2 Start__washing
+ e 1 4 Start__eatingBreakfast
+ e 4 5 eatingBreakfast__End
+ e 2 3 washing__toilet
+ e 3 6 toilet__washing
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 snack
+ e 1 2 watchingtv__washing
+ e 2 3 washing__toilet
+ e 4 1 snack__watchingtv
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 outdoors
+ e 1 2 watchingtv__washing
+ e 2 3 washing__toilet
+ e 3 4 toilet__outdoors
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 eatingLunch
+v 5 watchingtv
+v 6 prepareLunch
+ e 1 2 watchingtv__washing
+ e 2 3 washing__toilet
+ e 4 1 eatingLunch__watchingtv
+ e 5 6 watchingtv__prepareLunch
+ e 6 4 prepareLunch__eatingLunch
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 watchingtv
+v 4 End
+v 5 toilet
+ e 1 2 Start__eatingBreakfast
+ e 2 4 eatingBreakfast__End
+ e 3 4 watchingtv__End
+ e 1 5 Start__toilet
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 snack
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__snack
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 washing
+v 4 End
+v 5 watchingtv
+ e 1 2 Start__eatingBreakfast
+ e 3 4 washing__End
+ e 2 3 eatingBreakfast__washing
+ e 5 4 watchingtv__End
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 watchingtv
+v 4 snack
+v 5 watchingtv
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__watchingtv
+ e 3 4 watchingtv__snack
+ e 4 5 snack__watchingtv
+
+S
+v 1 washing
+v 2 grooming
+v 3 watchingtv
+ e 1 2 washing__grooming
+ e 3 1 watchingtv__washing
+
+S
+v 1 grooming
+v 2 washing
+d 1 2 grooming__washing
+ 
+S
+v 1 toilet
+v 2 washing
+d 1 2 toilet__washing
+ 
+S
+v 1 grooming
+v 2 washing
+v 3 grooming
+v 4 snack
+ e 2 3 washing__grooming
+ e 1 2 grooming__washing
+ e 4 1 snack__grooming
+
+S
+v 1 outdoors
+v 2 End
+d 1 2 outdoors__End
+ 
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 7 8 grooming__sleeping
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 12 13 washing__toilet
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+v 14 washing
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 12 13 washing__toilet
+ e 13 14 toilet__washing
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+v 14 washing
+v 15 outdoors
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 12 13 washing__toilet
+ e 13 14 toilet__washing
+ e 14 15 washing__outdoors
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+v 14 washing
+v 15 outdoors
+v 16 watchingtv
+v 17 prepareLunch
+v 18 eatingLunch
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 14 15 washing__outdoors
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 12 13 washing__toilet
+ e 13 14 toilet__washing
+ e 15 16 outdoors__watchingtv
+ e 16 17 watchingtv__prepareLunch
+ e 17 18 prepareLunch__eatingLunch
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+v 14 washing
+v 15 outdoors
+v 16 watchingtv
+v 17 prepareLunch
+v 18 eatingLunch
+v 19 watchingtv
+v 20 snack
+v 21 watchingtv
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 14 15 washing__outdoors
+ e 15 16 outdoors__watchingtv
+ e 16 17 watchingtv__prepareLunch
+ e 17 18 prepareLunch__eatingLunch
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 12 13 washing__toilet
+ e 13 14 toilet__washing
+ e 18 19 eatingLunch__watchingtv
+ e 19 20 watchingtv__snack
+ e 20 21 snack__watchingtv
+
+S
+v 1 Start
+v 2 sleeping
+d 1 2 Start__sleeping
+ 
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 toilet
+v 7 grooming
+v 8 sleeping
+v 9 toilet
+v 10 prepareBreakfast
+v 11 watchingtv
+v 12 washing
+v 13 toilet
+v 14 washing
+v 15 outdoors
+v 16 watchingtv
+v 17 prepareLunch
+v 18 eatingLunch
+v 19 watchingtv
+v 20 snack
+v 21 watchingtv
+v 22 toilet
+ e 5 6 washing__toilet
+ e 6 7 toilet__grooming
+ e 8 9 sleeping__toilet
+ e 9 10 toilet__prepareBreakfast
+ e 10 11 prepareBreakfast__watchingtv
+ e 11 12 watchingtv__washing
+ e 14 15 washing__outdoors
+ e 15 16 outdoors__watchingtv
+ e 16 17 watchingtv__prepareLunch
+ e 17 18 prepareLunch__eatingLunch
+ e 18 19 eatingLunch__watchingtv
+ e 19 20 watchingtv__snack
+ e 20 21 snack__watchingtv
+ e 7 8 grooming__sleeping
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 12 13 washing__toilet
+ e 13 14 toilet__washing
+ e 21 22 watchingtv__toilet
+
+S
+v 1 Start
+v 2 eatingLunch
+d 1 2 Start__eatingLunch
+ 
+S
+v 1 grooming
+v 2 watchingtv
+d 1 2 grooming__watchingtv
+ 
+S
+v 1 eatingBreakfast
+v 2 End
+v 3 prepareDinner
+ e 1 2 eatingBreakfast__End
+ e 2 3 End__prepareDinner
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 snack
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 3 4 prepareBreakfast__snack
+
+S
+v 1 snack
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 Start
+ e 3 4 washing__grooming
+ e 2 3 grooming__washing
+ e 1 2 snack__grooming
+ e 5 1 Start__snack
+
+S
+v 1 washing
+v 2 End
+d 1 2 washing__End
+ 
+S
+v 1 toilet
+v 2 washing
+v 3 snack
+ e 1 2 toilet__washing
+ e 2 3 washing__snack
+
+S
+v 1 grooming
+v 2 washing
+v 3 washing
+v 4 toilet
+v 5 grooming
+ e 1 2 grooming__washing
+ e 2 3 washing__washing
+ e 3 4 washing__toilet
+ e 4 5 toilet__grooming
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 grooming
+v 4 snack
+v 5 outdoors
+v 6 toilet
+ e 1 2 watchingtv__washing
+ e 2 3 washing__grooming
+ e 4 1 snack__watchingtv
+ e 5 6 outdoors__toilet
+ e 6 4 toilet__snack
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 washing
+v 5 grooming
+ e 2 3 toilet__prepareBreakfast
+ e 1 2 sleeping__toilet
+ e 3 4 prepareBreakfast__washing
+ e 4 5 washing__grooming
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 watchingtv
+v 4 snack
+v 5 watchingtv
+v 6 eatingLunch
+v 7 prepareLunch
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__watchingtv
+ e 3 4 watchingtv__snack
+ e 4 5 snack__watchingtv
+ e 6 1 eatingLunch__watchingtv
+ e 7 6 prepareLunch__eatingLunch
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 washing
+v 4 watchingtv
+v 5 End
+v 6 washing
+v 7 grooming
+ e 1 2 Start__eatingBreakfast
+ e 4 5 watchingtv__End
+ e 3 5 washing__End
+ e 2 3 eatingBreakfast__washing
+ e 1 6 Start__washing
+ e 6 7 washing__grooming
+
+S
+v 1 toilet
+v 2 washing
+v 3 snack
+v 4 watchingtv
+v 5 toilet
+v 6 snack
+ e 2 3 washing__snack
+ e 1 2 toilet__washing
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__toilet
+ e 5 6 toilet__snack
+
+S
+v 1 Start
+v 2 toilet
+v 3 eatingBreakfast
+v 4 watchingtv
+v 5 End
+v 6 sleeping
+v 7 toilet
+v 8 prepareBreakfast
+v 9 watchingtv
+v 10 washing
+v 11 shower
+ e 1 2 Start__toilet
+ e 1 3 Start__eatingBreakfast
+ e 3 5 eatingBreakfast__End
+ e 4 5 watchingtv__End
+ e 2 6 toilet__sleeping
+ e 8 9 prepareBreakfast__watchingtv
+ e 9 10 watchingtv__washing
+ e 6 7 sleeping__toilet
+ e 7 8 toilet__prepareBreakfast
+ e 10 11 washing__shower
+
+S
+v 1 watchingtv
+v 2 prepareLunch
+v 3 eatingLunch
+v 4 watchingtv
+v 5 washing
+v 6 toilet
+v 7 toilet
+v 8 watchingtv
+v 9 snack
+v 10 watchingtv
+v 11 washing
+ e 1 2 watchingtv__prepareLunch
+ e 2 3 prepareLunch__eatingLunch
+ e 3 4 eatingLunch__watchingtv
+ e 4 5 watchingtv__washing
+ e 5 6 washing__toilet
+ e 7 1 toilet__watchingtv
+ e 8 9 watchingtv__snack
+ e 9 10 snack__watchingtv
+ e 10 11 watchingtv__washing
+ e 11 7 washing__toilet
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+v 4 washing
+v 5 watchingtv
+v 6 outdoors
+ e 3 4 toilet__washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+ e 4 5 washing__watchingtv
+ e 5 6 watchingtv__outdoors
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 outdoors
+v 5 prepareBreakfast
+v 6 sleeping
+v 7 washing
+v 8 toilet
+v 9 shower
+ e 1 2 watchingtv__washing
+ e 2 3 washing__toilet
+ e 3 4 toilet__outdoors
+ e 5 1 prepareBreakfast__watchingtv
+ e 8 5 toilet__prepareBreakfast
+ e 9 5 shower__prepareBreakfast
+ e 6 7 sleeping__washing
+ e 7 8 washing__toilet
+ e 7 9 washing__shower
+
+S
+v 1 snack
+v 2 watchingtv
+v 3 washing
+v 4 toilet
+v 5 toilet
+v 6 washing
+v 7 watchingtv
+ e 1 2 snack__watchingtv
+ e 2 3 watchingtv__washing
+ e 3 4 washing__toilet
+ e 5 1 toilet__snack
+ e 6 7 washing__watchingtv
+ e 7 5 watchingtv__toilet
+
+S
+v 1 Start
+v 2 washing
+v 3 toilet
+v 4 washing
+v 5 eatingBreakfast
+v 6 End
+v 7 sleeping
+ e 1 2 Start__washing
+ e 1 5 Start__eatingBreakfast
+ e 5 6 eatingBreakfast__End
+ e 2 3 washing__toilet
+ e 3 4 toilet__washing
+ e 4 7 washing__sleeping
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 washing
+v 5 grooming
+v 6 watchingtv
+ e 4 5 washing__grooming
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__washing
+ e 5 6 grooming__watchingtv
+
+S
+v 1 Start
+v 2 washing
+v 3 watchingtv
+v 4 toilet
+v 5 eatingBreakfast
+v 6 watchingtv
+v 7 End
+v 8 washing
+v 9 toilet
+ e 1 2 Start__washing
+ e 1 5 Start__eatingBreakfast
+ e 2 3 washing__watchingtv
+ e 3 4 watchingtv__toilet
+ e 5 7 eatingBreakfast__End
+ e 6 7 watchingtv__End
+ e 4 8 toilet__washing
+ e 8 9 washing__toilet
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 shower
+v 4 washing
+v 5 grooming
+v 6 prepareBreakfast
+ e 1 2 watchingtv__washing
+ e 4 5 washing__grooming
+ e 2 3 washing__shower
+ e 3 4 shower__washing
+ e 6 1 prepareBreakfast__watchingtv
+
+S
+v 1 watchingtv
+v 2 prepareLunch
+v 3 eatingLunch
+v 4 watchingtv
+v 5 toilet
+ e 1 2 watchingtv__prepareLunch
+ e 2 3 prepareLunch__eatingLunch
+ e 3 4 eatingLunch__watchingtv
+ e 4 5 watchingtv__toilet
+
+S
+v 1 eatingBreakfast
+v 2 End
+v 3 watchingtv
+v 4 washing
+ e 1 2 eatingBreakfast__End
+ e 3 2 watchingtv__End
+ e 4 3 washing__watchingtv
+
+S
+v 1 eatingBreakfast
+v 2 End
+v 3 outdoors
+ e 1 2 eatingBreakfast__End
+ e 3 2 outdoors__End
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+v 4 washing
+v 5 watchingtv
+v 6 prepareLunch
+v 7 eatingLunch
+ e 3 4 toilet__washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+ e 4 5 washing__watchingtv
+ e 5 6 watchingtv__prepareLunch
+ e 6 7 prepareLunch__eatingLunch
+
+S
+v 1 eatingBreakfast
+v 2 End
+v 3 watchingtv
+ e 1 2 eatingBreakfast__End
+ e 3 2 watchingtv__End
+
+S
+v 1 snack
+v 2 toilet
+v 3 outdoors
+ e 1 2 snack__toilet
+ e 3 1 outdoors__snack
+
+S
+v 1 watchingtv
+v 2 outdoors
+v 3 washing
+ e 1 2 watchingtv__outdoors
+ e 3 1 washing__watchingtv
+
+S
+v 1 prepareDinner
+v 2 eatingDinner
+v 3 washing
+v 4 watchingtv
+v 5 toilet
+ e 1 2 prepareDinner__eatingDinner
+ e 2 3 eatingDinner__washing
+ e 3 4 washing__watchingtv
+ e 4 5 watchingtv__toilet
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 eatingBreakfast
+ e 3 4 washing__grooming
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 2 5 grooming__eatingBreakfast
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 watchingtv
+v 5 grooming
+v 6 washing
+ e 2 3 toilet__prepareBreakfast
+ e 3 4 prepareBreakfast__watchingtv
+ e 1 2 sleeping__toilet
+ e 5 1 grooming__sleeping
+ e 6 5 washing__grooming
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 shower
+v 4 End
+v 5 watchingtv
+ e 1 2 Start__eatingBreakfast
+ e 3 4 shower__End
+ e 2 3 eatingBreakfast__shower
+ e 1 5 Start__watchingtv
+
+S
+v 1 Start
+v 2 washing
+v 3 eatingBreakfast
+v 4 watchingtv
+v 5 End
+v 6 watchingtv
+v 7 washing
+ e 1 2 Start__washing
+ e 1 3 Start__eatingBreakfast
+ e 3 5 eatingBreakfast__End
+ e 4 5 watchingtv__End
+ e 2 6 washing__watchingtv
+ e 6 7 watchingtv__washing
+
+S
+v 1 washing
+v 2 outdoors
+v 3 watchingtv
+v 4 toilet
+v 5 watchingtv
+v 6 washing
+ e 1 2 washing__outdoors
+ e 2 3 outdoors__watchingtv
+ e 3 4 watchingtv__toilet
+ e 4 5 toilet__watchingtv
+ e 5 6 watchingtv__washing
+
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+v 4 watchingtv
+v 5 outdoors
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__outdoors
+
+S
+v 1 Start
+v 2 washing
+v 3 eatingBreakfast
+v 4 watchingtv
+v 5 End
+v 6 sleeping
+v 7 toilet
+ e 1 2 Start__washing
+ e 1 3 Start__eatingBreakfast
+ e 3 5 eatingBreakfast__End
+ e 4 5 watchingtv__End
+ e 2 6 washing__sleeping
+ e 6 7 sleeping__toilet
+
+S
+v 1 washing
+v 2 shower
+v 3 grooming
+v 4 washing
+v 5 toilet
+ e 1 2 washing__shower
+ e 3 1 grooming__washing
+ e 4 5 washing__toilet
+ e 5 3 toilet__grooming
+
+S
+v 1 washing
+v 2 shower
+v 3 prepareBreakfast
+ e 1 2 washing__shower
+ e 3 1 prepareBreakfast__washing
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 outdoors
+v 4 prepareBreakfast
+ e 1 2 watchingtv__washing
+ e 2 3 washing__outdoors
+ e 4 1 prepareBreakfast__watchingtv
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 outdoors
+v 5 prepareBreakfast
+v 6 sleeping
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__outdoors
+ e 5 1 prepareBreakfast__toilet
+ e 6 5 sleeping__prepareBreakfast
+
+S
+v 1 washing
+v 2 End
+v 3 grooming
+v 4 washing
+ e 1 2 washing__End
+ e 3 1 grooming__washing
+ e 4 3 washing__grooming
+
+S
+v 1 Start
+v 2 eatingLunch
+v 3 sleeping
+ e 1 2 Start__eatingLunch
+ e 2 3 eatingLunch__sleeping
+
+S
+v 1 washing
+v 2 watchingtv
+v 3 outdoors
+v 4 toilet
+v 5 washing
+v 6 grooming
+v 7 outdoors
+ e 1 2 washing__watchingtv
+ e 2 3 watchingtv__outdoors
+ e 3 4 outdoors__toilet
+ e 4 5 toilet__washing
+ e 5 6 washing__grooming
+ e 6 7 grooming__outdoors
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 eatingLunch
+v 4 watchingtv
+v 5 prepareLunch
+ e 1 2 watchingtv__washing
+ e 3 1 eatingLunch__watchingtv
+ e 4 5 watchingtv__prepareLunch
+ e 5 3 prepareLunch__eatingLunch
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 washing
+v 5 grooming
+v 6 washing
+v 7 toilet
+v 8 toilet
+v 9 sleeping
+ e 4 5 washing__grooming
+ e 3 4 prepareBreakfast__washing
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 5 6 grooming__washing
+ e 6 7 washing__toilet
+ e 8 1 toilet__sleeping
+ e 9 8 sleeping__toilet
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 watchingtv
+ e 1 2 sleeping__toilet
+ e 3 1 watchingtv__sleeping
+
+S
+v 1 prepareBreakfast
+v 2 washing
+v 3 shower
+v 4 washing
+v 5 watchingtv
+ e 1 2 prepareBreakfast__washing
+ e 2 3 washing__shower
+ e 3 4 shower__washing
+ e 4 5 washing__watchingtv
+
+S
+v 1 eatingBreakfast
+v 2 outdoors
+v 3 End
+v 4 toilet
+v 5 watchingtv
+v 6 snack
+v 7 watchingtv
+v 8 washing
+ e 1 3 eatingBreakfast__End
+ e 2 3 outdoors__End
+ e 4 2 toilet__outdoors
+ e 5 6 watchingtv__snack
+ e 6 7 snack__watchingtv
+ e 7 8 watchingtv__washing
+ e 8 4 washing__toilet
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 outdoors
+v 5 washing
+v 6 watchingtv
+ e 1 2 watchingtv__washing
+ e 2 3 washing__toilet
+ e 3 4 toilet__outdoors
+ e 4 5 outdoors__washing
+ e 5 6 washing__watchingtv
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 eatingBreakfast
+v 6 toilet
+ e 3 4 washing__grooming
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 2 5 grooming__eatingBreakfast
+ e 4 6 grooming__toilet
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+v 4 eatingLunch
+v 5 watchingtv
+v 6 prepareLunch
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+ e 4 1 eatingLunch__watchingtv
+ e 5 6 watchingtv__prepareLunch
+ e 6 4 prepareLunch__eatingLunch
+
+S
+v 1 watchingtv
+v 2 outdoors
+v 3 toilet
+ e 1 2 watchingtv__outdoors
+ e 2 3 outdoors__toilet
+
+S
+v 1 watchingtv
+v 2 outdoors
+v 3 toilet
+v 4 watchingtv
+v 5 outdoors
+ e 1 2 watchingtv__outdoors
+ e 2 3 outdoors__toilet
+ e 3 4 toilet__watchingtv
+ e 4 5 watchingtv__outdoors
+
+S
+v 1 prepareLunch
+v 2 eatingLunch
+v 3 toilet
+v 4 washing
+v 5 watchingtv
+ e 1 2 prepareLunch__eatingLunch
+ e 3 1 toilet__prepareLunch
+ e 5 3 watchingtv__toilet
+ e 4 5 washing__watchingtv
+
+S
+v 1 watchingtv
+v 2 prepareLunch
+v 3 eatingLunch
+v 4 watchingtv
+v 5 washing
+v 6 toilet
+v 7 watchingtv
+v 8 washing
+v 9 outdoors
+ e 1 2 watchingtv__prepareLunch
+ e 2 3 prepareLunch__eatingLunch
+ e 3 4 eatingLunch__watchingtv
+ e 4 5 watchingtv__washing
+ e 5 6 washing__toilet
+ e 6 7 toilet__watchingtv
+ e 7 8 watchingtv__washing
+ e 8 9 washing__outdoors
+
+S
+v 1 washing
+v 2 toilet
+v 3 shower
+v 4 prepareBreakfast
+v 5 watchingtv
+v 6 washing
+v 7 outdoors
+ e 2 4 toilet__prepareBreakfast
+ e 3 4 shower__prepareBreakfast
+ e 1 2 washing__toilet
+ e 1 3 washing__shower
+ e 4 5 prepareBreakfast__watchingtv
+ e 5 6 watchingtv__washing
+ e 6 7 washing__outdoors
+
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+v 4 grooming
+v 5 washing
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+ e 4 1 grooming__washing
+ e 5 4 washing__grooming
+
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+v 4 eatingDinner
+v 5 watchingtv
+v 6 prepareDinner
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+ e 4 1 eatingDinner__washing
+ e 5 6 watchingtv__prepareDinner
+ e 6 4 prepareDinner__eatingDinner
+
+S
+v 1 washing
+v 2 toilet
+v 3 grooming
+v 4 washing
+v 5 shower
+v 6 prepareBreakfast
+v 7 sleeping
+ e 1 2 washing__toilet
+ e 2 3 toilet__grooming
+ e 3 4 grooming__washing
+ e 4 5 washing__shower
+ e 6 1 prepareBreakfast__washing
+ e 7 6 sleeping__prepareBreakfast
+
+S
+v 1 washing
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 snack
+v 6 prepareBreakfast
+v 7 sleeping
+ e 3 4 washing__grooming
+ e 4 5 grooming__snack
+ e 1 2 washing__grooming
+ e 2 3 grooming__washing
+ e 6 1 prepareBreakfast__washing
+ e 7 6 sleeping__prepareBreakfast
+
+S
+v 1 Start
+v 2 toilet
+v 3 eatingBreakfast
+v 4 watchingtv
+v 5 End
+v 6 sleeping
+v 7 prepareBreakfast
+ e 1 2 Start__toilet
+ e 1 3 Start__eatingBreakfast
+ e 3 5 eatingBreakfast__End
+ e 4 5 watchingtv__End
+ e 2 6 toilet__sleeping
+ e 6 7 sleeping__prepareBreakfast
+
+S
+v 1 prepareLunch
+v 2 eatingLunch
+v 3 toilet
+v 4 watchingtv
+ e 1 2 prepareLunch__eatingLunch
+ e 3 1 toilet__prepareLunch
+ e 4 3 watchingtv__toilet
+
+S
+v 1 washing
+v 2 watchingtv
+v 3 toilet
+v 4 snack
+v 5 watchingtv
+v 6 washing
+v 7 toilet
+v 8 eatingLunch
+v 9 prepareLunch
+ e 1 2 washing__watchingtv
+ e 2 3 watchingtv__toilet
+ e 3 4 toilet__snack
+ e 4 5 snack__watchingtv
+ e 5 6 watchingtv__washing
+ e 6 7 washing__toilet
+ e 8 1 eatingLunch__washing
+ e 9 8 prepareLunch__eatingLunch
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+v 6 snack
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+ e 6 1 snack__watchingtv
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+v 6 toilet
+v 7 watchingtv
+v 8 washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+ e 6 1 toilet__watchingtv
+ e 7 8 watchingtv__washing
+ e 8 6 washing__toilet
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+v 6 prepareBreakfast
+v 7 sleeping
+v 8 toilet
+v 9 washing
+v 10 shower
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+ e 6 1 prepareBreakfast__watchingtv
+ e 7 8 sleeping__toilet
+ e 10 6 shower__prepareBreakfast
+ e 7 9 sleeping__washing
+ e 9 6 washing__prepareBreakfast
+
+S
+v 1 snack
+v 2 toilet
+v 3 watchingtv
+v 4 prepareDinner
+v 5 eatingDinner
+ e 1 2 snack__toilet
+ e 2 3 toilet__watchingtv
+ e 3 4 watchingtv__prepareDinner
+ e 4 5 prepareDinner__eatingDinner
+
+S
+v 1 watchingtv
+v 2 prepareDinner
+v 3 eatingDinner
+v 4 watchingtv
+v 5 snack
+v 6 watchingtv
+ e 1 2 watchingtv__prepareDinner
+ e 2 3 prepareDinner__eatingDinner
+ e 3 4 eatingDinner__watchingtv
+ e 4 5 watchingtv__snack
+ e 5 6 snack__watchingtv
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 watchingtv
+v 5 washing
+v 6 shower
+v 7 grooming
+v 8 washing
+v 9 grooming
+ e 3 4 prepareBreakfast__watchingtv
+ e 4 5 watchingtv__washing
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 5 6 washing__shower
+ e 6 7 shower__grooming
+ e 8 9 washing__grooming
+ e 7 8 grooming__washing
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 washing
+v 5 grooming
+v 6 watchingtv
+v 7 grooming
+v 8 washing
+v 9 grooming
+ e 4 5 washing__grooming
+ e 5 6 grooming__watchingtv
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__washing
+ e 6 7 watchingtv__grooming
+ e 8 9 washing__grooming
+ e 7 8 grooming__washing
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 grooming
+v 4 washing
+v 5 grooming
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__grooming
+ e 4 5 washing__grooming
+ e 3 4 grooming__washing
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 snack
+v 5 watchingtv
+v 6 snack
+ e 1 2 sleeping__toilet
+ e 3 4 prepareBreakfast__snack
+ e 2 3 toilet__prepareBreakfast
+ e 4 5 snack__watchingtv
+ e 5 6 watchingtv__snack
+
+S
+v 1 washing
+v 2 watchingtv
+v 3 toilet
+v 4 prepareLunch
+v 5 eatingLunch
+v 6 watchingtv
+v 7 snack
+ e 2 3 watchingtv__toilet
+ e 3 4 toilet__prepareLunch
+ e 4 5 prepareLunch__eatingLunch
+ e 1 2 washing__watchingtv
+ e 5 6 eatingLunch__watchingtv
+ e 6 7 watchingtv__snack
+
+S
+v 1 sleeping
+v 2 prepareBreakfast
+v 3 washing
+v 4 grooming
+v 5 washing
+v 6 grooming
+v 7 snack
+v 8 outdoors
+ e 5 6 washing__grooming
+ e 6 7 grooming__snack
+ e 2 3 prepareBreakfast__washing
+ e 1 2 sleeping__prepareBreakfast
+ e 3 4 washing__grooming
+ e 4 5 grooming__washing
+ e 7 8 snack__outdoors
+
+S
+v 1 washing
+v 2 outdoors
+v 3 watchingtv
+v 4 toilet
+v 5 watchingtv
+v 6 snack
+ e 1 2 washing__outdoors
+ e 2 3 outdoors__watchingtv
+ e 3 4 watchingtv__toilet
+ e 4 5 toilet__watchingtv
+ e 5 6 watchingtv__snack
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 washing
+v 4 End
+v 5 watchingtv
+v 6 watchingtv
+v 7 snack
+ e 1 2 Start__eatingBreakfast
+ e 3 4 washing__End
+ e 2 3 eatingBreakfast__washing
+ e 5 4 watchingtv__End
+ e 6 7 watchingtv__snack
+ e 7 5 snack__watchingtv
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+v 6 watchingtv
+v 7 washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+ e 5 6 toilet__watchingtv
+ e 6 7 watchingtv__washing
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 washing
+v 4 shower
+v 5 prepareBreakfast
+v 6 watchingtv
+v 7 prepareLunch
+v 8 eatingLunch
+ e 1 2 sleeping__toilet
+ e 4 5 shower__prepareBreakfast
+ e 1 3 sleeping__washing
+ e 3 5 washing__prepareBreakfast
+ e 5 6 prepareBreakfast__watchingtv
+ e 6 7 watchingtv__prepareLunch
+ e 7 8 prepareLunch__eatingLunch
+
+S
+v 1 snack
+v 2 watchingtv
+v 3 snack
+v 4 watchingtv
+v 5 washing
+v 6 toilet
+v 7 outdoors
+v 8 watchingtv
+ e 1 2 snack__watchingtv
+ e 2 3 watchingtv__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__washing
+ e 5 6 washing__toilet
+ e 7 1 outdoors__snack
+ e 8 7 watchingtv__outdoors
+
+S
+v 1 Start
+v 2 washing
+v 3 watchingtv
+v 4 toilet
+v 5 eatingBreakfast
+v 6 watchingtv
+v 7 End
+v 8 sleeping
+v 9 toilet
+v 10 washing
+v 11 shower
+v 12 prepareBreakfast
+ e 1 2 Start__washing
+ e 1 5 Start__eatingBreakfast
+ e 2 3 washing__watchingtv
+ e 3 4 watchingtv__toilet
+ e 5 7 eatingBreakfast__End
+ e 6 7 watchingtv__End
+ e 4 8 toilet__sleeping
+ e 8 9 sleeping__toilet
+ e 11 12 shower__prepareBreakfast
+ e 8 10 sleeping__washing
+ e 10 12 washing__prepareBreakfast
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 shower
+v 4 washing
+v 5 grooming
+v 6 watchingtv
+v 7 outdoors
+ e 1 2 watchingtv__washing
+ e 4 5 washing__grooming
+ e 2 3 washing__shower
+ e 3 4 shower__washing
+ e 5 6 grooming__watchingtv
+ e 6 7 watchingtv__outdoors
+
+S
+v 1 prepareLunch
+v 2 eatingLunch
+v 3 washing
+v 4 watchingtv
+v 5 toilet
+v 6 snack
+v 7 watchingtv
+v 8 washing
+v 9 toilet
+v 10 watchingtv
+v 11 outdoors
+ e 1 2 prepareLunch__eatingLunch
+ e 2 3 eatingLunch__washing
+ e 3 4 washing__watchingtv
+ e 4 5 watchingtv__toilet
+ e 5 6 toilet__snack
+ e 6 7 snack__watchingtv
+ e 7 8 watchingtv__washing
+ e 8 9 washing__toilet
+ e 9 10 toilet__watchingtv
+ e 10 11 watchingtv__outdoors
+
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+v 4 watchingtv
+v 5 toilet
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__toilet
+
+S
+v 1 eatingBreakfast
+v 2 End
+v 3 prepareDinner
+v 4 eatingDinner
+ e 1 2 eatingBreakfast__End
+ e 2 3 End__prepareDinner
+ e 4 2 eatingDinner__End
+
+S
+v 1 watchingtv
+v 2 outdoors
+v 3 toilet
+v 4 watchingtv
+ e 1 2 watchingtv__outdoors
+ e 3 1 toilet__watchingtv
+ e 4 3 watchingtv__toilet
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 washing
+ e 1 2 watchingtv__washing
+ e 3 1 washing__watchingtv
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 toilet
+v 4 watchingtv
+v 5 washing
+ e 1 2 watchingtv__snack
+ e 2 3 snack__toilet
+ e 3 4 toilet__watchingtv
+ e 4 5 watchingtv__washing
+
+S
+v 1 washing
+v 2 toilet
+v 3 shower
+v 4 prepareBreakfast
+v 5 watchingtv
+v 6 washing
+v 7 outdoors
+v 8 watchingtv
+v 9 washing
+ e 2 4 toilet__prepareBreakfast
+ e 3 4 shower__prepareBreakfast
+ e 4 5 prepareBreakfast__watchingtv
+ e 5 6 watchingtv__washing
+ e 6 7 washing__outdoors
+ e 1 2 washing__toilet
+ e 1 3 washing__shower
+ e 7 8 outdoors__watchingtv
+ e 8 9 watchingtv__washing
+
+S
+v 1 washing
+v 2 toilet
+v 3 shower
+v 4 prepareBreakfast
+v 5 watchingtv
+v 6 washing
+v 7 outdoors
+v 8 watchingtv
+v 9 washing
+v 10 watchingtv
+v 11 washing
+ e 2 4 toilet__prepareBreakfast
+ e 3 4 shower__prepareBreakfast
+ e 4 5 prepareBreakfast__watchingtv
+ e 5 6 watchingtv__washing
+ e 6 7 washing__outdoors
+ e 7 8 outdoors__watchingtv
+ e 8 9 watchingtv__washing
+ e 1 2 washing__toilet
+ e 1 3 washing__shower
+ e 9 10 washing__watchingtv
+ e 10 11 watchingtv__washing
+
+S
+v 1 watchingtv
+v 2 washing
+v 3 toilet
+v 4 watchingtv
+ e 1 2 watchingtv__washing
+ e 3 1 toilet__watchingtv
+ e 4 3 watchingtv__toilet
+
+S
+v 1 washing
+v 2 grooming
+v 3 washing
+v 4 End
+v 5 toilet
+v 6 watchingtv
+ e 3 4 washing__End
+ e 1 2 washing__grooming
+ e 2 3 grooming__washing
+ e 5 1 toilet__washing
+ e 6 5 watchingtv__toilet
+
+S
+v 1 washing
+v 2 grooming
+v 3 snack
+v 4 watchingtv
+v 5 outdoors
+v 6 watchingtv
+v 7 prepareLunch
+v 8 eatingLunch
+ e 1 2 washing__grooming
+ e 2 3 grooming__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__outdoors
+ e 5 6 outdoors__watchingtv
+ e 6 7 watchingtv__prepareLunch
+ e 7 8 prepareLunch__eatingLunch
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 grooming
+v 4 washing
+v 5 grooming
+v 6 toilet
+v 7 watchingtv
+ e 2 3 toilet__grooming
+ e 4 5 washing__grooming
+ e 3 4 grooming__washing
+ e 1 2 sleeping__toilet
+ e 6 1 toilet__sleeping
+ e 7 6 watchingtv__toilet
+
+S
+v 1 snack
+v 2 watchingtv
+v 3 washing
+v 4 toilet
+v 5 watchingtv
+v 6 toilet
+ e 1 2 snack__watchingtv
+ e 2 3 watchingtv__washing
+ e 3 4 washing__toilet
+ e 4 5 toilet__watchingtv
+ e 5 6 watchingtv__toilet
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 watchingtv
+v 4 End
+v 5 snack
+ e 1 2 Start__eatingBreakfast
+ e 2 4 eatingBreakfast__End
+ e 3 4 watchingtv__End
+ e 1 5 Start__snack
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 sleeping
+v 4 toilet
+v 5 grooming
+v 6 washing
+v 7 grooming
+v 8 Start
+v 9 eatingBreakfast
+v 10 watchingtv
+v 11 End
+ e 1 2 watchingtv__toilet
+ e 4 5 toilet__grooming
+ e 6 7 washing__grooming
+ e 5 6 grooming__washing
+ e 2 3 toilet__sleeping
+ e 3 4 sleeping__toilet
+ e 8 1 Start__watchingtv
+ e 8 9 Start__eatingBreakfast
+ e 9 11 eatingBreakfast__End
+ e 10 11 watchingtv__End
+
+S
+v 1 Start
+v 2 grooming
+v 3 washing
+v 4 grooming
+v 5 toilet
+v 6 eatingBreakfast
+v 7 grooming
+ e 3 4 washing__grooming
+ e 4 5 grooming__toilet
+ e 1 2 Start__grooming
+ e 2 3 grooming__washing
+ e 2 6 grooming__eatingBreakfast
+ e 6 7 eatingBreakfast__grooming
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 grooming
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 4 1 grooming__watchingtv
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 snack
+v 4 watchingtv
+v 5 snack
+v 6 watchingtv
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__snack
+ e 5 6 snack__watchingtv
+
+S
+v 1 toilet
+v 2 washing
+v 3 grooming
+v 4 washing
+v 5 grooming
+v 6 watchingtv
+v 7 grooming
+v 8 washing
+v 9 grooming
+v 10 washing
+v 11 toilet
+ e 4 5 washing__grooming
+ e 5 6 grooming__watchingtv
+ e 1 2 toilet__washing
+ e 2 3 washing__grooming
+ e 3 4 grooming__washing
+ e 6 7 watchingtv__grooming
+ e 7 8 grooming__washing
+ e 8 9 washing__grooming
+ e 9 10 grooming__washing
+ e 10 11 washing__toilet
+
+S
+v 1 washing
+v 2 toilet
+v 3 washing
+v 4 grooming
+ e 1 2 washing__toilet
+ e 2 3 toilet__washing
+ e 3 4 washing__grooming
+
+S
+v 1 washing
+v 2 toilet
+v 3 grooming
+v 4 washing
+ e 1 2 washing__toilet
+ e 3 1 grooming__washing
+ e 4 3 washing__grooming
+
+S
+v 1 prepareLunch
+v 2 toilet
+d 1 2 prepareLunch__toilet
+ 
+S
+v 1 grooming
+v 2 watchingtv
+v 3 snack
+v 4 watchingtv
+v 5 washing
+v 6 grooming
+ e 1 2 grooming__watchingtv
+ e 2 3 watchingtv__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__washing
+ e 5 6 washing__grooming
+
+S
+v 1 watchingtv
+v 2 toilet
+v 3 snack
+v 4 watchingtv
+v 5 snack
+v 6 watchingtv
+v 7 toilet
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__snack
+ e 5 6 snack__watchingtv
+ e 7 1 toilet__watchingtv
+
+S
+v 1 outdoors
+v 2 toilet
+d 1 2 outdoors__toilet
+ 
+S
+v 1 prepareLunch
+v 2 eatingLunch
+v 3 washing
+v 4 toilet
+ e 1 2 prepareLunch__eatingLunch
+ e 2 3 eatingLunch__washing
+ e 3 4 washing__toilet
+
+S
+v 1 watchingtv
+v 2 snack
+v 3 watchingtv
+v 4 washing
+v 5 toilet
+v 6 watchingtv
+v 7 washing
+v 8 washing
+v 9 toilet
+ e 1 2 watchingtv__snack
+ e 2 3 snack__watchingtv
+ e 3 4 watchingtv__washing
+ e 4 5 washing__toilet
+ e 5 6 toilet__watchingtv
+ e 6 7 watchingtv__washing
+ e 7 8 washing__washing
+ e 8 9 washing__toilet
+
+S
+v 1 snack
+v 2 toilet
+v 3 watchingtv
+v 4 prepareDinner
+v 5 eatingDinner
+v 6 washing
+v 7 grooming
+ e 1 2 snack__toilet
+ e 2 3 toilet__watchingtv
+ e 3 4 watchingtv__prepareDinner
+ e 4 5 prepareDinner__eatingDinner
+ e 5 6 eatingDinner__washing
+ e 6 7 washing__grooming
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 washing
+v 5 grooming
+v 6 washing
+v 7 grooming
+ e 2 3 toilet__prepareBreakfast
+ e 3 4 prepareBreakfast__washing
+ e 1 2 sleeping__toilet
+ e 4 5 washing__grooming
+ e 5 6 grooming__washing
+ e 6 7 washing__grooming
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 washing
+v 5 grooming
+v 6 washing
+v 7 grooming
+v 8 sleeping
+ e 2 3 toilet__prepareBreakfast
+ e 6 7 washing__grooming
+ e 3 4 prepareBreakfast__washing
+ e 1 2 sleeping__toilet
+ e 4 5 washing__grooming
+ e 5 6 grooming__washing
+ e 7 8 grooming__sleeping
+
+S
+v 1 Start
+v 2 washing
+v 3 toilet
+v 4 eatingBreakfast
+v 5 End
+v 6 sleeping
+ e 1 2 Start__washing
+ e 1 4 Start__eatingBreakfast
+ e 2 3 washing__toilet
+ e 4 5 eatingBreakfast__End
+ e 3 6 toilet__sleeping
+
+S
+v 1 washing
+v 2 toilet
+v 3 washing
+v 4 grooming
+v 5 grooming
+ e 2 3 toilet__washing
+ e 1 2 washing__toilet
+ e 3 4 washing__grooming
+ e 5 1 grooming__washing
+
+S
+v 1 watchingtv
+v 2 eatingLunch
+d 1 2 watchingtv__eatingLunch
+ 
+S
+v 1 sleeping
+v 2 toilet
+v 3 prepareBreakfast
+v 4 watchingtv
+v 5 washing
+v 6 shower
+v 7 grooming
+v 8 washing
+v 9 grooming
+v 10 washing
+ e 3 4 prepareBreakfast__watchingtv
+ e 4 5 watchingtv__washing
+ e 8 9 washing__grooming
+ e 1 2 sleeping__toilet
+ e 2 3 toilet__prepareBreakfast
+ e 5 6 washing__shower
+ e 7 8 grooming__washing
+ e 6 7 shower__grooming
+ e 9 10 grooming__washing
+
+S
+v 1 Start
+v 2 watchingtv
+v 3 eatingBreakfast
+v 4 shower
+v 5 End
+v 6 outdoors
+ e 1 2 Start__watchingtv
+ e 1 3 Start__eatingBreakfast
+ e 4 5 shower__End
+ e 3 4 eatingBreakfast__shower
+ e 6 5 outdoors__End
+
+S
+v 1 watchingtv
+v 2 prepareLunch
+v 3 eatingLunch
+v 4 watchingtv
+v 5 toilet
+v 6 outdoors
+ e 1 2 watchingtv__prepareLunch
+ e 2 3 prepareLunch__eatingLunch
+ e 3 4 eatingLunch__watchingtv
+ e 4 5 watchingtv__toilet
+ e 5 6 toilet__outdoors
+
+S
+v 1 Start
+v 2 eatingBreakfast
+v 3 shower
+v 4 End
+v 5 toilet
+ e 1 2 Start__eatingBreakfast
+ e 3 4 shower__End
+ e 2 3 eatingBreakfast__shower
+ e 1 5 Start__toilet
+
+S
+v 1 sleeping
+v 2 toilet
+v 3 sleeping
+v 4 toilet
+v 5 prepareBreakfast
+v 6 washing
+v 7 grooming
+v 8 washing
+v 9 toilet
+v 10 outdoors
+ e 2 3 toilet__sleeping
+ e 6 7 washing__grooming
+ e 1 2 sleeping__toilet
+ e 5 6 prepareBreakfast__washing
+ e 3 4 sleeping__toilet
+ e 4 5 toilet__prepareBreakfast
+ e 7 8 grooming__washing
+ e 8 9 washing__toilet
+ e 9 10 toilet__outdoors
+
+S
+v 1 Start
+v 2 washing
+v 3 toilet
+v 4 washing
+v 5 eatingBreakfast
+v 6 End
+v 7 outdoors
+ e 1 2 Start__washing
+ e 1 5 Start__eatingBreakfast
+ e 5 6 eatingBreakfast__End
+ e 2 3 washing__toilet
+ e 3 4 toilet__washing
+ e 7 6 outdoors__End
+
+S
+v 1 watchingtv
+v 2 outdoors
+v 3 snack
+v 4 watchingtv
+v 5 snack
+v 6 watchingtv
+v 7 washing
+v 8 toilet
+v 9 toilet
+ e 1 2 watchingtv__outdoors
+ e 2 3 outdoors__snack
+ e 3 4 snack__watchingtv
+ e 4 5 watchingtv__snack
+ e 5 6 snack__watchingtv
+ e 6 7 watchingtv__washing
+ e 7 8 washing__toilet
+ e 8 9 toilet__toilet
+
+S
+v 1 outdoors
+v 2 eatingDinner
+d 1 2 outdoors__eatingDinner
+ 
+S
+v 1 watchingtv
+v 2 toilet
+v 3 prepareLunch
+v 4 eatingLunch
+v 5 washing
+ e 1 2 watchingtv__toilet
+ e 2 3 toilet__prepareLunch
+ e 3 4 prepareLunch__eatingLunch
+ e 4 5 eatingLunch__washing
+
+S
+v 1 washing
+v 2 watchingtv
+v 3 shower
+ e 1 2 washing__watchingtv
+ e 3 2 shower__watchingtv

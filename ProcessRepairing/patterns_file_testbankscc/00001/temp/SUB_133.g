@@ -1,0 +1,3 @@
+v 1 SUB_6
+v 2 LRIRV
+d 1 2 LRIRV__LRIRV

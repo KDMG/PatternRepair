@@ -1,0 +1,1811 @@
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+d 1 2 start__A-SUBMITTED
+d 2 3 A-SUBMITTED__A-PREACCEPTED
+ 
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+d 1 2 A-ACCEPTED__A-FINALIZED
+d 2 3 A-FINALIZED__O-SENT
+d 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+d 3 4 O-SENT__W-Completerenaanvraag
+ 
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+d 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+d 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ 
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+d 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+d 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ 
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+d 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+d 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ 
+S
+v 1 W-Validerenaanvraag
+v 2 end
+d 1 2 W-Validerenaanvraag__end
+ 
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+d 1 2 A-DECLINED__W-Completerenaanvraag
+d 2 3 W-Completerenaanvraag__end
+ 
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+
+S
+v 1 W-Validerenaanvraag
+v 2 W-Validerenaanvraag
+d 1 2 W-Validerenaanvraag__W-Validerenaanvraag
+ 
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+d 2 3 W-Nabellenoffertes__end
+d 1 2 A-CANCELLED__W-Nabellenoffertes
+ 
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 4 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+v 9 W-Completerenaanvraag
+v 10 A-CANCELLED
+v 11 end
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 4 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 8 9 W-Completerenaanvraag__W-Completerenaanvraag
+ e 9 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 10 11 A-CANCELLED__end
+ e 3 10 W-Completerenaanvraag__A-CANCELLED
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+v 6 W-Nabellenoffertes
+d 1 2 A-ACCEPTED__A-FINALIZED
+d 2 3 A-FINALIZED__O-SENT
+d 3 4 O-SENT__W-Completerenaanvraag
+d 4 5 W-Completerenaanvraag__O-SENT
+d 5 6 O-SENT__W-Nabellenoffertes
+ 
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+v 5 W-Nabellenincompletedossiers
+v 6 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 1 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 5 6 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 6 4 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 W-Validerenaanvraag
+v 2 end
+v 3 A-APPROVED
+ e 1 2 W-Validerenaanvraag__end
+ e 3 1 A-APPROVED__W-Validerenaanvraag
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+d 2 3 W-Completerenaanvraag__end
+d 1 2 A-CANCELLED__W-Completerenaanvraag
+ 
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 A-CANCELLED
+v 8 end
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__A-CANCELLED
+ e 7 8 A-CANCELLED__end
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 4 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 W-Validerenaanvraag
+v 2 end
+v 3 A-DECLINED
+ e 1 2 W-Validerenaanvraag__end
+ e 3 1 A-DECLINED__W-Validerenaanvraag
+
+S
+v 1 W-Validerenaanvraag
+v 2 W-Validerenaanvraag
+v 3 W-Validerenaanvraag
+v 4 end
+ e 1 2 W-Validerenaanvraag__W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__W-Validerenaanvraag
+ e 3 4 W-Validerenaanvraag__end
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 A-PREACCEPTED
+v 7 start
+v 8 A-SUBMITTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 6 1 A-PREACCEPTED__A-ACCEPTED
+ e 7 8 start__A-SUBMITTED
+ e 8 6 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+d 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ 
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+d 1 2 O-SENT__W-Nabellenoffertes
+ 
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 A-PREACCEPTED
+v 8 start
+v 9 A-SUBMITTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 7 1 A-PREACCEPTED__A-ACCEPTED
+ e 8 9 start__A-SUBMITTED
+ e 9 7 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 W-Validerenaanvraag
+v 2 end
+v 3 W-Validerenaanvraag
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 A-APPROVED
+ e 1 2 W-Validerenaanvraag__end
+ e 3 1 W-Validerenaanvraag__W-Validerenaanvraag
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 3 W-Nabellenoffertes__W-Validerenaanvraag
+ e 6 7 W-Nabellenoffertes__A-APPROVED
+ e 7 2 A-APPROVED__end
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+d 1 2 A-ACCEPTED__A-FINALIZED
+d 2 3 A-FINALIZED__O-SENT
+d 3 4 O-SENT__W-Completerenaanvraag
+ 
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 A-PREACCEPTED
+v 5 W-Afhandelenleads
+d 1 2 start__A-SUBMITTED
+d 2 3 A-SUBMITTED__W-Afhandelenleads
+d 3 4 W-Afhandelenleads__A-PREACCEPTED
+d 4 5 A-PREACCEPTED__W-Afhandelenleads
+ 
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 A-PREACCEPTED
+v 9 start
+v 10 A-SUBMITTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 8 1 A-PREACCEPTED__A-ACCEPTED
+ e 9 10 start__A-SUBMITTED
+ e 10 8 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 A-PREACCEPTED
+v 5 start
+v 6 A-SUBMITTED
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 1 A-PREACCEPTED__W-Completerenaanvraag
+ e 5 6 start__A-SUBMITTED
+ e 6 4 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 W-Validerenaanvraag
+v 2 end
+v 3 W-Validerenaanvraag
+ e 1 2 W-Validerenaanvraag__end
+ e 3 1 W-Validerenaanvraag__W-Validerenaanvraag
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+ e 8 4 W-Completerenaanvraag__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 O-SENT
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 1 O-SENT__W-Nabellenoffertes
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+v 5 W-Nabellenincompletedossiers
+v 6 W-Nabellenincompletedossiers
+v 7 W-Nabellenincompletedossiers
+v 8 W-Nabellenincompletedossiers
+v 9 W-Nabellenincompletedossiers
+v 10 W-Nabellenincompletedossiers
+v 11 W-Nabellenincompletedossiers
+v 12 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 3 4 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 5 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 5 6 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 7 1 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 8 9 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 9 10 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 10 11 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 11 12 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 12 7 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 1 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+ e 1 2 O-SENT__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-CANCELLED
+v 2 end
+d 1 2 A-CANCELLED__end
+ 
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+v 5 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 3 4 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 5 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 A-APPROVED
+v 2 W-Validerenaanvraag
+v 3 end
+v 4 W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__end
+ e 1 2 A-APPROVED__W-Validerenaanvraag
+ e 4 1 W-Validerenaanvraag__A-APPROVED
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__O-SENT
+ e 5 6 O-SENT__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 8 W-Nabellenoffertes__W-Nabellenoffertes
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+v 9 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__A-ACCEPTED
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+ e 8 9 W-Completerenaanvraag__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 A-CANCELLED
+v 8 W-Nabellenoffertes
+v 9 end
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__A-CANCELLED
+ e 8 9 W-Nabellenoffertes__end
+ e 7 8 A-CANCELLED__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 A-DECLINED
+v 6 W-Completerenaanvraag
+v 7 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__A-DECLINED
+ e 5 6 A-DECLINED__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__end
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__A-ACCEPTED
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+ e 8 9 W-Completerenaanvraag__W-Nabellenoffertes
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 A-PREACCEPTED
+v 5 start
+v 6 A-SUBMITTED
+ e 1 2 A-DECLINED__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 4 1 A-PREACCEPTED__A-DECLINED
+ e 5 6 start__A-SUBMITTED
+ e 6 4 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+v 5 A-FINALIZED
+v 6 O-SENT
+v 7 W-Completerenaanvraag
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+ e 4 5 A-ACCEPTED__A-FINALIZED
+ e 5 6 A-FINALIZED__O-SENT
+ e 7 8 W-Completerenaanvraag__W-Nabellenoffertes
+ e 6 7 O-SENT__W-Completerenaanvraag
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Completerenaanvraag
+v 9 start
+v 10 A-SUBMITTED
+v 11 A-PREACCEPTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 8 1 W-Completerenaanvraag__A-ACCEPTED
+ e 9 10 start__A-SUBMITTED
+ e 10 11 A-SUBMITTED__A-PREACCEPTED
+ e 11 8 A-PREACCEPTED__W-Completerenaanvraag
+
+S
+v 1 A-DECLINED
+v 2 W-Validerenaanvraag
+v 3 end
+v 4 W-Validerenaanvraag
+ e 1 2 A-DECLINED__W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__end
+ e 4 1 W-Validerenaanvraag__A-DECLINED
+
+S
+v 1 W-Validerenaanvraag
+v 2 W-Validerenaanvraag
+v 3 W-Validerenaanvraag
+v 4 W-Validerenaanvraag
+ e 1 2 W-Validerenaanvraag__W-Validerenaanvraag
+ e 3 1 W-Validerenaanvraag__W-Validerenaanvraag
+ e 4 3 W-Validerenaanvraag__W-Validerenaanvraag
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 A-CANCELLED
+v 8 W-Completerenaanvraag
+v 9 end
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 3 4 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__A-CANCELLED
+ e 8 9 W-Completerenaanvraag__end
+ e 7 8 A-CANCELLED__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 A-PREACCEPTED
+v 5 W-Afhandelenleads
+v 6 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__W-Afhandelenleads
+ e 3 4 W-Afhandelenleads__A-PREACCEPTED
+ e 4 5 A-PREACCEPTED__W-Afhandelenleads
+ e 5 6 W-Afhandelenleads__W-Completerenaanvraag
+
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Completerenaanvraag
+v 6 A-ACCEPTED
+v 7 A-FINALIZED
+v 8 O-SENT
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 1 2 O-SENT__W-Nabellenoffertes
+ e 5 1 W-Completerenaanvraag__O-SENT
+ e 6 7 A-ACCEPTED__A-FINALIZED
+ e 7 8 A-FINALIZED__O-SENT
+ e 8 5 O-SENT__W-Completerenaanvraag
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 A-PREACCEPTED
+v 5 start
+v 6 A-SUBMITTED
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 A-PREACCEPTED__A-CANCELLED
+ e 5 6 start__A-SUBMITTED
+ e 6 4 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenincompletedossiers
+d 1 2 A-CANCELLED__W-Nabellenincompletedossiers
+ 
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+ e 1 2 O-SENT__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 W-Afhandelenleads
+v 5 A-PREACCEPTED
+v 6 W-Afhandelenleads
+d 1 2 start__A-SUBMITTED
+d 2 3 A-SUBMITTED__W-Afhandelenleads
+d 3 4 W-Afhandelenleads__W-Afhandelenleads
+d 4 5 W-Afhandelenleads__A-PREACCEPTED
+d 5 6 A-PREACCEPTED__W-Afhandelenleads
+ 
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+v 9 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__A-ACCEPTED
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+ e 8 9 W-Completerenaanvraag__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__O-SENT
+ e 5 6 O-SENT__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 8 W-Nabellenoffertes__W-Nabellenoffertes
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 A-CANCELLED
+v 6 W-Nabellenoffertes
+v 7 end
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__A-CANCELLED
+ e 6 7 W-Nabellenoffertes__end
+ e 5 6 A-CANCELLED__W-Nabellenoffertes
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+v 5 W-Nabellenincompletedossiers
+v 6 W-Nabellenincompletedossiers
+v 7 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 3 4 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 5 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 5 6 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 7 1 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 A-CANCELLED
+v 8 end
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+v 12 W-Nabellenoffertes
+v 13 W-Nabellenoffertes
+v 14 W-Nabellenoffertes
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__A-CANCELLED
+ e 7 8 A-CANCELLED__end
+ e 9 1 W-Nabellenoffertes__W-Nabellenoffertes
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+ e 11 12 W-Nabellenoffertes__W-Nabellenoffertes
+ e 12 13 W-Nabellenoffertes__W-Nabellenoffertes
+ e 13 14 W-Nabellenoffertes__W-Nabellenoffertes
+ e 14 9 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__A-ACCEPTED
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+ e 8 9 W-Completerenaanvraag__W-Nabellenoffertes
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 7 8 W-Nabellenoffertes__W-Nabellenoffertes
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 A-DECLINED
+v 8 W-Completerenaanvraag
+v 9 end
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 3 4 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__A-DECLINED
+ e 8 9 W-Completerenaanvraag__end
+ e 7 8 A-DECLINED__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+v 9 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__W-Completerenaanvraag
+ e 8 9 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 W-Validerenaanvraag
+v 2 end
+v 3 A-APPROVED
+v 4 O-SENT
+ e 1 2 W-Validerenaanvraag__end
+ e 3 2 A-APPROVED__end
+ e 4 1 O-SENT__W-Validerenaanvraag
+
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenincompletedossiers
+v 5 W-Nabellenincompletedossiers
+v 6 W-Nabellenincompletedossiers
+v 7 W-Nabellenincompletedossiers
+v 8 W-Nabellenincompletedossiers
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 3 4 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 5 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 5 6 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 6 7 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 7 8 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 A-DECLINED
+v 7 W-Completerenaanvraag
+v 8 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__A-DECLINED
+ e 6 7 A-DECLINED__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__end
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 A-PREACCEPTED
+v 8 start
+v 9 A-SUBMITTED
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 3 4 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 1 A-PREACCEPTED__W-Completerenaanvraag
+ e 8 9 start__A-SUBMITTED
+ e 9 7 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+v 5 A-FINALIZED
+v 6 O-SENT
+v 7 W-Completerenaanvraag
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+v 12 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+ e 4 5 A-ACCEPTED__A-FINALIZED
+ e 5 6 A-FINALIZED__O-SENT
+ e 7 8 W-Completerenaanvraag__W-Nabellenoffertes
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 O-SENT__W-Completerenaanvraag
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+ e 11 12 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 A-DECLINED
+v 6 W-Completerenaanvraag
+v 7 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__A-DECLINED
+ e 5 6 A-DECLINED__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__end
+
+S
+v 1 W-Validerenaanvraag
+v 2 W-Validerenaanvraag
+v 3 W-Validerenaanvraag
+v 4 end
+v 5 W-Validerenaanvraag
+v 6 W-Validerenaanvraag
+ e 1 2 W-Validerenaanvraag__W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__W-Validerenaanvraag
+ e 3 4 W-Validerenaanvraag__end
+ e 5 1 W-Validerenaanvraag__W-Validerenaanvraag
+ e 6 5 W-Validerenaanvraag__W-Validerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 A-ACCEPTED
+v 7 A-FINALIZED
+v 8 O-SENT
+v 9 W-Completerenaanvraag
+v 10 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__A-ACCEPTED
+ e 6 7 A-ACCEPTED__A-FINALIZED
+ e 7 8 A-FINALIZED__O-SENT
+ e 9 10 W-Completerenaanvraag__W-Nabellenoffertes
+ e 8 9 O-SENT__W-Completerenaanvraag
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+v 5 start
+v 6 A-SUBMITTED
+v 7 A-PREACCEPTED
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-CANCELLED
+ e 5 6 start__A-SUBMITTED
+ e 6 7 A-SUBMITTED__A-PREACCEPTED
+ e 7 4 A-PREACCEPTED__W-Completerenaanvraag
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Nabellenoffertes
+v 9 W-Completerenaanvraag
+v 10 start
+v 11 A-SUBMITTED
+v 12 A-PREACCEPTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 8 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 9 1 W-Completerenaanvraag__A-ACCEPTED
+ e 10 11 start__A-SUBMITTED
+ e 11 12 A-SUBMITTED__A-PREACCEPTED
+ e 12 9 A-PREACCEPTED__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 A-ACCEPTED
+v 7 A-FINALIZED
+v 8 O-SENT
+v 9 W-Completerenaanvraag
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+v 12 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__A-ACCEPTED
+ e 6 7 A-ACCEPTED__A-FINALIZED
+ e 7 8 A-FINALIZED__O-SENT
+ e 9 10 W-Completerenaanvraag__W-Nabellenoffertes
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+ e 11 12 W-Nabellenoffertes__W-Nabellenoffertes
+ e 8 9 O-SENT__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 A-ACCEPTED
+v 7 A-FINALIZED
+v 8 O-SENT
+v 9 W-Completerenaanvraag
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__A-ACCEPTED
+ e 6 7 A-ACCEPTED__A-FINALIZED
+ e 7 8 A-FINALIZED__O-SENT
+ e 9 10 W-Completerenaanvraag__W-Nabellenoffertes
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+ e 8 9 O-SENT__W-Completerenaanvraag
+
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 1 2 O-SENT__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-APPROVED
+v 2 W-Validerenaanvraag
+v 3 end
+v 4 W-Validerenaanvraag
+v 5 W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__end
+ e 1 2 A-APPROVED__W-Validerenaanvraag
+ e 4 1 W-Validerenaanvraag__A-APPROVED
+ e 5 4 W-Validerenaanvraag__W-Validerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+v 5 A-FINALIZED
+v 6 O-SENT
+v 7 W-Completerenaanvraag
+v 8 W-Nabellenoffertes
+v 9 W-Nabellenoffertes
+v 10 W-Nabellenoffertes
+v 11 W-Nabellenoffertes
+v 12 W-Nabellenoffertes
+v 13 W-Nabellenoffertes
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+ e 4 5 A-ACCEPTED__A-FINALIZED
+ e 5 6 A-FINALIZED__O-SENT
+ e 7 8 W-Completerenaanvraag__W-Nabellenoffertes
+ e 8 9 W-Nabellenoffertes__W-Nabellenoffertes
+ e 9 10 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 O-SENT__W-Completerenaanvraag
+ e 10 11 W-Nabellenoffertes__W-Nabellenoffertes
+ e 11 12 W-Nabellenoffertes__W-Nabellenoffertes
+ e 12 13 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 W-Afhandelenleads
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 A-DECLINED
+v 8 W-Completerenaanvraag
+v 9 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__W-Afhandelenleads
+ e 4 5 W-Afhandelenleads__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__A-DECLINED
+ e 8 9 W-Completerenaanvraag__end
+ e 7 8 A-DECLINED__W-Completerenaanvraag
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+v 5 W-Completerenaanvraag
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+v 9 W-Completerenaanvraag
+v 10 W-Completerenaanvraag
+v 11 W-Completerenaanvraag
+v 12 W-Completerenaanvraag
+v 13 W-Completerenaanvraag
+v 14 W-Completerenaanvraag
+v 15 W-Completerenaanvraag
+v 16 A-CANCELLED
+v 17 end
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 3 4 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Completerenaanvraag
+ e 5 6 W-Completerenaanvraag__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__W-Completerenaanvraag
+ e 8 9 W-Completerenaanvraag__W-Completerenaanvraag
+ e 9 10 W-Completerenaanvraag__W-Completerenaanvraag
+ e 10 11 W-Completerenaanvraag__W-Completerenaanvraag
+ e 11 12 W-Completerenaanvraag__W-Completerenaanvraag
+ e 12 13 W-Completerenaanvraag__W-Completerenaanvraag
+ e 13 14 W-Completerenaanvraag__W-Completerenaanvraag
+ e 14 15 W-Completerenaanvraag__W-Completerenaanvraag
+ e 15 16 W-Completerenaanvraag__A-CANCELLED
+ e 16 17 A-CANCELLED__end
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+v 5 A-FINALIZED
+v 6 O-SENT
+v 7 W-Completerenaanvraag
+v 8 W-Nabellenoffertes
+v 9 A-APPROVED
+v 10 W-Validerenaanvraag
+v 11 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+ e 4 5 A-ACCEPTED__A-FINALIZED
+ e 5 6 A-FINALIZED__O-SENT
+ e 7 8 W-Completerenaanvraag__W-Nabellenoffertes
+ e 6 7 O-SENT__W-Completerenaanvraag
+ e 8 9 W-Nabellenoffertes__A-APPROVED
+ e 10 11 W-Validerenaanvraag__end
+ e 9 10 A-APPROVED__W-Validerenaanvraag
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 O-SENT
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 5 W-Nabellenoffertes__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 7 1 O-SENT__W-Nabellenoffertes
+
+S
+v 1 A-DECLINED
+v 2 W-Validerenaanvraag
+v 3 end
+v 4 W-Validerenaanvraag
+v 5 W-Validerenaanvraag
+ e 1 2 A-DECLINED__W-Validerenaanvraag
+ e 2 3 W-Validerenaanvraag__end
+ e 4 1 W-Validerenaanvraag__A-DECLINED
+ e 5 4 W-Validerenaanvraag__W-Validerenaanvraag
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Nabellenoffertes
+v 7 W-Nabellenoffertes
+v 8 W-Afhandelenleads
+v 9 start
+v 10 A-SUBMITTED
+v 11 A-PREACCEPTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 5 6 W-Nabellenoffertes__W-Nabellenoffertes
+ e 6 7 W-Nabellenoffertes__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 8 1 W-Afhandelenleads__A-ACCEPTED
+ e 9 10 start__A-SUBMITTED
+ e 10 11 A-SUBMITTED__A-PREACCEPTED
+ e 11 8 A-PREACCEPTED__W-Afhandelenleads
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+
+S
+v 1 A-DECLINED
+v 2 W-Nabellenincompletedossiers
+d 1 2 A-DECLINED__W-Nabellenincompletedossiers
+ 
+S
+v 1 W-Afhandelenleads
+v 2 W-Afhandelenleads
+v 3 W-Afhandelenleads
+v 4 A-PREACCEPTED
+v 5 W-Afhandelenleads
+d 1 2 W-Afhandelenleads__W-Afhandelenleads
+d 2 3 W-Afhandelenleads__W-Afhandelenleads
+d 3 4 W-Afhandelenleads__A-PREACCEPTED
+d 4 5 A-PREACCEPTED__W-Afhandelenleads
+ 
+S
+v 1 A-ACCEPTED
+v 2 W-Completerenaanvraag
+v 3 A-FINALIZED
+v 4 O-SENT
+v 5 W-Completerenaanvraag
+d 3 4 A-FINALIZED__O-SENT
+d 4 5 O-SENT__W-Completerenaanvraag
+d 1 2 A-ACCEPTED__W-Completerenaanvraag
+d 2 3 W-Completerenaanvraag__A-FINALIZED
+ 
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Afhandelenleads
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 W-Afhandelenleads__A-CANCELLED
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-CANCELLED
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-DECLINED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-DECLINED
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Completerenaanvraag
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 6 1 W-Completerenaanvraag__A-ACCEPTED
+
+S
+v 1 A-DECLINED
+v 2 W-Nabellenoffertes
+v 3 end
+d 2 3 W-Nabellenoffertes__end
+d 1 2 A-DECLINED__W-Nabellenoffertes
+ 
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+
+S
+v 1 W-Nabellenoffertes
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+v 4 W-Nabellenoffertes
+ e 1 2 W-Nabellenoffertes__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+v 5 A-ACCEPTED
+v 6 A-FINALIZED
+v 7 O-SENT
+v 8 W-Completerenaanvraag
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+ e 8 4 W-Completerenaanvraag__W-Nabellenoffertes
+ e 7 8 O-SENT__W-Completerenaanvraag
+ e 5 6 A-ACCEPTED__A-FINALIZED
+ e 6 7 A-FINALIZED__O-SENT
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-DECLINED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-DECLINED
+
+S
+v 1 O-SENT
+v 2 W-Nabellenincompletedossiers
+d 1 2 O-SENT__W-Nabellenincompletedossiers
+ 
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenincompletedossiers
+v 3 end
+ e 1 2 A-CANCELLED__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__end
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 A-ACCEPTED
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 A-ACCEPTED__A-CANCELLED
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__O-SENT
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenincompletedossiers
+v 3 end
+v 4 W-Validerenaanvraag
+ e 1 2 A-CANCELLED__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__end
+ e 4 3 W-Validerenaanvraag__end
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 W-Afhandelenleads
+d 1 2 start__A-SUBMITTED
+d 2 3 A-SUBMITTED__W-Afhandelenleads
+d 3 4 W-Afhandelenleads__W-Afhandelenleads
+ 
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 A-PREACCEPTED
+v 5 W-Afhandelenleads
+v 6 A-DECLINED
+v 7 W-Completerenaanvraag
+v 8 end
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__W-Afhandelenleads
+ e 3 4 W-Afhandelenleads__A-PREACCEPTED
+ e 4 5 A-PREACCEPTED__W-Afhandelenleads
+ e 5 6 W-Afhandelenleads__A-DECLINED
+ e 6 7 A-DECLINED__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__end
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+v 6 W-Nabellenoffertes
+v 7 A-PREACCEPTED
+v 8 start
+v 9 A-SUBMITTED
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__O-SENT
+ e 5 6 O-SENT__W-Nabellenoffertes
+ e 7 1 A-PREACCEPTED__A-ACCEPTED
+ e 8 9 start__A-SUBMITTED
+ e 9 7 A-SUBMITTED__A-PREACCEPTED
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-DECLINED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-DECLINED
+
+S
+v 1 W-Completerenaanvraag
+v 2 W-Completerenaanvraag
+v 3 W-Completerenaanvraag
+v 4 W-Completerenaanvraag
+ e 1 2 W-Completerenaanvraag__W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__W-Completerenaanvraag
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 A-PREACCEPTED
+v 4 A-ACCEPTED
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__A-PREACCEPTED
+ e 3 4 A-PREACCEPTED__A-ACCEPTED
+
+S
+v 1 O-SENT
+v 2 W-Nabellenoffertes
+v 3 W-Nabellenoffertes
+ e 1 2 O-SENT__W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__W-Nabellenoffertes
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 W-Nabellenoffertes
+v 6 W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__W-Nabellenoffertes
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 6 1 W-Completerenaanvraag__A-ACCEPTED
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-CANCELLED
+
+S
+v 1 A-CANCELLED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-CANCELLED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-CANCELLED
+
+S
+v 1 A-DECLINED
+v 2 W-Nabellenincompletedossiers
+v 3 end
+v 4 W-Validerenaanvraag
+ e 1 2 A-DECLINED__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__end
+ e 4 3 W-Validerenaanvraag__end
+
+S
+v 1 A-CANCELLED
+v 2 W-Nabellenoffertes
+v 3 end
+v 4 W-Nabellenoffertes
+ e 2 3 W-Nabellenoffertes__end
+ e 1 2 A-CANCELLED__W-Nabellenoffertes
+ e 4 1 W-Nabellenoffertes__A-CANCELLED
+
+S
+v 1 A-DECLINED
+v 2 W-Completerenaanvraag
+v 3 end
+v 4 W-Completerenaanvraag
+ e 2 3 W-Completerenaanvraag__end
+ e 1 2 A-DECLINED__W-Completerenaanvraag
+ e 4 1 W-Completerenaanvraag__A-DECLINED
+
+S
+v 1 A-ACCEPTED
+v 2 W-Completerenaanvraag
+d 1 2 A-ACCEPTED__W-Completerenaanvraag
+ 
+S
+v 1 W-Nabellenincompletedossiers
+v 2 W-Nabellenincompletedossiers
+v 3 W-Nabellenincompletedossiers
+v 4 W-Nabellenoffertes
+v 5 end
+ e 1 2 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 2 3 W-Nabellenincompletedossiers__W-Nabellenincompletedossiers
+ e 4 1 W-Nabellenoffertes__W-Nabellenincompletedossiers
+ e 3 5 W-Nabellenincompletedossiers__end
+
+S
+v 1 A-ACCEPTED
+v 2 A-FINALIZED
+v 3 O-SENT
+v 4 W-Completerenaanvraag
+v 5 O-SENT
+ e 1 2 A-ACCEPTED__A-FINALIZED
+ e 2 3 A-FINALIZED__O-SENT
+ e 3 4 O-SENT__W-Completerenaanvraag
+ e 4 5 W-Completerenaanvraag__O-SENT
+
+S
+v 1 start
+v 2 A-SUBMITTED
+v 3 W-Afhandelenleads
+v 4 A-PREACCEPTED
+v 5 W-Afhandelenleads
+v 6 W-Completerenaanvraag
+v 7 W-Completerenaanvraag
+v 8 W-Completerenaanvraag
+ e 1 2 start__A-SUBMITTED
+ e 2 3 A-SUBMITTED__W-Afhandelenleads
+ e 3 4 W-Afhandelenleads__A-PREACCEPTED
+ e 4 5 A-PREACCEPTED__W-Afhandelenleads
+ e 5 6 W-Afhandelenleads__W-Completerenaanvraag
+ e 6 7 W-Completerenaanvraag__W-Completerenaanvraag
+ e 7 8 W-Completerenaanvraag__W-Completerenaanvraag

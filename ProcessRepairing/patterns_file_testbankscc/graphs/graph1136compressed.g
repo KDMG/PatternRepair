@@ -1,0 +1,8 @@
+v 1 SUB_42
+v 2 SUB_66
+v 3 SUB_663
+
+e 1 3 FRPP__EPP
+e 3 2 SHRRP__SHRRPC
+e 2 3 MHRRPC__HRRR
+

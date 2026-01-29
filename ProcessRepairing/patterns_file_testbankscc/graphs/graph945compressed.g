@@ -1,0 +1,13 @@
+v 1 SRP
+v 2 RBPC
+v 3 EPP
+v 4 REPC
+v 5 SUB_936
+
+e 4 5 REPC__FRPP
+e 1 5 SRP__RIBPC
+e 1 2 SRP__RBPC
+e 1 4 SRP__REPC
+e 3 5 EPP__FRPP
+e 2 3 RBPC__EPP
+

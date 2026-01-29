@@ -1,0 +1,81 @@
+Selected Pattern: 551
+Number of graphs in which the pattern occurs: 128
+Subgraph:  ['Instance', '1:', 'v', '7', 'REPP', 'v', '8', 'SRPP', 'v', '9', 'RIBPC', 'v', '10', 'FRPP', 'd', '9', '10', 'RIBPC__FRPP', 'd', '7', '8', 'REPP__SRPP', 'd', '8', '9', 'SRPP__RIBPC', 'Found', '1', 'instances.']
+Repairing sub: 17
+Subgraph:  ['Instance', '1:', 'v', '7', 'REPP', 'v', '8', 'SRPP', 'v', '9', 'RIBPC', 'v', '10', 'FRPP', 'd', '9', '10', 'RIBPC__FRPP', 'd', '7', '8', 'REPP__SRPP', 'd', '8', '9', 'SRPP__RIBPC', 'Found', '1', 'instances.']
+Initial sub:  ['REPP', 'SRPP', 'RIBPC', 'FRPP']
+Trace:  trace_1996
+Alignment: ['[L/M]SRP', '[M-REAL]SRPP', '[L]FRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L]SRPP', '[L]REPP', '[L]SRPP', '[L]RIBPC', '[L/M]FRPP', '[L/M]EPP', '[M-REAL]SHRRP', '[L]SRP', '[L]FRP', '[L/M]SHRRPC', '[L/M]HRHA', '[L/M]MHRRPC', '[L/M]FHRRPC', '[L/M]RHRRPC', '[L/M]HRRAN', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]FHRRPC', '[M-REAL]HRRR', '[M-REAL]FHRRP', '[M-REAL]FRP', '[L]EPP', '[L]SLRRP']
+Simplified subgraph:  ['Instance', '1:', 'v', '7', 'REPP', 'v', '8', 'SRPP', 'v', '9', 'RIBPC', 'd', '7', '8', 'REPP__SRPP', 'd', '8', '9', 'SRPP__RIBPC', 'Found', '1', 'instances.']
+Simplified sub:  ['REPP', 'SRPP', 'RIBPC']
+Start:  7
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.7291666666666667, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP'), (n45, 'RIBPC'), (n44, 'RBPC'), (n46, 'REPC')], 'reached_marking': ['n23:1', 'n24:1', 'n25:1'], 'enabled_transitions_in_marking': {(n47, 'FRPP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 6, 'remaining_tokens': 3, 'produced_tokens': 8}]
+Reached Marking:  ['n24', 'n23', 'n25']
+End:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.7291666666666667, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP'), (n45, 'RIBPC'), (n44, 'RBPC'), (n46, 'REPC')], 'reached_marking': ['n23:1', 'n24:1', 'n25:1'], 'enabled_transitions_in_marking': {(n47, 'FRPP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 6, 'remaining_tokens': 3, 'produced_tokens': 8}]
+Reached Marking:  ['n24', 'n23', 'n25']
+Added:  REPP s1 --> n51
+Added:  n51 --> SRPP s2
+Added:  SRPP s2 --> n52
+Added:  n52 --> RIBPC s3
+Added: n24 -- > (s1, 'REPP') s1
+Added: n23 -- > (s1, 'REPP') s1
+Added: n25 -- > (s1, 'REPP') s1
+Added: (s3, 'RIBPC') s3 -- > n24
+Added: (s3, 'RIBPC') s3 -- > n23
+Added: (s3, 'RIBPC') s3 -- > n25
+Subgraph:  ['Instance', '1:', 'v', '1', 'SRP', 'v', '2', 'FRPP', 'd', '1', '2', 'SRP__FRPP', 'Found', '1', 'instances.']
+Repairing sub: 40
+Subgraph:  ['Instance', '1:', 'v', '1', 'SRP', 'v', '2', 'FRPP', 'd', '1', '2', 'SRP__FRPP', 'Found', '1', 'instances.']
+Initial sub:  ['SRP', 'FRPP']
+Trace:  trace_1996
+Alignment: ['[L/M]SRP', '[M-REAL]SRPP', '[L]FRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L]SRPP', '[L]REPP', '[L]SRPP', '[L]RIBPC', '[L/M]FRPP', '[L/M]EPP', '[M-REAL]SHRRP', '[L]SRP', '[L]FRP', '[L/M]SHRRPC', '[L/M]HRHA', '[L/M]MHRRPC', '[L/M]FHRRPC', '[L/M]RHRRPC', '[L/M]HRRAN', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]FHRRPC', '[M-REAL]HRRR', '[M-REAL]FHRRP', '[M-REAL]FRP', '[L]EPP', '[L]SLRRP']
+Simplified subgraph:  ['Instance', '1:', 'v', '2', 'FRPP', 'Found', '1', 'instances.']
+Simplified sub:  ['FRPP']
+Start:  2
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.5, 'activated_transitions': [(n42, 'SRP')], 'reached_marking': ['n19:1'], 'enabled_transitions_in_marking': {(n43, 'SRPP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 2, 'remaining_tokens': 1, 'produced_tokens': 2}]
+Reached Marking:  ['n19']
+End:  2
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.5333333333333334, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP')], 'reached_marking': ['n20:1', 'n21:1', 'n22:1'], 'enabled_transitions_in_marking': {(n44, 'RBPC'), (n46, 'REPC'), (n45, 'RIBPC')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 3, 'remaining_tokens': 3, 'produced_tokens': 5}]
+Reached Marking:  ['n22', 'n20', 'n21']
+Added: n19 -- > (s4, 'FRPP') s4
+Added: (s4, 'FRPP') s4 -- > n22
+Added: (s4, 'FRPP') s4 -- > n20
+Added: (s4, 'FRPP') s4 -- > n21
+
+
+Start pattern repairing..
+Loop found in Sub_40 [((n26,), (n19,))]
+Loop found in Sub_17 [((n26,), (n19,)), ((n24, n23, n25), (n24, n23, n25))].
+Common loop found between Sub_40 and Sub_17
+Removed:  (n42, 'SRP') --> n19
+Added: (h1, None)
+Added: n53
+Added:  (n42, 'SRP') --> n53
+Added:  n53 --> (h1, None)
+Added:  (h1, None) --> n19
+Added:  (h2, None)
+Added:  n53 --> (h2, None)
+Added:  (h2, None) --> n19
+Added:  n54
+Added:  (h3, None)
+Added:  n55
+Added:  n54 --> (s4, 'FRPP')
+Added:  (h3, None) --> n54
+Added:  (h2, None) --> n54
+Added:  (s4, 'FRPP') --> n55
+Added:  n55 --> (h3, None)
+Added:  (h4, None)
+Added:  (h4, None) --> n55
+Added:  n56
+Added:  (h5, None)
+Added:  n56 --> (h5, None)
+Added:  (s3, 'RIBPC') --> n56
+Added:  n56 --> (h4, None)
+Added:  n57
+Added:  (h1, None) --> n57
+Added:  (h5, None) --> n57
+Added:  n57 --> (n49, 'EPP')
+In choice transitions of Sub_40: [(h1, None)]
+In choice transitions of Sub_17: []
+Added:  n55 --> (s1, 'REPP')

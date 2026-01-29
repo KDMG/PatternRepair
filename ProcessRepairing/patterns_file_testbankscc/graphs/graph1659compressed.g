@@ -1,0 +1,8 @@
+v 1 LRERV
+v 2 SUB_35
+v 3 SUB_858
+
+e 1 2 LRERV__LRRR
+e 3 2 FRP__LRIRV
+e 3 1 FRP__LRERV
+

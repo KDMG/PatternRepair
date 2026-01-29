@@ -1,0 +1,33 @@
+Result of replaying imported_1762858872.568362 on null
+
+Index,Case IDs,NumOfCases,IsReliable,"Raw Fitness Cost","Calculation Time (ms)","Num. States","Move-Model Fitness","Trace Fitness","Move-Log Fitness","Trace Length","Queued States",Match
+1,"trace_439",1,Yes,"0,00","1,00","16,00","1,00","1,00","1,00","15,00","53,00",[L/M]START|[L/M]SRP|[L/M]SRPP|[L/M]RBPC|[L/M]REPC|[L/M]RIBPC|[L/M]FRPP|[L/M]EPP|[L/M]SLRRP|[L/M]LRERV|[L/M]LRIRV|[L/M]LRIRV|[L/M]FLRRP|[L/M]FRP|[L/M]END
+
+
+ONLY RELIABLE RESULTS
+
+Property,Value
+#Reliable cases replayed,1
+#Synchronous ev.class (log+model),15
+#Skipped ev.class,0
+#Unobservable ev.class,0
+#Inserted ev.class,0
+Calculation Time (ms),1.0
+Raw Fitness Cost,0.0
+Num. States,16.0
+Trace Fitness,1.0
+Move-Model Fitness,1.0
+Move-Log Fitness,1.0
+Trace Length,15.0
+Queued States,53.0
+
+
+Property,Average,Minimum,Maximum,Std. Deviation,Number of cases with value 1.00
+"Raw Fitness Cost","0,00","0,00","0,00","<NaN>","0,00"
+"Calculation Time (ms)","1,00","1,00","1,00","<NaN>","1,00"
+"Num. States","16,00","16,00","16,00","<NaN>","0,00"
+"Move-Model Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Trace Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Move-Log Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Trace Length","15,00","15,00","15,00","<NaN>","0,00"
+"Queued States","53,00","53,00","53,00","<NaN>","0,00"

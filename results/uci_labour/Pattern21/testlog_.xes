@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<trace>
+		<string key="concept:name" value="41" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Start" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T00:27:20+00:00" />
+			<string key="Column_4" value="Start" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T00:28:29+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="toilet" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T00:28:59+00:00" />
+			<string key="Column_4" value="toilet" />
+		</event>
+		<event>
+			<string key="concept:name" value="sleeping" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T05:12:29+00:00" />
+			<string key="Column_4" value="sleeping" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T05:15:52+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="grooming" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T05:15:59+00:00" />
+			<string key="Column_4" value="grooming" />
+		</event>
+		<event>
+			<string key="concept:name" value="sleeping" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T09:01:27+00:00" />
+			<string key="Column_4" value="sleeping" />
+		</event>
+		<event>
+			<string key="concept:name" value="toilet" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T09:04:58+00:00" />
+			<string key="Column_4" value="toilet" />
+		</event>
+		<event>
+			<string key="concept:name" value="prepareBreakfast" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T09:09:41+00:00" />
+			<string key="Column_4" value="prepareBreakfast" />
+		</event>
+		<event>
+			<string key="concept:name" value="eatingBreakfast" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T09:21:43+00:00" />
+			<string key="Column_4" value="eatingBreakfast" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T10:37:29+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="eatingBreakfast" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T11:06:23+00:00" />
+			<string key="Column_4" value="eatingBreakfast" />
+		</event>
+		<event>
+			<string key="concept:name" value="prepareBreakfast" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T11:43:23+00:00" />
+			<string key="Column_4" value="prepareBreakfast" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T11:45:10+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T11:52:17+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="shower" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T11:58:55+00:00" />
+			<string key="Column_4" value="shower" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T12:08:53+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="grooming" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T12:20:34+00:00" />
+			<string key="Column_4" value="grooming" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T12:22:55+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T12:51:29+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="outdoors" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T14:22:37+00:00" />
+			<string key="Column_4" value="outdoors" />
+		</event>
+		<event>
+			<string key="concept:name" value="toilet" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T14:24:01+00:00" />
+			<string key="Column_4" value="toilet" />
+		</event>
+		<event>
+			<string key="concept:name" value="washing" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T14:24:13+00:00" />
+			<string key="Column_4" value="washing" />
+		</event>
+		<event>
+			<string key="concept:name" value="grooming" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T14:28:25+00:00" />
+			<string key="Column_4" value="grooming" />
+		</event>
+		<event>
+			<string key="concept:name" value="outdoors" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T15:54:56+00:00" />
+			<string key="Column_4" value="outdoors" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T21:06:29+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="prepareDinner" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T21:35:17+00:00" />
+			<string key="Column_4" value="prepareDinner" />
+		</event>
+		<event>
+			<string key="concept:name" value="eatingDinner" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T21:47:18+00:00" />
+			<string key="Column_4" value="eatingDinner" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T22:13:45+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="snack" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-14T22:17:47+00:00" />
+			<string key="Column_4" value="snack" />
+		</event>
+		<event>
+			<string key="concept:name" value="watchingtv" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-15T00:06:45+00:00" />
+			<string key="Column_4" value="watchingtv" />
+		</event>
+		<event>
+			<string key="concept:name" value="End" />
+			<string key="lifecycle:transition" value="complete" />
+			<date key="time:timestamp" value="2012-11-15T00:06:45+00:00" />
+			<string key="Column_4" value="End" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,33 @@
+Result of replaying imported_1761926383.43505 on null
+
+Index,Case IDs,NumOfCases,IsReliable,"Raw Fitness Cost","Calculation Time (ms)","Num. States","Move-Model Fitness","Trace Fitness","Move-Log Fitness","Trace Length","Queued States",Match
+1,"trace_357",1,Yes,"0,00","5,00","28,00","1,00","1,00","1,00","21,00","99,00",[L/M]START|[L/M]SRP|[M-INVI]n57|[L/M]FRPP|[M-INVI]n60|[L/M]RIBPC|[L/M]REPC|[M-INVI]n59|[L/M]SRPP|[M-INVI]n55|[L/M]EPP|[L/M]SHRRP|[L/M]SHRRPC|[L/M]AHRRPC|[L/M]HRHA|[L/M]FHRRPC|[L/M]RHRRPC|[L/M]SHRRPC|[L/M]AHRRPC|[L/M]HRRAN|[L/M]FHRRPC|[L/M]HRRR|[L/M]FHRRP|[L/M]FRP|[L/M]END
+
+
+ONLY RELIABLE RESULTS
+
+Property,Value
+#Reliable cases replayed,1
+#Synchronous ev.class (log+model),21
+#Skipped ev.class,0
+#Unobservable ev.class,4
+#Inserted ev.class,0
+Calculation Time (ms),5.0
+Raw Fitness Cost,0.0
+Num. States,28.0
+Trace Fitness,1.0
+Move-Model Fitness,1.0
+Move-Log Fitness,1.0
+Trace Length,21.0
+Queued States,99.0
+
+
+Property,Average,Minimum,Maximum,Std. Deviation,Number of cases with value 1.00
+"Raw Fitness Cost","0,00","0,00","0,00","<NaN>","0,00"
+"Calculation Time (ms)","5,00","5,00","5,00","<NaN>","0,00"
+"Num. States","28,00","28,00","28,00","<NaN>","0,00"
+"Move-Model Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Trace Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Move-Log Fitness","1,00","1,00","1,00","<NaN>","1,00"
+"Trace Length","21,00","21,00","21,00","<NaN>","0,00"
+"Queued States","99,00","99,00","99,00","<NaN>","0,00"

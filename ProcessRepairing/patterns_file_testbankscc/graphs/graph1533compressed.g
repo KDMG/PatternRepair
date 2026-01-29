@@ -1,0 +1,6 @@
+v 1 LRRR
+v 2 SUB_300
+
+e 2 1 RIBPC__LRRR
+e 1 2 LRRR__SRPP
+

@@ -1,0 +1,3 @@
+v 1 T03Adjustconfirmationofreceipt
+v 2 T02Checkconfirmationofreceipt
+d 1 2 T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt

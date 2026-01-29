@@ -1,0 +1,3 @@
+v 1 SUB_11
+v 2 T10Determinenecessitytostopindication
+d 2 1 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed

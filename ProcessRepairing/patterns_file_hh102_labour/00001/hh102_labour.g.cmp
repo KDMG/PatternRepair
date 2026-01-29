@@ -1,0 +1,154 @@
+XP
+v 1 SUB_162
+v 2 SUB_161
+v 3 SUB_160
+v 4 SUB_159
+v 5 SUB_157
+v 6 SUB_156
+v 7 SUB_154
+v 8 SUB_153
+v 9 SUB_152
+v 10 SUB_151
+v 11 SUB_150
+v 12 SUB_148
+v 13 SUB_147
+v 14 SUB_145
+v 15 SUB_144
+v 16 SUB_143
+v 17 SUB_141
+v 18 SUB_138
+v 19 SUB_137
+v 20 SUB_136
+v 21 SUB_131
+v 22 SUB_129
+v 23 SUB_128
+v 24 SUB_126
+v 25 SUB_120
+v 26 SUB_110
+v 27 SUB_105
+v 28 SUB_100
+v 29 SUB_98
+v 30 SUB_93
+v 31 SUB_91
+v 32 SUB_90
+v 33 SUB_87
+v 34 SUB_82
+v 35 SUB_79
+v 36 SUB_78
+v 37 SUB_77
+v 38 SUB_76
+v 39 SUB_64
+v 40 SUB_50
+v 41 SUB_49
+v 42 SUB_42
+v 43 SUB_41
+v 44 SUB_40
+v 45 SUB_38
+v 46 SUB_37
+v 47 SUB_36
+v 48 SUB_35
+v 49 SUB_34
+v 50 SUB_31
+v 51 SUB_30
+v 52 SUB_29
+v 53 SUB_28
+v 54 SUB_25
+v 55 SUB_24
+v 56 SUB_23
+v 57 SUB_22
+v 58 SUB_21
+v 59 SUB_18
+v 60 SUB_17
+v 61 SUB_15
+v 62 SUB_13
+v 63 SUB_12
+v 64 SUB_10
+v 65 SUB_9
+v 66 SUB_7
+v 67 SUB_6
+v 68 SUB_4
+v 69 SUB_2
+v 70 SUB_1
+v 71 read
+v 72 snack
+v 73 toilet
+v 74 sleep
+v 75 work
+v 76 personalhygiene
+v 77 medication
+v 78 watchtv
+v 79 relax
+v 80 outdoors
+v 81 dress
+d 30 44 toilet__mealpreperation
+d 44 18 relax__personalhygiene
+d 18 1 work__bathe
+d 1 71 eatingdrinking__read
+d 1 71 cleaning__read
+d 71 23 read__relax
+d 22 49 sleep__snack
+d 16 72 outdoors__snack
+d 72 65 snack__mealpreperation
+d 65 3 mealpreperation__cleaning
+d 65 3 eatingdrinking__work
+d 49 16 mealpreperation__bathe
+d 39 12 toilet__mealpreperation
+d 6 11 relax__snack
+d 11 73 relax__toilet
+d 73 57 toilet__snack
+d 12 6 cleaning__work
+d 57 20 snack__watchtv
+d 28 74 personalhygiene__sleep
+d 74 15 sleep__relax
+d 15 8 relax__outdoors
+d 8 75 toilet__work
+d 75 54 work__relax
+d 54 2 mealpreperation__cleaning
+d 54 2 relax__relax
+d 32 33 relax__mealpreperation
+d 26 62 bathe__dress
+d 62 24 relax__snack
+d 37 9 relax__personalhygiene
+d 9 7 relax__personalhygiene
+d 7 31 relax__personalhygiene
+d 21 38 outdoors__sleep
+d 27 60 personalhygiene__snack
+d 60 34 relax__snack
+d 70 69 sleep__relax
+d 69 4 mealpreperation__cleaning
+d 76 14 personalhygiene__bathe
+d 14 56 groom__personalhygiene
+d 56 51 snack__toilet
+d 51 19 toilet__outdoors
+d 4 76 cleaning__personalhygiene
+d 69 76 eatingdrinking__personalhygiene
+d 43 59 dress__personalhygiene
+d 59 64 toilet__relax
+d 64 50 relax__toilet
+d 50 53 relax__personalhygiene
+d 53 66 outdoors__personalhygiene
+d 29 77 outdoors__medication
+d 77 43 medication__bathe
+d 66 78 relax__watchtv
+d 78 41 watchtv__personalhygiene
+d 35 5 relax__mealpreperation
+d 5 13 relax__work
+d 13 46 groom__personalhygiene
+d 46 61 relax__outdoors
+d 61 79 outdoors__relax
+d 79 68 relax__personalhygiene
+d 68 45 outdoors__sleep
+d 45 67 relax__sleep
+d 67 42 toilet__snack
+d 42 58 eatingdrinking__relax
+d 58 25 cleaning__work
+d 10 80 eatingdrinking__outdoors
+d 10 17 cleaning__outdoors
+d 80 17 outdoors__outdoors
+d 40 81 personalhygiene__dress
+d 81 63 dress__personalhygiene
+d 63 55 groom__outdoors
+d 55 48 toilet__snack
+d 48 47 outdoors__snack
+d 47 52 cleaning__mealpreperation
+d 52 36 personalhygiene__read

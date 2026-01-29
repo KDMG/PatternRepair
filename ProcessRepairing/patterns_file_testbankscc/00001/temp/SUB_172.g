@@ -1,0 +1,3 @@
+v 1 LRRR
+v 2 FLRRP
+d 1 2 LRRR__FLRRP

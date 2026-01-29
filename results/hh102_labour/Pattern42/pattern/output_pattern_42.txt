@@ -1,0 +1,71 @@
+Selected Pattern: 42
+Number of graphs in which the pattern occurs: 1
+Subgraph:  ['Instance', '1:', 'v', '29', 'relax', 'v', '30', 'cleaning', 'd', '29', '30', 'relax__cleaning', 'Found', '1', 'instances.']
+Repairing sub: 21
+Subgraph:  ['Instance', '1:', 'v', '29', 'relax', 'v', '30', 'cleaning', 'd', '29', '30', 'relax__cleaning', 'Found', '1', 'instances.']
+Initial sub:  ['relax', 'cleaning']
+Trace:  221
+Alignment: ['[L/M]START', '[L/M]toilet', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]toilet', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]mealpreperation', '[M-INVI]tau from tree', '[L/M]relax', '[L/M]work', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]toilet', '[L/M]snack', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]eatingdrinking', '[L/M]relax', '[L]cleaning', '[L/M]work', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[L]groom', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '30', 'cleaning', 'Found', '1', 'instances.']
+Simplified sub:  ['cleaning']
+Start:  30
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9885057471264368, 'activated_transitions': [(n17, 'START'), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n22, 'mealpreperation'), (n23, None), (n29, 'relax'), (n37, 'work'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n21, None), (n29, 'relax'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n30, 'snack'), (n32, None), (n40, None), (n21, None), (n29, 'relax')], 'reached_marking': ['n8:1'], 'enabled_transitions_in_marking': {(n34, 'bathe'), (n37, 'work'), (n35, 'personalhygiene'), (n36, 'dress'), (n30, 'snack'), (n31, 'outdoors'), (n29, 'relax'), (n18, 'toilet'), (n19, 'sleep'), (n44, 'END'), (n22, 'mealpreperation')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 87, 'remaining_tokens': 1, 'produced_tokens': 87}]
+Reached Marking:  ['n8']
+End:  30
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9885057471264368, 'activated_transitions': [(n17, 'START'), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n22, 'mealpreperation'), (n23, None), (n29, 'relax'), (n37, 'work'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n21, None), (n29, 'relax'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n30, 'snack'), (n32, None), (n40, None), (n21, None), (n29, 'relax')], 'reached_marking': ['n8:1'], 'enabled_transitions_in_marking': {(n34, 'bathe'), (n37, 'work'), (n35, 'personalhygiene'), (n22, 'mealpreperation'), (n36, 'dress'), (n30, 'snack'), (n31, 'outdoors'), (n29, 'relax'), (n18, 'toilet'), (n19, 'sleep'), (n44, 'END')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 87, 'remaining_tokens': 1, 'produced_tokens': 87}]
+Reached Marking:  ['n8']
+Added: n8 -- > (s1, 'cleaning') s1
+Added: (s1, 'cleaning') s1 -- > n8
+Subgraph:  ['Instance', '1:', 'v', '27', 'snack', 'v', '28', 'eatingdrinking', 'd', '27', '28', 'snack__eatingdrinking', 'Found', '1', 'instances.']
+Repairing sub: 42
+Subgraph:  ['Instance', '1:', 'v', '27', 'snack', 'v', '28', 'eatingdrinking', 'd', '27', '28', 'snack__eatingdrinking', 'Found', '1', 'instances.']
+Initial sub:  ['snack', 'eatingdrinking']
+Trace:  221
+Alignment: ['[L/M]START', '[L/M]toilet', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]toilet', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]mealpreperation', '[M-INVI]tau from tree', '[L/M]relax', '[L/M]work', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]outdoors', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]toilet', '[L/M]snack', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]eatingdrinking', '[L/M]relax', '[L]cleaning', '[L/M]work', '[L/M]groom', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]relax', '[M-INVI]tau from tree', '[L]groom', '[L/M]personalhygiene', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]sleep', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '28', 'eatingdrinking', 'Found', '1', 'instances.']
+Simplified sub:  ['eatingdrinking']
+Start:  28
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9879518072289156, 'activated_transitions': [(n17, 'START'), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n22, 'mealpreperation'), (n23, None), (n29, 'relax'), (n37, 'work'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n21, None), (n29, 'relax'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n30, 'snack')], 'reached_marking': ['n8:1'], 'enabled_transitions_in_marking': {(n19, 'sleep'), (n44, 'END'), (n34, 'bathe'), (n37, 'work'), (n22, 'mealpreperation'), (n36, 'dress'), (n35, 'personalhygiene'), (n30, 'snack'), (n31, 'outdoors'), (n29, 'relax'), (n18, 'toilet')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 83, 'remaining_tokens': 1, 'produced_tokens': 83}]
+Reached Marking:  ['n8']
+End:  28
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9879518072289156, 'activated_transitions': [(n17, 'START'), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n20, None), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n22, 'mealpreperation'), (n23, None), (n29, 'relax'), (n37, 'work'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n39, 'groom'), (n40, None), (n20, None), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n32, None), (n40, None), (n31, 'outdoors'), (n32, None), (n40, None), (n21, None), (n29, 'relax'), (n33, None), (n35, 'personalhygiene'), (n38, None), (n40, None), (n31, 'outdoors'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n21, None), (n29, 'relax'), (n32, None), (n41, None), (n42, None), (n19, 'sleep'), (n20, None), (n32, None), (n41, None), (n42, None), (n18, 'toilet'), (n30, 'snack')], 'reached_marking': ['n8:1'], 'enabled_transitions_in_marking': {(n34, 'bathe'), (n37, 'work'), (n35, 'personalhygiene'), (n36, 'dress'), (n30, 'snack'), (n31, 'outdoors'), (n29, 'relax'), (n18, 'toilet'), (n19, 'sleep'), (n44, 'END'), (n22, 'mealpreperation')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 83, 'remaining_tokens': 1, 'produced_tokens': 83}]
+Reached Marking:  ['n8']
+Added: n8 -- > (s2, 'eatingdrinking') s2
+Added: (s2, 'eatingdrinking') s2 -- > n8
+
+
+Start pattern repairing..
+Loop found in Sub_42 [((n5,), (n3,)), ((n7,), (n6,)), ((n8,), (n8,))]
+Loop found in Sub_21 [((n5,), (n3,)), ((n7,), (n6,)), ((n8,), (n8,))].
+Common loop found between Sub_42 and Sub_21
+Added: (h1, None)
+Added: n45
+Added:  (n17, 'START') --> n45
+Added:  n45 --> (h1, None)
+Added:  (h1, None) --> n3
+Removed: (n17, 'START')->n3
+Added:  (h2, None)
+Added:  n45 --> (h2, None)
+Added:  (h2, None) --> n3
+Added:  n46
+Added:  (h3, None)
+Added:  n46 --> (s2, 'eatingdrinking')
+Added:  (h3, None) --> n46
+Added:  (h2, None) --> n46
+Added:  n47
+Added:  (s2, 'eatingdrinking') --> n47
+Added:  n47 --> (h3, None)
+Added:  (h4, None)
+Added:  (h4, None) --> n47
+Added:  n48
+Added:  (h5, None)
+Added:  n48 --> (h5, None)
+Added:  n49
+Added:  (h1, None) --> n49
+Added:  (h5, None) --> n49
+Added:  n49 --> (n43, None)
+In choice transitions of Sub_42: [(h1, None)]
+In choice transitions of Sub_21: []
+Added:  n47 --> (s1, 'cleaning')
+Added:  (s1, 'cleaning') --> n48
+Added:  n48 --> (h4, None)

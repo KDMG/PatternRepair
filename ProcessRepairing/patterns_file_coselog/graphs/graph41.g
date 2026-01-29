@@ -1,0 +1,41 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+v 5 T05Printandsendconfirmationofreceipt
+v 6 T06Determinenecessityofstopadvice
+v 7 T08Draftandsendrequestforadvice
+v 8 T09-3Processorreceiveexternaladvicefromparty3
+v 9 T09-1Processorreceiveexternaladvicefromparty1
+v 10 T07-3Draftinternadviceholdforaspect3
+v 11 T07-5Draftinternadviceaspect5
+v 12 T09-2Processorreceiveexternaladvicefromparty2
+v 13 T09-4Processorreceiveexternaladvicefromparty4
+v 14 T07-2Draftinternadviceaspect2
+v 15 T07-1Draftinternadviceaspect1
+v 16 T07-4Draftinternaladvicetoholdfortype4
+v 17 T06Determinenecessityofstopadvice
+v 18 T06Determinenecessityofstopadvice
+v 19 T06Determinenecessityofstopadvice
+v 20 END
+e 1 2  START__Confirmationofreceipt
+e 2 3  Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 3 4  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 4 6  T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 5 6  T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 6 7  T06Determinenecessityofstopadvice__T08Draftandsendrequestforadvice
+e 7 8  T08Draftandsendrequestforadvice__T09-3Processorreceiveexternaladvicefromparty3
+e 7 15  T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1
+e 13 14  T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+e 17 18  T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+e 18 19  T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+e 19 20  T06Determinenecessityofstopadvice__END
+e 8 10  T09-3Processorreceiveexternaladvicefromparty3__T07-3Draftinternadviceholdforaspect3
+e 9 10  T09-1Processorreceiveexternaladvicefromparty1__T07-3Draftinternadviceholdforaspect3
+e 10 11  T07-3Draftinternadviceholdforaspect3__T07-5Draftinternadviceaspect5
+e 11 12  T07-5Draftinternadviceaspect5__T09-2Processorreceiveexternaladvicefromparty2
+e 12 13  T09-2Processorreceiveexternaladvicefromparty2__T09-4Processorreceiveexternaladvicefromparty4
+e 14 16  T07-2Draftinternadviceaspect2__T07-4Draftinternaladvicetoholdfortype4
+e 15 16  T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+e 16 17  T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+

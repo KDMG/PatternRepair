@@ -1,0 +1,848 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imported_1765893170.6533089" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imported_1765893170.6533089</text>
+    </name>
+    <page id="n0">
+      <place id="n77">
+        <name>
+          <text>n77</text>
+        </name>
+      </place>
+      <place id="n27">
+        <name>
+          <text>sink 77</text>
+        </name>
+        <graphics>
+          <position x="1648.75" y="157.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n69">
+        <name>
+          <text>n69</text>
+        </name>
+      </place>
+      <place id="n72">
+        <name>
+          <text>n72</text>
+        </name>
+      </place>
+      <place id="n7">
+        <name>
+          <text>sink 57</text>
+        </name>
+        <graphics>
+          <position x="268.75" y="163.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n20">
+        <name>
+          <text>sink 70</text>
+        </name>
+        <graphics>
+          <position x="1056.25" y="174.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n5">
+        <name>
+          <text>sink 55</text>
+        </name>
+        <graphics>
+          <position x="1561.25" y="160.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n2">
+        <name>
+          <text>sink 52</text>
+        </name>
+        <graphics>
+          <position x="1736.25" y="155.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n1">
+        <name>
+          <text>source 51</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+        <graphics>
+          <position x="6.25" y="138.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n74">
+        <name>
+          <text>n74</text>
+        </name>
+      </place>
+      <place id="n76">
+        <name>
+          <text>n76</text>
+        </name>
+      </place>
+      <place id="n19">
+        <name>
+          <text>sink 69</text>
+        </name>
+        <graphics>
+          <position x="968.75" y="180.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n22">
+        <name>
+          <text>sink 72</text>
+        </name>
+        <graphics>
+          <position x="1056.25" y="113.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n13">
+        <name>
+          <text>sink 63</text>
+        </name>
+        <graphics>
+          <position x="1396.25" y="180.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n11">
+        <name>
+          <text>sink 61</text>
+        </name>
+        <graphics>
+          <position x="531.25" y="180.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n17">
+        <name>
+          <text>sink 67</text>
+        </name>
+        <graphics>
+          <position x="881.25" y="195.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n26">
+        <name>
+          <text>sink 76</text>
+        </name>
+        <graphics>
+          <position x="968.75" y="124.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n15">
+        <name>
+          <text>sink 65</text>
+        </name>
+        <graphics>
+          <position x="793.75" y="183.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n10">
+        <name>
+          <text>sink 60</text>
+        </name>
+        <graphics>
+          <position x="443.75" y="185.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n9">
+        <name>
+          <text>sink 59</text>
+        </name>
+        <graphics>
+          <position x="356.25" y="187.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n23">
+        <name>
+          <text>source 73</text>
+        </name>
+        <graphics>
+          <position x="881.25" y="93.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n73">
+        <name>
+          <text>n73</text>
+        </name>
+      </place>
+      <place id="n14">
+        <name>
+          <text>middle 64</text>
+        </name>
+        <graphics>
+          <position x="1318.75" y="170.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n4">
+        <name>
+          <text>sink 54</text>
+        </name>
+        <graphics>
+          <position x="181.25" y="132.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n70">
+        <name>
+          <text>n70</text>
+        </name>
+      </place>
+      <place id="n25">
+        <name>
+          <text>source 75</text>
+        </name>
+        <graphics>
+          <position x="881.25" y="122.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n68">
+        <name>
+          <text>n68</text>
+        </name>
+      </place>
+      <place id="n75">
+        <name>
+          <text>n75</text>
+        </name>
+      </place>
+      <place id="n18">
+        <name>
+          <text>middle 68</text>
+        </name>
+        <graphics>
+          <position x="1143.75" y="184.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n71">
+        <name>
+          <text>n71</text>
+        </name>
+      </place>
+      <place id="n16">
+        <name>
+          <text>sink 66</text>
+        </name>
+        <graphics>
+          <position x="1231.25" y="166.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n12">
+        <name>
+          <text>sink 62</text>
+        </name>
+        <graphics>
+          <position x="706.25" y="158.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n21">
+        <name>
+          <text>sink 71</text>
+        </name>
+        <graphics>
+          <position x="793.75" y="120.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n24">
+        <name>
+          <text>sink 74</text>
+        </name>
+        <graphics>
+          <position x="968.75" y="95.0"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n6">
+        <name>
+          <text>middle 56</text>
+        </name>
+        <graphics>
+          <position x="1483.75" y="165.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n8">
+        <name>
+          <text>sink 58</text>
+        </name>
+        <graphics>
+          <position x="618.75" y="162.5"/>
+          <dimension x="12.5" y="12.5"/>
+        </graphics>
+      </place>
+      <place id="n67">
+        <name>
+          <text>n67</text>
+        </name>
+      </place>
+      <transition id="s4">
+        <name>
+          <text>T06Determinenecessityofstopadvice</text>
+        </name>
+      </transition>
+      <transition id="n63">
+        <name>
+          <text>n63</text>
+        </name>
+        <graphics>
+          <position x="1522.5" y="164.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b4bc8910-acde-4584-99b8-da8c5d683317"/>
+      </transition>
+      <transition id="n37">
+        <name>
+          <text>n37</text>
+        </name>
+        <graphics>
+          <position x="750.0" y="207.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="20621036-473c-4326-bea2-d6dd71846fc6"/>
+      </transition>
+      <transition id="n43">
+        <name>
+          <text>n43</text>
+        </name>
+        <graphics>
+          <position x="1012.5" y="154.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="99cdc2d6-64c9-4d3e-b46c-e9e5cd919a7a"/>
+      </transition>
+      <transition id="n34">
+        <name>
+          <text>T19DeterminereportYtostopindication</text>
+        </name>
+        <graphics>
+          <position x="487.5" y="183.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n53">
+        <name>
+          <text>T05Printandsendconfirmationofreceipt</text>
+        </name>
+        <graphics>
+          <position x="925.0" y="85.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n57">
+        <name>
+          <text>T14DeterminedocumentXrequestunlicensed</text>
+        </name>
+        <graphics>
+          <position x="1100.0" y="101.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="h4">
+        <name>
+          <text>h4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5ec83c65-a172-4725-af3c-16e0082e7d4f"/>
+      </transition>
+      <transition id="n47">
+        <name>
+          <text>n47</text>
+        </name>
+        <graphics>
+          <position x="1187.5" y="170.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3e5360b3-fa1f-475a-8769-39346cf292f6"/>
+      </transition>
+      <transition id="n35">
+        <name>
+          <text>T20PrintreportYtostopindication</text>
+        </name>
+        <graphics>
+          <position x="575.0" y="176.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n50">
+        <name>
+          <text>T10Determinenecessitytostopindication</text>
+        </name>
+        <graphics>
+          <position x="750.0" y="140.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n51">
+        <name>
+          <text>n51</text>
+        </name>
+        <graphics>
+          <position x="837.5" y="100.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8ceac7a8-5c65-4b41-8d71-8ea6f94c8674"/>
+      </transition>
+      <transition id="n61">
+        <name>
+          <text>T03Adjustconfirmationofreceipt</text>
+        </name>
+        <graphics>
+          <position x="1440.0" y="198.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n64">
+        <name>
+          <text>n64</text>
+        </name>
+        <graphics>
+          <position x="1605.0" y="142.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6a489a7b-8280-4d66-be2f-ad7803b3f455"/>
+      </transition>
+      <transition id="n59">
+        <name>
+          <text>n59</text>
+        </name>
+        <graphics>
+          <position x="1357.5" y="179.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b9442294-f17c-44b4-ac39-bd4d46f2747d"/>
+      </transition>
+      <transition id="n36">
+        <name>
+          <text>T04Determineconfirmationofreceipt</text>
+        </name>
+        <graphics>
+          <position x="662.5" y="160.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="s6">
+        <name>
+          <text>T11CreatedocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="s7">
+        <name>
+          <text>T12CheckdocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="n55">
+        <name>
+          <text>T12CheckdocumentXrequestunlicensed</text>
+        </name>
+        <graphics>
+          <position x="925.0" y="150.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n56">
+        <name>
+          <text>n56</text>
+        </name>
+        <graphics>
+          <position x="1100.0" y="133.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="15defd4b-bcbb-473e-95c0-9b17857c3296"/>
+      </transition>
+      <transition id="n62">
+        <name>
+          <text>n62</text>
+        </name>
+        <graphics>
+          <position x="1522.5" y="134.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="79ee36da-564b-4fed-b461-83390ff8323b"/>
+      </transition>
+      <transition id="n46">
+        <name>
+          <text>T09-1Processorreceiveexternaladvicefromparty1</text>
+        </name>
+        <graphics>
+          <position x="1187.5" y="203.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="s2">
+        <name>
+          <text>T12CheckdocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="n42">
+        <name>
+          <text>T07-5Draftinternadviceaspect5</text>
+        </name>
+        <graphics>
+          <position x="925.0" y="200.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="s1">
+        <name>
+          <text>T11CreatedocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="n31">
+        <name>
+          <text>n31</text>
+        </name>
+        <graphics>
+          <position x="312.5" y="155.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="19730601-8352-4c0a-8a34-72eaf97f6f81"/>
+      </transition>
+      <transition id="h3">
+        <name>
+          <text>h3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="34d92416-2d09-4241-99bf-12d87fe41238"/>
+      </transition>
+      <transition id="s3">
+        <name>
+          <text>T14DeterminedocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="n52">
+        <name>
+          <text>n52</text>
+        </name>
+        <graphics>
+          <position x="1012.5" y="105.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="edc71ad5-c509-476d-96f1-6e6961ccb9a0"/>
+      </transition>
+      <transition id="n39">
+        <name>
+          <text>n39</text>
+        </name>
+        <graphics>
+          <position x="837.5" y="130.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="93397647-25ef-462f-9d91-bf8614977708"/>
+      </transition>
+      <transition id="n30">
+        <name>
+          <text>T02Checkconfirmationofreceipt</text>
+        </name>
+        <graphics>
+          <position x="225.0" y="148.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n45">
+        <name>
+          <text>T07-2Draftinternadviceaspect2</text>
+        </name>
+        <graphics>
+          <position x="1100.0" y="181.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n41">
+        <name>
+          <text>T09-3Processorreceiveexternaladvicefromparty3</text>
+        </name>
+        <graphics>
+          <position x="837.5" y="163.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n32">
+        <name>
+          <text>T16Reportreasonstoholdrequest</text>
+        </name>
+        <graphics>
+          <position x="312.5" y="187.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n65">
+        <name>
+          <text>T15PrintdocumentXrequestunlicensed</text>
+        </name>
+        <graphics>
+          <position x="1605.0" y="175.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="h5">
+        <name>
+          <text>h5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1355a2e3-2eda-4a0b-9c10-e26fd91a69ba"/>
+      </transition>
+      <transition id="s5">
+        <name>
+          <text>T10Determinenecessitytostopindication</text>
+        </name>
+      </transition>
+      <transition id="n58">
+        <name>
+          <text>n58</text>
+        </name>
+        <graphics>
+          <position x="1357.5" y="149.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="65ce0517-1dc2-42af-ada1-e0f151c1baf0"/>
+      </transition>
+      <transition id="n29">
+        <name>
+          <text>Confirmationofreceipt</text>
+        </name>
+        <graphics>
+          <position x="137.5" y="135.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n48">
+        <name>
+          <text>T06Determinenecessityofstopadvice</text>
+        </name>
+        <graphics>
+          <position x="1275.0" y="186.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n66">
+        <name>
+          <text>END</text>
+        </name>
+        <graphics>
+          <position x="1692.5" y="155.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="h1">
+        <name>
+          <text>h1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9b104a58-7f9b-494d-869e-a5024f16bc30"/>
+      </transition>
+      <transition id="n33">
+        <name>
+          <text>T17CheckreportYtostopindication</text>
+        </name>
+        <graphics>
+          <position x="400.0" y="186.5"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="h2">
+        <name>
+          <text>h2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b33c0509-2067-4a4b-bb60-69822a30d996"/>
+      </transition>
+      <transition id="s8">
+        <name>
+          <text>T14DeterminedocumentXrequestunlicensed</text>
+        </name>
+      </transition>
+      <transition id="n54">
+        <name>
+          <text>n54</text>
+        </name>
+        <graphics>
+          <position x="925.0" y="118.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="daa324fe-9de6-45ee-9c36-6291df362b83"/>
+      </transition>
+      <transition id="n40">
+        <name>
+          <text>n40</text>
+        </name>
+        <graphics>
+          <position x="837.5" y="195.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="cb6767a3-f73e-4d96-950e-89bb8c64da69"/>
+      </transition>
+      <transition id="n44">
+        <name>
+          <text>T09-4Processorreceiveexternaladvicefromparty4</text>
+        </name>
+        <graphics>
+          <position x="1012.5" y="187.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n60">
+        <name>
+          <text>n60</text>
+        </name>
+        <graphics>
+          <position x="1440.0" y="165.5"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1739e0dc-9599-4e1d-83d1-407f8d087790"/>
+      </transition>
+      <transition id="n38">
+        <name>
+          <text>T08Draftandsendrequestforadvice</text>
+        </name>
+        <graphics>
+          <position x="750.0" y="175.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <transition id="n49">
+        <name>
+          <text>T07-1Draftinternadviceaspect1</text>
+        </name>
+        <graphics>
+          <position x="837.5" y="228.0"/>
+          <dimension x="25.0" y="20.0"/>
+        </graphics>
+      </transition>
+      <arc id="5831123968" source="n25" target="n54"/>
+      <arc id="5830018576" source="n7" target="n31"/>
+      <arc id="5831126032" source="n17" target="n42"/>
+      <arc id="5831210512" source="n5" target="n65"/>
+      <arc id="5831056400" source="n48" target="n14"/>
+      <arc id="5831054864" source="n1" target="n29"/>
+      <arc id="5831212576" source="n30" target="n7"/>
+      <arc id="5830020640" source="n27" target="n66"/>
+      <arc id="5831125024" source="n11" target="n35"/>
+      <arc id="5831123488" source="s8" target="n21"/>
+      <arc id="5831209504" source="n7" target="s4"/>
+      <arc id="5831211040" source="s1" target="n68"/>
+      <arc id="5831056928" source="n42" target="n19"/>
+      <arc id="5831055392" source="n51" target="n23"/>
+      <arc id="5831210032" source="n56" target="n14"/>
+      <arc id="5831055920" source="n22" target="n57"/>
+      <arc id="5831132208" source="s3" target="n75"/>
+      <arc id="5831124544" source="n46" target="n17"/>
+      <arc id="5831212096" source="n67" target="s3"/>
+      <arc id="5831209024" source="n15" target="n41"/>
+      <arc id="5831126608" source="n22" target="n56"/>
+      <arc id="5831123536" source="n9" target="n33"/>
+      <arc id="5831212624" source="n16" target="n48"/>
+      <arc id="5831209552" source="n29" target="n73"/>
+      <arc id="5830020688" source="n49" target="n14"/>
+      <arc id="5831131728" source="n38" target="n15"/>
+      <arc id="5831125600" source="n62" target="n4"/>
+      <arc id="5831210080" source="n5" target="n64"/>
+      <arc id="5831124592" source="n73" target="h2"/>
+      <arc id="5831212144" source="n53" target="n24"/>
+      <arc id="5831209072" source="s3" target="n21"/>
+      <arc id="5831123584" source="n15" target="n39"/>
+      <arc id="5831125648" source="n44" target="n20"/>
+      <arc id="5831210128" source="n59" target="n13"/>
+      <arc id="5831211664" source="n50" target="n21"/>
+      <arc id="5831056016" source="n63" target="n5"/>
+      <arc id="5831054480" source="n7" target="n32"/>
+      <arc id="5831124640" source="n75" target="s4"/>
+      <arc id="5831123104" source="n20" target="n45"/>
+      <arc id="5831209120" source="n18" target="n47"/>
+      <arc id="5830017184" source="n40" target="n17"/>
+      <arc id="5831055008" source="n33" target="n10"/>
+      <arc id="5831212720" source="n45" target="n18"/>
+      <arc id="5831209648" source="n35" target="n8"/>
+      <arc id="5831211184" source="n31" target="n8"/>
+      <arc id="5831131824" source="n25" target="n55"/>
+      <arc id="5831124160" source="n54" target="n26"/>
+      <arc id="5831210176" source="n41" target="n17"/>
+      <arc id="5831211712" source="n60" target="n6"/>
+      <arc id="5831123152" source="n52" target="n22"/>
+      <arc id="5831055056" source="n19" target="n44"/>
+      <arc id="5831125216" source="n24" target="n52"/>
+      <arc id="5831209696" source="n55" target="n26"/>
+      <arc id="5831211232" source="n57" target="n14"/>
+      <arc id="5831057120" source="n12" target="n38"/>
+      <arc id="5831055584" source="n39" target="n16"/>
+      <arc id="5831124208" source="s8" target="n76"/>
+      <arc id="5831056112" source="n13" target="n61"/>
+      <arc id="5831054576" source="n66" target="n2"/>
+      <arc id="5831209216" source="n72" target="s7"/>
+      <arc id="5831210752" source="n61" target="n6"/>
+      <arc id="5830018816" source="n23" target="n53"/>
+      <arc id="5831125264" source="n14" target="n59"/>
+      <arc id="5831123728" source="h1" target="n77"/>
+      <arc id="5831211280" source="h3" target="n74"/>
+      <arc id="5831131920" source="n13" target="n60"/>
+      <arc id="5831211808" source="n76" target="h5"/>
+      <arc id="5831056160" source="n51" target="n25"/>
+      <arc id="5831124784" source="n65" target="n27"/>
+      <arc id="5831056688" source="n19" target="n43"/>
+      <arc id="5831055152" source="n68" target="s2"/>
+      <arc id="5831126848" source="n21" target="n51"/>
+      <arc id="5831211328" source="h5" target="n77"/>
+      <arc id="5831124304" source="n32" target="n9"/>
+      <arc id="5831054672" source="n47" target="n16"/>
+      <arc id="5831056208" source="n70" target="s8"/>
+      <arc id="5831210848" source="n34" target="n11"/>
+      <arc id="5830020448" source="s2" target="n67"/>
+      <arc id="5831056736" source="n37" target="n15"/>
+      <arc id="5830017904" source="n77" target="n63"/>
+      <arc id="5831126896" source="n10" target="n34"/>
+      <arc id="5831125360" source="h2" target="n74"/>
+      <arc id="5831212912" source="n76" target="h4"/>
+      <arc id="5831057264" source="s6" target="n72"/>
+      <arc id="5831055728" source="n6" target="n63"/>
+      <arc id="5831132016" source="n14" target="n58"/>
+      <arc id="5831124352" source="n71" target="s6"/>
+      <arc id="5831054720" source="s5" target="n71"/>
+      <arc id="5831210896" source="n69" target="s5"/>
+      <arc id="5831123344" source="n75" target="h3"/>
+      <arc id="5831126944" source="n36" target="n12"/>
+      <arc id="5831125408" source="s4" target="n69"/>
+      <arc id="5831123872" source="n26" target="n52"/>
+      <arc id="5831212960" source="n15" target="n40"/>
+      <arc id="5831057312" source="s7" target="n70"/>
+      <arc id="5831055776" source="h1" target="n4"/>
+      <arc id="5831210416" source="n12" target="n50"/>
+      <arc id="5830018480" source="n15" target="n49"/>
+      <arc id="5831124928" source="h2" target="n4"/>
+      <arc id="5830019008" source="n18" target="n46"/>
+      <arc id="5831056832" source="n43" target="n20"/>
+      <arc id="5831123920" source="n6" target="n62"/>
+      <arc id="5831209936" source="n12" target="n37"/>
+      <arc id="5831132112" source="n4" target="n30"/>
+      <arc id="5831212000" source="n21" target="s1"/>
+      <arc id="5830018528" source="n58" target="n12"/>
+      <arc id="5831056352" source="n64" target="n27"/>
+      <arc id="5831124976" source="n8" target="n36"/>
+      <arc id="5831123440" source="n73" target="h1"/>
+      <arc id="5831210992" source="h4" target="n75"/>
+      <arc id="5831056880" source="n74" target="s1"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="n2">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

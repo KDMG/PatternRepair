@@ -1,0 +1,7 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+d 1 2 START__Confirmationofreceipt
+d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt

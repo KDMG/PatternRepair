@@ -1,0 +1,6 @@
+
+v 1 T06Determinenecessityofstopadvice
+v 2 T10Determinenecessitytostopindication
+v 3 END
+e 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+e 2 3 T10Determinenecessitytostopindication__END

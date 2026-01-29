@@ -1,0 +1,7 @@
+v 1 SUB_7
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T11CreatedocumentXrequestunlicensed
+v 4 END
+d 1 2 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+d 2 3 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+d 3 4 T11CreatedocumentXrequestunlicensed__END

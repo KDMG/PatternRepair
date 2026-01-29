@@ -1,0 +1,1990 @@
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 11 mealpreperation
+v 32 End
+d 1 2 Start__toilet
+d 1 11 Start__mealpreperation
+d 2 3 toilet__sleep
+d 3 4 sleep__toilet
+d 4 5 toilet__sleep
+d 11 32 mealpreperation__End
+ 
+S
+v 1 toilet
+v 2 sleep
+d 1 2 toilet__sleep
+ 
+S
+v 1 relax
+v 2 toilet
+d 1 2 relax__toilet
+ 
+S
+v 1 dress
+v 2 groom
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+d 2 3 groom__medication
+d 3 4 medication__read
+d 4 5 read__eatingdrinking
+d 1 2 dress__groom
+ 
+S
+v 1 work
+v 2 toilet
+d 1 2 work__toilet
+ 
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+d 1 2 outdoors__work
+d 2 3 work__medication
+ 
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 End
+v 8 sleep
+v 9 personalhygiene
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 7 mealpreperation__End
+ e 8 7 sleep__End
+ e 9 8 personalhygiene__sleep
+
+S
+v 1 toilet
+v 2 sleep
+v 3 bathe
+v 4 dress
+v 5 groom
+ e 1 2 toilet__sleep
+ e 2 3 sleep__bathe
+ e 4 5 dress__groom
+ e 3 4 bathe__dress
+
+S
+v 1 work
+v 2 outdoors
+d 1 2 work__outdoors
+ 
+S
+v 1 work
+v 2 relax
+d 1 2 work__relax
+ 
+S
+v 1 Start
+v 13 mealpreperation
+v 39 End
+d 1 13 Start__mealpreperation
+d 13 39 mealpreperation__End
+ 
+S
+v 1 relax
+v 2 toilet
+v 3 work
+ e 1 2 relax__toilet
+ e 3 1 work__relax
+
+S
+v 1 medication
+v 2 read
+v 3 eatingdrinking
+d 1 2 medication__read
+d 2 3 read__eatingdrinking
+ 
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+
+S
+v 1 medication
+v 2 outdoors
+d 1 2 medication__outdoors
+ 
+S
+v 1 work
+v 2 toilet
+v 3 cleaning
+ e 1 2 work__toilet
+ e 3 1 cleaning__work
+
+S
+v 1 toilet
+v 2 sleep
+v 3 sleep
+ e 1 2 toilet__sleep
+ e 3 1 sleep__toilet
+
+S
+v 1 medication
+v 2 relax
+d 1 2 medication__relax
+ 
+S
+v 1 medication
+v 2 eatingdrinking
+v 3 toilet
+v 4 outdoors
+d 1 2 medication__eatingdrinking
+d 2 3 eatingdrinking__toilet
+d 3 4 toilet__outdoors
+ 
+S
+v 1 dress
+v 2 groom
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+v 6 bathe
+v 7 toilet
+v 8 sleep
+ e 2 3 groom__medication
+ e 3 4 medication__read
+ e 4 5 read__eatingdrinking
+ e 1 2 dress__groom
+ e 6 1 bathe__dress
+ e 7 8 toilet__sleep
+ e 8 6 sleep__bathe
+
+S
+v 1 outdoors
+v 2 relax
+d 1 2 outdoors__relax
+ 
+S
+v 1 Start
+v 2 mealpreperation
+v 3 End
+v 4 sleep
+v 5 personalhygiene
+ e 1 2 Start__mealpreperation
+ e 2 3 mealpreperation__End
+ e 4 3 sleep__End
+ e 5 4 personalhygiene__sleep
+
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 bathe
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__bathe
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 personalhygiene
+v 8 sleep
+v 9 End
+v 10 medication
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 9 mealpreperation__End
+ e 7 8 personalhygiene__sleep
+ e 8 9 sleep__End
+ e 10 7 medication__personalhygiene
+
+S
+v 1 work
+v 2 toilet
+v 3 medication
+ e 1 2 work__toilet
+ e 3 1 medication__work
+
+S
+v 1 medication
+v 2 toilet
+d 1 2 medication__toilet
+ 
+S
+v 1 medication
+v 2 personalhygiene
+d 1 2 medication__personalhygiene
+ 
+S
+v 1 sleep
+v 2 toilet
+v 3 sleep
+v 4 Start
+v 5 mealpreperation
+v 6 End
+v 7 toilet
+v 8 sleep
+ e 1 2 sleep__toilet
+ e 2 3 toilet__sleep
+ e 4 1 Start__sleep
+ e 4 5 Start__mealpreperation
+ e 5 6 mealpreperation__End
+ e 7 8 toilet__sleep
+ e 3 7 sleep__toilet
+
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+v 4 work
+v 5 relax
+v 6 toilet
+ e 1 2 outdoors__work
+ e 2 3 work__medication
+ e 4 1 work__outdoors
+ e 5 6 relax__toilet
+ e 3 5 medication__relax
+
+S
+v 1 relax
+v 2 toilet
+v 3 medication
+v 4 outdoors
+ e 1 2 relax__toilet
+ e 3 1 medication__relax
+ e 2 4 toilet__outdoors
+
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+v 4 medication
+v 5 relax
+ e 1 2 outdoors__work
+ e 2 3 work__medication
+ e 4 1 medication__outdoors
+ e 3 5 medication__relax
+
+S
+v 1 relax
+v 2 toilet
+v 3 relax
+ e 1 2 relax__toilet
+ e 2 3 toilet__relax
+
+S
+v 1 outdoors
+v 2 toilet
+d 1 2 outdoors__toilet
+ 
+S
+v 1 dress
+v 2 groom
+d 1 2 dress__groom
+ 
+S
+v 1 medication
+v 2 read
+v 3 eatingdrinking
+v 4 toilet
+v 5 dress
+ e 1 2 medication__read
+ e 2 3 read__eatingdrinking
+ e 4 1 toilet__medication
+ e 5 4 dress__toilet
+
+S
+v 1 work
+v 2 relax
+v 3 work
+v 4 toilet
+ e 1 2 work__relax
+ e 2 3 relax__work
+ e 3 4 work__toilet
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+d 1 2 mealpreperation__eatingdrinking
+ 
+S
+v 1 toilet
+v 2 relax
+d 1 2 toilet__relax
+ 
+S
+v 1 medication
+v 2 personalhygiene
+v 3 relax
+v 4 work
+ e 1 2 medication__personalhygiene
+ e 3 1 relax__medication
+ e 4 3 work__relax
+
+S
+v 1 medication
+v 2 work
+v 3 toilet
+v 4 outdoors
+ e 1 2 medication__work
+ e 2 3 work__toilet
+ e 4 1 outdoors__medication
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 medication
+v 8 personalhygiene
+v 9 sleep
+v 10 End
+v 11 toilet
+v 12 relax
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 10 mealpreperation__End
+ e 7 8 medication__personalhygiene
+ e 8 9 personalhygiene__sleep
+ e 9 10 sleep__End
+ e 11 7 toilet__medication
+ e 12 11 relax__toilet
+
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 bathe
+v 5 dress
+v 6 groom
+v 7 medication
+v 8 read
+v 9 eatingdrinking
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__bathe
+ e 4 5 bathe__dress
+ e 6 7 groom__medication
+ e 7 8 medication__read
+ e 8 9 read__eatingdrinking
+ e 5 6 dress__groom
+
+S
+v 1 Start
+v 2 mealpreperation
+v 3 personalhygiene
+v 4 sleep
+v 5 End
+v 6 relax
+v 7 medication
+ e 1 2 Start__mealpreperation
+ e 2 5 mealpreperation__End
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__End
+ e 6 3 relax__personalhygiene
+ e 7 6 medication__relax
+
+S
+v 1 toilet
+v 2 sleep
+v 3 bathe
+v 4 dress
+v 5 groom
+v 6 medication
+v 7 read
+v 8 eatingdrinking
+v 9 sleep
+v 10 Start
+v 11 toilet
+v 12 sleep
+v 13 toilet
+v 14 mealpreperation
+v 15 End
+ e 1 2 toilet__sleep
+ e 5 6 groom__medication
+ e 6 7 medication__read
+ e 7 8 read__eatingdrinking
+ e 2 3 sleep__bathe
+ e 4 5 dress__groom
+ e 3 4 bathe__dress
+ e 9 1 sleep__toilet
+ e 10 11 Start__toilet
+ e 10 14 Start__mealpreperation
+ e 11 12 toilet__sleep
+ e 12 13 sleep__toilet
+ e 13 9 toilet__sleep
+ e 14 15 mealpreperation__End
+
+S
+v 1 medication
+v 2 relax
+v 3 outdoors
+v 4 work
+ e 1 2 medication__relax
+ e 3 1 outdoors__medication
+ e 4 3 work__outdoors
+
+S
+v 1 cleaning
+v 2 work
+v 3 toilet
+v 4 eatingdrinking
+v 5 medication
+v 6 read
+ e 1 2 cleaning__work
+ e 2 3 work__toilet
+ e 4 1 eatingdrinking__cleaning
+ e 5 6 medication__read
+ e 6 4 read__eatingdrinking
+
+S
+v 1 medication
+v 2 outdoors
+v 3 relax
+v 4 work
+ e 1 2 medication__outdoors
+ e 3 1 relax__medication
+ e 4 3 work__relax
+
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 medication
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+ e 4 1 medication__toilet
+
+S
+v 1 medication
+v 2 read
+v 3 eatingdrinking
+v 4 work
+ e 1 2 medication__read
+ e 2 3 read__eatingdrinking
+ e 4 1 work__medication
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 medication
+v 5 outdoors
+v 6 work
+ e 1 2 work__relax
+ e 2 3 relax__toilet
+ e 4 1 medication__work
+ e 5 6 outdoors__work
+ e 6 4 work__medication
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 toilet
+v 5 work
+ e 1 2 work__relax
+ e 2 3 relax__toilet
+ e 4 1 toilet__work
+ e 5 4 work__toilet
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 medication
+ e 1 2 work__relax
+ e 2 3 relax__toilet
+ e 4 1 medication__work
+
+S
+v 1 work
+v 2 outdoors
+v 3 medication
+ e 1 2 work__outdoors
+ e 3 1 medication__work
+
+S
+v 1 toilet
+v 2 sleep
+v 3 sleep
+v 4 toilet
+ e 1 2 toilet__sleep
+ e 3 1 sleep__toilet
+ e 4 3 toilet__sleep
+
+S
+v 1 work
+v 2 cleaning
+d 1 2 work__cleaning
+ 
+S
+v 1 toilet
+v 2 outdoors
+d 1 2 toilet__outdoors
+ 
+S
+v 1 relax
+v 2 sleep
+d 1 2 relax__sleep
+ 
+S
+v 1 dress
+v 2 groom
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+v 6 toilet
+ e 2 3 groom__medication
+ e 3 4 medication__read
+ e 4 5 read__eatingdrinking
+ e 1 2 dress__groom
+ e 6 1 toilet__dress
+
+S
+v 1 medication
+v 2 eatingdrinking
+d 1 2 medication__eatingdrinking
+ 
+S
+v 1 sleep
+v 2 End
+d 1 2 sleep__End
+ 
+S
+v 1 toilet
+v 2 sleep
+v 3 End
+ e 1 2 toilet__sleep
+ e 2 3 sleep__End
+
+S
+v 1 toilet
+v 2 sleep
+v 3 End
+v 4 relax
+v 5 toilet
+ e 1 2 toilet__sleep
+ e 2 3 sleep__End
+ e 4 1 relax__toilet
+ e 5 4 toilet__relax
+
+S
+v 1 toilet
+v 2 relax
+v 3 toilet
+v 4 sleep
+v 5 End
+v 6 personalhygiene
+v 7 work
+v 8 relax
+v 9 medication
+ e 1 2 toilet__relax
+ e 2 3 relax__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__End
+ e 6 1 personalhygiene__toilet
+ e 7 8 work__relax
+ e 8 9 relax__medication
+ e 9 6 medication__personalhygiene
+
+S
+v 1 work
+v 2 outdoors
+v 3 Start
+ e 1 2 work__outdoors
+ e 3 1 Start__work
+
+S
+v 1 toilet
+v 2 sleep
+v 3 Start
+ e 1 2 toilet__sleep
+ e 3 1 Start__toilet
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+v 9 work
+v 10 outdoors
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+ e 8 9 groom__work
+ e 9 10 work__outdoors
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+v 9 work
+v 10 outdoors
+v 11 medication
+v 12 outdoors
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 8 9 groom__work
+ e 9 10 work__outdoors
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+ e 10 11 outdoors__medication
+ e 11 12 medication__outdoors
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+v 9 work
+v 10 outdoors
+v 11 medication
+v 12 outdoors
+v 13 work
+v 14 toilet
+v 15 work
+v 16 relax
+v 17 toilet
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 8 9 groom__work
+ e 9 10 work__outdoors
+ e 10 11 outdoors__medication
+ e 11 12 medication__outdoors
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+ e 12 13 outdoors__work
+ e 13 14 work__toilet
+ e 14 15 toilet__work
+ e 15 16 work__relax
+ e 16 17 relax__toilet
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+v 9 work
+v 10 outdoors
+v 11 medication
+v 12 outdoors
+v 13 work
+v 14 toilet
+v 15 work
+v 16 relax
+v 17 toilet
+v 18 medication
+v 19 work
+v 20 relax
+v 21 toilet
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 8 9 groom__work
+ e 9 10 work__outdoors
+ e 10 11 outdoors__medication
+ e 11 12 medication__outdoors
+ e 12 13 outdoors__work
+ e 13 14 work__toilet
+ e 14 15 toilet__work
+ e 15 16 work__relax
+ e 16 17 relax__toilet
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+ e 17 18 toilet__medication
+ e 18 19 medication__work
+ e 19 20 work__relax
+ e 20 21 relax__toilet
+
+S
+v 1 Start
+v 2 work
+v 3 outdoors
+v 4 medication
+ e 1 2 Start__work
+ e 2 3 work__outdoors
+ e 3 4 outdoors__medication
+
+S
+v 1 Start
+v 2 work
+v 3 outdoors
+v 4 medication
+v 5 relax
+v 6 toilet
+v 7 relax
+ e 1 2 Start__work
+ e 2 3 work__outdoors
+ e 3 4 outdoors__medication
+ e 4 5 medication__relax
+ e 5 6 relax__toilet
+ e 6 7 toilet__relax
+
+S
+v 1 Start
+v 2 work
+v 3 outdoors
+v 4 medication
+v 5 relax
+v 6 toilet
+v 7 relax
+v 8 personalhygiene
+ e 1 2 Start__work
+ e 2 3 work__outdoors
+ e 3 4 outdoors__medication
+ e 4 5 medication__relax
+ e 5 6 relax__toilet
+ e 6 7 toilet__relax
+ e 7 8 relax__personalhygiene
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+v 8 groom
+v 9 work
+v 10 outdoors
+v 11 medication
+v 12 outdoors
+v 13 work
+v 14 toilet
+v 15 work
+v 16 relax
+v 17 toilet
+v 18 medication
+v 19 work
+v 20 relax
+v 21 toilet
+v 22 outdoors
+ e 1 2 Start__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 8 9 groom__work
+ e 9 10 work__outdoors
+ e 10 11 outdoors__medication
+ e 11 12 medication__outdoors
+ e 12 13 outdoors__work
+ e 13 14 work__toilet
+ e 14 15 toilet__work
+ e 15 16 work__relax
+ e 16 17 relax__toilet
+ e 17 18 toilet__medication
+ e 18 19 medication__work
+ e 19 20 work__relax
+ e 20 21 relax__toilet
+ e 5 6 sleep__bathe
+ e 7 8 dress__groom
+ e 6 7 bathe__dress
+ e 21 22 toilet__outdoors
+
+S
+v 1 medication
+v 2 eatingdrinking
+v 3 groom
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+ e 1 2 medication__eatingdrinking
+ e 3 1 groom__medication
+ e 4 5 toilet__sleep
+ e 5 6 sleep__bathe
+ e 7 3 dress__groom
+ e 6 7 bathe__dress
+
+S
+v 1 dress
+v 2 toilet
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+v 6 outdoors
+ e 2 3 toilet__medication
+ e 3 4 medication__read
+ e 4 5 read__eatingdrinking
+ e 1 2 dress__toilet
+ e 5 6 eatingdrinking__outdoors
+
+S
+v 1 toilet
+v 2 dress
+v 3 groom
+v 4 medication
+v 5 read
+v 6 eatingdrinking
+v 7 cleaning
+v 8 work
+v 9 toilet
+ e 3 4 groom__medication
+ e 4 5 medication__read
+ e 5 6 read__eatingdrinking
+ e 2 3 dress__groom
+ e 1 2 toilet__dress
+ e 6 7 eatingdrinking__cleaning
+ e 7 8 cleaning__work
+ e 8 9 work__toilet
+
+S
+v 1 work
+v 2 eatingdrinking
+d 1 2 work__eatingdrinking
+ 
+S
+v 1 relax
+v 2 sleep
+v 3 personalhygiene
+ e 1 2 relax__sleep
+ e 3 1 personalhygiene__relax
+
+S
+v 1 medication
+v 2 eatingdrinking
+v 3 toilet
+v 4 outdoors
+v 5 work
+ e 1 2 medication__eatingdrinking
+ e 2 3 eatingdrinking__toilet
+ e 3 4 toilet__outdoors
+ e 5 1 work__medication
+
+S
+v 1 toilet
+v 2 outdoors
+v 3 relax
+v 4 toilet
+ e 1 2 toilet__outdoors
+ e 2 3 outdoors__relax
+ e 3 4 relax__toilet
+
+S
+v 1 work
+v 2 cleaning
+v 3 toilet
+v 4 relax
+ e 1 2 work__cleaning
+ e 3 1 toilet__work
+ e 4 3 relax__toilet
+
+S
+v 1 toilet
+v 2 dress
+v 3 groom
+v 4 medication
+v 5 read
+v 6 eatingdrinking
+v 7 cleaning
+v 8 work
+v 9 toilet
+v 10 sleep
+v 11 Start
+v 12 toilet
+v 13 sleep
+v 14 toilet
+v 15 mealpreperation
+v 16 relax
+v 17 toilet
+v 18 medication
+v 19 personalhygiene
+v 20 sleep
+v 21 End
+ e 3 4 groom__medication
+ e 4 5 medication__read
+ e 5 6 read__eatingdrinking
+ e 6 7 eatingdrinking__cleaning
+ e 7 8 cleaning__work
+ e 8 9 work__toilet
+ e 2 3 dress__groom
+ e 1 2 toilet__dress
+ e 10 1 sleep__toilet
+ e 11 12 Start__toilet
+ e 11 15 Start__mealpreperation
+ e 12 13 toilet__sleep
+ e 13 14 sleep__toilet
+ e 14 10 toilet__sleep
+ e 15 21 mealpreperation__End
+ e 16 17 relax__toilet
+ e 17 18 toilet__medication
+ e 18 19 medication__personalhygiene
+ e 19 20 personalhygiene__sleep
+ e 20 21 sleep__End
+
+S
+v 1 medication
+v 2 eatingdrinking
+v 3 toilet
+v 4 outdoors
+v 5 groom
+v 6 toilet
+v 7 sleep
+v 8 bathe
+v 9 dress
+ e 1 2 medication__eatingdrinking
+ e 2 3 eatingdrinking__toilet
+ e 3 4 toilet__outdoors
+ e 5 1 groom__medication
+ e 6 7 toilet__sleep
+ e 7 8 sleep__bathe
+ e 9 5 dress__groom
+ e 8 9 bathe__dress
+
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 medication
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 5 1 medication__toilet
+
+S
+v 1 medication
+v 2 work
+v 3 outdoors
+v 4 toilet
+v 5 work
+ e 1 2 medication__work
+ e 2 3 work__outdoors
+ e 4 1 toilet__medication
+ e 5 4 work__toilet
+
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+v 4 work
+v 5 relax
+v 6 toilet
+v 7 work
+ e 1 2 outdoors__work
+ e 2 3 work__medication
+ e 3 4 medication__work
+ e 4 5 work__relax
+ e 5 6 relax__toilet
+ e 7 1 work__outdoors
+
+S
+v 1 work
+v 2 medication
+v 3 read
+v 4 eatingdrinking
+v 5 groom
+v 6 dress
+ e 1 2 work__medication
+ e 2 3 medication__read
+ e 3 4 read__eatingdrinking
+ e 5 1 groom__work
+ e 6 5 dress__groom
+
+S
+v 1 toilet
+v 2 relax
+v 3 work
+ e 1 2 toilet__relax
+ e 2 3 relax__work
+
+S
+v 1 medication
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 outdoors
+ e 1 2 medication__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 5 1 outdoors__medication
+
+S
+v 1 work
+v 2 relax
+v 3 medication
+v 4 outdoors
+v 5 cleaning
+ e 1 2 work__relax
+ e 2 3 relax__medication
+ e 3 4 medication__outdoors
+ e 5 1 cleaning__work
+
+S
+v 1 work
+v 2 personalhygiene
+d 1 2 work__personalhygiene
+ 
+S
+v 1 work
+v 2 toilet
+v 3 relax
+ e 1 2 work__toilet
+ e 2 3 toilet__relax
+
+S
+v 1 medication
+v 2 read
+v 3 eatingdrinking
+v 4 cleaning
+v 5 work
+v 6 toilet
+v 7 bathe
+v 8 toilet
+v 9 sleep
+v 10 toilet
+ e 1 2 medication__read
+ e 2 3 read__eatingdrinking
+ e 3 4 eatingdrinking__cleaning
+ e 4 5 cleaning__work
+ e 5 6 work__toilet
+ e 7 1 bathe__medication
+ e 8 9 toilet__sleep
+ e 9 10 sleep__toilet
+ e 10 7 toilet__bathe
+
+S
+v 1 work
+v 2 outdoors
+v 3 medication
+v 4 relax
+v 5 toilet
+v 6 work
+v 7 relax
+ e 1 2 work__outdoors
+ e 2 3 outdoors__medication
+ e 3 4 medication__relax
+ e 5 1 toilet__work
+ e 6 7 work__relax
+ e 7 5 relax__toilet
+
+S
+v 1 toilet
+v 2 sleep
+v 3 bathe
+v 4 dress
+v 5 groom
+v 6 medication
+v 7 eatingdrinking
+v 8 cleaning
+ e 1 2 toilet__sleep
+ e 5 6 groom__medication
+ e 6 7 medication__eatingdrinking
+ e 2 3 sleep__bathe
+ e 4 5 dress__groom
+ e 3 4 bathe__dress
+ e 7 8 eatingdrinking__cleaning
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 bathe
+v 9 dress
+v 10 groom
+v 11 medication
+v 12 read
+v 13 mealpreperation
+v 14 eatingdrinking
+v 15 End
+v 16 sleep
+v 17 sleep
+v 18 toilet
+ e 1 2 Start__toilet
+ e 1 13 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 10 11 groom__medication
+ e 11 12 medication__read
+ e 12 14 read__eatingdrinking
+ e 13 15 mealpreperation__End
+ e 7 8 sleep__bathe
+ e 9 10 dress__groom
+ e 8 9 bathe__dress
+ e 16 15 sleep__End
+ e 17 18 sleep__toilet
+ e 18 16 toilet__sleep
+
+S
+v 1 Start
+v 2 mealpreperation
+v 3 medication
+v 4 relax
+v 5 personalhygiene
+v 6 sleep
+v 7 End
+v 8 medication
+ e 1 2 Start__mealpreperation
+ e 2 7 mealpreperation__End
+ e 3 4 medication__relax
+ e 4 5 relax__personalhygiene
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__End
+ e 1 8 Start__medication
+
+S
+v 1 work
+v 2 toilet
+v 3 cleaning
+ e 1 2 work__toilet
+ e 2 3 toilet__cleaning
+
+S
+v 1 medication
+v 2 work
+d 1 2 medication__work
+ 
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 bathe
+v 5 dress
+v 6 groom
+v 7 medication
+v 8 read
+v 9 eatingdrinking
+v 10 sleep
+v 11 sleep
+v 12 toilet
+ e 1 2 toilet__sleep
+ e 6 7 groom__medication
+ e 7 8 medication__read
+ e 8 9 read__eatingdrinking
+ e 2 3 sleep__toilet
+ e 5 6 dress__groom
+ e 3 4 toilet__bathe
+ e 4 5 bathe__dress
+ e 10 1 sleep__toilet
+ e 11 12 sleep__toilet
+ e 12 10 toilet__sleep
+
+S
+v 1 outdoors
+v 2 medication
+v 3 work
+v 4 toilet
+v 5 toilet
+v 6 work
+ e 1 2 outdoors__medication
+ e 2 3 medication__work
+ e 3 4 work__toilet
+ e 5 1 toilet__outdoors
+ e 6 5 work__toilet
+
+S
+v 1 toilet
+v 2 outdoors
+v 3 relax
+v 4 toilet
+v 5 eatingdrinking
+v 6 mealpreperation
+ e 1 2 toilet__outdoors
+ e 2 3 outdoors__relax
+ e 3 4 relax__toilet
+ e 5 1 eatingdrinking__toilet
+ e 6 5 mealpreperation__eatingdrinking
+
+S
+v 1 work
+v 2 toilet
+v 3 outdoors
+v 4 medication
+v 5 work
+v 6 toilet
+v 7 work
+v 8 relax
+v 9 work
+v 10 toilet
+ e 1 2 work__toilet
+ e 2 3 toilet__outdoors
+ e 3 4 outdoors__medication
+ e 4 5 medication__work
+ e 5 6 work__toilet
+ e 6 7 toilet__work
+ e 7 8 work__relax
+ e 8 9 relax__work
+ e 9 10 work__toilet
+
+S
+v 1 work
+v 2 outdoors
+v 3 medication
+v 4 relax
+v 5 work
+v 6 relax
+v 7 work
+v 8 toilet
+ e 1 2 work__outdoors
+ e 2 3 outdoors__medication
+ e 3 4 medication__relax
+ e 4 5 relax__work
+ e 5 6 work__relax
+ e 6 7 relax__work
+ e 7 8 work__toilet
+
+S
+v 1 dress
+v 2 groom
+v 3 medication
+ e 1 2 dress__groom
+ e 2 3 groom__medication
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 work
+v 5 outdoors
+v 6 medication
+v 7 relax
+v 8 outdoors
+v 9 toilet
+ e 1 2 work__relax
+ e 2 3 relax__toilet
+ e 3 4 toilet__work
+ e 4 5 work__outdoors
+ e 5 6 outdoors__medication
+ e 6 7 medication__relax
+ e 7 8 relax__outdoors
+ e 8 9 outdoors__toilet
+
+S
+v 1 outdoors
+v 2 toilet
+v 3 toilet
+v 4 relax
+ e 1 2 outdoors__toilet
+ e 3 1 toilet__outdoors
+ e 4 3 relax__toilet
+
+S
+v 1 work
+v 2 toilet
+v 3 work
+v 4 relax
+v 5 toilet
+v 6 relax
+v 7 toilet
+v 8 relax
+ e 1 2 work__toilet
+ e 2 3 toilet__work
+ e 3 4 work__relax
+ e 4 5 relax__toilet
+ e 5 6 toilet__relax
+ e 6 7 relax__toilet
+ e 7 8 toilet__relax
+
+S
+v 1 work
+v 2 toilet
+v 3 outdoors
+v 4 medication
+v 5 work
+v 6 toilet
+v 7 work
+v 8 relax
+v 9 work
+v 10 toilet
+v 11 medication
+v 12 outdoors
+v 13 work
+v 14 medication
+v 15 relax
+ e 1 2 work__toilet
+ e 2 3 toilet__outdoors
+ e 3 4 outdoors__medication
+ e 4 5 medication__work
+ e 5 6 work__toilet
+ e 6 7 toilet__work
+ e 7 8 work__relax
+ e 8 9 relax__work
+ e 9 10 work__toilet
+ e 10 11 toilet__medication
+ e 11 12 medication__outdoors
+ e 12 13 outdoors__work
+ e 13 14 work__medication
+ e 14 15 medication__relax
+
+S
+v 1 medication
+v 2 relax
+v 3 toilet
+v 4 outdoors
+v 5 relax
+v 6 work
+ e 1 2 medication__relax
+ e 2 3 relax__toilet
+ e 3 4 toilet__outdoors
+ e 5 1 relax__medication
+ e 6 5 work__relax
+
+S
+v 1 relax
+v 2 toilet
+v 3 personalhygiene
+ e 1 2 relax__toilet
+ e 3 1 personalhygiene__relax
+
+S
+v 1 work
+v 2 outdoors
+v 3 work
+v 4 medication
+v 5 work
+v 6 relax
+v 7 toilet
+v 8 work
+v 9 outdoors
+v 10 work
+v 11 medication
+v 12 relax
+v 13 toilet
+ e 1 2 work__outdoors
+ e 2 3 outdoors__work
+ e 3 4 work__medication
+ e 4 5 medication__work
+ e 5 6 work__relax
+ e 6 7 relax__toilet
+ e 7 8 toilet__work
+ e 8 9 work__outdoors
+ e 9 10 outdoors__work
+ e 10 11 work__medication
+ e 11 12 medication__relax
+ e 12 13 relax__toilet
+
+S
+v 1 toilet
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 sleep
+v 6 Start
+v 7 sleep
+v 8 toilet
+v 9 sleep
+v 10 toilet
+v 11 mealpreperation
+v 12 End
+ e 1 2 toilet__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 5 1 sleep__toilet
+ e 6 7 Start__sleep
+ e 6 11 Start__mealpreperation
+ e 7 8 sleep__toilet
+ e 8 9 toilet__sleep
+ e 9 10 sleep__toilet
+ e 10 5 toilet__sleep
+ e 11 12 mealpreperation__End
+
+S
+v 1 medication
+v 2 personalhygiene
+v 3 relax
+ e 1 2 medication__personalhygiene
+ e 3 1 relax__medication
+
+S
+v 1 medication
+v 2 toilet
+v 3 groom
+v 4 toilet
+v 5 sleep
+v 6 bathe
+v 7 dress
+ e 1 2 medication__toilet
+ e 3 1 groom__medication
+ e 4 5 toilet__sleep
+ e 5 6 sleep__bathe
+ e 7 3 dress__groom
+ e 6 7 bathe__dress
+
+S
+v 1 medication
+v 2 toilet
+v 3 toilet
+v 4 work
+v 5 relax
+ e 1 2 medication__toilet
+ e 3 1 toilet__medication
+ e 4 5 work__relax
+ e 5 3 relax__toilet
+
+S
+v 1 medication
+v 2 toilet
+v 3 work
+ e 1 2 medication__toilet
+ e 3 1 work__medication
+
+S
+v 1 medication
+v 2 work
+v 3 toilet
+v 4 work
+ e 1 2 medication__work
+ e 2 3 work__toilet
+ e 4 1 work__medication
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 medication
+v 8 personalhygiene
+v 9 sleep
+v 10 End
+v 11 toilet
+v 12 sleep
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 10 mealpreperation__End
+ e 7 8 medication__personalhygiene
+ e 8 9 personalhygiene__sleep
+ e 9 10 sleep__End
+ e 5 11 sleep__toilet
+ e 11 12 toilet__sleep
+
+S
+v 1 work
+v 2 outdoors
+v 3 work
+v 4 medication
+v 5 work
+v 6 relax
+v 7 toilet
+v 8 work
+v 9 outdoors
+v 10 work
+v 11 medication
+v 12 relax
+v 13 toilet
+v 14 outdoors
+v 15 relax
+ e 1 2 work__outdoors
+ e 2 3 outdoors__work
+ e 3 4 work__medication
+ e 4 5 medication__work
+ e 5 6 work__relax
+ e 6 7 relax__toilet
+ e 7 8 toilet__work
+ e 8 9 work__outdoors
+ e 9 10 outdoors__work
+ e 10 11 work__medication
+ e 11 12 medication__relax
+ e 12 13 relax__toilet
+ e 13 14 toilet__outdoors
+ e 14 15 outdoors__relax
+
+S
+v 1 outdoors
+v 2 relax
+v 3 relax
+v 4 work
+ e 1 2 outdoors__relax
+ e 3 1 relax__outdoors
+ e 4 3 work__relax
+
+S
+v 1 outdoors
+v 2 relax
+v 3 relax
+ e 1 2 outdoors__relax
+ e 3 1 relax__outdoors
+
+S
+v 1 medication
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 relax
+v 6 outdoors
+ e 1 2 medication__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 5 1 relax__medication
+ e 6 5 outdoors__relax
+
+S
+v 1 toilet
+v 2 relax
+v 3 work
+v 4 medication
+v 5 relax
+ e 1 2 toilet__relax
+ e 2 3 relax__work
+ e 3 4 work__medication
+ e 4 5 medication__relax
+
+S
+v 1 sleep
+v 2 toilet
+v 3 sleep
+v 4 Start
+v 5 mealpreperation
+v 6 End
+ e 1 2 sleep__toilet
+ e 2 3 toilet__sleep
+ e 4 1 Start__sleep
+ e 4 5 Start__mealpreperation
+ e 5 6 mealpreperation__End
+
+S
+v 1 work
+v 2 eatingdrinking
+v 3 cleaning
+v 4 work
+v 5 toilet
+ e 1 2 work__eatingdrinking
+ e 2 3 eatingdrinking__cleaning
+ e 3 4 cleaning__work
+ e 4 5 work__toilet
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 bathe
+v 9 dress
+v 10 groom
+v 11 medication
+v 12 read
+v 13 mealpreperation
+v 14 eatingdrinking
+v 15 End
+v 16 cleaning
+v 17 work
+v 18 toilet
+ e 1 2 Start__toilet
+ e 1 13 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 10 11 groom__medication
+ e 11 12 medication__read
+ e 12 14 read__eatingdrinking
+ e 13 15 mealpreperation__End
+ e 7 8 sleep__bathe
+ e 9 10 dress__groom
+ e 8 9 bathe__dress
+ e 14 16 eatingdrinking__cleaning
+ e 16 17 cleaning__work
+ e 17 18 work__toilet
+
+S
+v 1 toilet
+v 2 outdoors
+v 3 medication
+v 4 outdoors
+ e 1 2 toilet__outdoors
+ e 2 3 outdoors__medication
+ e 3 4 medication__outdoors
+
+S
+v 1 medication
+v 2 work
+v 3 relax
+v 4 toilet
+v 5 medication
+v 6 outdoors
+ e 1 2 medication__work
+ e 2 3 work__relax
+ e 3 4 relax__toilet
+ e 4 5 toilet__medication
+ e 5 6 medication__outdoors
+
+S
+v 1 medication
+v 2 outdoors
+v 3 work
+ e 1 2 medication__outdoors
+ e 3 1 work__medication
+
+S
+v 1 Start
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 mealpreperation
+v 6 End
+v 7 toilet
+v 8 sleep
+v 9 toilet
+ e 1 2 Start__sleep
+ e 1 5 Start__mealpreperation
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 5 6 mealpreperation__End
+ e 4 7 sleep__toilet
+ e 7 8 toilet__sleep
+ e 8 9 sleep__toilet
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 outdoors
+v 5 work
+ e 1 2 work__relax
+ e 2 3 relax__toilet
+ e 4 1 outdoors__work
+ e 5 4 work__outdoors
+
+S
+v 1 medication
+v 2 toilet
+v 3 work
+v 4 relax
+v 5 toilet
+ e 1 2 medication__toilet
+ e 2 3 toilet__work
+ e 3 4 work__relax
+ e 4 5 relax__toilet
+
+S
+v 1 work
+v 2 relax
+v 3 toilet
+v 4 relax
+ e 1 2 work__relax
+ e 3 1 toilet__work
+ e 4 3 relax__toilet
+
+S
+v 1 dress
+v 2 toilet
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+v 6 outdoors
+v 7 work
+v 8 outdoors
+ e 2 3 toilet__medication
+ e 3 4 medication__read
+ e 4 5 read__eatingdrinking
+ e 5 6 eatingdrinking__outdoors
+ e 1 2 dress__toilet
+ e 6 7 outdoors__work
+ e 7 8 work__outdoors
+
+S
+v 1 outdoors
+v 2 relax
+v 3 work
+v 4 relax
+ e 1 2 outdoors__relax
+ e 2 3 relax__work
+ e 3 4 work__relax
+
+S
+v 1 work
+v 2 medication
+v 3 toilet
+v 4 work
+v 5 outdoors
+ e 1 2 work__medication
+ e 2 3 medication__toilet
+ e 3 4 toilet__work
+ e 4 5 work__outdoors
+
+S
+v 1 work
+v 2 outdoors
+v 3 toilet
+ e 1 2 work__outdoors
+ e 3 1 toilet__work
+
+S
+v 1 medication
+v 2 toilet
+v 3 work
+v 4 relax
+v 5 toilet
+v 6 outdoors
+v 7 work
+ e 1 2 medication__toilet
+ e 2 3 toilet__work
+ e 3 4 work__relax
+ e 4 5 relax__toilet
+ e 6 1 outdoors__medication
+ e 7 6 work__outdoors
+
+S
+v 1 Start
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 toilet
+v 6 sleep
+v 7 mealpreperation
+v 8 End
+v 9 toilet
+v 10 sleep
+v 11 bathe
+v 12 dress
+v 13 groom
+ e 1 2 Start__sleep
+ e 1 7 Start__mealpreperation
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__toilet
+ e 5 6 toilet__sleep
+ e 7 8 mealpreperation__End
+ e 6 9 sleep__toilet
+ e 9 10 toilet__sleep
+ e 10 11 sleep__bathe
+ e 12 13 dress__groom
+ e 11 12 bathe__dress
+
+S
+v 1 work
+v 2 outdoors
+v 3 work
+v 4 relax
+v 5 toilet
+v 6 work
+ e 1 2 work__outdoors
+ e 2 3 outdoors__work
+ e 3 4 work__relax
+ e 4 5 relax__toilet
+ e 5 6 toilet__work
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 toilet
+v 4 outdoors
+v 5 relax
+v 6 toilet
+v 7 outdoors
+v 8 work
+v 9 medication
+ e 2 3 eatingdrinking__toilet
+ e 3 4 toilet__outdoors
+ e 4 5 outdoors__relax
+ e 5 6 relax__toilet
+ e 1 2 mealpreperation__eatingdrinking
+ e 6 7 toilet__outdoors
+ e 7 8 outdoors__work
+ e 8 9 work__medication
+
+S
+v 1 Start
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 toilet
+v 6 sleep
+v 7 toilet
+v 8 sleep
+v 9 bathe
+v 10 dress
+v 11 groom
+v 12 mealpreperation
+v 13 End
+v 14 work
+ e 1 2 Start__sleep
+ e 1 12 Start__mealpreperation
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__toilet
+ e 5 6 toilet__sleep
+ e 6 7 sleep__toilet
+ e 7 8 toilet__sleep
+ e 12 13 mealpreperation__End
+ e 8 9 sleep__bathe
+ e 10 11 dress__groom
+ e 9 10 bathe__dress
+ e 11 14 groom__work
+
+S
+v 1 toilet
+v 2 sleep
+v 3 bathe
+v 4 dress
+v 5 groom
+v 6 medication
+v 7 read
+v 8 eatingdrinking
+v 9 relax
+v 10 toilet
+ e 1 2 toilet__sleep
+ e 5 6 groom__medication
+ e 6 7 medication__read
+ e 7 8 read__eatingdrinking
+ e 2 3 sleep__bathe
+ e 4 5 dress__groom
+ e 3 4 bathe__dress
+ e 8 9 eatingdrinking__relax
+ e 9 10 relax__toilet
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 personalhygiene
+v 8 sleep
+v 9 End
+v 10 drink
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 9 mealpreperation__End
+ e 7 8 personalhygiene__sleep
+ e 8 9 sleep__End
+ e 5 10 sleep__drink
+
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 personalhygiene
+v 8 sleep
+v 9 End
+v 10 toilet
+v 11 sleep
+ e 1 2 Start__toilet
+ e 1 6 Start__mealpreperation
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 6 9 mealpreperation__End
+ e 7 8 personalhygiene__sleep
+ e 8 9 sleep__End
+ e 5 10 sleep__toilet
+ e 10 11 toilet__sleep
+
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+v 4 medication
+ e 1 2 outdoors__work
+ e 2 3 work__medication
+ e 4 1 medication__outdoors
+
+S
+v 1 work
+v 2 toilet
+v 3 relax
+v 4 outdoors
+v 5 work
+v 6 medication
+ e 1 2 work__toilet
+ e 2 3 toilet__relax
+ e 3 4 relax__outdoors
+ e 4 5 outdoors__work
+ e 5 6 work__medication
+
+S
+v 1 toilet
+v 2 sleep
+v 3 sleep
+v 4 Start
+v 5 toilet
+v 6 sleep
+v 7 toilet
+v 8 mealpreperation
+v 9 End
+ e 1 2 toilet__sleep
+ e 3 1 sleep__toilet
+ e 4 5 Start__toilet
+ e 4 8 Start__mealpreperation
+ e 5 6 toilet__sleep
+ e 6 7 sleep__toilet
+ e 7 3 toilet__sleep
+ e 8 9 mealpreperation__End

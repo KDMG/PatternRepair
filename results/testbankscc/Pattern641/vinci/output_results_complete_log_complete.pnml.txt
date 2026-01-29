@@ -1,0 +1,5 @@
+Fitness alignment:  {'percFitTraces': 12.180451127819548, 'averageFitness': 0.9192997792839767, 'percentage_of_fitting_traces': 12.180451127819548, 'average_trace_fitness': 0.9192997792839767, 'log_fitness': 0.9192732571218111}
+Fitness token:  {'perc_fit_traces': 1.4536340852130325, 'average_trace_fitness': 0.8957532076460757, 'log_fitness': 0.8946181071037518, 'percentage_of_fitting_traces': 1.4536340852130325}
+Precision:  0.46940700668146806
+Generalization:  0.7778415667505055
+Simplicity:  0.3390557939914163

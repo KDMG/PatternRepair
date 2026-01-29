@@ -1,0 +1,17 @@
+v 1 T06Determinenecessityofstopadvice
+v 2 T07-1Draftinternadviceaspect1
+v 3 T08Draftandsendrequestforadvice
+v 4 T09-1Processorreceiveexternaladvicefromparty1
+v 5 T07-2Draftinternadviceaspect2
+v 6 END
+v 7 SUB_27
+v 8 SUB_48
+
+e 1 8 T06Determinenecessityofstopadvice__T07-5Draftinternadviceaspect5
+e 1 2 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+e 2 3 T07-1Draftinternadviceaspect1__T08Draftandsendrequestforadvice
+e 2 7 T07-1Draftinternadviceaspect1__T02Checkconfirmationofreceipt
+e 3 7 T08Draftandsendrequestforadvice__T06Determinenecessityofstopadvice
+e 5 7 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+e 7 6 T10Determinenecessitytostopindication__END
+

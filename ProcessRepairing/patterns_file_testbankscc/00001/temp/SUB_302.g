@@ -1,0 +1,6 @@
+v 1 SUB_32
+v 2 SUB_21
+v 3 REPC
+d 3 1 REPC__FRPP
+d 2 3 REPP__REPC
+d 2 1 REPP__RIBPC

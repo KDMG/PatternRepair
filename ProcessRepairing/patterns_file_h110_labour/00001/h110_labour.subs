@@ -1,0 +1,919 @@
+S
+v 1 Start
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 mealpreperation
+v 7 End
+d 1 2 Start__toilet
+d 1 6 Start__mealpreperation
+d 2 3 toilet__sleep
+d 3 4 sleep__toilet
+d 4 5 toilet__sleep
+d 6 7 mealpreperation__End
+
+S
+v 1 toilet
+v 2 sleep
+d 1 2 toilet__sleep
+
+S
+v 1 relax
+v 2 toilet
+d 1 2 relax__toilet
+
+S
+v 1 dress
+v 2 groom
+v 3 medication
+v 4 read
+v 5 eatingdrinking
+d 2 3 groom__medication
+d 3 4 medication__read
+d 4 5 read__eatingdrinking
+d 1 2 dress__groom
+
+S
+v 1 work
+v 2 toilet
+d 1 2 work__toilet
+
+S
+v 1 outdoors
+v 2 work
+v 3 medication
+d 1 2 outdoors__work
+d 2 3 work__medication
+
+S
+v 1 SUB_1
+v 2 personalhygiene
+v 3 sleep
+d 2 3 personalhygiene__sleep
+d 3 1 sleep__End
+
+S
+v 1 SUB_2
+v 2 bathe
+v 3 dress
+v 4 groom
+d 1 2 sleep__bathe
+d 3 4 dress__groom
+d 2 3 bathe__dress
+
+S
+v 1 work
+v 2 outdoors
+d 1 2 work__outdoors
+
+S
+v 1 work
+v 2 relax
+d 1 2 work__relax
+
+S
+v 1 Start
+v 2 mealpreperation
+v 3 End
+d 1 2 Start__mealpreperation
+d 2 3 mealpreperation__End
+
+S
+v 1 SUB_3
+v 2 work
+d 2 1 work__relax
+
+S
+v 1 medication
+v 2 read
+v 3 eatingdrinking
+d 1 2 medication__read
+d 2 3 read__eatingdrinking
+
+S
+v 1 SUB_2
+v 2 toilet
+d 1 2 sleep__toilet
+
+S
+v 1 medication
+v 2 outdoors
+d 1 2 medication__outdoors
+
+S
+v 1 SUB_5
+v 2 cleaning
+d 2 1 cleaning__work
+
+S
+v 1 SUB_2
+v 2 sleep
+d 2 1 sleep__toilet
+
+S
+v 1 medication
+v 2 relax
+d 1 2 medication__relax
+
+S
+v 1 medication
+v 2 eatingdrinking
+v 3 toilet
+v 4 outdoors
+d 1 2 medication__eatingdrinking
+d 2 3 eatingdrinking__toilet
+d 3 4 toilet__outdoors
+
+S
+v 1 SUB_4
+v 2 SUB_2
+v 3 bathe
+d 2 3 sleep__bathe
+d 3 1 bathe__dress
+
+S
+v 1 outdoors
+v 2 relax
+d 1 2 outdoors__relax
+
+S
+v 1 SUB_11
+v 2 personalhygiene
+v 3 sleep
+d 2 3 personalhygiene__sleep
+d 3 1 sleep__End
+
+S
+v 1 SUB_14
+v 2 bathe
+d 1 2 toilet__bathe
+
+S
+v 1 SUB_7
+v 2 medication
+d 2 1 medication__personalhygiene
+
+S
+v 1 SUB_5
+v 2 medication
+d 2 1 medication__work
+
+S
+v 1 medication
+v 2 toilet
+d 1 2 medication__toilet
+
+S
+v 1 medication
+v 2 personalhygiene
+d 1 2 medication__personalhygiene
+
+S
+v 1 SUB_17
+v 2 SUB_11
+v 3 SUB_2
+d 2 1 Start__sleep
+d 1 3 sleep__toilet
+
+S
+v 1 SUB_6
+v 2 SUB_3
+v 3 work
+d 3 1 work__outdoors
+d 1 2 medication__relax
+
+S
+v 1 SUB_3
+v 2 medication
+v 3 outdoors
+d 2 1 medication__relax
+d 1 3 toilet__outdoors
+
+S
+v 1 SUB_6
+v 2 medication
+v 3 relax
+d 2 1 medication__outdoors
+d 1 3 medication__relax
+
+S
+v 1 SUB_3
+v 2 relax
+d 1 2 toilet__relax
+
+S
+v 1 outdoors
+v 2 toilet
+d 1 2 outdoors__toilet
+
+S
+v 1 dress
+v 2 groom
+d 1 2 dress__groom
+
+S
+v 1 SUB_13
+v 2 dress
+v 3 toilet
+d 3 1 toilet__medication
+d 2 3 dress__toilet
+
+S
+v 1 SUB_10
+v 2 SUB_5
+d 1 2 relax__work
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+d 1 2 mealpreperation__eatingdrinking
+
+S
+v 1 toilet
+v 2 relax
+d 1 2 toilet__relax
+
+S
+v 1 SUB_27
+v 2 SUB_10
+d 2 1 relax__medication
+
+S
+v 1 SUB_25
+v 2 outdoors
+d 2 1 outdoors__medication
+
+S
+v 1 SUB_24
+v 2 SUB_3
+d 2 1 toilet__medication
+
+S
+v 1 SUB_23
+v 2 SUB_4
+d 1 2 bathe__dress
+
+S
+v 1 SUB_22
+v 2 SUB_18
+d 2 1 relax__personalhygiene
+
+S
+v 1 SUB_20
+v 2 SUB_1
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_18
+v 2 SUB_9
+d 2 1 outdoors__medication
+
+S
+v 1 SUB_16
+v 2 SUB_13
+d 2 1 eatingdrinking__cleaning
+
+S
+v 1 SUB_15
+v 2 SUB_10
+d 2 1 relax__medication
+
+S
+v 1 SUB_14
+v 2 medication
+d 2 1 medication__toilet
+
+S
+v 1 SUB_13
+v 2 work
+d 2 1 work__medication
+
+S
+v 1 SUB_12
+v 2 SUB_6
+d 2 1 medication__work
+
+S
+v 1 SUB_12
+v 2 SUB_5
+d 2 1 toilet__work
+
+S
+v 1 SUB_12
+v 2 medication
+d 2 1 medication__work
+
+S
+v 1 SUB_9
+v 2 medication
+d 2 1 medication__work
+
+S
+v 1 SUB_2
+v 2 SUB_2
+d 1 2 sleep__toilet
+
+S
+v 1 work
+v 2 cleaning
+d 1 2 work__cleaning
+
+S
+v 1 toilet
+v 2 outdoors
+d 1 2 toilet__outdoors
+
+S
+v 1 relax
+v 2 sleep
+d 1 2 relax__sleep
+
+S
+v 1 SUB_4
+v 2 toilet
+d 2 1 toilet__dress
+
+S
+v 1 medication
+v 2 eatingdrinking
+d 1 2 medication__eatingdrinking
+
+S
+v 1 sleep
+v 2 End
+d 1 2 sleep__End
+
+S
+v 1 SUB_2
+v 2 End
+d 1 2 sleep__End
+
+S
+v 1 SUB_61
+v 2 SUB_38
+d 2 1 relax__toilet
+
+S
+v 1 SUB_62
+v 2 SUB_39
+d 2 1 personalhygiene__toilet
+
+S
+v 1 SUB_9
+v 2 Start
+d 2 1 Start__work
+
+S
+v 1 SUB_2
+v 2 Start
+d 2 1 Start__toilet
+
+S
+v 1 SUB_65
+v 2 SUB_8
+d 1 2 sleep__toilet
+
+S
+v 1 SUB_66
+v 2 SUB_9
+d 1 2 groom__work
+
+S
+v 1 SUB_67
+v 2 SUB_15
+d 1 2 outdoors__medication
+
+S
+v 1 SUB_68
+v 2 SUB_51
+d 1 2 outdoors__work
+
+S
+v 1 SUB_69
+v 2 SUB_52
+d 1 2 toilet__medication
+
+S
+v 1 SUB_64
+v 2 medication
+d 1 2 outdoors__medication
+
+S
+v 1 SUB_71
+v 2 SUB_32
+d 1 2 medication__relax
+
+S
+v 1 SUB_72
+v 2 personalhygiene
+d 1 2 relax__personalhygiene
+
+S
+v 1 SUB_70
+v 2 outdoors
+d 1 2 toilet__outdoors
+
+S
+v 1 SUB_59
+v 2 SUB_8
+d 2 1 groom__medication
+
+S
+v 1 SUB_35
+v 2 outdoors
+d 1 2 eatingdrinking__outdoors
+
+S
+v 1 SUB_58
+v 2 SUB_16
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 work
+v 2 eatingdrinking
+d 1 2 work__eatingdrinking
+
+S
+v 1 SUB_57
+v 2 personalhygiene
+d 2 1 personalhygiene__relax
+
+S
+v 1 SUB_19
+v 2 work
+d 2 1 work__medication
+
+S
+v 1 SUB_56
+v 2 SUB_3
+d 1 2 outdoors__relax
+
+S
+v 1 SUB_55
+v 2 SUB_3
+d 2 1 toilet__work
+
+S
+v 1 SUB_77
+v 2 SUB_41
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_19
+v 2 SUB_8
+d 2 1 groom__medication
+
+S
+v 1 SUB_54
+v 2 medication
+d 2 1 medication__toilet
+
+S
+v 1 SUB_53
+v 2 SUB_5
+d 2 1 toilet__medication
+
+S
+v 1 SUB_50
+v 2 work
+d 2 1 work__outdoors
+
+S
+v 1 SUB_49
+v 2 SUB_34
+d 2 1 groom__work
+
+S
+v 1 SUB_38
+v 2 work
+d 1 2 relax__work
+
+S
+v 1 SUB_48
+v 2 outdoors
+d 2 1 outdoors__medication
+
+S
+v 1 SUB_47
+v 2 cleaning
+d 2 1 cleaning__work
+
+S
+v 1 work
+v 2 personalhygiene
+d 1 2 work__personalhygiene
+
+S
+v 1 SUB_5
+v 2 relax
+d 1 2 toilet__relax
+
+S
+v 1 SUB_46
+v 2 SUB_23
+d 2 1 bathe__medication
+
+S
+v 1 SUB_45
+v 2 SUB_12
+d 2 1 toilet__work
+
+S
+v 1 SUB_75
+v 2 cleaning
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 SUB_44
+v 2 SUB_17
+d 2 1 sleep__End
+
+S
+v 1 SUB_43
+v 2 medication
+d 1 2 Start__medication
+
+S
+v 1 SUB_5
+v 2 cleaning
+d 1 2 toilet__cleaning
+
+S
+v 1 medication
+v 2 work
+d 1 2 medication__work
+
+S
+v 1 SUB_42
+v 2 SUB_17
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_40
+v 2 SUB_5
+d 2 1 toilet__outdoors
+
+S
+v 1 SUB_81
+v 2 SUB_37
+d 2 1 eatingdrinking__toilet
+
+S
+v 1 SUB_102
+v 2 SUB_36
+d 1 2 toilet__work
+
+S
+v 1 SUB_45
+v 2 SUB_36
+d 1 2 relax__work
+
+S
+v 1 SUB_34
+v 2 medication
+d 1 2 groom__medication
+
+S
+v 1 SUB_95
+v 2 SUB_33
+d 1 2 relax__outdoors
+
+S
+v 1 SUB_33
+v 2 SUB_3
+d 2 1 toilet__outdoors
+
+S
+v 1 SUB_51
+v 2 SUB_32
+d 1 2 toilet__relax
+
+S
+v 1 SUB_104
+v 2 SUB_31
+d 1 2 toilet__medication
+
+S
+v 1 SUB_30
+v 2 SUB_10
+d 2 1 relax__medication
+
+S
+v 1 SUB_3
+v 2 personalhygiene
+d 2 1 personalhygiene__relax
+
+S
+v 1 SUB_87
+v 2 SUB_29
+d 1 2 toilet__work
+
+S
+v 1 SUB_54
+v 2 SUB_28
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_27
+v 2 relax
+d 2 1 relax__medication
+
+S
+v 1 SUB_26
+v 2 SUB_8
+d 2 1 groom__medication
+
+S
+v 1 SUB_26
+v 2 SUB_12
+d 2 1 toilet__medication
+
+S
+v 1 SUB_26
+v 2 work
+d 2 1 work__medication
+
+S
+v 1 SUB_25
+v 2 work
+d 2 1 work__medication
+
+S
+v 1 SUB_24
+v 2 SUB_2
+d 1 2 sleep__toilet
+
+S
+v 1 SUB_113
+v 2 SUB_21
+d 1 2 toilet__outdoors
+
+S
+v 1 SUB_21
+v 2 SUB_10
+d 2 1 relax__outdoors
+
+S
+v 1 SUB_21
+v 2 relax
+d 2 1 relax__outdoors
+
+S
+v 1 SUB_48
+v 2 SUB_21
+d 2 1 relax__medication
+
+S
+v 1 SUB_89
+v 2 SUB_18
+d 1 2 work__medication
+
+S
+v 1 SUB_17
+v 2 SUB_11
+d 2 1 Start__sleep
+
+S
+v 1 SUB_78
+v 2 SUB_16
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 SUB_44
+v 2 SUB_16
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 SUB_56
+v 2 SUB_15
+d 1 2 outdoors__medication
+
+S
+v 1 SUB_52
+v 2 SUB_15
+d 1 2 toilet__medication
+
+S
+v 1 SUB_15
+v 2 work
+d 2 1 work__medication
+
+S
+v 1 SUB_126
+v 2 SUB_14
+d 1 2 sleep__toilet
+
+S
+v 1 SUB_12
+v 2 SUB_9
+d 2 1 outdoors__work
+
+S
+v 1 SUB_26
+v 2 SUB_12
+d 1 2 toilet__work
+
+S
+v 1 SUB_10
+v 2 SUB_3
+d 2 1 toilet__work
+
+S
+v 1 SUB_76
+v 2 SUB_9
+d 1 2 outdoors__work
+
+S
+v 1 SUB_21
+v 2 SUB_10
+d 1 2 relax__work
+
+S
+v 1 SUB_118
+v 2 SUB_9
+d 1 2 toilet__work
+
+S
+v 1 SUB_9
+v 2 toilet
+d 2 1 toilet__work
+
+S
+v 1 SUB_134
+v 2 SUB_9
+d 2 1 outdoors__medication
+
+S
+v 1 SUB_28
+v 2 SUB_8
+d 1 2 sleep__toilet
+
+S
+v 1 SUB_133
+v 2 work
+d 1 2 toilet__work
+
+S
+v 1 SUB_103
+v 2 SUB_6
+d 1 2 toilet__outdoors
+
+S
+v 1 SUB_141
+v 2 work
+d 1 2 groom__work
+
+S
+v 1 SUB_20
+v 2 SUB_3
+d 1 2 eatingdrinking__relax
+
+S
+v 1 SUB_7
+v 2 drink
+d 1 2 sleep__drink
+
+S
+v 1 SUB_7
+v 2 SUB_2
+d 1 2 sleep__toilet
+
+S
+v 1 SUB_6
+v 2 medication
+d 2 1 medication__outdoors
+
+S
+v 1 SUB_93
+v 2 SUB_6
+d 1 2 relax__outdoors
+
+S
+v 1 SUB_2
+v 2 SUB_1
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_124
+v 2 SUB_5
+d 1 2 toilet__work
+
+S
+v 1 SUB_83
+v 2 SUB_5
+d 1 2 toilet__work
+
+S
+v 1 SUB_5
+v 2 outdoors
+d 2 1 outdoors__work
+
+S
+v 1 SUB_58
+v 2 SUB_5
+d 1 2 eatingdrinking__work
+
+S
+v 1 SUB_138
+v 2 SUB_3
+d 1 2 outdoors__relax
+
+S
+v 1 SUB_29
+v 2 SUB_3
+d 2 1 toilet__work
+
+S
+v 1 SUB_53
+v 2 SUB_3
+d 1 2 outdoors__relax
+
+S
+v 1 SUB_46
+v 2 SUB_3
+d 2 1 toilet__medication
+
+S
+v 1 SUB_142
+v 2 SUB_2
+d 1 2 work__toilet
+
+S
+v 1 SUB_96
+v 2 SUB_1
+d 2 1 sleep__toilet
+
+S
+v 1 SUB_106
+v 2 read
+d 1 2 medication__read
+
+S
+v 1 SUB_121
+v 2 bathe
+d 1 2 relax__bathe
+
+S
+v 1 SUB_120
+v 2 bathe
+d 1 2 sleep__bathe
+
+S
+v 1 SUB_49
+v 2 cleaning
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 SUB_94
+v 2 dress
+d 1 2 toilet__dress
+
+S
+v 1 SUB_18
+v 2 work
+d 1 2 relax__work
+
+S
+v 1 SUB_100
+v 2 sleep
+d 1 2 work__sleep
+
+S
+v 1 SUB_117
+v 2 relax
+d 1 2 toilet__relax
+
+S
+v 1 SUB_47
+v 2 toilet
+d 1 2 outdoors__toilet
+
+S
+v 1 SUB_17
+v 2 bathe
+d 1 2 sleep__bathe
+
+S
+v 1 SUB_158
+v 2 relax
+d 1 2 toilet__relax
+
+S
+v 1 eatingdrinking
+v 2 cleaning
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 SUB_19
+v 2 cleaning
+d 1 2 eatingdrinking__cleaning
+
+S
+v 1 cleaning
+
+S
+v 1 SUB_174
+v 2 SUB_35
+d 2 1 eatingdrinking__cleaning
+

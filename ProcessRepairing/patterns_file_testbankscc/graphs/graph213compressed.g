@@ -1,0 +1,9 @@
+v 1 SUB_42
+v 2 SUB_172
+v 3 SUB_181
+v 4 SUB_594
+
+e 1 4 FRPP__EPP
+e 4 2 LRRR__LRRR
+e 2 3 FLRRP__HRRAN
+

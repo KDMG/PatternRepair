@@ -1,0 +1,124 @@
+XP
+v 1 SUB_59
+v 2 SUB_58
+v 3 SUB_57
+v 4 SUB_56
+v 5 SUB_55
+v 6 SUB_53
+v 7 SUB_50
+v 8 SUB_49
+v 9 SUB_48
+v 10 SUB_47
+v 11 SUB_45
+v 12 SUB_43
+v 13 SUB_42
+v 14 SUB_41
+v 15 SUB_39
+v 16 SUB_36
+v 17 SUB_35
+v 18 SUB_34
+v 19 SUB_33
+v 20 SUB_32
+v 21 SUB_31
+v 22 SUB_30
+v 23 SUB_29
+v 24 SUB_28
+v 25 SUB_27
+v 26 SUB_26
+v 27 SUB_25
+v 28 SUB_21
+v 29 SUB_18
+v 30 SUB_17
+v 31 SUB_16
+v 32 SUB_15
+v 33 SUB_15
+v 34 SUB_14
+v 35 SUB_14
+v 36 SUB_12
+v 37 SUB_12
+v 38 SUB_11
+v 39 SUB_10
+v 40 SUB_10
+v 41 SUB_10
+v 42 SUB_9
+v 43 SUB_7
+v 44 SUB_6
+v 45 SUB_6
+v 46 SUB_5
+v 47 SUB_4
+v 48 SUB_2
+v 49 SUB_2
+v 50 SUB_2
+v 51 SUB_2
+v 52 SUB_1
+v 53 SUB_1
+v 54 SUB_1
+v 55 SUB_1
+v 56 SUB_1
+v 57 SUB_1
+v 58 SUB_1
+v 59 SUB_1
+v 60 SUB_1
+v 61 SUB_1
+v 62 SUB_1
+v 63 SUB_1
+v 64 SUB_1
+v 65 SUB_1
+v 66 SUB_1
+v 67 SUB_1
+v 68 SUB_1
+v 69 SUB_1
+v 70 SUB_1
+v 71 SUB_1
+v 72 SUB_1
+v 73 SUB_1
+v 74 SUB_1
+v 75 SUB_1
+v 76 SUB_1
+v 77 T06Determinenecessityofstopadvice
+v 78 T07-1Draftinternadviceaspect1
+v 79 T08Draftandsendrequestforadvice
+v 80 T09-1Processorreceiveexternaladvicefromparty1
+v 81 T07-2Draftinternadviceaspect2
+v 82 END
+v 83 T09-3Processorreceiveexternaladvicefromparty3
+v 84 T07-5Draftinternadviceaspect5
+v 85 T09-2Processorreceiveexternaladvicefromparty2
+v 86 T07-4Draftinternaladvicetoholdfortype4
+v 87 START
+v 88 Confirmationofreceipt
+v 89 T02Checkconfirmationofreceipt
+v 90 T04Determineconfirmationofreceipt
+v 91 T05Printandsendconfirmationofreceipt
+d 13 42 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+d 77 9 T06Determinenecessityofstopadvice__T07-5Draftinternadviceaspect5
+d 77 78 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+d 78 79 T07-1Draftinternadviceaspect1__T08Draftandsendrequestforadvice
+d 78 25 T07-1Draftinternadviceaspect1__T02Checkconfirmationofreceipt
+d 79 25 T08Draftandsendrequestforadvice__T06Determinenecessityofstopadvice
+d 81 25 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+d 25 82 T10Determinenecessitytostopindication__END
+d 2 11 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+d 47 28 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+d 47 27 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+d 27 47 T13AdjustdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+d 6 6 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+d 1 26 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+d 26 1 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+d 1 1 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+d 29 5 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+d 4 83 T08Draftandsendrequestforadvice__T09-3Processorreceiveexternaladvicefromparty3
+d 83 7 T09-3Processorreceiveexternaladvicefromparty3__T07-3Draftinternadviceholdforaspect3
+d 7 84 T07-3Draftinternadviceholdforaspect3__T07-5Draftinternadviceaspect5
+d 84 85 T07-5Draftinternadviceaspect5__T09-2Processorreceiveexternaladvicefromparty2
+d 85 3 T09-2Processorreceiveexternaladvicefromparty2__T09-4Processorreceiveexternaladvicefromparty4
+d 3 86 T07-2Draftinternadviceaspect2__T07-4Draftinternaladvicetoholdfortype4
+d 4 86 T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+d 86 10 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+d 30 8 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+d 8 12 T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice
+d 87 88 START__Confirmationofreceipt
+d 88 89 Confirmationofreceipt__T02Checkconfirmationofreceipt
+d 91 38 T05Printandsendconfirmationofreceipt__T14DeterminedocumentXrequestunlicensed
+d 89 38 T02Checkconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+d 38 91 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt

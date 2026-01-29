@@ -1,0 +1,223 @@
+S
+v 1 Sub_140
+
+S
+v 1 Sub_21
+v 2 Sub_140
+d 1 1 interleaving
+d 1 2 interleaving
+
+S
+v 1 Sub_130
+
+S
+v 1 Sub_29
+v 2 Sub_130
+d 1 2 interleaving
+
+S
+v 1 Sub_119
+
+S
+v 1 Sub_42
+v 2 Sub_119
+d 1 2 interleaving
+
+S
+v 1 Sub_21
+v 2 Sub_119
+d 1 2 eventually
+
+S
+v 1 Sub_21
+v 2 Sub_42
+v 3 Sub_119
+d 1 3 eventually
+d 2 1 strictlySeq
+d 2 3 eventually
+
+S
+v 1 Sub_101
+
+S
+v 1 Sub_42
+v 2 Sub_101
+d 1 2 interleaving
+
+S
+v 1 Sub_96
+
+S
+v 1 Sub_42
+v 2 Sub_96
+d 1 2 interleaving
+
+S
+v 1 Sub_29
+v 2 Sub_96
+d 2 1 eventually
+
+S
+v 1 Sub_29
+v 2 Sub_42
+v 3 Sub_96
+d 2 1 eventually
+d 3 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_80
+
+S
+v 1 Sub_19
+v 2 Sub_80
+d 1 2 interleaving
+
+S
+v 1 Sub_78
+
+S
+v 1 Sub_21
+v 2 Sub_78
+d 1 2 interleaving
+
+S
+v 1 Sub_29
+v 2 Sub_78
+d 1 1 eventually
+d 1 2 eventually
+d 1 2 strictlySeq
+
+S
+v 1 Sub_21
+v 2 Sub_29
+v 3 Sub_78
+d 1 2 strictlySeq
+d 1 3 eventually
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_54
+
+S
+v 1 Sub_42
+v 2 Sub_54
+d 1 2 interleaving
+
+S
+v 1 Sub_11
+v 2 Sub_54
+d 1 2 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_42
+v 3 Sub_54
+d 1 2 eventually
+d 1 3 eventually
+d 2 3 eventually
+
+S
+v 1 Sub_22
+v 2 Sub_54
+d 1 2 eventually
+
+S
+v 1 Sub_22
+v 2 Sub_42
+v 3 Sub_54
+d 1 3 eventually
+d 2 1 eventually
+d 2 3 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_22
+v 3 Sub_54
+d 1 2 eventually
+d 1 3 eventually
+d 2 3 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_22
+v 3 Sub_42
+v 4 Sub_54
+d 1 2 eventually
+d 1 3 eventually
+d 1 4 eventually
+d 2 4 eventually
+d 3 2 eventually
+d 3 4 eventually
+
+S
+v 1 Sub_22
+
+S
+v 1 Sub_22
+v 2 Sub_42
+d 2 1 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_22
+d 1 2 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_22
+v 3 Sub_42
+d 1 2 eventually
+d 1 3 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_11
+
+S
+v 1 Sub_11
+v 2 Sub_42
+d 1 2 eventually
+
+S
+v 1 Sub_11
+v 2 Sub_19
+d 1 2 interleaving
+
+S
+v 1 Sub_29
+
+S
+v 1 Sub_29
+v 2 Sub_42
+d 2 1 eventually
+
+S
+v 1 Sub_21
+v 2 Sub_29
+d 1 2 strictlySeq
+d 2 1 eventually
+d 2 2 eventually
+
+S
+v 1 Sub_19
+
+S
+v 1 Sub_19
+v 2 Sub_21
+d 1 2 interleaving
+
+S
+v 1 Sub_21
+
+S
+v 1 Sub_21
+v 2 Sub_42
+d 2 1 strictlySeq
+
+S
+v 1 Sub_42
+

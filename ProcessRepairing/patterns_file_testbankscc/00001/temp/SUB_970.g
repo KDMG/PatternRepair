@@ -1,0 +1,7 @@
+v 1 SUB_140
+v 2 SUB_111
+v 3 SUB_22
+v 4 HRHA
+d 2 3 FRPP__EPP
+d 3 4 SHRRP__HRHA
+d 4 1 HRHA__HRRR

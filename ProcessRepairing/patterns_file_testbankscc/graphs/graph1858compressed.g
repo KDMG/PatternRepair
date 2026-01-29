@@ -1,0 +1,7 @@
+v 1 SUB_104
+v 2 SUB_181
+v 3 SUB_274
+
+e 3 1 LRIRV__FLRRP
+e 1 2 LRRR__HRRAN
+

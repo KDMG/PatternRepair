@@ -1,0 +1,7 @@
+v 1 LRRR
+v 2 HRRR
+v 3 SUB_947
+
+e 1 2 LRRR__HRRR
+e 2 3 HRRR__SRP
+

@@ -1,0 +1,8 @@
+v 1 SRPP
+v 2 SUB_87
+v 3 SUB_88
+
+e 3 3 LRERV__LRRR
+e 2 1 EPP__SRPP
+e 1 3 SRPP__SLRRP
+

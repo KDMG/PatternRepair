@@ -1,0 +1,23 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T06Determinenecessityofstopadvice
+v 5 T10Determinenecessitytostopindication
+v 6 T11CreatedocumentXrequestunlicensed
+v 7 T12CheckdocumentXrequestunlicensed
+v 8 T04Determineconfirmationofreceipt
+v 9 T14DeterminedocumentXrequestunlicensed
+v 10 T05Printandsendconfirmationofreceipt
+v 11 T15PrintdocumentXrequestunlicensed
+v 12 END
+e 1 2  START__Confirmationofreceipt
+e 2 3  Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 3 8  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 4 5  T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+e 7 9  T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+e 9 11  T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+e 10 11  T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed
+e 11 12  T15PrintdocumentXrequestunlicensed__END
+e 5 6  T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+e 6 7  T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+e 6 10  T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt

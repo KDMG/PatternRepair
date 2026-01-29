@@ -1,0 +1,6 @@
+v 1 SUB_15
+v 2 FRP
+v 3 HRRAN
+d 3 1 HRRAN__HRRR
+d 2 1 FRP__HRHA
+d 2 3 FRP__HRRAN

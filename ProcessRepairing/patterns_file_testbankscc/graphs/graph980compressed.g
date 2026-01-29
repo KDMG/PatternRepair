@@ -1,0 +1,9 @@
+v 1 SUB_24
+v 2 SUB_94
+v 3 SUB_137
+v 4 SUB_898
+
+e 2 1 REPP__SRPP
+e 1 4 FRPP__EPP
+e 4 3 FLRRP__SHRRP
+

@@ -1,0 +1,6 @@
+v 1 SUB_39
+v 2 SUB_35
+v 3 LRERV
+d 3 2 LRERV__LRRR
+d 1 2 EPP__LRIRV
+d 1 3 EPP__LRERV

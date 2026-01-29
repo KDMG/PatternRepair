@@ -1,0 +1,369 @@
+generazione nuovi pattern terminata
+sub 13 and sub 125 in relation 3 in graph 1
+sub 13 and sub 125 in relation 10 in graph 1
+sub 13 and sub 125 in relation 3 in graph 17
+sub 13 and sub 125 in relation 3 in graph 6
+sub 13 and sub 125 in relation 10 in graph 6
+generazione nuovi pattern terminata
+riga pattern2 scritta 
+sub 33 and sub 125 in relation 3 in graph 1
+sub 33 and sub 125 in relation 3 in graph 17
+sub 33 and sub 125 in relation 3 in graph 6
+generazione nuovi pattern terminata
+riga pattern3 scritta 
+sub 13 and sub 33 in relation 1 in graph 1
+sub 13 and sub 33 in relation 6 in graph 1
+sub 13 and sub 33 in relation 9 in graph 1
+sub 13 and sub 125 in relation 3 in graph 1
+sub 13 and sub 125 in relation 9 in graph 1
+sub 33 and sub 125 in relation 3 in graph 1
+sub 13 and sub 33 in relation 2 in graph 17
+sub 13 and sub 125 in relation 3 in graph 17
+sub 33 and sub 125 in relation 3 in graph 17
+sub 13 and sub 33 in relation 2 in graph 6
+sub 13 and sub 33 in relation 6 in graph 6
+sub 13 and sub 33 in relation 9 in graph 6
+sub 13 and sub 125 in relation 3 in graph 6
+sub 13 and sub 125 in relation 9 in graph 6
+sub 33 and sub 125 in relation 3 in graph 6
+generazione nuovi pattern terminata
+riga pattern4 scritta 
+generazione nuovi pattern terminata
+sub 13 and sub 60 in relation 2 in graph 1
+sub 13 and sub 60 in relation 3 in graph 1
+sub 13 and sub 60 in relation 9 in graph 1
+sub 13 and sub 60 in relation 3 in graph 19
+sub 13 and sub 60 in relation 3 in graph 7
+generazione nuovi pattern terminata
+riga pattern6 scritta 
+sub 33 and sub 60 in relation 2 in graph 1
+sub 33 and sub 60 in relation 2 in graph 19
+sub 33 and sub 60 in relation 2 in graph 7
+generazione nuovi pattern terminata
+riga pattern7 scritta 
+sub 13 and sub 33 in relation 1 in graph 1
+sub 13 and sub 33 in relation 6 in graph 1
+sub 13 and sub 33 in relation 9 in graph 1
+sub 13 and sub 60 in relation 2 in graph 1
+sub 13 and sub 60 in relation 3 in graph 1
+sub 13 and sub 60 in relation 9 in graph 1
+sub 33 and sub 60 in relation 2 in graph 1
+sub 13 and sub 33 in relation 2 in graph 19
+sub 13 and sub 60 in relation 2 in graph 19
+sub 33 and sub 60 in relation 2 in graph 19
+sub 13 and sub 33 in relation 2 in graph 7
+sub 13 and sub 60 in relation 2 in graph 7
+sub 33 and sub 60 in relation 2 in graph 7
+generazione nuovi pattern terminata
+riga pattern8 scritta 
+sub 60 and sub 64 in relation 6 in graph 19
+sub 60 and sub 64 in relation 6 in graph 7
+generazione nuovi pattern terminata
+riga pattern9 scritta 
+sub 13 and sub 60 in relation 2 in graph 19
+sub 13 and sub 64 in relation 3 in graph 19
+sub 60 and sub 64 in relation 6 in graph 19
+sub 13 and sub 60 in relation 2 in graph 7
+sub 13 and sub 64 in relation 5 in graph 7
+sub 60 and sub 64 in relation 6 in graph 7
+generazione nuovi pattern terminata
+riga pattern10 scritta 
+sub 33 and sub 60 in relation 2 in graph 19
+sub 33 and sub 64 in relation 6 in graph 19
+sub 60 and sub 64 in relation 6 in graph 19
+sub 33 and sub 60 in relation 2 in graph 7
+sub 33 and sub 64 in relation 6 in graph 7
+sub 60 and sub 64 in relation 6 in graph 7
+generazione nuovi pattern terminata
+riga pattern11 scritta 
+sub 13 and sub 33 in relation 2 in graph 19
+sub 13 and sub 60 in relation 2 in graph 19
+sub 13 and sub 64 in relation 3 in graph 19
+sub 33 and sub 60 in relation 2 in graph 19
+sub 33 and sub 64 in relation 6 in graph 19
+sub 60 and sub 64 in relation 6 in graph 19
+sub 13 and sub 33 in relation 2 in graph 7
+sub 13 and sub 60 in relation 2 in graph 7
+sub 13 and sub 64 in relation 5 in graph 7
+sub 33 and sub 60 in relation 2 in graph 7
+sub 33 and sub 64 in relation 6 in graph 7
+sub 60 and sub 64 in relation 6 in graph 7
+generazione nuovi pattern terminata
+riga pattern12 scritta 
+generazione nuovi pattern terminata
+sub 21 and sub 33 in relation 3 in graph 10
+sub 21 and sub 33 in relation 3 in graph 11
+sub 21 and sub 33 in relation 3 in graph 12
+sub 21 and sub 33 in relation 3 in graph 13
+sub 21 and sub 33 in relation 3 in graph 15
+sub 21 and sub 33 in relation 3 in graph 20
+sub 21 and sub 33 in relation 3 in graph 9
+generazione nuovi pattern terminata
+riga pattern14 scritta 
+sub 13 and sub 21 in relation 3 in graph 10
+sub 13 and sub 33 in relation 1 in graph 10
+sub 21 and sub 33 in relation 3 in graph 10
+sub 13 and sub 21 in relation 3 in graph 11
+sub 13 and sub 21 in relation 9 in graph 11
+sub 13 and sub 33 in relation 2 in graph 11
+sub 13 and sub 33 in relation 9 in graph 11
+sub 21 and sub 33 in relation 3 in graph 11
+sub 13 and sub 21 in relation 3 in graph 12
+sub 13 and sub 21 in relation 9 in graph 12
+sub 13 and sub 33 in relation 2 in graph 12
+sub 13 and sub 33 in relation 9 in graph 12
+sub 21 and sub 33 in relation 3 in graph 12
+sub 13 and sub 21 in relation 3 in graph 13
+sub 13 and sub 33 in relation 2 in graph 13
+sub 21 and sub 33 in relation 3 in graph 13
+sub 13 and sub 21 in relation 3 in graph 15
+sub 13 and sub 33 in relation 2 in graph 15
+sub 21 and sub 33 in relation 3 in graph 15
+sub 13 and sub 21 in relation 3 in graph 20
+sub 13 and sub 33 in relation 2 in graph 20
+sub 21 and sub 33 in relation 3 in graph 20
+generazione nuovi pattern terminata
+riga pattern15 scritta 
+sub 13 and sub 21 in relation 3 in graph 10
+sub 13 and sub 21 in relation 3 in graph 11
+sub 13 and sub 21 in relation 9 in graph 11
+sub 13 and sub 21 in relation 3 in graph 12
+sub 13 and sub 21 in relation 9 in graph 12
+sub 13 and sub 21 in relation 3 in graph 13
+sub 13 and sub 21 in relation 3 in graph 15
+sub 13 and sub 21 in relation 3 in graph 20
+sub 13 and sub 21 in relation 3 in graph 3
+sub 13 and sub 21 in relation 10 in graph 3
+sub 13 and sub 21 in relation 3 in graph 4
+sub 13 and sub 21 in relation 10 in graph 4
+generazione nuovi pattern terminata
+riga pattern16 scritta 
+sub 21 and sub 64 in relation 3 in graph 10
+sub 21 and sub 64 in relation 3 in graph 11
+sub 21 and sub 64 in relation 3 in graph 12
+sub 21 and sub 64 in relation 3 in graph 13
+sub 21 and sub 64 in relation 3 in graph 15
+sub 21 and sub 64 in relation 3 in graph 20
+sub 21 and sub 64 in relation 3 in graph 3
+sub 21 and sub 64 in relation 3 in graph 4
+sub 21 and sub 64 in relation 3 in graph 9
+generazione nuovi pattern terminata
+riga pattern17 scritta 
+sub 21 and sub 33 in relation 3 in graph 10
+sub 21 and sub 64 in relation 3 in graph 10
+sub 33 and sub 64 in relation 6 in graph 10
+sub 21 and sub 33 in relation 3 in graph 11
+sub 21 and sub 64 in relation 3 in graph 11
+sub 33 and sub 64 in relation 6 in graph 11
+sub 21 and sub 33 in relation 3 in graph 12
+sub 21 and sub 64 in relation 3 in graph 12
+sub 33 and sub 64 in relation 6 in graph 12
+sub 21 and sub 33 in relation 3 in graph 13
+sub 21 and sub 64 in relation 3 in graph 13
+sub 33 and sub 64 in relation 6 in graph 13
+sub 21 and sub 33 in relation 3 in graph 15
+sub 21 and sub 64 in relation 3 in graph 15
+sub 33 and sub 64 in relation 6 in graph 15
+sub 21 and sub 33 in relation 3 in graph 20
+sub 21 and sub 64 in relation 3 in graph 20
+sub 33 and sub 64 in relation 6 in graph 20
+sub 21 and sub 33 in relation 3 in graph 9
+sub 21 and sub 64 in relation 3 in graph 9
+sub 33 and sub 64 in relation 6 in graph 9
+generazione nuovi pattern terminata
+riga pattern18 scritta 
+sub 13 and sub 21 in relation 3 in graph 10
+sub 13 and sub 33 in relation 1 in graph 10
+sub 13 and sub 64 in relation 5 in graph 10
+sub 21 and sub 33 in relation 3 in graph 10
+sub 21 and sub 64 in relation 3 in graph 10
+sub 33 and sub 64 in relation 6 in graph 10
+sub 13 and sub 21 in relation 3 in graph 11
+sub 13 and sub 21 in relation 9 in graph 11
+sub 13 and sub 33 in relation 2 in graph 11
+sub 13 and sub 33 in relation 9 in graph 11
+sub 13 and sub 64 in relation 3 in graph 11
+sub 13 and sub 64 in relation 6 in graph 11
+sub 13 and sub 64 in relation 9 in graph 11
+sub 21 and sub 33 in relation 3 in graph 11
+sub 21 and sub 64 in relation 3 in graph 11
+sub 33 and sub 64 in relation 6 in graph 11
+sub 13 and sub 21 in relation 3 in graph 12
+sub 13 and sub 21 in relation 9 in graph 12
+sub 13 and sub 33 in relation 2 in graph 12
+sub 13 and sub 33 in relation 9 in graph 12
+sub 13 and sub 64 in relation 3 in graph 12
+sub 13 and sub 64 in relation 6 in graph 12
+sub 13 and sub 64 in relation 9 in graph 12
+sub 21 and sub 33 in relation 3 in graph 12
+sub 21 and sub 64 in relation 3 in graph 12
+sub 33 and sub 64 in relation 6 in graph 12
+sub 13 and sub 21 in relation 3 in graph 13
+sub 13 and sub 33 in relation 2 in graph 13
+sub 13 and sub 64 in relation 5 in graph 13
+sub 21 and sub 33 in relation 3 in graph 13
+sub 21 and sub 64 in relation 3 in graph 13
+sub 33 and sub 64 in relation 6 in graph 13
+sub 13 and sub 21 in relation 3 in graph 15
+sub 13 and sub 33 in relation 2 in graph 15
+sub 13 and sub 64 in relation 3 in graph 15
+sub 21 and sub 33 in relation 3 in graph 15
+sub 21 and sub 64 in relation 3 in graph 15
+sub 33 and sub 64 in relation 6 in graph 15
+sub 13 and sub 21 in relation 3 in graph 20
+sub 13 and sub 33 in relation 2 in graph 20
+sub 13 and sub 64 in relation 3 in graph 20
+sub 21 and sub 33 in relation 3 in graph 20
+sub 21 and sub 64 in relation 3 in graph 20
+sub 33 and sub 64 in relation 6 in graph 20
+generazione nuovi pattern terminata
+riga pattern19 scritta 
+sub 13 and sub 21 in relation 3 in graph 10
+sub 13 and sub 64 in relation 5 in graph 10
+sub 21 and sub 64 in relation 3 in graph 10
+sub 13 and sub 21 in relation 3 in graph 11
+sub 13 and sub 21 in relation 9 in graph 11
+sub 13 and sub 64 in relation 3 in graph 11
+sub 13 and sub 64 in relation 6 in graph 11
+sub 13 and sub 64 in relation 9 in graph 11
+sub 21 and sub 64 in relation 3 in graph 11
+sub 13 and sub 21 in relation 3 in graph 12
+sub 13 and sub 21 in relation 9 in graph 12
+sub 13 and sub 64 in relation 3 in graph 12
+sub 13 and sub 64 in relation 6 in graph 12
+sub 13 and sub 64 in relation 9 in graph 12
+sub 21 and sub 64 in relation 3 in graph 12
+sub 13 and sub 21 in relation 3 in graph 13
+sub 13 and sub 64 in relation 5 in graph 13
+sub 21 and sub 64 in relation 3 in graph 13
+sub 13 and sub 21 in relation 3 in graph 15
+sub 13 and sub 64 in relation 3 in graph 15
+sub 21 and sub 64 in relation 3 in graph 15
+sub 13 and sub 21 in relation 3 in graph 20
+sub 13 and sub 64 in relation 3 in graph 20
+sub 21 and sub 64 in relation 3 in graph 20
+sub 13 and sub 21 in relation 3 in graph 3
+sub 13 and sub 21 in relation 9 in graph 3
+sub 13 and sub 64 in relation 5 in graph 3
+sub 13 and sub 64 in relation 6 in graph 3
+sub 13 and sub 64 in relation 9 in graph 3
+sub 21 and sub 64 in relation 3 in graph 3
+sub 13 and sub 21 in relation 3 in graph 4
+sub 13 and sub 21 in relation 9 in graph 4
+sub 13 and sub 64 in relation 5 in graph 4
+sub 13 and sub 64 in relation 6 in graph 4
+sub 13 and sub 64 in relation 9 in graph 4
+sub 21 and sub 64 in relation 3 in graph 4
+generazione nuovi pattern terminata
+riga pattern20 scritta 
+generazione nuovi pattern terminata
+sub 33 and sub 64 in relation 6 in graph 10
+sub 33 and sub 64 in relation 6 in graph 11
+sub 33 and sub 64 in relation 6 in graph 12
+sub 33 and sub 64 in relation 6 in graph 13
+sub 33 and sub 64 in relation 6 in graph 15
+sub 33 and sub 64 in relation 3 in graph 16
+sub 33 and sub 64 in relation 6 in graph 19
+sub 33 and sub 64 in relation 3 in graph 2
+sub 33 and sub 64 in relation 6 in graph 20
+sub 33 and sub 64 in relation 3 in graph 21
+sub 33 and sub 64 in relation 6 in graph 7
+sub 33 and sub 64 in relation 3 in graph 8
+sub 33 and sub 64 in relation 6 in graph 9
+generazione nuovi pattern terminata
+riga pattern22 scritta 
+sub 13 and sub 33 in relation 1 in graph 10
+sub 13 and sub 64 in relation 5 in graph 10
+sub 33 and sub 64 in relation 6 in graph 10
+sub 13 and sub 33 in relation 2 in graph 11
+sub 13 and sub 33 in relation 9 in graph 11
+sub 13 and sub 64 in relation 3 in graph 11
+sub 13 and sub 64 in relation 6 in graph 11
+sub 13 and sub 64 in relation 9 in graph 11
+sub 33 and sub 64 in relation 6 in graph 11
+sub 13 and sub 33 in relation 2 in graph 12
+sub 13 and sub 33 in relation 9 in graph 12
+sub 13 and sub 64 in relation 3 in graph 12
+sub 13 and sub 64 in relation 6 in graph 12
+sub 13 and sub 64 in relation 9 in graph 12
+sub 33 and sub 64 in relation 6 in graph 12
+sub 13 and sub 33 in relation 2 in graph 13
+sub 13 and sub 64 in relation 5 in graph 13
+sub 33 and sub 64 in relation 6 in graph 13
+sub 13 and sub 33 in relation 2 in graph 15
+sub 13 and sub 64 in relation 3 in graph 15
+sub 33 and sub 64 in relation 6 in graph 15
+sub 13 and sub 33 in relation 1 in graph 16
+sub 13 and sub 64 in relation 5 in graph 16
+sub 33 and sub 64 in relation 6 in graph 16
+sub 13 and sub 33 in relation 2 in graph 19
+sub 13 and sub 64 in relation 3 in graph 19
+sub 33 and sub 64 in relation 6 in graph 19
+sub 13 and sub 33 in relation 2 in graph 2
+sub 13 and sub 64 in relation 5 in graph 2
+sub 33 and sub 64 in relation 6 in graph 2
+sub 13 and sub 33 in relation 2 in graph 20
+sub 13 and sub 64 in relation 3 in graph 20
+sub 33 and sub 64 in relation 6 in graph 20
+sub 13 and sub 33 in relation 2 in graph 7
+sub 13 and sub 64 in relation 5 in graph 7
+sub 33 and sub 64 in relation 6 in graph 7
+sub 13 and sub 33 in relation 2 in graph 8
+sub 13 and sub 64 in relation 5 in graph 8
+sub 33 and sub 64 in relation 6 in graph 8
+generazione nuovi pattern terminata
+riga pattern23 scritta 
+sub 13 and sub 64 in relation 5 in graph 10
+sub 13 and sub 64 in relation 3 in graph 11
+sub 13 and sub 64 in relation 6 in graph 11
+sub 13 and sub 64 in relation 9 in graph 11
+sub 13 and sub 64 in relation 3 in graph 12
+sub 13 and sub 64 in relation 6 in graph 12
+sub 13 and sub 64 in relation 9 in graph 12
+sub 13 and sub 64 in relation 5 in graph 13
+sub 13 and sub 64 in relation 3 in graph 15
+sub 13 and sub 64 in relation 5 in graph 16
+sub 13 and sub 64 in relation 3 in graph 19
+sub 13 and sub 64 in relation 5 in graph 2
+sub 13 and sub 64 in relation 3 in graph 20
+sub 13 and sub 64 in relation 5 in graph 3
+sub 13 and sub 64 in relation 6 in graph 3
+sub 13 and sub 64 in relation 9 in graph 3
+sub 13 and sub 64 in relation 5 in graph 4
+sub 13 and sub 64 in relation 6 in graph 4
+sub 13 and sub 64 in relation 9 in graph 4
+sub 13 and sub 64 in relation 3 in graph 5
+sub 13 and sub 64 in relation 10 in graph 5
+sub 13 and sub 64 in relation 5 in graph 7
+sub 13 and sub 64 in relation 5 in graph 8
+generazione nuovi pattern terminata
+riga pattern24 scritta 
+generazione nuovi pattern terminata
+sub 13 and sub 33 in relation 1 in graph 1
+sub 13 and sub 33 in relation 6 in graph 1
+sub 13 and sub 33 in relation 9 in graph 1
+sub 13 and sub 33 in relation 1 in graph 10
+sub 13 and sub 33 in relation 2 in graph 11
+sub 13 and sub 33 in relation 9 in graph 11
+sub 13 and sub 33 in relation 2 in graph 12
+sub 13 and sub 33 in relation 9 in graph 12
+sub 13 and sub 33 in relation 2 in graph 13
+sub 13 and sub 33 in relation 2 in graph 15
+sub 13 and sub 33 in relation 1 in graph 16
+sub 13 and sub 33 in relation 2 in graph 17
+sub 13 and sub 33 in relation 2 in graph 19
+sub 13 and sub 33 in relation 2 in graph 2
+sub 13 and sub 33 in relation 2 in graph 20
+sub 13 and sub 33 in relation 2 in graph 6
+sub 13 and sub 33 in relation 6 in graph 6
+sub 13 and sub 33 in relation 9 in graph 6
+sub 13 and sub 33 in relation 2 in graph 7
+sub 13 and sub 33 in relation 2 in graph 8
+generazione nuovi pattern terminata
+riga pattern26 scritta 
+generazione nuovi pattern terminata
+file nuovi patterns in chiusura
+file nuovi patterns chiuso
+generazione nuovi pattern terminata
+file dot dei nuovi patterns terminato
+patterns visualizzati

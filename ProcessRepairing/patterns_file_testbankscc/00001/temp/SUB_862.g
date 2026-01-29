@@ -1,0 +1,3 @@
+v 1 RIBPC
+v 2 RIBPC
+d 1 2 RIBPC__RIBPC

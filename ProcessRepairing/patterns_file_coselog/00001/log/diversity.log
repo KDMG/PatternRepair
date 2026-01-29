@@ -1,0 +1,1359 @@
+Il file coselog_pattern_08.subs e' stato caricato
+Il file temp/SUB_1.g e' stato caricato
+Il file temp/SUB_2.g e' stato caricato
+Il file temp/SUB_3.g e' stato caricato
+Il file temp/SUB_4.g e' stato caricato
+Il file temp/SUB_5.g e' stato caricato
+Il file temp/SUB_6.g e' stato caricato
+Il file temp/SUB_7.g e' stato caricato
+Il file temp/SUB_8.g e' stato caricato
+Il file temp/SUB_9.g e' stato caricato
+Il file temp/SUB_10.g e' stato caricato
+Il file temp/SUB_11.g e' stato caricato
+Il file temp/SUB_12.g e' stato caricato
+Il file temp/SUB_13.g e' stato caricato
+Il file temp/SUB_14.g e' stato caricato
+Il file temp/SUB_15.g e' stato caricato
+Il file temp/SUB_16.g e' stato caricato
+Il file temp/SUB_17.g e' stato caricato
+Il file temp/SUB_18.g e' stato caricato
+Il file temp/SUB_19.g e' stato caricato
+Il file temp/SUB_20.g e' stato caricato
+Il file temp/SUB_21.g e' stato caricato
+Il file temp/SUB_22.g e' stato caricato
+Il file temp/SUB_23.g e' stato caricato
+Il file temp/SUB_24.g e' stato caricato
+Il file temp/SUB_25.g e' stato caricato
+Il file temp/SUB_26.g e' stato caricato
+Il file temp/SUB_27.g e' stato caricato
+Il file temp/SUB_28.g e' stato caricato
+Il file temp/SUB_29.g e' stato caricato
+Il file temp/SUB_30.g e' stato caricato
+Il file temp/SUB_31.g e' stato caricato
+Il file temp/SUB_32.g e' stato caricato
+Il file temp/SUB_33.g e' stato caricato
+Il file temp/SUB_34.g e' stato caricato
+Il file temp/SUB_35.g e' stato caricato
+Il file temp/SUB_36.g e' stato caricato
+Il file temp/SUB_37.g e' stato caricato
+Il file temp/SUB_38.g e' stato caricato
+Il file temp/SUB_39.g e' stato caricato
+Il file temp/SUB_40.g e' stato caricato
+Il file temp/SUB_41.g e' stato caricato
+Il file temp/SUB_42.g e' stato caricato
+Il file temp/SUB_43.g e' stato caricato
+Il file temp/SUB_44.g e' stato caricato
+Il file temp/SUB_45.g e' stato caricato
+Il file temp/SUB_46.g e' stato caricato
+Il file temp/SUB_47.g e' stato caricato
+Il file temp/SUB_48.g e' stato caricato
+Il file temp/SUB_49.g e' stato caricato
+Il file temp/SUB_50.g e' stato caricato
+Il file temp/SUB_51.g e' stato caricato
+Il file temp/SUB_52.g e' stato caricato
+Il file temp/SUB_53.g e' stato caricato
+Il file temp/SUB_54.g e' stato caricato
+Il file temp/SUB_55.g e' stato caricato
+Il file temp/SUB_56.g e' stato caricato
+Il file temp/SUB_57.g e' stato caricato
+Il file temp/SUB_58.g e' stato caricato
+Il file temp/SUB_59.g e' stato caricato
+
+SUB_0.norm = 0
+SUB_0.inst = 1
+SUB_0.orphan = 1
+SUB_0.nsons = 15
+	SUB_0.son->me 57
+	SUB_0.son->me 50
+	SUB_0.son->me 44
+	SUB_0.son->me 42
+	SUB_0.son->me 26
+	SUB_0.son->me 25
+	SUB_0.son->me 22
+	SUB_0.son->me 17
+	SUB_0.son->me 12
+	SUB_0.son->me 11
+	SUB_0.son->me 7
+	SUB_0.son->me 4
+	SUB_0.son->me 3
+	SUB_0.son->me 2
+	SUB_0.son->me 1
+
+SUB_1.norm = 23
+SUB_1.inst = 1
+SUB_1.orphan = 1
+SUB_1.nsons = 0
+
+SUB_2.norm = 7
+SUB_2.inst = 12
+SUB_2.orphan = 1
+SUB_2.nsons = 11
+	SUB_2.son->me 35
+	SUB_2.son->me 33
+	SUB_2.son->me 31
+	SUB_2.son->me 30
+	SUB_2.son->me 21
+	SUB_2.son->me 18
+	SUB_2.son->me 15
+	SUB_2.son->me 14
+	SUB_2.son->me 9
+	SUB_2.son->me 6
+	SUB_2.son->me 5
+
+SUB_3.norm = 14
+SUB_3.inst = 3
+SUB_3.orphan = 1
+SUB_3.nsons = 2
+	SUB_3.son->me 34
+	SUB_3.son->me 10
+
+SUB_4.norm = 13
+SUB_4.inst = 4
+SUB_4.orphan = 1
+SUB_4.nsons = 3
+	SUB_4.son->me 53
+	SUB_4.son->me 37
+	SUB_4.son->me 20
+
+SUB_5.norm = 27
+SUB_5.inst = 2
+SUB_5.orphan = 0
+SUB_5.nsons = 1
+	SUB_5.son->me 59
+
+SUB_6.norm = 5
+SUB_6.inst = 5
+SUB_6.orphan = 0
+SUB_6.nsons = 4
+	SUB_6.son->me 52
+	SUB_6.son->me 36
+	SUB_6.son->me 27
+	SUB_6.son->me 24
+
+SUB_7.norm = 3
+SUB_7.inst = 5
+SUB_7.orphan = 1
+SUB_7.nsons = 4
+	SUB_7.son->me 51
+	SUB_7.son->me 13
+	SUB_7.son->me 9
+	SUB_7.son->me 8
+
+SUB_8.norm = 7
+SUB_8.inst = 3
+SUB_8.orphan = 0
+SUB_8.nsons = 2
+	SUB_8.son->me 33
+	SUB_8.son->me 15
+
+SUB_9.norm = 7
+SUB_9.inst = 2
+SUB_9.orphan = 0
+SUB_9.nsons = 1
+	SUB_9.son->me 16
+
+SUB_10.norm = 3
+SUB_10.inst = 3
+SUB_10.orphan = 0
+SUB_10.nsons = 2
+	SUB_10.son->me 30
+	SUB_10.son->me 14
+
+SUB_11.norm = 9
+SUB_11.inst = 2
+SUB_11.orphan = 1
+SUB_11.nsons = 1
+	SUB_11.son->me 54
+
+SUB_12.norm = 5
+SUB_12.inst = 2
+SUB_12.orphan = 1
+SUB_12.nsons = 1
+	SUB_12.son->me 39
+
+SUB_13.norm = 3
+SUB_13.inst = 3
+SUB_13.orphan = 0
+SUB_13.nsons = 2
+	SUB_13.son->me 23
+	SUB_13.son->me 19
+
+SUB_14.norm = 3
+SUB_14.inst = 1
+SUB_14.orphan = 0
+SUB_14.nsons = 0
+
+SUB_15.norm = 3
+SUB_15.inst = 1
+SUB_15.orphan = 0
+SUB_15.nsons = 0
+
+SUB_16.norm = 5
+SUB_16.inst = 2
+SUB_16.orphan = 0
+SUB_16.nsons = 1
+	SUB_16.son->me 29
+
+SUB_17.norm = 3
+SUB_17.inst = 2
+SUB_17.orphan = 1
+SUB_17.nsons = 1
+	SUB_17.son->me 49
+
+SUB_18.norm = 3
+SUB_18.inst = 2
+SUB_18.orphan = 0
+SUB_18.nsons = 1
+	SUB_18.son->me 34
+
+SUB_19.norm = 3
+SUB_19.inst = 3
+SUB_19.orphan = 0
+SUB_19.nsons = 2
+	SUB_19.son->me 36
+	SUB_19.son->me 28
+
+SUB_20.norm = 3
+SUB_20.inst = 3
+SUB_20.orphan = 0
+SUB_20.nsons = 2
+	SUB_20.son->me 35
+	SUB_20.son->me 31
+
+SUB_21.norm = 3
+SUB_21.inst = 2
+SUB_21.orphan = 0
+SUB_21.nsons = 1
+	SUB_21.son->me 58
+
+SUB_22.norm = 3
+SUB_22.inst = 3
+SUB_22.orphan = 1
+SUB_22.nsons = 2
+	SUB_22.son->me 46
+	SUB_22.son->me 29
+
+SUB_23.norm = 3
+SUB_23.inst = 3
+SUB_23.orphan = 0
+SUB_23.nsons = 2
+	SUB_23.son->me 38
+	SUB_23.son->me 32
+
+SUB_24.norm = 3
+SUB_24.inst = 3
+SUB_24.orphan = 0
+SUB_24.nsons = 2
+	SUB_24.son->me 49
+	SUB_24.son->me 28
+
+SUB_25.norm = 3
+SUB_25.inst = 2
+SUB_25.orphan = 1
+SUB_25.nsons = 1
+	SUB_25.son->me 45
+
+SUB_26.norm = 3
+SUB_26.inst = 2
+SUB_26.orphan = 1
+SUB_26.nsons = 1
+	SUB_26.son->me 59
+
+SUB_27.norm = 3
+SUB_27.inst = 2
+SUB_27.orphan = 0
+SUB_27.nsons = 1
+	SUB_27.son->me 40
+
+SUB_28.norm = 3
+SUB_28.inst = 1
+SUB_28.orphan = 0
+SUB_28.nsons = 0
+
+SUB_29.norm = 3
+SUB_29.inst = 1
+SUB_29.orphan = 0
+SUB_29.nsons = 0
+
+SUB_30.norm = 3
+SUB_30.inst = 1
+SUB_30.orphan = 0
+SUB_30.nsons = 0
+
+SUB_31.norm = 3
+SUB_31.inst = 1
+SUB_31.orphan = 0
+SUB_31.nsons = 0
+
+SUB_32.norm = 3
+SUB_32.inst = 1
+SUB_32.orphan = 0
+SUB_32.nsons = 0
+
+SUB_33.norm = 3
+SUB_33.inst = 1
+SUB_33.orphan = 0
+SUB_33.nsons = 0
+
+SUB_34.norm = 3
+SUB_34.inst = 1
+SUB_34.orphan = 0
+SUB_34.nsons = 0
+
+SUB_35.norm = 3
+SUB_35.inst = 1
+SUB_35.orphan = 0
+SUB_35.nsons = 0
+
+SUB_36.norm = 3
+SUB_36.inst = 1
+SUB_36.orphan = 0
+SUB_36.nsons = 0
+
+SUB_37.norm = 3
+SUB_37.inst = 2
+SUB_37.orphan = 0
+SUB_37.nsons = 1
+	SUB_37.son->me 43
+
+SUB_38.norm = 3
+SUB_38.inst = 2
+SUB_38.orphan = 0
+SUB_38.nsons = 1
+	SUB_38.son->me 39
+
+SUB_39.norm = 3
+SUB_39.inst = 1
+SUB_39.orphan = 0
+SUB_39.nsons = 0
+
+SUB_40.norm = 3
+SUB_40.inst = 2
+SUB_40.orphan = 0
+SUB_40.nsons = 1
+	SUB_40.son->me 41
+
+SUB_41.norm = 3
+SUB_41.inst = 1
+SUB_41.orphan = 0
+SUB_41.nsons = 0
+
+SUB_42.norm = 3
+SUB_42.inst = 1
+SUB_42.orphan = 1
+SUB_42.nsons = 0
+
+SUB_43.norm = 3
+SUB_43.inst = 1
+SUB_43.orphan = 0
+SUB_43.nsons = 0
+
+SUB_44.norm = 3
+SUB_44.inst = 2
+SUB_44.orphan = 1
+SUB_44.nsons = 1
+	SUB_44.son->me 48
+
+SUB_45.norm = 3
+SUB_45.inst = 1
+SUB_45.orphan = 0
+SUB_45.nsons = 0
+
+SUB_46.norm = 3
+SUB_46.inst = 2
+SUB_46.orphan = 0
+SUB_46.nsons = 1
+	SUB_46.son->me 47
+
+SUB_47.norm = 3
+SUB_47.inst = 1
+SUB_47.orphan = 0
+SUB_47.nsons = 0
+
+SUB_48.norm = 3
+SUB_48.inst = 1
+SUB_48.orphan = 0
+SUB_48.nsons = 0
+
+SUB_49.norm = 3
+SUB_49.inst = 1
+SUB_49.orphan = 0
+SUB_49.nsons = 0
+
+SUB_50.norm = 3
+SUB_50.inst = 1
+SUB_50.orphan = 1
+SUB_50.nsons = 0
+
+SUB_51.norm = 3
+SUB_51.inst = 2
+SUB_51.orphan = 0
+SUB_51.nsons = 1
+	SUB_51.son->me 58
+
+SUB_52.norm = 3
+SUB_52.inst = 2
+SUB_52.orphan = 0
+SUB_52.nsons = 1
+	SUB_52.son->me 56
+
+SUB_53.norm = 3
+SUB_53.inst = 1
+SUB_53.orphan = 0
+SUB_53.nsons = 0
+
+SUB_54.norm = 3
+SUB_54.inst = 2
+SUB_54.orphan = 0
+SUB_54.nsons = 1
+	SUB_54.son->me 55
+
+SUB_55.norm = 3
+SUB_55.inst = 1
+SUB_55.orphan = 0
+SUB_55.nsons = 0
+
+SUB_56.norm = 3
+SUB_56.inst = 1
+SUB_56.orphan = 0
+SUB_56.nsons = 0
+
+SUB_57.norm = 3
+SUB_57.inst = 1
+SUB_57.orphan = 1
+SUB_57.nsons = 0
+
+SUB_58.norm = 3
+SUB_58.inst = 1
+SUB_58.orphan = 0
+SUB_58.nsons = 0
+
+SUB_59.norm = 3
+SUB_59.inst = 1
+SUB_59.orphan = 0
+SUB_59.nsons = 0
+
+La distanza tra SUB_57.g e SUB_50.g e' 3
+
+Numeratore = 1.000000
+Denominatore = 1.000000
+
+La distanza tra SUB_57.g e SUB_44.g e' 3
+
+Numeratore = 3.000000
+Denominatore = 3.000000
+
+La distanza tra SUB_57.g e SUB_42.g e' 3
+
+Numeratore = 4.000000
+Denominatore = 4.000000
+
+La distanza tra SUB_57.g e SUB_26.g e' 3
+
+Numeratore = 6.000000
+Denominatore = 6.000000
+
+La distanza tra SUB_57.g e SUB_25.g e' 3
+
+Numeratore = 8.000000
+Denominatore = 8.000000
+
+La distanza tra SUB_57.g e SUB_22.g e' 3
+
+Numeratore = 11.000000
+Denominatore = 11.000000
+
+La distanza tra SUB_57.g e SUB_17.g e' 3
+
+Numeratore = 13.000000
+Denominatore = 13.000000
+
+La distanza tra SUB_57.g e SUB_12.g e' 5
+
+Numeratore = 15.000000
+Denominatore = 15.000000
+
+La distanza tra SUB_57.g e SUB_11.g e' 9
+
+Numeratore = 17.000000
+Denominatore = 17.000000
+
+La distanza tra SUB_57.g e SUB_7.g e' 3
+
+Numeratore = 22.000000
+Denominatore = 22.000000
+
+La distanza tra SUB_57.g e SUB_4.g e' 13
+
+Numeratore = 26.000000
+Denominatore = 26.000000
+
+La distanza tra SUB_57.g e SUB_3.g e' 14
+
+Numeratore = 29.000000
+Denominatore = 29.000000
+
+La distanza tra SUB_57.g e SUB_2.g e' 7
+
+Numeratore = 41.000000
+Denominatore = 41.000000
+
+La distanza tra SUB_57.g e SUB_1.g e' 23
+
+Numeratore = 42.000000
+Denominatore = 42.000000
+
+La distanza tra SUB_50.g e SUB_44.g e' 3
+
+Numeratore = 44.000000
+Denominatore = 44.000000
+
+La distanza tra SUB_50.g e SUB_42.g e' 2
+
+Numeratore = 44.666668
+Denominatore = 45.000000
+
+La distanza tra SUB_50.g e SUB_26.g e' 3
+
+Numeratore = 46.666668
+Denominatore = 47.000000
+
+La distanza tra SUB_50.g e SUB_25.g e' 3
+
+Numeratore = 48.666668
+Denominatore = 49.000000
+
+La distanza tra SUB_50.g e SUB_22.g e' 3
+
+Numeratore = 51.666668
+Denominatore = 52.000000
+
+La distanza tra SUB_50.g e SUB_17.g e' 3
+
+Numeratore = 53.666668
+Denominatore = 54.000000
+
+La distanza tra SUB_50.g e SUB_12.g e' 5
+
+Numeratore = 55.666668
+Denominatore = 56.000000
+
+La distanza tra SUB_50.g e SUB_11.g e' 9
+
+Numeratore = 57.666668
+Denominatore = 58.000000
+
+La distanza tra SUB_50.g e SUB_7.g e' 3
+
+Numeratore = 62.666668
+Denominatore = 63.000000
+
+La distanza tra SUB_50.g e SUB_4.g e' 13
+
+Numeratore = 66.666672
+Denominatore = 67.000000
+
+La distanza tra SUB_50.g e SUB_3.g e' 14
+
+Numeratore = 69.666672
+Denominatore = 70.000000
+
+La distanza tra SUB_50.g e SUB_2.g e' 7
+
+Numeratore = 81.666672
+Denominatore = 82.000000
+
+La distanza tra SUB_50.g e SUB_1.g e' 23
+
+Numeratore = 82.666672
+Denominatore = 83.000000
+
+La distanza tra SUB_44.g e SUB_42.g e' 3
+
+Numeratore = 84.666672
+Denominatore = 85.000000
+
+La distanza tra SUB_44.g e SUB_26.g e' 3
+
+Numeratore = 88.666672
+Denominatore = 89.000000
+
+La distanza tra SUB_44.g e SUB_25.g e' 3
+
+Numeratore = 92.666672
+Denominatore = 93.000000
+
+La distanza tra SUB_44.g e SUB_22.g e' 3
+
+Numeratore = 98.666672
+Denominatore = 99.000000
+
+La distanza tra SUB_44.g e SUB_17.g e' 3
+
+Numeratore = 102.666672
+Denominatore = 103.000000
+
+La distanza tra SUB_44.g e SUB_12.g e' 4
+
+Numeratore = 105.866669
+Denominatore = 107.000000
+
+La distanza tra SUB_44.g e SUB_11.g e' 9
+
+Numeratore = 109.866669
+Denominatore = 111.000000
+
+La distanza tra SUB_44.g e SUB_7.g e' 3
+
+Numeratore = 119.866669
+Denominatore = 121.000000
+
+La distanza tra SUB_44.g e SUB_4.g e' 13
+
+Numeratore = 127.866669
+Denominatore = 129.000000
+
+La distanza tra SUB_44.g e SUB_3.g e' 14
+
+Numeratore = 133.866669
+Denominatore = 135.000000
+
+La distanza tra SUB_44.g e SUB_2.g e' 7
+
+Numeratore = 157.866669
+Denominatore = 159.000000
+
+La distanza tra SUB_44.g e SUB_1.g e' 23
+
+Numeratore = 159.866669
+Denominatore = 161.000000
+
+La distanza tra SUB_42.g e SUB_26.g e' 3
+
+Numeratore = 161.866669
+Denominatore = 163.000000
+
+La distanza tra SUB_42.g e SUB_25.g e' 3
+
+Numeratore = 163.866669
+Denominatore = 165.000000
+
+La distanza tra SUB_42.g e SUB_22.g e' 2
+
+Numeratore = 165.866669
+Denominatore = 168.000000
+
+La distanza tra SUB_42.g e SUB_17.g e' 3
+
+Numeratore = 167.866669
+Denominatore = 170.000000
+
+La distanza tra SUB_42.g e SUB_12.g e' 4
+
+Numeratore = 169.466675
+Denominatore = 172.000000
+
+La distanza tra SUB_42.g e SUB_11.g e' 9
+
+Numeratore = 171.466675
+Denominatore = 174.000000
+
+La distanza tra SUB_42.g e SUB_7.g e' 2
+
+Numeratore = 174.800003
+Denominatore = 179.000000
+
+La distanza tra SUB_42.g e SUB_4.g e' 12
+
+Numeratore = 178.492310
+Denominatore = 183.000000
+
+La distanza tra SUB_42.g e SUB_3.g e' 14
+
+Numeratore = 181.492310
+Denominatore = 186.000000
+
+La distanza tra SUB_42.g e SUB_2.g e' 7
+
+Numeratore = 193.492310
+Denominatore = 198.000000
+
+La distanza tra SUB_42.g e SUB_1.g e' 22
+
+Numeratore = 194.448837
+Denominatore = 199.000000
+
+La distanza tra SUB_26.g e SUB_25.g e' 3
+
+Numeratore = 198.448837
+Denominatore = 203.000000
+
+La distanza tra SUB_26.g e SUB_22.g e' 3
+
+Numeratore = 204.448837
+Denominatore = 209.000000
+
+La distanza tra SUB_26.g e SUB_17.g e' 3
+
+Numeratore = 208.448837
+Denominatore = 213.000000
+
+La distanza tra SUB_26.g e SUB_12.g e' 5
+
+Numeratore = 212.448837
+Denominatore = 217.000000
+
+La distanza tra SUB_26.g e SUB_11.g e' 9
+
+Numeratore = 216.448837
+Denominatore = 221.000000
+
+La distanza tra SUB_26.g e SUB_7.g e' 3
+
+Numeratore = 226.448837
+Denominatore = 231.000000
+
+La distanza tra SUB_26.g e SUB_4.g e' 13
+
+Numeratore = 234.448837
+Denominatore = 239.000000
+
+La distanza tra SUB_26.g e SUB_3.g e' 14
+
+Numeratore = 240.448837
+Denominatore = 245.000000
+
+La distanza tra SUB_26.g e SUB_2.g e' 7
+
+Numeratore = 264.448853
+Denominatore = 269.000000
+
+La distanza tra SUB_26.g e SUB_1.g e' 23
+
+Numeratore = 266.448853
+Denominatore = 271.000000
+
+La distanza tra SUB_25.g e SUB_22.g e' 3
+
+Numeratore = 272.448853
+Denominatore = 277.000000
+
+La distanza tra SUB_25.g e SUB_17.g e' 3
+
+Numeratore = 276.448853
+Denominatore = 281.000000
+
+La distanza tra SUB_25.g e SUB_12.g e' 5
+
+Numeratore = 280.448853
+Denominatore = 285.000000
+
+La distanza tra SUB_25.g e SUB_11.g e' 9
+
+Numeratore = 284.448853
+Denominatore = 289.000000
+
+La distanza tra SUB_25.g e SUB_7.g e' 3
+
+Numeratore = 294.448853
+Denominatore = 299.000000
+
+La distanza tra SUB_25.g e SUB_4.g e' 13
+
+Numeratore = 302.448853
+Denominatore = 307.000000
+
+La distanza tra SUB_25.g e SUB_3.g e' 13
+
+Numeratore = 308.020294
+Denominatore = 313.000000
+
+La distanza tra SUB_25.g e SUB_2.g e' 7
+
+Numeratore = 332.020294
+Denominatore = 337.000000
+
+La distanza tra SUB_25.g e SUB_1.g e' 22
+
+Numeratore = 333.933350
+Denominatore = 339.000000
+
+La distanza tra SUB_22.g e SUB_17.g e' 3
+
+Numeratore = 339.933350
+Denominatore = 345.000000
+
+La distanza tra SUB_22.g e SUB_12.g e' 4
+
+Numeratore = 344.733337
+Denominatore = 351.000000
+
+La distanza tra SUB_22.g e SUB_11.g e' 9
+
+Numeratore = 350.733337
+Denominatore = 357.000000
+
+La distanza tra SUB_22.g e SUB_7.g e' 2
+
+Numeratore = 360.733337
+Denominatore = 372.000000
+
+La distanza tra SUB_22.g e SUB_4.g e' 12
+
+Numeratore = 371.810272
+Denominatore = 384.000000
+
+La distanza tra SUB_22.g e SUB_3.g e' 14
+
+Numeratore = 380.810272
+Denominatore = 393.000000
+
+La distanza tra SUB_22.g e SUB_2.g e' 7
+
+Numeratore = 416.810272
+Denominatore = 429.000000
+
+La distanza tra SUB_22.g e SUB_1.g e' 22
+
+Numeratore = 419.679840
+Denominatore = 432.000000
+
+La distanza tra SUB_17.g e SUB_12.g e' 5
+
+Numeratore = 423.679840
+Denominatore = 436.000000
+
+La distanza tra SUB_17.g e SUB_11.g e' 9
+
+Numeratore = 427.679840
+Denominatore = 440.000000
+
+La distanza tra SUB_17.g e SUB_7.g e' 3
+
+Numeratore = 437.679840
+Denominatore = 450.000000
+
+La distanza tra SUB_17.g e SUB_4.g e' 13
+
+Numeratore = 445.679840
+Denominatore = 458.000000
+
+La distanza tra SUB_17.g e SUB_3.g e' 14
+
+Numeratore = 451.679840
+Denominatore = 464.000000
+
+La distanza tra SUB_17.g e SUB_2.g e' 6
+
+Numeratore = 472.251282
+Denominatore = 488.000000
+
+La distanza tra SUB_17.g e SUB_1.g e' 22
+
+Numeratore = 474.164337
+Denominatore = 490.000000
+
+La distanza tra SUB_12.g e SUB_11.g e' 10
+
+Numeratore = 478.608795
+Denominatore = 494.000000
+
+La distanza tra SUB_12.g e SUB_7.g e' 5
+
+Numeratore = 488.608795
+Denominatore = 504.000000
+
+La distanza tra SUB_12.g e SUB_4.g e' 14
+
+Numeratore = 497.224182
+Denominatore = 512.000000
+
+La distanza tra SUB_12.g e SUB_3.g e' 14
+
+Numeratore = 503.224182
+Denominatore = 518.000000
+
+La distanza tra SUB_12.g e SUB_2.g e' 8
+
+Numeratore = 530.652771
+Denominatore = 542.000000
+
+La distanza tra SUB_12.g e SUB_1.g e' 22
+
+Numeratore = 532.565796
+Denominatore = 544.000000
+
+La distanza tra SUB_11.g e SUB_7.g e' 9
+
+Numeratore = 542.565796
+Denominatore = 554.000000
+
+La distanza tra SUB_11.g e SUB_4.g e' 4
+
+Numeratore = 545.027344
+Denominatore = 562.000000
+
+La distanza tra SUB_11.g e SUB_3.g e' 7
+
+Numeratore = 548.027344
+Denominatore = 568.000000
+
+La distanza tra SUB_11.g e SUB_2.g e' 9
+
+Numeratore = 572.027344
+Denominatore = 592.000000
+
+La distanza tra SUB_11.g e SUB_1.g e' 14
+
+Numeratore = 573.244751
+Denominatore = 594.000000
+
+La distanza tra SUB_7.g e SUB_4.g e' 10
+
+Numeratore = 588.629395
+Denominatore = 614.000000
+
+La distanza tra SUB_7.g e SUB_3.g e' 14
+
+Numeratore = 603.629395
+Denominatore = 629.000000
+
+La distanza tra SUB_7.g e SUB_2.g e' 7
+
+Numeratore = 663.629395
+Denominatore = 689.000000
+
+La distanza tra SUB_7.g e SUB_1.g e' 20
+
+Numeratore = 667.977234
+Denominatore = 694.000000
+
+La distanza tra SUB_4.g e SUB_3.g e' 7
+
+Numeratore = 673.977234
+Denominatore = 706.000000
+
+La distanza tra SUB_4.g e SUB_2.g e' 13
+
+Numeratore = 721.977234
+Denominatore = 754.000000
+
+La distanza tra SUB_4.g e SUB_1.g e' 10
+
+Numeratore = 723.716370
+Denominatore = 758.000000
+
+La distanza tra SUB_3.g e SUB_2.g e' 14
+
+Numeratore = 759.716370
+Denominatore = 794.000000
+
+La distanza tra SUB_3.g e SUB_1.g e' 22
+
+Numeratore = 762.585938
+Denominatore = 797.000000
+
+La distanza tra SUB_2.g e SUB_1.g e' 16
+
+Numeratore = 770.933777
+Denominatore = 809.000000
+
+La distanza tra SUB_46.g e SUB_29.g e' 2
+
+Numeratore = 1.333333
+Denominatore = 2.000000
+
+La distanza tra SUB_51.g e SUB_13.g e' 2
+
+Numeratore = 4.000000
+Denominatore = 6.000000
+
+La distanza tra SUB_51.g e SUB_9.g e' 6
+
+Numeratore = 7.428572
+Denominatore = 10.000000
+
+La distanza tra SUB_51.g e SUB_8.g e' 6
+
+Numeratore = 12.571428
+Denominatore = 16.000000
+
+La distanza tra SUB_13.g e SUB_9.g e' 6
+
+Numeratore = 17.714285
+Denominatore = 22.000000
+
+La distanza tra SUB_13.g e SUB_8.g e' 6
+
+Numeratore = 25.428570
+Denominatore = 31.000000
+
+La distanza tra SUB_9.g e SUB_8.g e' 5
+
+Numeratore = 29.714283
+Denominatore = 37.000000
+
+La distanza tra SUB_23.g e SUB_19.g e' 2
+
+Numeratore = 6.000000
+Denominatore = 9.000000
+
+La distanza tra SUB_38.g e SUB_32.g e' 1
+
+Numeratore = 0.666667
+Denominatore = 2.000000
+
+La distanza tra SUB_36.g e SUB_28.g e' 2
+
+Numeratore = 0.666667
+Denominatore = 1.000000
+
+La distanza tra SUB_33.g e SUB_15.g e' 2
+
+Numeratore = 0.666667
+Denominatore = 1.000000
+
+La distanza tra SUB_53.g e SUB_37.g e' 2
+
+Numeratore = 1.333333
+Denominatore = 2.000000
+
+La distanza tra SUB_53.g e SUB_20.g e' 1
+
+Numeratore = 2.333333
+Denominatore = 5.000000
+
+La distanza tra SUB_37.g e SUB_20.g e' 2
+
+Numeratore = 6.333333
+Denominatore = 11.000000
+
+La distanza tra SUB_35.g e SUB_31.g e' 1
+
+Numeratore = 0.333333
+Denominatore = 1.000000
+
+La distanza tra SUB_34.g e SUB_10.g e' 2
+
+Numeratore = 2.000000
+Denominatore = 3.000000
+
+La distanza tra SUB_30.g e SUB_14.g e' 2
+
+Numeratore = 0.666667
+Denominatore = 1.000000
+
+La distanza tra SUB_35.g e SUB_33.g e' 3
+
+Numeratore = 1.000000
+Denominatore = 1.000000
+
+La distanza tra SUB_35.g e SUB_31.g e' 1
+
+Numeratore = 1.333333
+Denominatore = 2.000000
+
+La distanza tra SUB_35.g e SUB_30.g e' 1
+
+Numeratore = 1.666667
+Denominatore = 3.000000
+
+La distanza tra SUB_35.g e SUB_21.g e' 3
+
+Numeratore = 3.666667
+Denominatore = 5.000000
+
+La distanza tra SUB_35.g e SUB_18.g e' 3
+
+Numeratore = 5.666667
+Denominatore = 7.000000
+
+La distanza tra SUB_35.g e SUB_15.g e' 1
+
+Numeratore = 6.000000
+Denominatore = 8.000000
+
+La distanza tra SUB_35.g e SUB_14.g e' 3
+
+Numeratore = 7.000000
+Denominatore = 9.000000
+
+La distanza tra SUB_35.g e SUB_9.g e' 7
+
+Numeratore = 9.000000
+Denominatore = 11.000000
+
+La distanza tra SUB_35.g e SUB_6.g e' 3
+
+Numeratore = 12.000000
+Denominatore = 16.000000
+
+La distanza tra SUB_35.g e SUB_5.g e' 25
+
+Numeratore = 13.851851
+Denominatore = 18.000000
+
+La distanza tra SUB_33.g e SUB_31.g e' 3
+
+Numeratore = 14.851851
+Denominatore = 19.000000
+
+La distanza tra SUB_33.g e SUB_30.g e' 3
+
+Numeratore = 15.851851
+Denominatore = 20.000000
+
+La distanza tra SUB_33.g e SUB_21.g e' 2
+
+Numeratore = 17.185184
+Denominatore = 22.000000
+
+La distanza tra SUB_33.g e SUB_18.g e' 2
+
+Numeratore = 18.518518
+Denominatore = 24.000000
+
+La distanza tra SUB_33.g e SUB_15.g e' 2
+
+Numeratore = 19.185184
+Denominatore = 25.000000
+
+La distanza tra SUB_33.g e SUB_14.g e' 1
+
+Numeratore = 19.518518
+Denominatore = 26.000000
+
+La distanza tra SUB_33.g e SUB_9.g e' 5
+
+Numeratore = 20.947090
+Denominatore = 28.000000
+
+La distanza tra SUB_33.g e SUB_6.g e' 5
+
+Numeratore = 25.947090
+Denominatore = 33.000000
+
+La distanza tra SUB_33.g e SUB_5.g e' 27
+
+Numeratore = 27.947090
+Denominatore = 35.000000
+
+La distanza tra SUB_31.g e SUB_30.g e' 2
+
+Numeratore = 28.613756
+Denominatore = 36.000000
+
+La distanza tra SUB_31.g e SUB_21.g e' 3
+
+Numeratore = 30.613756
+Denominatore = 38.000000
+
+La distanza tra SUB_31.g e SUB_18.g e' 3
+
+Numeratore = 32.613754
+Denominatore = 40.000000
+
+La distanza tra SUB_31.g e SUB_15.g e' 2
+
+Numeratore = 33.280422
+Denominatore = 41.000000
+
+La distanza tra SUB_31.g e SUB_14.g e' 3
+
+Numeratore = 34.280422
+Denominatore = 42.000000
+
+La distanza tra SUB_31.g e SUB_9.g e' 7
+
+Numeratore = 36.280422
+Denominatore = 44.000000
+
+La distanza tra SUB_31.g e SUB_6.g e' 4
+
+Numeratore = 40.280422
+Denominatore = 49.000000
+
+La distanza tra SUB_31.g e SUB_5.g e' 26
+
+Numeratore = 42.206348
+Denominatore = 51.000000
+
+La distanza tra SUB_30.g e SUB_21.g e' 3
+
+Numeratore = 44.206348
+Denominatore = 53.000000
+
+La distanza tra SUB_30.g e SUB_18.g e' 3
+
+Numeratore = 46.206348
+Denominatore = 55.000000
+
+La distanza tra SUB_30.g e SUB_15.g e' 1
+
+Numeratore = 46.539680
+Denominatore = 56.000000
+
+La distanza tra SUB_30.g e SUB_14.g e' 2
+
+Numeratore = 47.206348
+Denominatore = 57.000000
+
+La distanza tra SUB_30.g e SUB_9.g e' 7
+
+Numeratore = 49.206348
+Denominatore = 59.000000
+
+La distanza tra SUB_30.g e SUB_6.g e' 3
+
+Numeratore = 52.206348
+Denominatore = 64.000000
+
+La distanza tra SUB_30.g e SUB_5.g e' 25
+
+Numeratore = 54.058201
+Denominatore = 66.000000
+
+La distanza tra SUB_21.g e SUB_18.g e' 2
+
+Numeratore = 56.724869
+Denominatore = 70.000000
+
+La distanza tra SUB_21.g e SUB_15.g e' 3
+
+Numeratore = 58.724869
+Denominatore = 72.000000
+
+La distanza tra SUB_21.g e SUB_14.g e' 2
+
+Numeratore = 60.058201
+Denominatore = 74.000000
+
+La distanza tra SUB_21.g e SUB_9.g e' 6
+
+Numeratore = 63.486771
+Denominatore = 78.000000
+
+La distanza tra SUB_21.g e SUB_6.g e' 5
+
+Numeratore = 73.486771
+Denominatore = 88.000000
+
+La distanza tra SUB_21.g e SUB_5.g e' 27
+
+Numeratore = 77.486771
+Denominatore = 92.000000
+
+La distanza tra SUB_18.g e SUB_15.g e' 3
+
+Numeratore = 79.486771
+Denominatore = 94.000000
+
+La distanza tra SUB_18.g e SUB_14.g e' 2
+
+Numeratore = 80.820107
+Denominatore = 96.000000
+
+La distanza tra SUB_18.g e SUB_9.g e' 6
+
+Numeratore = 84.248680
+Denominatore = 100.000000
+
+La distanza tra SUB_18.g e SUB_6.g e' 4
+
+Numeratore = 92.248680
+Denominatore = 110.000000
+
+La distanza tra SUB_18.g e SUB_5.g e' 26
+
+Numeratore = 96.100533
+Denominatore = 114.000000
+
+La distanza tra SUB_15.g e SUB_14.g e' 3
+
+Numeratore = 97.100533
+Denominatore = 115.000000
+
+La distanza tra SUB_15.g e SUB_9.g e' 7
+
+Numeratore = 99.100533
+Denominatore = 117.000000
+
+La distanza tra SUB_15.g e SUB_6.g e' 3
+
+Numeratore = 102.100533
+Denominatore = 122.000000
+
+La distanza tra SUB_15.g e SUB_5.g e' 25
+
+Numeratore = 103.952385
+Denominatore = 124.000000
+
+La distanza tra SUB_14.g e SUB_9.g e' 5
+
+Numeratore = 105.380959
+Denominatore = 126.000000
+
+La distanza tra SUB_14.g e SUB_6.g e' 5
+
+Numeratore = 110.380959
+Denominatore = 131.000000
+
+La distanza tra SUB_14.g e SUB_5.g e' 27
+
+Numeratore = 112.380959
+Denominatore = 133.000000
+
+La distanza tra SUB_9.g e SUB_6.g e' 6
+
+Numeratore = 120.952385
+Denominatore = 143.000000
+
+La distanza tra SUB_9.g e SUB_5.g e' 26
+
+Numeratore = 124.804237
+Denominatore = 147.000000
+
+La distanza tra SUB_6.g e SUB_5.g e' 22
+
+Numeratore = 132.952393
+Denominatore = 157.000000
+
+La distanza tra SUB_52.g e SUB_36.g e' 2
+
+Numeratore = 1.333333
+Denominatore = 2.000000
+
+La distanza tra SUB_52.g e SUB_27.g e' 2
+
+Numeratore = 4.000000
+Denominatore = 6.000000
+
+La distanza tra SUB_52.g e SUB_24.g e' 2
+
+Numeratore = 8.000000
+Denominatore = 12.000000
+
+La distanza tra SUB_36.g e SUB_27.g e' 2
+
+Numeratore = 9.333333
+Denominatore = 14.000000
+
+La distanza tra SUB_36.g e SUB_24.g e' 2
+
+Numeratore = 11.333333
+Denominatore = 17.000000
+
+La distanza tra SUB_27.g e SUB_24.g e' 2
+
+Numeratore = 15.333333
+Denominatore = 23.000000
+
+La distanza tra SUB_49.g e SUB_28.g e' 3
+
+Numeratore = 1.000000
+Denominatore = 1.000000
+
+La diversita' vale: 9.512
+
+
+Il calcolo della diversita' ha richiesto circa 1 secondi

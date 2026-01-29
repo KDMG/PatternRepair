@@ -1,0 +1,8 @@
+v 1 SUB_92
+v 2 SUB_15
+v 3 SUB_5
+v 4 REPP
+d 1 3 FRP__SHRRPC
+d 1 2 FRP__HRHA
+d 4 2 REPP__HRRR
+d 1 4 HRRAN__REPP

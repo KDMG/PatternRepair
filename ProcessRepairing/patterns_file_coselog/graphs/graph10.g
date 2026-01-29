@@ -1,0 +1,22 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+v 5 T05Printandsendconfirmationofreceipt
+v 6 T06Determinenecessityofstopadvice
+v 7 T07-1Draftinternadviceaspect1
+v 8 T07-4Draftinternaladvicetoholdfortype4
+v 9 T06Determinenecessityofstopadvice
+v 10 T10Determinenecessitytostopindication
+v 11 END
+e 1 2  START__Confirmationofreceipt
+e 2 3  Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 3 4  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 4 6  T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 5 6  T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 6 7  T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+e 9 10  T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+e 10 11  T10Determinenecessitytostopindication__END
+e 7 8  T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+e 8 9  T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+

@@ -1,0 +1,9 @@
+v 1 SUB_86
+v 2 SUB_528
+v 3 SUB_603
+v 4 SUB_618
+
+e 2 3 FRPP__REPP
+e 4 1 RIBPC__LRRR
+e 3 4 LRIRV__FLRRP
+

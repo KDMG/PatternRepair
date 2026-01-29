@@ -1,0 +1,5 @@
+v 1 SUB_2
+v 2 T05Printandsendconfirmationofreceipt
+v 3 T06Determinenecessityofstopadvice
+d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice

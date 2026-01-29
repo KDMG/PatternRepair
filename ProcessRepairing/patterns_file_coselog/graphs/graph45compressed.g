@@ -1,0 +1,14 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+v 5 T05Printandsendconfirmationofreceipt
+v 6 SUB_7
+v 7 SUB_11
+
+e 1 2 START__Confirmationofreceipt
+e 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 5 7 T05Printandsendconfirmationofreceipt__T14DeterminedocumentXrequestunlicensed
+e 3 7 T02Checkconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+e 7 5 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+

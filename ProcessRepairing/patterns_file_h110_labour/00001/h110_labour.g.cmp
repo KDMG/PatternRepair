@@ -1,0 +1,241 @@
+XP
+v 1 SUB_175
+v 2 SUB_174
+v 3 SUB_173
+v 4 SUB_172
+v 5 SUB_171
+v 6 SUB_170
+v 7 SUB_169
+v 8 SUB_168
+v 9 SUB_167
+v 10 SUB_166
+v 11 SUB_165
+v 12 SUB_164
+v 13 SUB_163
+v 14 SUB_162
+v 15 SUB_161
+v 16 SUB_160
+v 17 SUB_159
+v 18 SUB_157
+v 19 SUB_156
+v 20 SUB_155
+v 21 SUB_154
+v 22 SUB_153
+v 23 SUB_152
+v 24 SUB_151
+v 25 SUB_150
+v 26 SUB_149
+v 27 SUB_148
+v 28 SUB_147
+v 29 SUB_146
+v 30 SUB_145
+v 31 SUB_144
+v 32 SUB_143
+v 33 SUB_140
+v 34 SUB_139
+v 35 SUB_137
+v 36 SUB_136
+v 37 SUB_135
+v 38 SUB_132
+v 39 SUB_131
+v 40 SUB_130
+v 41 SUB_129
+v 42 SUB_128
+v 43 SUB_127
+v 44 SUB_125
+v 45 SUB_123
+v 46 SUB_122
+v 47 SUB_119
+v 48 SUB_116
+v 49 SUB_115
+v 50 SUB_114
+v 51 SUB_112
+v 52 SUB_111
+v 53 SUB_110
+v 54 SUB_109
+v 55 SUB_108
+v 56 SUB_107
+v 57 SUB_105
+v 58 SUB_101
+v 59 SUB_99
+v 60 SUB_98
+v 61 SUB_97
+v 62 SUB_92
+v 63 SUB_91
+v 64 SUB_90
+v 65 SUB_88
+v 66 SUB_86
+v 67 SUB_85
+v 68 SUB_84
+v 69 SUB_82
+v 70 SUB_80
+v 71 SUB_79
+v 72 SUB_74
+v 73 SUB_73
+v 74 SUB_63
+v 75 SUB_60
+v 76 SUB_59
+v 77 SUB_57
+v 78 SUB_55
+v 79 SUB_50
+v 80 SUB_43
+v 81 SUB_42
+v 82 SUB_41
+v 83 SUB_40
+v 84 SUB_39
+v 85 SUB_37
+v 86 SUB_36
+v 87 SUB_34
+v 88 SUB_33
+v 89 SUB_32
+v 90 SUB_31
+v 91 SUB_30
+v 92 SUB_27
+v 93 SUB_25
+v 94 SUB_24
+v 95 SUB_23
+v 96 SUB_22
+v 97 SUB_16
+v 98 SUB_15
+v 99 SUB_14
+v 100 SUB_12
+v 101 SUB_11
+v 102 SUB_10
+v 103 SUB_9
+v 104 SUB_8
+v 105 SUB_7
+v 106 SUB_6
+v 107 SUB_5
+v 108 SUB_3
+v 109 SUB_2
+v 110 SUB_1
+v 111 groom
+v 112 medication
+v 113 work
+v 114 sleep
+v 115 dress
+v 116 bathe
+v 117 relax
+v 118 read
+v 119 toilet
+d 15 43 read__work
+d 43 14 toilet__work
+d 67 38 sleep__End
+d 38 15 toilet__dress
+d 14 67 bathe__medication
+d 16 56 cleaning__work
+d 32 71 medication__personalhygiene
+d 71 16 sleep__End
+d 56 32 toilet__mealpreperation
+d 36 99 outdoors__toilet
+d 99 70 toilet__work
+d 70 44 outdoors__toilet
+d 44 28 relax__personalhygiene
+d 28 36 sleep__dress
+d 1 102 eatingdrinking__work
+d 1 102 cleaning__relax
+d 102 62 relax__work
+d 62 64 personalhygiene__outdoors
+d 64 27 toilet__medication
+d 27 46 medication__work
+d 46 13 relax__medication
+d 13 111 bathe__groom
+d 111 1 groom__dress
+d 25 11 sleep__toilet
+d 26 45 medication__relax
+d 45 51 relax__personalhygiene
+d 51 112 toilet__medication
+d 112 25 medication__End
+d 11 26 dress__work
+d 50 48 sleep__toilet
+d 48 4 toilet__eatingdrinking
+d 4 113 eatingdrinking__work
+d 113 86 work__work
+d 4 86 cleaning__work
+d 86 24 toilet__outdoors
+d 24 55 toilet__relax
+d 55 9 toilet__medication
+d 9 50 sleep__End
+d 61 66 eatingdrinking__work
+d 66 114 outdoors__sleep
+d 114 41 sleep__toilet
+d 41 37 outdoors__relax
+d 37 84 relax__work
+d 84 61 personalhygiene__sleep
+d 42 17 toilet__work
+d 17 40 sleep__medication
+d 40 49 outdoors__relax
+d 49 77 personalhygiene__relax
+d 77 42 sleep__End
+d 96 30 Start__toilet
+d 30 69 toilet__relax
+d 85 63 eatingdrinking__cleaning
+d 63 8 outdoors__work
+d 8 96 relax__personalhygiene
+d 69 39 cleaning__work
+d 39 85 outdoors__mealpreperation
+d 23 20 toilet__work
+d 20 98 toilet__medication
+d 98 23 outdoors__relax
+d 82 95 sleep__toilet
+d 87 3 groom__medication
+d 3 3 cleaning__outdoors
+d 3 19 outdoors__relax
+d 19 7 toilet__work
+d 7 82 toilet__relax
+d 95 87 bathe__dress
+d 58 53 eatingdrinking__work
+d 53 29 relax__personalhygiene
+d 29 58 drink__sleep
+d 105 68 sleep__toilet
+d 68 59 outdoors__work
+d 57 54 toilet__work
+d 54 18 relax__medication
+d 18 10 toilet__medication
+d 10 105 work__personalhygiene
+d 59 57 cleaning__work
+d 60 6 medication__sleep
+d 5 47 relax__work
+d 47 22 toilet__outdoors
+d 22 79 toilet__outdoors
+d 79 35 toilet__outdoors
+d 35 60 relax__medication
+d 115 5 dress__relax
+d 6 115 bathe__dress
+d 65 34 eatingdrinking__toilet
+d 34 78 outdoors__work
+d 33 117 toilet__relax
+d 117 83 relax__outdoors
+d 83 89 toilet__relax
+d 89 94 relax__medication
+d 94 116 sleep__bathe
+d 116 65 bathe__dress
+d 78 33 cleaning__work
+d 21 103 toilet__work
+d 103 93 outdoors__medication
+d 93 52 toilet__work
+d 52 108 outdoors__relax
+d 108 92 toilet__medication
+d 92 110 personalhygiene__End
+d 110 21 sleep__toilet
+d 31 118 work__read
+d 118 76 read__medication
+d 76 107 eatingdrinking__work
+d 76 2 eatingdrinking__cleaning
+d 2 107 cleaning__toilet
+d 107 88 toilet__outdoors
+d 88 90 toilet__medication
+d 90 31 relax__End
+d 73 75 personalhygiene__sleep
+d 72 74 outdoors__work
+d 80 81 Start__toilet
+d 81 97 eatingdrinking__cleaning
+d 97 100 toilet__work
+d 100 106 toilet__outdoors
+d 106 109 medication__toilet
+d 109 91 sleep__medication
+d 91 80 outdoors__medication
+d 101 104 Start__toilet
+d 104 12 groom__work
+d 12 119 cleaning__toilet
+d 119 101 toilet__End

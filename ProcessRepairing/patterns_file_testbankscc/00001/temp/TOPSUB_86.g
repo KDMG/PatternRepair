@@ -1,0 +1,3 @@
+v 1 LRRR
+v 2 FRP
+d 1 2 LRRR__FRP

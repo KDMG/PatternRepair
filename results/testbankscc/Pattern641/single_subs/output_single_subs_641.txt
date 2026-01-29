@@ -1,0 +1,42 @@
+Selected Pattern: 641
+Number of graphs in which the pattern occurs: 368
+Subgraph:  ['Instance', '1:', 'v', '1', 'SRP', 'v', '2', 'FRPP', 'd', '1', '2', 'SRP__FRPP', 'Found', '1', 'instances.']
+Repairing sub: 40
+Subgraph:  ['Instance', '1:', 'v', '1', 'SRP', 'v', '2', 'FRPP', 'd', '1', '2', 'SRP__FRPP', 'Found', '1', 'instances.']
+Initial sub:  ['SRP', 'FRPP']
+Trace:  trace_1001
+Alignment: ['[L/M]SRP', '[M-REAL]SRPP', '[L]FRPP', '[L/M]RBPC', '[L/M]REPC', '[L/M]RIBPC', '[L]SRPP', '[L]REPP', '[L/M]FRPP', '[M-REAL]EPP', '[M-REAL]SHRRP', '[L]RIBPC', '[L]REPC', '[L]SRPP', '[L]SRP', '[L]FRP', '[L/M]SHRRPC', '[L/M]MHRRPC', '[L/M]FHRRPC', '[L/M]HRRAN', '[L/M]HRHA', '[L/M]HRRR', '[L/M]FHRRP', '[L/M]FRP']
+Simplified subgraph:  ['Instance', '1:', 'v', '2', 'FRPP', 'Found', '1', 'instances.']
+Simplified sub:  ['FRPP']
+Start:  2
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.5, 'activated_transitions': [(n42, 'SRP')], 'reached_marking': ['n19:1'], 'enabled_transitions_in_marking': {(n43, 'SRPP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 2, 'remaining_tokens': 1, 'produced_tokens': 2}]
+Reached Marking:  ['n19']
+End:  2
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.5333333333333334, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP')], 'reached_marking': ['n20:1', 'n21:1', 'n22:1'], 'enabled_transitions_in_marking': {(n44, 'RBPC'), (n45, 'RIBPC'), (n46, 'REPC')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 3, 'remaining_tokens': 3, 'produced_tokens': 5}]
+Reached Marking:  ['n22', 'n21', 'n20']
+Added: n19 -- > (s1, 'FRPP') s1
+Added: (s1, 'FRPP') s1 -- > n22
+Added: (s1, 'FRPP') s1 -- > n21
+Added: (s1, 'FRPP') s1 -- > n20
+Subgraph:  ['Instance', '1:', 'v', '10', 'REPC', 'v', '11', 'SRPP', 'd', '10', '11', 'REPC__SRPP', 'Instance', '2:', 'v', '4', 'REPC', 'v', '6', 'SRPP', 'd', '4', '6', 'REPC__SRPP', 'Found', '2', 'instances.']
+Repairing sub: 464
+Subgraph:  ['Instance', '1:', 'v', '10', 'REPC', 'v', '11', 'SRPP', 'd', '10', '11', 'REPC__SRPP', 'Instance', '2:', 'v', '4', 'REPC', 'v', '6', 'SRPP', 'd', '4', '6', 'REPC__SRPP', 'Found', '2', 'instances.']
+Initial sub:  ['REPC', 'SRPP', 'REPC', 'SRPP']
+Trace:  trace_1001
+Alignment: ['[L/M]SRP', '[M-REAL]SRPP', '[L]FRPP', '[L/M]RBPC', '[L/M]REPC', '[L/M]RIBPC', '[L]SRPP', '[L]REPP', '[L/M]FRPP', '[M-REAL]EPP', '[M-REAL]SHRRP', '[L]RIBPC', '[L]REPC', '[L]SRPP', '[L]SRP', '[L]FRP', '[L/M]SHRRPC', '[L/M]MHRRPC', '[L/M]FHRRPC', '[L/M]HRRAN', '[L/M]HRHA', '[L/M]HRRR', '[L/M]FHRRP', '[L/M]FRP']
+Simplified subgraph:  ['Instance', '1:', 'Instance', '2:', 'v', '4', 'REPC', 'v', '6', 'SRPP', 'd', '4', '6', 'REPC__SRPP', 'Found', '2', 'instances.']
+Simplified sub:  ['REPC', 'SRPP']
+Start:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.625, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP'), (n44, 'RBPC')], 'reached_marking': ['n21:1', 'n22:1', 'n23:1'], 'enabled_transitions_in_marking': {(n45, 'RIBPC'), (n46, 'REPC')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 3, 'produced_tokens': 6}]
+Reached Marking:  ['n22', 'n21', 'n23']
+End:  6
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.7291666666666667, 'activated_transitions': [(n42, 'SRP'), (n43, 'SRPP'), (n44, 'RBPC'), (n46, 'REPC'), (n45, 'RIBPC')], 'reached_marking': ['n23:1', 'n24:1', 'n25:1'], 'enabled_transitions_in_marking': {(n47, 'FRPP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 6, 'remaining_tokens': 3, 'produced_tokens': 8}]
+Reached Marking:  ['n23', 'n25', 'n24']
+Added:  REPC s2 --> n51
+Added:  n51 --> SRPP s3
+Added: n22 -- > (s2, 'REPC') s2
+Added: n21 -- > (s2, 'REPC') s2
+Added: n23 -- > (s2, 'REPC') s2
+Added: (s3, 'SRPP') s3 -- > n23
+Added: (s3, 'SRPP') s3 -- > n25
+Added: (s3, 'SRPP') s3 -- > n24

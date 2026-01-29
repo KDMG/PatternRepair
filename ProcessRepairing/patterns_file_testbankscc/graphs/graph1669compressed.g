@@ -1,0 +1,9 @@
+v 1 SHRRP
+v 2 SUB_37
+v 3 SUB_175
+v 4 SUB_344
+
+e 2 4 FRPP__EPP
+e 3 2 SRPP__REPP
+e 4 1 FRP__SHRRP
+

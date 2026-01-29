@@ -1,0 +1,83 @@
+Selected Pattern: 8
+Number of graphs in which the pattern occurs: 1
+Subgraph:  ['Instance', '1:', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'v', '11', 'T15PrintdocumentXrequestunlicensed', 'v', '12', 'END', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '9', '11', 'T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed', 'd', '11', '12', 'T15PrintdocumentXrequestunlicensed__END', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Repairing sub: 11
+Subgraph:  ['Instance', '1:', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'v', '11', 'T15PrintdocumentXrequestunlicensed', 'v', '12', 'END', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '9', '11', 'T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed', 'd', '11', '12', 'T15PrintdocumentXrequestunlicensed__END', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Initial sub:  ['T11CreatedocumentXrequestunlicensed', 'T12CheckdocumentXrequestunlicensed', 'T14DeterminedocumentXrequestunlicensed', 'T15PrintdocumentXrequestunlicensed', 'END']
+Trace:  case-5533
+Alignment: ['[L/M]START', '[L/M]Confirmationofreceipt', '[L/M]T02Checkconfirmationofreceipt', '[M-INVI]tau from tree', '[M-INVI]T04Determineconfirmationofreceipt', '[M-INVI]T08Draftandsendrequestforadvice', '[M-INVI]tau from tree', '[L/M]T06Determinenecessityofstopadvice', '[M-INVI]tau from tree', '[L/M]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[L]T11CreatedocumentXrequestunlicensed', '[L/M]T12CheckdocumentXrequestunlicensed', '[M-INVI]T05Printandsendconfirmationofreceipt', '[M-INVI]tau join', '[M-INVI]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T03Adjustconfirmationofreceipt', '[M-INVI]tau from tree', '[M-INVI]T02Checkconfirmationofreceipt', '[M-INVI]tau from tree', '[L/M]T04Determineconfirmationofreceipt', '[M-INVI]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[M-INVI]T05Printandsendconfirmationofreceipt', '[M-INVI]T12CheckdocumentXrequestunlicensed', '[M-INVI]tau join', '[L/M]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[L/M]T05Printandsendconfirmationofreceipt', '[M-INVI]T12CheckdocumentXrequestunlicensed', '[M-INVI]tau join', '[M-INVI]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T03Adjustconfirmationofreceipt', '[M-INVI]tau from tree', '[L/M]T15PrintdocumentXrequestunlicensed', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Simplified sub:  ['T11CreatedocumentXrequestunlicensed', 'T12CheckdocumentXrequestunlicensed', 'T14DeterminedocumentXrequestunlicensed']
+Start:  6
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9090909090909091, 'activated_transitions': [(n28, 'START'), (n29, 'Confirmationofreceipt'), (n30, 'T02Checkconfirmationofreceipt'), (n31, None), (n36, 'T04Determineconfirmationofreceipt'), (n38, 'T08Draftandsendrequestforadvice'), (n39, None), (n48, 'T06Determinenecessityofstopadvice'), (n58, None), (n50, 'T10Determinenecessitytostopindication')], 'reached_marking': ['n21:1'], 'enabled_transitions_in_marking': {(n53, 'T05Printandsendconfirmationofreceipt'), (n55, 'T12CheckdocumentXrequestunlicensed')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 11, 'remaining_tokens': 1, 'produced_tokens': 11}]
+Reached Marking:  ['n21']
+End:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.96875, 'activated_transitions': [(n28, 'START'), (n29, 'Confirmationofreceipt'), (n30, 'T02Checkconfirmationofreceipt'), (n31, None), (n36, 'T04Determineconfirmationofreceipt'), (n38, 'T08Draftandsendrequestforadvice'), (n39, None), (n48, 'T06Determinenecessityofstopadvice'), (n58, None), (n50, 'T10Determinenecessitytostopindication'), (n51, None), (n55, 'T12CheckdocumentXrequestunlicensed'), (n53, 'T05Printandsendconfirmationofreceipt'), (n52, None), (n57, 'T14DeterminedocumentXrequestunlicensed'), (n59, None), (n61, 'T03Adjustconfirmationofreceipt'), (n62, None), (n30, 'T02Checkconfirmationofreceipt'), (n31, None), (n36, 'T04Determineconfirmationofreceipt'), (n50, 'T10Determinenecessitytostopindication'), (n51, None), (n53, 'T05Printandsendconfirmationofreceipt'), (n55, 'T12CheckdocumentXrequestunlicensed'), (n52, None), (n57, 'T14DeterminedocumentXrequestunlicensed'), (n58, None), (n50, 'T10Determinenecessitytostopindication')], 'reached_marking': ['n21:1'], 'enabled_transitions_in_marking': {(n53, 'T05Printandsendconfirmationofreceipt'), (n55, 'T12CheckdocumentXrequestunlicensed')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 32, 'remaining_tokens': 1, 'produced_tokens': 32}]
+Reached Marking:  ['n21']
+Added:  T12CheckdocumentXrequestunlicensed s2 --> n67
+Added:  n67 --> T14DeterminedocumentXrequestunlicensed s3
+Added:  T11CreatedocumentXrequestunlicensed s1 --> n68
+Added:  n68 --> T12CheckdocumentXrequestunlicensed s2
+Added: n21 -- > (s1, 'T11CreatedocumentXrequestunlicensed') s1
+Added: (s3, 'T14DeterminedocumentXrequestunlicensed') s3 -- > n21
+Subgraph:  ['Instance', '1:', 'v', '4', 'T06Determinenecessityofstopadvice', 'v', '5', 'T10Determinenecessitytostopindication', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'v', '10', 'T05Printandsendconfirmationofreceipt', 'v', '11', 'T15PrintdocumentXrequestunlicensed', 'v', '12', 'END', 'd', '4', '5', 'T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '9', '11', 'T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed', 'd', '10', '11', 'T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed', 'd', '11', '12', 'T15PrintdocumentXrequestunlicensed__END', 'd', '5', '6', 'T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Repairing sub: 51
+Subgraph:  ['Instance', '1:', 'v', '4', 'T06Determinenecessityofstopadvice', 'v', '5', 'T10Determinenecessitytostopindication', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'v', '10', 'T05Printandsendconfirmationofreceipt', 'v', '11', 'T15PrintdocumentXrequestunlicensed', 'v', '12', 'END', 'd', '4', '5', 'T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '9', '11', 'T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed', 'd', '10', '11', 'T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed', 'd', '11', '12', 'T15PrintdocumentXrequestunlicensed__END', 'd', '5', '6', 'T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Initial sub:  ['T06Determinenecessityofstopadvice', 'T10Determinenecessitytostopindication', 'T11CreatedocumentXrequestunlicensed', 'T12CheckdocumentXrequestunlicensed', 'T14DeterminedocumentXrequestunlicensed', 'T05Printandsendconfirmationofreceipt', 'T15PrintdocumentXrequestunlicensed', 'END']
+Trace:  case-5533
+Alignment: ['[L/M]START', '[L/M]Confirmationofreceipt', '[L/M]T02Checkconfirmationofreceipt', '[M-INVI]tau from tree', '[M-INVI]T04Determineconfirmationofreceipt', '[M-INVI]T08Draftandsendrequestforadvice', '[M-INVI]tau from tree', '[L/M]T06Determinenecessityofstopadvice', '[M-INVI]tau from tree', '[L/M]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[L]T11CreatedocumentXrequestunlicensed', '[L/M]T12CheckdocumentXrequestunlicensed', '[M-INVI]T05Printandsendconfirmationofreceipt', '[M-INVI]tau join', '[M-INVI]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T03Adjustconfirmationofreceipt', '[M-INVI]tau from tree', '[M-INVI]T02Checkconfirmationofreceipt', '[M-INVI]tau from tree', '[L/M]T04Determineconfirmationofreceipt', '[M-INVI]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[M-INVI]T05Printandsendconfirmationofreceipt', '[M-INVI]T12CheckdocumentXrequestunlicensed', '[M-INVI]tau join', '[L/M]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T10Determinenecessitytostopindication', '[M-INVI]tau split', '[L/M]T05Printandsendconfirmationofreceipt', '[M-INVI]T12CheckdocumentXrequestunlicensed', '[M-INVI]tau join', '[M-INVI]T14DeterminedocumentXrequestunlicensed', '[M-INVI]tau from tree', '[M-INVI]T03Adjustconfirmationofreceipt', '[M-INVI]tau from tree', '[L/M]T15PrintdocumentXrequestunlicensed', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '4', 'T06Determinenecessityofstopadvice', 'v', '5', 'T10Determinenecessitytostopindication', 'v', '6', 'T11CreatedocumentXrequestunlicensed', 'v', '7', 'T12CheckdocumentXrequestunlicensed', 'v', '9', 'T14DeterminedocumentXrequestunlicensed', 'd', '4', '5', 'T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication', 'd', '7', '9', 'T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed', 'd', '5', '6', 'T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed', 'd', '6', '7', 'T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed', 'Found', '1', 'instances.']
+Simplified sub:  ['T06Determinenecessityofstopadvice', 'T10Determinenecessitytostopindication', 'T11CreatedocumentXrequestunlicensed', 'T12CheckdocumentXrequestunlicensed', 'T14DeterminedocumentXrequestunlicensed']
+Start:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [(n28, 'START'), (n29, 'Confirmationofreceipt'), (n30, 'T02Checkconfirmationofreceipt')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n32, 'T16Reportreasonstoholdrequest'), (n36, 'T04Determineconfirmationofreceipt')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+End:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.96875, 'activated_transitions': [(n28, 'START'), (n29, 'Confirmationofreceipt'), (n30, 'T02Checkconfirmationofreceipt'), (n31, None), (n36, 'T04Determineconfirmationofreceipt'), (n38, 'T08Draftandsendrequestforadvice'), (n39, None), (n48, 'T06Determinenecessityofstopadvice'), (n58, None), (n50, 'T10Determinenecessitytostopindication'), (n51, None), (n55, 'T12CheckdocumentXrequestunlicensed'), (n53, 'T05Printandsendconfirmationofreceipt'), (n52, None), (n57, 'T14DeterminedocumentXrequestunlicensed'), (n59, None), (n61, 'T03Adjustconfirmationofreceipt'), (n62, None), (n30, 'T02Checkconfirmationofreceipt'), (n31, None), (n36, 'T04Determineconfirmationofreceipt'), (n50, 'T10Determinenecessitytostopindication'), (n51, None), (n53, 'T05Printandsendconfirmationofreceipt'), (n55, 'T12CheckdocumentXrequestunlicensed'), (n52, None), (n57, 'T14DeterminedocumentXrequestunlicensed'), (n58, None), (n50, 'T10Determinenecessitytostopindication')], 'reached_marking': ['n21:1'], 'enabled_transitions_in_marking': {(n53, 'T05Printandsendconfirmationofreceipt'), (n55, 'T12CheckdocumentXrequestunlicensed')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 32, 'remaining_tokens': 1, 'produced_tokens': 32}]
+Reached Marking:  ['n21']
+Added:  T06Determinenecessityofstopadvice s4 --> n69
+Added:  n69 --> T10Determinenecessitytostopindication s5
+Added:  T12CheckdocumentXrequestunlicensed s7 --> n70
+Added:  n70 --> T14DeterminedocumentXrequestunlicensed s8
+Added:  T10Determinenecessitytostopindication s5 --> n71
+Added:  n71 --> T11CreatedocumentXrequestunlicensed s6
+Added:  T11CreatedocumentXrequestunlicensed s6 --> n72
+Added:  n72 --> T12CheckdocumentXrequestunlicensed s7
+Added: n7 -- > (s4, 'T06Determinenecessityofstopadvice') s4
+Added: (s8, 'T14DeterminedocumentXrequestunlicensed') s8 -- > n21
+
+
+Start pattern repairing..
+Loop found in Sub_11 [((n6,), (n4,)), ((n14,), (n12,)), ((n21,), (n21,))]
+Loop found in Sub_51 [((n6,), (n4,))].
+Common loop found between Sub_11 and Sub_51
+Added: (h1, None)
+Added: n73
+Added:  (n29, 'Confirmationofreceipt') --> n73
+Added:  n73 --> (h1, None)
+Added:  (h1, None) --> n4
+Removed: (n29, 'Confirmationofreceipt')->n4
+Added:  (h2, None)
+Added:  n73 --> (h2, None)
+Added:  (h2, None) --> n4
+Added:  n74
+Added:  (h3, None)
+Added:  n74 --> (s1, 'T11CreatedocumentXrequestunlicensed')
+Added:  (h3, None) --> n74
+Added:  (h2, None) --> n74
+Added:  n75
+Added:  (s3, 'T14DeterminedocumentXrequestunlicensed') --> n75
+Added:  n75 --> (h3, None)
+Added:  (h4, None)
+Added:  (h4, None) --> n75
+Added:  n76
+Added:  (h5, None)
+Added:  n76 --> (h5, None)
+Added:  n77
+Added:  (h1, None) --> n77
+Added:  (h5, None) --> n77
+Added:  n77 --> (n63, None)
+In choice transitions of Sub_11: [(h1, None)]
+In choice transitions of Sub_51: []
+Added:  n75 --> (s4, 'T06Determinenecessityofstopadvice')
+Added:  (s8, 'T14DeterminedocumentXrequestunlicensed') --> n76
+Added:  n76 --> (h4, None)

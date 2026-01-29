@@ -1,0 +1,5 @@
+v 1 SUB_255
+v 2 RIBPC
+v 3 FRP
+d 1 2 LRRR__RIBPC
+d 2 3 RIBPC__FRP

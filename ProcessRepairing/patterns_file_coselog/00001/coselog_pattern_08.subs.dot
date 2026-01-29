@@ -1,0 +1,568 @@
+// Subdue 5.2.2 output in dot format
+
+digraph Subdue {
+
+  compound=true;
+
+subgraph cluster_SUB_1 {
+  1 [label="START",color=black,fontcolor=black];
+  2 [label="Confirmationofreceipt",color=black,fontcolor=black];
+  3 [label="T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  4 [label="T04Determineconfirmationofreceipt",color=black,fontcolor=black];
+  5 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  6 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  7 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  8 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  9 [label="T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  10 [label="T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  11 [label="T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  12 [label="END",color=black,fontcolor=black];
+  1 -> 2 [label="START__Confirmationofreceipt",color=black,fontcolor=black];
+  2 -> 3 [label="Confirmationofreceipt__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  3 -> 4 [label="T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt",color=black,fontcolor=black];
+  4 -> 6 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  5 -> 6 [label="T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  6 -> 7 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  9 -> 10 [label="T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  10 -> 11 [label="T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  11 -> 12 [label="T15PrintdocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  7 -> 8 [label="T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  8 -> 9 [label="T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_1";
+}
+
+subgraph cluster_SUB_2 {
+  13 [label="START",color=black,fontcolor=black];
+  14 [label="Confirmationofreceipt",color=black,fontcolor=black];
+  15 [label="T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  16 [label="T04Determineconfirmationofreceipt",color=black,fontcolor=black];
+  13 -> 14 [label="START__Confirmationofreceipt",color=black,fontcolor=black];
+  14 -> 15 [label="Confirmationofreceipt__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  15 -> 16 [label="T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_2";
+}
+
+subgraph cluster_SUB_3 {
+  17 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  18 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  19 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  20 [label="T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  21 [label="T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  22 [label="T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  23 [label="END",color=black,fontcolor=black];
+  17 -> 18 [label="T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  17 -> 20 [label="T10Determinenecessitytostopindication__T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  20 -> 21 [label="T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  21 -> 22 [label="T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  22 -> 23 [label="T15PrintdocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  19 -> 21 [label="T11CreatedocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  18 -> 19 [label="T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_3";
+}
+
+subgraph cluster_SUB_4 {
+  24 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  25 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  26 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  27 [label="T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  28 [label="T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  29 [label="T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  30 [label="END",color=black,fontcolor=black];
+  24 -> 25 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  27 -> 28 [label="T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  28 -> 29 [label="T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  29 -> 30 [label="T15PrintdocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  25 -> 26 [label="T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  26 -> 27 [label="T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_4";
+}
+
+subgraph cluster_SUB_5 {
+  31 [label="SUB_2",color=black,fontcolor=black];
+  32 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  33 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  34 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  35 [label="T16Reportreasonstoholdrequest",color=black,fontcolor=black];
+  36 [label="T17CheckreportYtostopindication",color=black,fontcolor=black];
+  37 [label="T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  38 [label="T17CheckreportYtostopindication",color=black,fontcolor=black];
+  39 [label="T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  40 [label="T17CheckreportYtostopindication",color=black,fontcolor=black];
+  41 [label="T19DeterminereportYtostopindication",color=black,fontcolor=black];
+  42 [label="T20PrintreportYtostopindication",color=black,fontcolor=black];
+  43 [label="END",color=black,fontcolor=black];
+  31 -> 35 [label="T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest",color=black,fontcolor=black];
+  31 -> 33 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  32 -> 33 [label="T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  33 -> 34 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  34 -> 43 [label="T10Determinenecessitytostopindication__END",color=black,fontcolor=black];
+  35 -> 36 [label="T16Reportreasonstoholdrequest__T17CheckreportYtostopindication",color=black,fontcolor=black];
+  35 -> 38 [label="T16Reportreasonstoholdrequest__T17CheckreportYtostopindication",color=black,fontcolor=black];
+  35 -> 40 [label="T16Reportreasonstoholdrequest__T17CheckreportYtostopindication",color=black,fontcolor=black];
+  40 -> 41 [label="T17CheckreportYtostopindication__T19DeterminereportYtostopindication",color=black,fontcolor=black];
+  41 -> 42 [label="T19DeterminereportYtostopindication__T20PrintreportYtostopindication",color=black,fontcolor=black];
+  37 -> 41 [label="T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication",color=black,fontcolor=black];
+  36 -> 37 [label="T17CheckreportYtostopindication__T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  39 -> 41 [label="T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication",color=black,fontcolor=black];
+  38 -> 39 [label="T17CheckreportYtostopindication__T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  label="SUB_5";
+}
+16 -> 31 [ltail=cluster_SUB_2,lhead=cluster_SUB_5];
+
+subgraph cluster_SUB_6 {
+  44 [label="SUB_2",color=black,fontcolor=black];
+  45 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  46 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  44 -> 46 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  45 -> 46 [label="T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_6";
+}
+16 -> 44 [ltail=cluster_SUB_2,lhead=cluster_SUB_6];
+
+subgraph cluster_SUB_7 {
+  47 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  48 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  47 -> 48 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_7";
+}
+
+subgraph cluster_SUB_8 {
+  49 [label="SUB_7",color=black,fontcolor=black];
+  50 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  51 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  52 [label="END",color=black,fontcolor=black];
+  49 -> 50 [label="T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  50 -> 51 [label="T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  51 -> 52 [label="T11CreatedocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  label="SUB_8";
+}
+48 -> 49 [ltail=cluster_SUB_7,lhead=cluster_SUB_8];
+
+subgraph cluster_SUB_9 {
+  53 [label="SUB_7",color=black,fontcolor=black];
+  54 [label="SUB_2",color=black,fontcolor=black];
+  55 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  56 [label="END",color=black,fontcolor=black];
+  53 -> 54 [label="T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  53 -> 55 [label="T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  55 -> 56 [label="T05Printandsendconfirmationofreceipt__END",color=black,fontcolor=black];
+  label="SUB_9";
+}
+48 -> 53 [ltail=cluster_SUB_7,lhead=cluster_SUB_9];
+16 -> 53 [ltail=cluster_SUB_2,lhead=cluster_SUB_9];
+
+subgraph cluster_SUB_10 {
+  57 [label="SUB_3",color=black,fontcolor=black];
+  58 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  58 -> 57 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_10";
+}
+23 -> 57 [ltail=cluster_SUB_3,lhead=cluster_SUB_10];
+
+subgraph cluster_SUB_11 {
+  59 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  60 [label="T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  61 [label="T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  62 [label="T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  63 [label="END",color=black,fontcolor=black];
+  60 -> 61 [label="T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed",color=black,fontcolor=black];
+  61 -> 62 [label="T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  62 -> 63 [label="T15PrintdocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  59 -> 60 [label="T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_11";
+}
+
+subgraph cluster_SUB_12 {
+  64 [label="T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  65 [label="T07-2Draftinternadviceaspect2",color=black,fontcolor=black];
+  66 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  65 -> 66 [label="T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  64 -> 66 [label="T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_12";
+}
+
+subgraph cluster_SUB_13 {
+  67 [label="SUB_7",color=black,fontcolor=black];
+  68 [label="END",color=black,fontcolor=black];
+  67 -> 68 [label="T10Determinenecessitytostopindication__END",color=black,fontcolor=black];
+  label="SUB_13";
+}
+48 -> 67 [ltail=cluster_SUB_7,lhead=cluster_SUB_13];
+
+subgraph cluster_SUB_14 {
+  69 [label="SUB_10",color=black,fontcolor=black];
+  70 [label="SUB_2",color=black,fontcolor=black];
+  69 -> 70 [label="T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_14";
+}
+58 -> 69 [ltail=cluster_SUB_10,lhead=cluster_SUB_14];
+16 -> 69 [ltail=cluster_SUB_2,lhead=cluster_SUB_14];
+
+subgraph cluster_SUB_15 {
+  71 [label="SUB_8",color=black,fontcolor=black];
+  72 [label="SUB_2",color=black,fontcolor=black];
+  72 -> 71 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_15";
+}
+52 -> 71 [ltail=cluster_SUB_8,lhead=cluster_SUB_15];
+16 -> 71 [ltail=cluster_SUB_2,lhead=cluster_SUB_15];
+
+subgraph cluster_SUB_16 {
+  73 [label="SUB_9",color=black,fontcolor=black];
+  74 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  75 [label="T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  74 -> 75 [label="T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  75 -> 73 [label="T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_16";
+}
+56 -> 73 [ltail=cluster_SUB_9,lhead=cluster_SUB_16];
+
+subgraph cluster_SUB_17 {
+  76 [label="T03Adjustconfirmationofreceipt",color=black,fontcolor=black];
+  77 [label="T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  76 -> 77 [label="T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_17";
+}
+
+subgraph cluster_SUB_18 {
+  78 [label="SUB_2",color=black,fontcolor=black];
+  79 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  79 -> 78 [label="T06Determinenecessityofstopadvice__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_18";
+}
+16 -> 78 [ltail=cluster_SUB_2,lhead=cluster_SUB_18];
+
+subgraph cluster_SUB_19 {
+  80 [label="SUB_13",color=black,fontcolor=black];
+  81 [label="T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  81 -> 80 [label="T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_19";
+}
+68 -> 80 [ltail=cluster_SUB_13,lhead=cluster_SUB_19];
+
+subgraph cluster_SUB_20 {
+  82 [label="SUB_4",color=black,fontcolor=black];
+  83 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  83 -> 82 [label="T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_20";
+}
+30 -> 82 [ltail=cluster_SUB_4,lhead=cluster_SUB_20];
+
+subgraph cluster_SUB_21 {
+  84 [label="SUB_2",color=black,fontcolor=black];
+  85 [label="T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  85 -> 84 [label="T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_21";
+}
+16 -> 84 [ltail=cluster_SUB_2,lhead=cluster_SUB_21];
+
+subgraph cluster_SUB_22 {
+  86 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  87 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  86 -> 87 [label="T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_22";
+}
+
+subgraph cluster_SUB_23 {
+  88 [label="SUB_13",color=black,fontcolor=black];
+  89 [label="T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  89 -> 88 [label="T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_23";
+}
+68 -> 88 [ltail=cluster_SUB_13,lhead=cluster_SUB_23];
+
+subgraph cluster_SUB_24 {
+  90 [label="SUB_6",color=black,fontcolor=black];
+  91 [label="T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  90 -> 91 [label="T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  label="SUB_24";
+}
+46 -> 90 [ltail=cluster_SUB_6,lhead=cluster_SUB_24];
+
+subgraph cluster_SUB_25 {
+  92 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  93 [label="T13AdjustdocumentXrequestunlicensed",color=black,fontcolor=black];
+  92 -> 93 [label="T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_25";
+}
+
+subgraph cluster_SUB_26 {
+  94 [label="T17CheckreportYtostopindication",color=black,fontcolor=black];
+  95 [label="T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  94 -> 95 [label="T17CheckreportYtostopindication__T18AdjustreportYtostopindicition",color=black,fontcolor=black];
+  label="SUB_26";
+}
+
+subgraph cluster_SUB_27 {
+  96 [label="SUB_6",color=black,fontcolor=black];
+  97 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  96 -> 97 [label="T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_27";
+}
+46 -> 96 [ltail=cluster_SUB_6,lhead=cluster_SUB_27];
+
+subgraph cluster_SUB_28 {
+  98 [label="SUB_24",color=black,fontcolor=black];
+  99 [label="SUB_19",color=black,fontcolor=black];
+  98 -> 99 [label="T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  label="SUB_28";
+}
+91 -> 98 [ltail=cluster_SUB_24,lhead=cluster_SUB_28];
+81 -> 98 [ltail=cluster_SUB_19,lhead=cluster_SUB_28];
+
+subgraph cluster_SUB_29 {
+  100 [label="SUB_22",color=black,fontcolor=black];
+  101 [label="SUB_16",color=black,fontcolor=black];
+  100 -> 101 [label="T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_29";
+}
+87 -> 100 [ltail=cluster_SUB_22,lhead=cluster_SUB_29];
+75 -> 100 [ltail=cluster_SUB_16,lhead=cluster_SUB_29];
+
+subgraph cluster_SUB_30 {
+  102 [label="SUB_10",color=black,fontcolor=black];
+  103 [label="SUB_2",color=black,fontcolor=black];
+  103 -> 102 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_30";
+}
+58 -> 102 [ltail=cluster_SUB_10,lhead=cluster_SUB_30];
+16 -> 102 [ltail=cluster_SUB_2,lhead=cluster_SUB_30];
+
+subgraph cluster_SUB_31 {
+  104 [label="SUB_20",color=black,fontcolor=black];
+  105 [label="SUB_2",color=black,fontcolor=black];
+  105 -> 104 [label="T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_31";
+}
+83 -> 104 [ltail=cluster_SUB_20,lhead=cluster_SUB_31];
+16 -> 104 [ltail=cluster_SUB_2,lhead=cluster_SUB_31];
+
+subgraph cluster_SUB_32 {
+  106 [label="SUB_23",color=black,fontcolor=black];
+  107 [label="T07-2Draftinternadviceaspect2",color=black,fontcolor=black];
+  107 -> 106 [label="T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_32";
+}
+89 -> 106 [ltail=cluster_SUB_23,lhead=cluster_SUB_32];
+
+subgraph cluster_SUB_33 {
+  108 [label="SUB_8",color=black,fontcolor=black];
+  109 [label="SUB_2",color=black,fontcolor=black];
+  108 -> 109 [label="T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_33";
+}
+52 -> 108 [ltail=cluster_SUB_8,lhead=cluster_SUB_33];
+16 -> 108 [ltail=cluster_SUB_2,lhead=cluster_SUB_33];
+
+subgraph cluster_SUB_34 {
+  110 [label="SUB_18",color=black,fontcolor=black];
+  111 [label="SUB_3",color=black,fontcolor=black];
+  110 -> 111 [label="T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_34";
+}
+79 -> 110 [ltail=cluster_SUB_18,lhead=cluster_SUB_34];
+23 -> 110 [ltail=cluster_SUB_3,lhead=cluster_SUB_34];
+
+subgraph cluster_SUB_35 {
+  112 [label="SUB_20",color=black,fontcolor=black];
+  113 [label="SUB_2",color=black,fontcolor=black];
+  113 -> 112 [label="T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_35";
+}
+83 -> 112 [ltail=cluster_SUB_20,lhead=cluster_SUB_35];
+16 -> 112 [ltail=cluster_SUB_2,lhead=cluster_SUB_35];
+
+subgraph cluster_SUB_36 {
+  114 [label="SUB_19",color=black,fontcolor=black];
+  115 [label="SUB_6",color=black,fontcolor=black];
+  115 -> 114 [label="T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  label="SUB_36";
+}
+81 -> 114 [ltail=cluster_SUB_19,lhead=cluster_SUB_36];
+46 -> 114 [ltail=cluster_SUB_6,lhead=cluster_SUB_36];
+
+subgraph cluster_SUB_37 {
+  116 [label="SUB_4",color=black,fontcolor=black];
+  117 [label="T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  117 -> 116 [label="T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_37";
+}
+30 -> 116 [ltail=cluster_SUB_4,lhead=cluster_SUB_37];
+
+subgraph cluster_SUB_38 {
+  118 [label="SUB_23",color=black,fontcolor=black];
+  119 [label="T07-2Draftinternadviceaspect2",color=black,fontcolor=black];
+  119 -> 118 [label="T07-2Draftinternadviceaspect2__T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  label="SUB_38";
+}
+89 -> 118 [ltail=cluster_SUB_23,lhead=cluster_SUB_38];
+
+subgraph cluster_SUB_39 {
+  120 [label="SUB_38",color=black,fontcolor=black];
+  121 [label="SUB_12",color=black,fontcolor=black];
+  121 -> 120 [label="T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  label="SUB_39";
+}
+119 -> 120 [ltail=cluster_SUB_38,lhead=cluster_SUB_39];
+66 -> 120 [ltail=cluster_SUB_12,lhead=cluster_SUB_39];
+
+subgraph cluster_SUB_40 {
+  122 [label="SUB_27",color=black,fontcolor=black];
+  123 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  122 -> 123 [label="T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_40";
+}
+97 -> 122 [ltail=cluster_SUB_27,lhead=cluster_SUB_40];
+
+subgraph cluster_SUB_41 {
+  124 [label="SUB_40",color=black,fontcolor=black];
+  125 [label="END",color=black,fontcolor=black];
+  124 -> 125 [label="T11CreatedocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  label="SUB_41";
+}
+123 -> 124 [ltail=cluster_SUB_40,lhead=cluster_SUB_41];
+
+subgraph cluster_SUB_42 {
+  126 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  127 [label="T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  126 -> 127 [label="T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  label="SUB_42";
+}
+
+subgraph cluster_SUB_43 {
+  128 [label="SUB_37",color=black,fontcolor=black];
+  129 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  129 -> 128 [label="T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  label="SUB_43";
+}
+117 -> 128 [ltail=cluster_SUB_37,lhead=cluster_SUB_43];
+
+subgraph cluster_SUB_44 {
+  130 [label="T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  131 [label="T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  130 -> 131 [label="T07-3Draftinternadviceholdforaspect3__T07-4Draftinternaladvicetoholdfortype4",color=black,fontcolor=black];
+  label="SUB_44";
+}
+
+subgraph cluster_SUB_45 {
+  132 [label="SUB_25",color=black,fontcolor=black];
+  133 [label="END",color=black,fontcolor=black];
+  132 -> 133 [label="T13AdjustdocumentXrequestunlicensed__END",color=black,fontcolor=black];
+  label="SUB_45";
+}
+93 -> 132 [ltail=cluster_SUB_25,lhead=cluster_SUB_45];
+
+subgraph cluster_SUB_46 {
+  134 [label="SUB_22",color=black,fontcolor=black];
+  135 [label="END",color=black,fontcolor=black];
+  134 -> 135 [label="T06Determinenecessityofstopadvice__END",color=black,fontcolor=black];
+  label="SUB_46";
+}
+87 -> 134 [ltail=cluster_SUB_22,lhead=cluster_SUB_46];
+
+subgraph cluster_SUB_47 {
+  136 [label="SUB_46",color=black,fontcolor=black];
+  137 [label="T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  137 -> 136 [label="T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice",color=black,fontcolor=black];
+  label="SUB_47";
+}
+135 -> 136 [ltail=cluster_SUB_46,lhead=cluster_SUB_47];
+
+subgraph cluster_SUB_48 {
+  138 [label="SUB_44",color=black,fontcolor=black];
+  139 [label="T07-5Draftinternadviceaspect5",color=black,fontcolor=black];
+  139 -> 138 [label="T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  label="SUB_48";
+}
+131 -> 138 [ltail=cluster_SUB_44,lhead=cluster_SUB_48];
+
+subgraph cluster_SUB_49 {
+  140 [label="SUB_24",color=black,fontcolor=black];
+  141 [label="SUB_17",color=black,fontcolor=black];
+  141 -> 140 [label="T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt",color=black,fontcolor=black];
+  label="SUB_49";
+}
+91 -> 140 [ltail=cluster_SUB_24,lhead=cluster_SUB_49];
+77 -> 140 [ltail=cluster_SUB_17,lhead=cluster_SUB_49];
+
+subgraph cluster_SUB_50 {
+  142 [label="T09-1Processorreceiveexternaladvicefromparty1",color=black,fontcolor=black];
+  143 [label="T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  142 -> 143 [label="T09-1Processorreceiveexternaladvicefromparty1__T07-3Draftinternadviceholdforaspect3",color=black,fontcolor=black];
+  label="SUB_50";
+}
+
+subgraph cluster_SUB_51 {
+  144 [label="SUB_7",color=black,fontcolor=black];
+  145 [label="T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  144 -> 145 [label="T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_51";
+}
+48 -> 144 [ltail=cluster_SUB_7,lhead=cluster_SUB_51];
+
+subgraph cluster_SUB_52 {
+  146 [label="SUB_6",color=black,fontcolor=black];
+  147 [label="T08Draftandsendrequestforadvice",color=black,fontcolor=black];
+  146 -> 147 [label="T06Determinenecessityofstopadvice__T08Draftandsendrequestforadvice",color=black,fontcolor=black];
+  label="SUB_52";
+}
+46 -> 146 [ltail=cluster_SUB_6,lhead=cluster_SUB_52];
+
+subgraph cluster_SUB_53 {
+  148 [label="SUB_4",color=black,fontcolor=black];
+  149 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  149 -> 148 [label="T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_53";
+}
+30 -> 148 [ltail=cluster_SUB_4,lhead=cluster_SUB_53];
+
+subgraph cluster_SUB_54 {
+  150 [label="SUB_11",color=black,fontcolor=black];
+  151 [label="T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  151 -> 150 [label="T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_54";
+}
+63 -> 150 [ltail=cluster_SUB_11,lhead=cluster_SUB_54];
+
+subgraph cluster_SUB_55 {
+  152 [label="SUB_54",color=black,fontcolor=black];
+  153 [label="T05Printandsendconfirmationofreceipt",color=black,fontcolor=black];
+  153 -> 152 [label="T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication",color=black,fontcolor=black];
+  label="SUB_55";
+}
+151 -> 152 [ltail=cluster_SUB_54,lhead=cluster_SUB_55];
+
+subgraph cluster_SUB_56 {
+  154 [label="SUB_52",color=black,fontcolor=black];
+  155 [label="T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  154 -> 155 [label="T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1",color=black,fontcolor=black];
+  label="SUB_56";
+}
+147 -> 154 [ltail=cluster_SUB_52,lhead=cluster_SUB_56];
+
+subgraph cluster_SUB_57 {
+  156 [label="T09-4Processorreceiveexternaladvicefromparty4",color=black,fontcolor=black];
+  157 [label="T07-2Draftinternadviceaspect2",color=black,fontcolor=black];
+  156 -> 157 [label="T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2",color=black,fontcolor=black];
+  label="SUB_57";
+}
+
+subgraph cluster_SUB_58 {
+  158 [label="SUB_51",color=black,fontcolor=black];
+  159 [label="SUB_21",color=black,fontcolor=black];
+  158 -> 159 [label="T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed",color=black,fontcolor=black];
+  label="SUB_58";
+}
+145 -> 158 [ltail=cluster_SUB_51,lhead=cluster_SUB_58];
+85 -> 158 [ltail=cluster_SUB_21,lhead=cluster_SUB_58];
+
+subgraph cluster_SUB_59 {
+  160 [label="SUB_26",color=black,fontcolor=black];
+  161 [label="SUB_5",color=black,fontcolor=black];
+  161 -> 160 [label="T16Reportreasonstoholdrequest__T17CheckreportYtostopindication",color=black,fontcolor=black];
+  label="SUB_59";
+}
+95 -> 160 [ltail=cluster_SUB_26,lhead=cluster_SUB_59];
+43 -> 160 [ltail=cluster_SUB_5,lhead=cluster_SUB_59];
+
+}

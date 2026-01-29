@@ -1,0 +1,36 @@
+Selected Pattern: 119
+Number of graphs in which the pattern occurs: 312
+Subgraph:  ['Instance', '1:', 'v', '8', 'IVLiquid', 'v', '9', 'IVAntibiotics', 'd', '8', '9', 'IVLiquid__IVAntibiotics', 'Found', '1', 'instances.']
+Repairing sub: 14
+Subgraph:  ['Instance', '1:', 'v', '8', 'IVLiquid', 'v', '9', 'IVAntibiotics', 'd', '8', '9', 'IVLiquid__IVAntibiotics', 'Found', '1', 'instances.']
+Initial sub:  ['IVLiquid', 'IVAntibiotics']
+Trace:  J
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[L]ERSepsisTriage', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau split', '[L]LacticAcid', '[L]IVLiquid', '[L]IVAntibiotics', '[L/M]AdmissionNC', '[M-INVI]tau from tree', '[M-INVI]tau join', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '8', 'IVLiquid', 'v', '9', 'IVAntibiotics', 'd', '8', '9', 'IVLiquid__IVAntibiotics', 'Found', '1', 'instances.']
+Simplified sub:  ['IVLiquid', 'IVAntibiotics']
+Start:  8
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8571428571428572, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n29, None), (n31, 'Leucocytes')], 'reached_marking': ['n11:1'], 'enabled_transitions_in_marking': {(n32, 'IVAntibiotics'), (n48, 'ReleaseD'), (n46, 'ReleaseA'), (n47, 'ReleaseC'), (n42, 'AdmissionNC'), (n44, 'ReleaseB'), (n26, 'ERTriage'), (n27, 'IVLiquid'), (n52, 'END'), (n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 7, 'remaining_tokens': 1, 'produced_tokens': 7}]
+Reached Marking:  ['n11']
+End:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8571428571428572, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n29, None), (n31, 'Leucocytes')], 'reached_marking': ['n11:1'], 'enabled_transitions_in_marking': {(n26, 'ERTriage'), (n27, 'IVLiquid'), (n28, 'CRP'), (n32, 'IVAntibiotics'), (n42, 'AdmissionNC'), (n47, 'ReleaseC'), (n48, 'ReleaseD'), (n46, 'ReleaseA'), (n44, 'ReleaseB'), (n52, 'END')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 7, 'remaining_tokens': 1, 'produced_tokens': 7}]
+Reached Marking:  ['n11']
+Added:  IVLiquid s1 --> n53
+Added:  n53 --> IVAntibiotics s2
+Added: n11 -- > (s1, 'IVLiquid') s1
+Added: (s2, 'IVAntibiotics') s2 -- > n11
+Subgraph:  ['Instance', '1:', 'v', '3', 'ERTriage', 'v', '4', 'ERSepsisTriage', 'd', '3', '4', 'ERTriage__ERSepsisTriage', 'Found', '1', 'instances.']
+Repairing sub: 22
+Subgraph:  ['Instance', '1:', 'v', '3', 'ERTriage', 'v', '4', 'ERSepsisTriage', 'd', '3', '4', 'ERTriage__ERSepsisTriage', 'Found', '1', 'instances.']
+Initial sub:  ['ERTriage', 'ERSepsisTriage']
+Trace:  J
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[L]ERSepsisTriage', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau split', '[L]LacticAcid', '[L]IVLiquid', '[L]IVAntibiotics', '[L/M]AdmissionNC', '[M-INVI]tau from tree', '[M-INVI]tau join', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '4', 'ERSepsisTriage', 'Found', '1', 'instances.']
+Simplified sub:  ['ERSepsisTriage']
+Start:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+End:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+Added: n7 -- > (s3, 'ERSepsisTriage') s3
+Added: (s3, 'ERSepsisTriage') s3 -- > n7

@@ -1,0 +1,1386 @@
+// Subdue 5.2.2 output in dot format
+
+digraph Subdue {
+
+  compound=true;
+
+subgraph cluster_SUB_1 {
+  1 [label="START",color=black,fontcolor=black];
+  2 [label="toilet",color=black,fontcolor=black];
+  3 [label="sleep",color=black,fontcolor=black];
+  4 [label="toilet",color=black,fontcolor=black];
+  5 [label="sleep",color=black,fontcolor=black];
+  1 -> 2 [label="START__toilet",color=black,fontcolor=black];
+  2 -> 3 [label="toilet__sleep",color=black,fontcolor=black];
+  3 -> 4 [label="sleep__toilet",color=black,fontcolor=black];
+  4 -> 5 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_1";
+}
+
+subgraph cluster_SUB_2 {
+  6 [label="relax",color=black,fontcolor=black];
+  7 [label="mealpreperation",color=black,fontcolor=black];
+  8 [label="eatingdrinking",color=black,fontcolor=black];
+  6 -> 7 [label="relax__mealpreperation",color=black,fontcolor=black];
+  7 -> 8 [label="mealpreperation__eatingdrinking",color=black,fontcolor=black];
+  label="SUB_2";
+}
+
+subgraph cluster_SUB_3 {
+  9 [label="personalhygiene",color=black,fontcolor=black];
+  10 [label="sleep",color=black,fontcolor=black];
+  11 [label="END",color=black,fontcolor=black];
+  9 -> 10 [label="personalhygiene__sleep",color=black,fontcolor=black];
+  10 -> 11 [label="sleep__END",color=black,fontcolor=black];
+  label="SUB_3";
+}
+
+subgraph cluster_SUB_4 {
+  12 [label="personalhygiene",color=black,fontcolor=black];
+  13 [label="outdoors",color=black,fontcolor=black];
+  12 -> 13 [label="personalhygiene__outdoors",color=black,fontcolor=black];
+  label="SUB_4";
+}
+
+subgraph cluster_SUB_5 {
+  14 [label="snack",color=black,fontcolor=black];
+  15 [label="relax",color=black,fontcolor=black];
+  14 -> 15 [label="snack__relax",color=black,fontcolor=black];
+  label="SUB_5";
+}
+
+subgraph cluster_SUB_6 {
+  16 [label="sleep",color=black,fontcolor=black];
+  17 [label="toilet",color=black,fontcolor=black];
+  16 -> 17 [label="sleep__toilet",color=black,fontcolor=black];
+  label="SUB_6";
+}
+
+subgraph cluster_SUB_7 {
+  18 [label="personalhygiene",color=black,fontcolor=black];
+  19 [label="relax",color=black,fontcolor=black];
+  18 -> 19 [label="personalhygiene__relax",color=black,fontcolor=black];
+  label="SUB_7";
+}
+
+subgraph cluster_SUB_8 {
+  20 [label="toilet",color=black,fontcolor=black];
+  21 [label="relax",color=black,fontcolor=black];
+  20 -> 21 [label="toilet__relax",color=black,fontcolor=black];
+  label="SUB_8";
+}
+
+subgraph cluster_SUB_9 {
+  22 [label="mealpreperation",color=black,fontcolor=black];
+  23 [label="eatingdrinking",color=black,fontcolor=black];
+  22 -> 23 [label="mealpreperation__eatingdrinking",color=black,fontcolor=black];
+  label="SUB_9";
+}
+
+subgraph cluster_SUB_10 {
+  24 [label="SUB_2",color=black,fontcolor=black];
+  25 [label="cleaning",color=black,fontcolor=black];
+  26 [label="relax",color=black,fontcolor=black];
+  24 -> 25 [label="mealpreperation__cleaning",color=black,fontcolor=black];
+  24 -> 26 [label="eatingdrinking__relax",color=black,fontcolor=black];
+  25 -> 26 [label="cleaning__relax",color=black,fontcolor=black];
+  label="SUB_10";
+}
+8 -> 24 [ltail=cluster_SUB_2,lhead=cluster_SUB_10];
+
+subgraph cluster_SUB_11 {
+  27 [label="SUB_6",color=black,fontcolor=black];
+  28 [label="START",color=black,fontcolor=black];
+  29 [label="toilet",color=black,fontcolor=black];
+  30 [label="sleep",color=black,fontcolor=black];
+  31 [label="medication",color=black,fontcolor=black];
+  28 -> 29 [label="START__toilet",color=black,fontcolor=black];
+  29 -> 30 [label="toilet__sleep",color=black,fontcolor=black];
+  30 -> 31 [label="sleep__medication",color=black,fontcolor=black];
+  31 -> 27 [label="medication__sleep",color=black,fontcolor=black];
+  label="SUB_11";
+}
+17 -> 27 [ltail=cluster_SUB_6,lhead=cluster_SUB_11];
+
+subgraph cluster_SUB_12 {
+  32 [label="personalhygiene",color=black,fontcolor=black];
+  33 [label="groom",color=black,fontcolor=black];
+  32 -> 33 [label="personalhygiene__groom",color=black,fontcolor=black];
+  label="SUB_12";
+}
+
+subgraph cluster_SUB_13 {
+  34 [label="SUB_4",color=black,fontcolor=black];
+  35 [label="SUB_4",color=black,fontcolor=black];
+  36 [label="dress",color=black,fontcolor=black];
+  37 [label="snack",color=black,fontcolor=black];
+  38 [label="eatingdrinking",color=black,fontcolor=black];
+  39 [label="relax",color=black,fontcolor=black];
+  36 -> 34 [label="dress__personalhygiene",color=black,fontcolor=black];
+  34 -> 37 [label="outdoors__snack",color=black,fontcolor=black];
+  35 -> 39 [label="outdoors__relax",color=black,fontcolor=black];
+  37 -> 38 [label="snack__eatingdrinking",color=black,fontcolor=black];
+  38 -> 35 [label="eatingdrinking__personalhygiene",color=black,fontcolor=black];
+  label="SUB_13";
+}
+13 -> 34 [ltail=cluster_SUB_4,lhead=cluster_SUB_13];
+13 -> 34 [ltail=cluster_SUB_4,lhead=cluster_SUB_13];
+
+subgraph cluster_SUB_14 {
+  40 [label="mealpreperation",color=black,fontcolor=black];
+  41 [label="relax",color=black,fontcolor=black];
+  42 [label="toilet",color=black,fontcolor=black];
+  40 -> 41 [label="mealpreperation__relax",color=black,fontcolor=black];
+  41 -> 42 [label="relax__toilet",color=black,fontcolor=black];
+  label="SUB_14";
+}
+
+subgraph cluster_SUB_15 {
+  43 [label="outdoors",color=black,fontcolor=black];
+  44 [label="relax",color=black,fontcolor=black];
+  45 [label="outdoors",color=black,fontcolor=black];
+  44 -> 45 [label="relax__outdoors",color=black,fontcolor=black];
+  43 -> 44 [label="outdoors__relax",color=black,fontcolor=black];
+  label="SUB_15";
+}
+
+subgraph cluster_SUB_16 {
+  46 [label="SUB_1",color=black,fontcolor=black];
+  47 [label="toilet",color=black,fontcolor=black];
+  48 [label="sleep",color=black,fontcolor=black];
+  49 [label="relax",color=black,fontcolor=black];
+  46 -> 47 [label="sleep__toilet",color=black,fontcolor=black];
+  47 -> 48 [label="toilet__sleep",color=black,fontcolor=black];
+  48 -> 49 [label="sleep__relax",color=black,fontcolor=black];
+  label="SUB_16";
+}
+5 -> 46 [ltail=cluster_SUB_1,lhead=cluster_SUB_16];
+
+subgraph cluster_SUB_17 {
+  50 [label="snack",color=black,fontcolor=black];
+  51 [label="eatingdrinking",color=black,fontcolor=black];
+  52 [label="cleaning",color=black,fontcolor=black];
+  53 [label="relax",color=black,fontcolor=black];
+  51 -> 53 [label="eatingdrinking__relax",color=black,fontcolor=black];
+  52 -> 53 [label="cleaning__relax",color=black,fontcolor=black];
+  50 -> 51 [label="snack__eatingdrinking",color=black,fontcolor=black];
+  50 -> 52 [label="snack__cleaning",color=black,fontcolor=black];
+  label="SUB_17";
+}
+
+subgraph cluster_SUB_18 {
+  54 [label="personalhygiene",color=black,fontcolor=black];
+  55 [label="toilet",color=black,fontcolor=black];
+  54 -> 55 [label="personalhygiene__toilet",color=black,fontcolor=black];
+  label="SUB_18";
+}
+
+subgraph cluster_SUB_19 {
+  56 [label="SUB_3",color=black,fontcolor=black];
+  57 [label="read",color=black,fontcolor=black];
+  57 -> 56 [label="read__personalhygiene",color=black,fontcolor=black];
+  label="SUB_19";
+}
+11 -> 56 [ltail=cluster_SUB_3,lhead=cluster_SUB_19];
+
+subgraph cluster_SUB_20 {
+  58 [label="sleep",color=black,fontcolor=black];
+  59 [label="END",color=black,fontcolor=black];
+  58 -> 59 [label="sleep__END",color=black,fontcolor=black];
+  label="SUB_20";
+}
+
+subgraph cluster_SUB_21 {
+  60 [label="relax",color=black,fontcolor=black];
+  61 [label="cleaning",color=black,fontcolor=black];
+  60 -> 61 [label="relax__cleaning",color=black,fontcolor=black];
+  label="SUB_21";
+}
+
+subgraph cluster_SUB_22 {
+  62 [label="SUB_2",color=black,fontcolor=black];
+  63 [label="snack",color=black,fontcolor=black];
+  64 [label="cleaning",color=black,fontcolor=black];
+  65 [label="watchtv",color=black,fontcolor=black];
+  66 [label="snack",color=black,fontcolor=black];
+  63 -> 62 [label="snack__relax",color=black,fontcolor=black];
+  62 -> 64 [label="mealpreperation__cleaning",color=black,fontcolor=black];
+  64 -> 65 [label="cleaning__watchtv",color=black,fontcolor=black];
+  62 -> 65 [label="eatingdrinking__watchtv",color=black,fontcolor=black];
+  65 -> 66 [label="watchtv__snack",color=black,fontcolor=black];
+  label="SUB_22";
+}
+8 -> 62 [ltail=cluster_SUB_2,lhead=cluster_SUB_22];
+
+subgraph cluster_SUB_23 {
+  67 [label="personalhygiene",color=black,fontcolor=black];
+  68 [label="snack",color=black,fontcolor=black];
+  67 -> 68 [label="personalhygiene__snack",color=black,fontcolor=black];
+  label="SUB_23";
+}
+
+subgraph cluster_SUB_24 {
+  69 [label="outdoors",color=black,fontcolor=black];
+  70 [label="toilet",color=black,fontcolor=black];
+  69 -> 70 [label="outdoors__toilet",color=black,fontcolor=black];
+  label="SUB_24";
+}
+
+subgraph cluster_SUB_25 {
+  71 [label="SUB_2",color=black,fontcolor=black];
+  72 [label="relax",color=black,fontcolor=black];
+  71 -> 72 [label="eatingdrinking__relax",color=black,fontcolor=black];
+  label="SUB_25";
+}
+8 -> 71 [ltail=cluster_SUB_2,lhead=cluster_SUB_25];
+
+subgraph cluster_SUB_26 {
+  73 [label="SUB_3",color=black,fontcolor=black];
+  74 [label="relax",color=black,fontcolor=black];
+  74 -> 73 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_26";
+}
+11 -> 73 [ltail=cluster_SUB_3,lhead=cluster_SUB_26];
+
+subgraph cluster_SUB_27 {
+  75 [label="SUB_6",color=black,fontcolor=black];
+  76 [label="START",color=black,fontcolor=black];
+  76 -> 75 [label="START__sleep",color=black,fontcolor=black];
+  label="SUB_27";
+}
+17 -> 75 [ltail=cluster_SUB_6,lhead=cluster_SUB_27];
+
+subgraph cluster_SUB_28 {
+  77 [label="SUB_18",color=black,fontcolor=black];
+  78 [label="outdoors",color=black,fontcolor=black];
+  77 -> 78 [label="toilet__outdoors",color=black,fontcolor=black];
+  label="SUB_28";
+}
+55 -> 77 [ltail=cluster_SUB_18,lhead=cluster_SUB_28];
+
+subgraph cluster_SUB_29 {
+  79 [label="SUB_9",color=black,fontcolor=black];
+  80 [label="personalhygiene",color=black,fontcolor=black];
+  79 -> 80 [label="eatingdrinking__personalhygiene",color=black,fontcolor=black];
+  label="SUB_29";
+}
+23 -> 79 [ltail=cluster_SUB_9,lhead=cluster_SUB_29];
+
+subgraph cluster_SUB_30 {
+  81 [label="SUB_8",color=black,fontcolor=black];
+  82 [label="toilet",color=black,fontcolor=black];
+  81 -> 82 [label="relax__toilet",color=black,fontcolor=black];
+  label="SUB_30";
+}
+21 -> 81 [ltail=cluster_SUB_8,lhead=cluster_SUB_30];
+
+subgraph cluster_SUB_31 {
+  83 [label="SUB_8",color=black,fontcolor=black];
+  84 [label="SUB_5",color=black,fontcolor=black];
+  83 -> 84 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_31";
+}
+21 -> 83 [ltail=cluster_SUB_8,lhead=cluster_SUB_31];
+15 -> 83 [ltail=cluster_SUB_5,lhead=cluster_SUB_31];
+
+subgraph cluster_SUB_32 {
+  85 [label="SUB_8",color=black,fontcolor=black];
+  86 [label="mealpreperation",color=black,fontcolor=black];
+  85 -> 86 [label="relax__mealpreperation",color=black,fontcolor=black];
+  label="SUB_32";
+}
+21 -> 85 [ltail=cluster_SUB_8,lhead=cluster_SUB_32];
+
+subgraph cluster_SUB_33 {
+  87 [label="SUB_7",color=black,fontcolor=black];
+  88 [label="snack",color=black,fontcolor=black];
+  87 -> 88 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_33";
+}
+19 -> 87 [ltail=cluster_SUB_7,lhead=cluster_SUB_33];
+
+subgraph cluster_SUB_34 {
+  89 [label="SUB_5",color=black,fontcolor=black];
+  90 [label="mealpreperation",color=black,fontcolor=black];
+  89 -> 90 [label="relax__mealpreperation",color=black,fontcolor=black];
+  label="SUB_34";
+}
+15 -> 89 [ltail=cluster_SUB_5,lhead=cluster_SUB_34];
+
+subgraph cluster_SUB_35 {
+  91 [label="SUB_5",color=black,fontcolor=black];
+  92 [label="outdoors",color=black,fontcolor=black];
+  91 -> 92 [label="relax__outdoors",color=black,fontcolor=black];
+  label="SUB_35";
+}
+15 -> 91 [ltail=cluster_SUB_5,lhead=cluster_SUB_35];
+
+subgraph cluster_SUB_36 {
+  93 [label="SUB_5",color=black,fontcolor=black];
+  94 [label="cleaning",color=black,fontcolor=black];
+  93 -> 94 [label="relax__cleaning",color=black,fontcolor=black];
+  label="SUB_36";
+}
+15 -> 93 [ltail=cluster_SUB_5,lhead=cluster_SUB_36];
+
+subgraph cluster_SUB_37 {
+  95 [label="SUB_4",color=black,fontcolor=black];
+  96 [label="relax",color=black,fontcolor=black];
+  95 -> 96 [label="outdoors__relax",color=black,fontcolor=black];
+  label="SUB_37";
+}
+13 -> 95 [ltail=cluster_SUB_4,lhead=cluster_SUB_37];
+
+subgraph cluster_SUB_38 {
+  97 [label="sleep",color=black,fontcolor=black];
+  98 [label="relax",color=black,fontcolor=black];
+  97 -> 98 [label="sleep__relax",color=black,fontcolor=black];
+  label="SUB_38";
+}
+
+subgraph cluster_SUB_39 {
+  99 [label="work",color=black,fontcolor=black];
+  100 [label="groom",color=black,fontcolor=black];
+  99 -> 100 [label="work__groom",color=black,fontcolor=black];
+  label="SUB_39";
+}
+
+subgraph cluster_SUB_40 {
+  101 [label="SUB_9",color=black,fontcolor=black];
+  102 [label="cleaning",color=black,fontcolor=black];
+  103 [label="relax",color=black,fontcolor=black];
+  101 -> 102 [label="mealpreperation__cleaning",color=black,fontcolor=black];
+  101 -> 103 [label="eatingdrinking__relax",color=black,fontcolor=black];
+  102 -> 103 [label="cleaning__relax",color=black,fontcolor=black];
+  label="SUB_40";
+}
+23 -> 101 [ltail=cluster_SUB_9,lhead=cluster_SUB_40];
+
+subgraph cluster_SUB_41 {
+  104 [label="bathe",color=black,fontcolor=black];
+  105 [label="dress",color=black,fontcolor=black];
+  104 -> 105 [label="bathe__dress",color=black,fontcolor=black];
+  label="SUB_41";
+}
+
+subgraph cluster_SUB_42 {
+  106 [label="snack",color=black,fontcolor=black];
+  107 [label="eatingdrinking",color=black,fontcolor=black];
+  106 -> 107 [label="snack__eatingdrinking",color=black,fontcolor=black];
+  label="SUB_42";
+}
+
+subgraph cluster_SUB_43 {
+  108 [label="SUB_36",color=black,fontcolor=black];
+  109 [label="SUB_26",color=black,fontcolor=black];
+  108 -> 109 [label="cleaning__relax",color=black,fontcolor=black];
+  label="SUB_43";
+}
+94 -> 108 [ltail=cluster_SUB_36,lhead=cluster_SUB_43];
+74 -> 108 [ltail=cluster_SUB_26,lhead=cluster_SUB_43];
+
+subgraph cluster_SUB_44 {
+  110 [label="SUB_32",color=black,fontcolor=black];
+  111 [label="START",color=black,fontcolor=black];
+  111 -> 110 [label="START__toilet",color=black,fontcolor=black];
+  label="SUB_44";
+}
+86 -> 110 [ltail=cluster_SUB_32,lhead=cluster_SUB_44];
+
+subgraph cluster_SUB_45 {
+  112 [label="SUB_24",color=black,fontcolor=black];
+  113 [label="SUB_3",color=black,fontcolor=black];
+  112 -> 113 [label="toilet__personalhygiene",color=black,fontcolor=black];
+  label="SUB_45";
+}
+70 -> 112 [ltail=cluster_SUB_24,lhead=cluster_SUB_45];
+11 -> 112 [ltail=cluster_SUB_3,lhead=cluster_SUB_45];
+
+subgraph cluster_SUB_46 {
+  114 [label="SUB_8",color=black,fontcolor=black];
+  115 [label="SUB_3",color=black,fontcolor=black];
+  114 -> 115 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_46";
+}
+21 -> 114 [ltail=cluster_SUB_8,lhead=cluster_SUB_46];
+11 -> 114 [ltail=cluster_SUB_3,lhead=cluster_SUB_46];
+
+subgraph cluster_SUB_47 {
+  116 [label="SUB_7",color=black,fontcolor=black];
+  117 [label="SUB_3",color=black,fontcolor=black];
+  116 -> 117 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_47";
+}
+19 -> 116 [ltail=cluster_SUB_7,lhead=cluster_SUB_47];
+11 -> 116 [ltail=cluster_SUB_3,lhead=cluster_SUB_47];
+
+subgraph cluster_SUB_48 {
+  118 [label="SUB_12",color=black,fontcolor=black];
+  119 [label="SUB_3",color=black,fontcolor=black];
+  118 -> 119 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_48";
+}
+33 -> 118 [ltail=cluster_SUB_12,lhead=cluster_SUB_48];
+11 -> 118 [ltail=cluster_SUB_3,lhead=cluster_SUB_48];
+
+subgraph cluster_SUB_49 {
+  120 [label="SUB_20",color=black,fontcolor=black];
+  121 [label="SUB_18",color=black,fontcolor=black];
+  121 -> 120 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_49";
+}
+59 -> 120 [ltail=cluster_SUB_20,lhead=cluster_SUB_49];
+55 -> 120 [ltail=cluster_SUB_18,lhead=cluster_SUB_49];
+
+subgraph cluster_SUB_50 {
+  122 [label="SUB_29",color=black,fontcolor=black];
+  123 [label="SUB_1",color=black,fontcolor=black];
+  123 -> 122 [label="sleep__mealpreperation",color=black,fontcolor=black];
+  label="SUB_50";
+}
+80 -> 122 [ltail=cluster_SUB_29,lhead=cluster_SUB_50];
+5 -> 122 [ltail=cluster_SUB_1,lhead=cluster_SUB_50];
+
+subgraph cluster_SUB_51 {
+  124 [label="SUB_3",color=black,fontcolor=black];
+  125 [label="groom",color=black,fontcolor=black];
+  125 -> 124 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_51";
+}
+11 -> 124 [ltail=cluster_SUB_3,lhead=cluster_SUB_51];
+
+subgraph cluster_SUB_52 {
+  126 [label="SUB_27",color=black,fontcolor=black];
+  127 [label="SUB_6",color=black,fontcolor=black];
+  126 -> 127 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_52";
+}
+76 -> 126 [ltail=cluster_SUB_27,lhead=cluster_SUB_52];
+17 -> 126 [ltail=cluster_SUB_6,lhead=cluster_SUB_52];
+
+subgraph cluster_SUB_53 {
+  128 [label="SUB_47",color=black,fontcolor=black];
+  129 [label="SUB_2",color=black,fontcolor=black];
+  129 -> 128 [label="eatingdrinking__personalhygiene",color=black,fontcolor=black];
+  label="SUB_53";
+}
+117 -> 128 [ltail=cluster_SUB_47,lhead=cluster_SUB_53];
+8 -> 128 [ltail=cluster_SUB_2,lhead=cluster_SUB_53];
+
+subgraph cluster_SUB_54 {
+  130 [label="SUB_20",color=black,fontcolor=black];
+  131 [label="read",color=black,fontcolor=black];
+  131 -> 130 [label="read__sleep",color=black,fontcolor=black];
+  label="SUB_54";
+}
+59 -> 130 [ltail=cluster_SUB_20,lhead=cluster_SUB_54];
+
+subgraph cluster_SUB_55 {
+  132 [label="SUB_19",color=black,fontcolor=black];
+  133 [label="personalhygiene",color=black,fontcolor=black];
+  133 -> 132 [label="personalhygiene__read",color=black,fontcolor=black];
+  label="SUB_55";
+}
+57 -> 132 [ltail=cluster_SUB_19,lhead=cluster_SUB_55];
+
+subgraph cluster_SUB_56 {
+  134 [label="SUB_55",color=black,fontcolor=black];
+  135 [label="SUB_21",color=black,fontcolor=black];
+  135 -> 134 [label="cleaning__personalhygiene",color=black,fontcolor=black];
+  label="SUB_56";
+}
+133 -> 134 [ltail=cluster_SUB_55,lhead=cluster_SUB_56];
+61 -> 134 [ltail=cluster_SUB_21,lhead=cluster_SUB_56];
+
+subgraph cluster_SUB_57 {
+  136 [label="SUB_56",color=black,fontcolor=black];
+  137 [label="SUB_34",color=black,fontcolor=black];
+  137 -> 136 [label="mealpreperation__relax",color=black,fontcolor=black];
+  label="SUB_57";
+}
+135 -> 136 [ltail=cluster_SUB_56,lhead=cluster_SUB_57];
+90 -> 136 [ltail=cluster_SUB_34,lhead=cluster_SUB_57];
+
+subgraph cluster_SUB_58 {
+  138 [label="SUB_57",color=black,fontcolor=black];
+  139 [label="SUB_30",color=black,fontcolor=black];
+  139 -> 138 [label="toilet__snack",color=black,fontcolor=black];
+  label="SUB_58";
+}
+137 -> 138 [ltail=cluster_SUB_57,lhead=cluster_SUB_58];
+82 -> 138 [ltail=cluster_SUB_30,lhead=cluster_SUB_58];
+
+subgraph cluster_SUB_59 {
+  140 [label="SUB_58",color=black,fontcolor=black];
+  141 [label="SUB_28",color=black,fontcolor=black];
+  141 -> 140 [label="outdoors__toilet",color=black,fontcolor=black];
+  label="SUB_59";
+}
+139 -> 140 [ltail=cluster_SUB_58,lhead=cluster_SUB_59];
+78 -> 140 [ltail=cluster_SUB_28,lhead=cluster_SUB_59];
+
+subgraph cluster_SUB_60 {
+  142 [label="SUB_19",color=black,fontcolor=black];
+  143 [label="snack",color=black,fontcolor=black];
+  143 -> 142 [label="snack__read",color=black,fontcolor=black];
+  label="SUB_60";
+}
+57 -> 142 [ltail=cluster_SUB_19,lhead=cluster_SUB_60];
+
+subgraph cluster_SUB_61 {
+  144 [label="SUB_60",color=black,fontcolor=black];
+  145 [label="SUB_25",color=black,fontcolor=black];
+  145 -> 144 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_61";
+}
+143 -> 144 [ltail=cluster_SUB_60,lhead=cluster_SUB_61];
+72 -> 144 [ltail=cluster_SUB_25,lhead=cluster_SUB_61];
+
+subgraph cluster_SUB_62 {
+  146 [label="SUB_16",color=black,fontcolor=black];
+  147 [label="mealpreperation",color=black,fontcolor=black];
+  146 -> 147 [label="relax__mealpreperation",color=black,fontcolor=black];
+  label="SUB_62";
+}
+49 -> 146 [ltail=cluster_SUB_16,lhead=cluster_SUB_62];
+
+subgraph cluster_SUB_63 {
+  148 [label="SUB_54",color=black,fontcolor=black];
+  149 [label="personalhygiene",color=black,fontcolor=black];
+  149 -> 148 [label="personalhygiene__read",color=black,fontcolor=black];
+  label="SUB_63";
+}
+131 -> 148 [ltail=cluster_SUB_54,lhead=cluster_SUB_63];
+
+subgraph cluster_SUB_64 {
+  150 [label="SUB_14",color=black,fontcolor=black];
+  151 [label="SUB_11",color=black,fontcolor=black];
+  151 -> 150 [label="toilet__mealpreperation",color=black,fontcolor=black];
+  label="SUB_64";
+}
+42 -> 150 [ltail=cluster_SUB_14,lhead=cluster_SUB_64];
+31 -> 150 [ltail=cluster_SUB_11,lhead=cluster_SUB_64];
+
+subgraph cluster_SUB_65 {
+  152 [label="SUB_16",color=black,fontcolor=black];
+  153 [label="SUB_14",color=black,fontcolor=black];
+  152 -> 153 [label="relax__mealpreperation",color=black,fontcolor=black];
+  label="SUB_65";
+}
+49 -> 152 [ltail=cluster_SUB_16,lhead=cluster_SUB_65];
+42 -> 152 [ltail=cluster_SUB_14,lhead=cluster_SUB_65];
+
+subgraph cluster_SUB_66 {
+  154 [label="SUB_20",color=black,fontcolor=black];
+  155 [label="SUB_6",color=black,fontcolor=black];
+  155 -> 154 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_66";
+}
+59 -> 154 [ltail=cluster_SUB_20,lhead=cluster_SUB_66];
+17 -> 154 [ltail=cluster_SUB_6,lhead=cluster_SUB_66];
+
+subgraph cluster_SUB_67 {
+  156 [label="SUB_45",color=black,fontcolor=black];
+  157 [label="SUB_7",color=black,fontcolor=black];
+  157 -> 156 [label="relax__outdoors",color=black,fontcolor=black];
+  label="SUB_67";
+}
+113 -> 156 [ltail=cluster_SUB_45,lhead=cluster_SUB_67];
+19 -> 156 [ltail=cluster_SUB_7,lhead=cluster_SUB_67];
+
+subgraph cluster_SUB_68 {
+  158 [label="SUB_11",color=black,fontcolor=black];
+  159 [label="personalhygiene",color=black,fontcolor=black];
+  158 -> 159 [label="toilet__personalhygiene",color=black,fontcolor=black];
+  label="SUB_68";
+}
+31 -> 158 [ltail=cluster_SUB_11,lhead=cluster_SUB_68];
+
+subgraph cluster_SUB_69 {
+  160 [label="SUB_67",color=black,fontcolor=black];
+  161 [label="SUB_17",color=black,fontcolor=black];
+  161 -> 160 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_69";
+}
+157 -> 160 [ltail=cluster_SUB_67,lhead=cluster_SUB_69];
+53 -> 160 [ltail=cluster_SUB_17,lhead=cluster_SUB_69];
+
+subgraph cluster_SUB_70 {
+  162 [label="SUB_69",color=black,fontcolor=black];
+  163 [label="SUB_31",color=black,fontcolor=black];
+  163 -> 162 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_70";
+}
+161 -> 162 [ltail=cluster_SUB_69,lhead=cluster_SUB_70];
+84 -> 162 [ltail=cluster_SUB_31,lhead=cluster_SUB_70];
+
+subgraph cluster_SUB_71 {
+  164 [label="SUB_68",color=black,fontcolor=black];
+  165 [label="SUB_10",color=black,fontcolor=black];
+  164 -> 165 [label="personalhygiene__relax",color=black,fontcolor=black];
+  label="SUB_71";
+}
+159 -> 164 [ltail=cluster_SUB_68,lhead=cluster_SUB_71];
+26 -> 164 [ltail=cluster_SUB_10,lhead=cluster_SUB_71];
+
+subgraph cluster_SUB_72 {
+  166 [label="SUB_71",color=black,fontcolor=black];
+  167 [label="SUB_12",color=black,fontcolor=black];
+  166 -> 167 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_72";
+}
+165 -> 166 [ltail=cluster_SUB_71,lhead=cluster_SUB_72];
+33 -> 166 [ltail=cluster_SUB_12,lhead=cluster_SUB_72];
+
+subgraph cluster_SUB_73 {
+  168 [label="SUB_19",color=black,fontcolor=black];
+  169 [label="SUB_5",color=black,fontcolor=black];
+  169 -> 168 [label="relax__read",color=black,fontcolor=black];
+  label="SUB_73";
+}
+57 -> 168 [ltail=cluster_SUB_19,lhead=cluster_SUB_73];
+15 -> 168 [ltail=cluster_SUB_5,lhead=cluster_SUB_73];
+
+subgraph cluster_SUB_74 {
+  170 [label="SUB_73",color=black,fontcolor=black];
+  171 [label="SUB_40",color=black,fontcolor=black];
+  171 -> 170 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_74";
+}
+169 -> 170 [ltail=cluster_SUB_73,lhead=cluster_SUB_74];
+103 -> 170 [ltail=cluster_SUB_40,lhead=cluster_SUB_74];
+
+subgraph cluster_SUB_75 {
+  172 [label="SUB_74",color=black,fontcolor=black];
+  173 [label="SUB_33",color=black,fontcolor=black];
+  173 -> 172 [label="snack__mealpreperation",color=black,fontcolor=black];
+  label="SUB_75";
+}
+171 -> 172 [ltail=cluster_SUB_74,lhead=cluster_SUB_75];
+88 -> 172 [ltail=cluster_SUB_33,lhead=cluster_SUB_75];
+
+subgraph cluster_SUB_76 {
+  174 [label="SUB_75",color=black,fontcolor=black];
+  175 [label="SUB_38",color=black,fontcolor=black];
+  175 -> 174 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_76";
+}
+173 -> 174 [ltail=cluster_SUB_75,lhead=cluster_SUB_76];
+98 -> 174 [ltail=cluster_SUB_38,lhead=cluster_SUB_76];
+
+subgraph cluster_SUB_77 {
+  176 [label="SUB_72",color=black,fontcolor=black];
+  177 [label="SUB_7",color=black,fontcolor=black];
+  176 -> 177 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_77";
+}
+167 -> 176 [ltail=cluster_SUB_72,lhead=cluster_SUB_77];
+19 -> 176 [ltail=cluster_SUB_7,lhead=cluster_SUB_77];
+
+subgraph cluster_SUB_78 {
+  178 [label="SUB_26",color=black,fontcolor=black];
+  179 [label="read",color=black,fontcolor=black];
+  179 -> 178 [label="read__relax",color=black,fontcolor=black];
+  label="SUB_78";
+}
+74 -> 178 [ltail=cluster_SUB_26,lhead=cluster_SUB_78];
+
+subgraph cluster_SUB_79 {
+  180 [label="SUB_7",color=black,fontcolor=black];
+  181 [label="SUB_1",color=black,fontcolor=black];
+  181 -> 180 [label="sleep__personalhygiene",color=black,fontcolor=black];
+  label="SUB_79";
+}
+19 -> 180 [ltail=cluster_SUB_7,lhead=cluster_SUB_79];
+5 -> 180 [ltail=cluster_SUB_1,lhead=cluster_SUB_79];
+
+subgraph cluster_SUB_80 {
+  182 [label="SUB_62",color=black,fontcolor=black];
+  183 [label="personalhygiene",color=black,fontcolor=black];
+  182 -> 183 [label="mealpreperation__personalhygiene",color=black,fontcolor=black];
+  label="SUB_80";
+}
+147 -> 182 [ltail=cluster_SUB_62,lhead=cluster_SUB_80];
+
+subgraph cluster_SUB_81 {
+  184 [label="SUB_66",color=black,fontcolor=black];
+  185 [label="personalhygiene",color=black,fontcolor=black];
+  185 -> 184 [label="personalhygiene__sleep",color=black,fontcolor=black];
+  label="SUB_81";
+}
+155 -> 184 [ltail=cluster_SUB_66,lhead=cluster_SUB_81];
+
+subgraph cluster_SUB_82 {
+  186 [label="SUB_70",color=black,fontcolor=black];
+  187 [label="SUB_5",color=black,fontcolor=black];
+  187 -> 186 [label="relax__toilet",color=black,fontcolor=black];
+  label="SUB_82";
+}
+163 -> 186 [ltail=cluster_SUB_70,lhead=cluster_SUB_82];
+15 -> 186 [ltail=cluster_SUB_5,lhead=cluster_SUB_82];
+
+subgraph cluster_SUB_83 {
+  188 [label="SUB_27",color=black,fontcolor=black];
+  189 [label="sleep",color=black,fontcolor=black];
+  188 -> 189 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_83";
+}
+76 -> 188 [ltail=cluster_SUB_27,lhead=cluster_SUB_83];
+
+subgraph cluster_SUB_84 {
+  190 [label="SUB_46",color=black,fontcolor=black];
+  191 [label="snack",color=black,fontcolor=black];
+  191 -> 190 [label="snack__toilet",color=black,fontcolor=black];
+  label="SUB_84";
+}
+115 -> 190 [ltail=cluster_SUB_46,lhead=cluster_SUB_84];
+
+subgraph cluster_SUB_85 {
+  192 [label="SUB_52",color=black,fontcolor=black];
+  193 [label="dress",color=black,fontcolor=black];
+  192 -> 193 [label="toilet__dress",color=black,fontcolor=black];
+  label="SUB_85";
+}
+127 -> 192 [ltail=cluster_SUB_52,lhead=cluster_SUB_85];
+
+subgraph cluster_SUB_86 {
+  194 [label="SUB_59",color=black,fontcolor=black];
+  195 [label="work",color=black,fontcolor=black];
+  195 -> 194 [label="work__personalhygiene",color=black,fontcolor=black];
+  label="SUB_86";
+}
+141 -> 194 [ltail=cluster_SUB_59,lhead=cluster_SUB_86];
+
+subgraph cluster_SUB_87 {
+  196 [label="SUB_86",color=black,fontcolor=black];
+  197 [label="mealpreperation",color=black,fontcolor=black];
+  197 -> 196 [label="mealpreperation__work",color=black,fontcolor=black];
+  label="SUB_87";
+}
+195 -> 196 [ltail=cluster_SUB_86,lhead=cluster_SUB_87];
+
+subgraph cluster_SUB_88 {
+  198 [label="SUB_43",color=black,fontcolor=black];
+  199 [label="SUB_4",color=black,fontcolor=black];
+  199 -> 198 [label="outdoors__snack",color=black,fontcolor=black];
+  label="SUB_88";
+}
+109 -> 198 [ltail=cluster_SUB_43,lhead=cluster_SUB_88];
+13 -> 198 [ltail=cluster_SUB_4,lhead=cluster_SUB_88];
+
+subgraph cluster_SUB_89 {
+  200 [label="SUB_88",color=black,fontcolor=black];
+  201 [label="SUB_21",color=black,fontcolor=black];
+  201 -> 200 [label="cleaning__personalhygiene",color=black,fontcolor=black];
+  label="SUB_89";
+}
+199 -> 200 [ltail=cluster_SUB_88,lhead=cluster_SUB_89];
+61 -> 200 [ltail=cluster_SUB_21,lhead=cluster_SUB_89];
+
+subgraph cluster_SUB_90 {
+  202 [label="SUB_1",color=black,fontcolor=black];
+  203 [label="relax",color=black,fontcolor=black];
+  202 -> 203 [label="sleep__relax",color=black,fontcolor=black];
+  label="SUB_90";
+}
+5 -> 202 [ltail=cluster_SUB_1,lhead=cluster_SUB_90];
+
+subgraph cluster_SUB_91 {
+  204 [label="SUB_61",color=black,fontcolor=black];
+  205 [label="SUB_4",color=black,fontcolor=black];
+  205 -> 204 [label="outdoors__relax",color=black,fontcolor=black];
+  label="SUB_91";
+}
+145 -> 204 [ltail=cluster_SUB_61,lhead=cluster_SUB_91];
+13 -> 204 [ltail=cluster_SUB_4,lhead=cluster_SUB_91];
+
+subgraph cluster_SUB_92 {
+  206 [label="SUB_89",color=black,fontcolor=black];
+  207 [label="SUB_9",color=black,fontcolor=black];
+  207 -> 206 [label="eatingdrinking__relax",color=black,fontcolor=black];
+  label="SUB_92";
+}
+201 -> 206 [ltail=cluster_SUB_89,lhead=cluster_SUB_92];
+23 -> 206 [ltail=cluster_SUB_9,lhead=cluster_SUB_92];
+
+subgraph cluster_SUB_93 {
+  208 [label="SUB_85",color=black,fontcolor=black];
+  209 [label="SUB_6",color=black,fontcolor=black];
+  208 -> 209 [label="dress__sleep",color=black,fontcolor=black];
+  label="SUB_93";
+}
+193 -> 208 [ltail=cluster_SUB_85,lhead=cluster_SUB_93];
+17 -> 208 [ltail=cluster_SUB_6,lhead=cluster_SUB_93];
+
+subgraph cluster_SUB_94 {
+  210 [label="SUB_92",color=black,fontcolor=black];
+  211 [label="outdoors",color=black,fontcolor=black];
+  211 -> 210 [label="outdoors__mealpreperation",color=black,fontcolor=black];
+  label="SUB_94";
+}
+207 -> 210 [ltail=cluster_SUB_92,lhead=cluster_SUB_94];
+
+subgraph cluster_SUB_95 {
+  212 [label="SUB_80",color=black,fontcolor=black];
+  213 [label="dress",color=black,fontcolor=black];
+  212 -> 213 [label="personalhygiene__dress",color=black,fontcolor=black];
+  label="SUB_95";
+}
+183 -> 212 [ltail=cluster_SUB_80,lhead=cluster_SUB_95];
+
+subgraph cluster_SUB_96 {
+  214 [label="SUB_44",color=black,fontcolor=black];
+  215 [label="groom",color=black,fontcolor=black];
+  214 -> 215 [label="mealpreperation__groom",color=black,fontcolor=black];
+  label="SUB_96";
+}
+111 -> 214 [ltail=cluster_SUB_44,lhead=cluster_SUB_96];
+
+subgraph cluster_SUB_97 {
+  216 [label="SUB_1",color=black,fontcolor=black];
+  217 [label="toilet",color=black,fontcolor=black];
+  216 -> 217 [label="sleep__toilet",color=black,fontcolor=black];
+  label="SUB_97";
+}
+5 -> 216 [ltail=cluster_SUB_1,lhead=cluster_SUB_97];
+
+subgraph cluster_SUB_98 {
+  218 [label="SUB_97",color=black,fontcolor=black];
+  219 [label="SUB_4",color=black,fontcolor=black];
+  218 -> 219 [label="toilet__personalhygiene",color=black,fontcolor=black];
+  label="SUB_98";
+}
+217 -> 218 [ltail=cluster_SUB_97,lhead=cluster_SUB_98];
+13 -> 218 [ltail=cluster_SUB_4,lhead=cluster_SUB_98];
+
+subgraph cluster_SUB_99 {
+  220 [label="SUB_32",color=black,fontcolor=black];
+  221 [label="SUB_1",color=black,fontcolor=black];
+  221 -> 220 [label="sleep__toilet",color=black,fontcolor=black];
+  label="SUB_99";
+}
+86 -> 220 [ltail=cluster_SUB_32,lhead=cluster_SUB_99];
+5 -> 220 [ltail=cluster_SUB_1,lhead=cluster_SUB_99];
+
+subgraph cluster_SUB_100 {
+  222 [label="SUB_83",color=black,fontcolor=black];
+  223 [label="personalhygiene",color=black,fontcolor=black];
+  222 -> 223 [label="sleep__personalhygiene",color=black,fontcolor=black];
+  label="SUB_100";
+}
+189 -> 222 [ltail=cluster_SUB_83,lhead=cluster_SUB_100];
+
+subgraph cluster_SUB_101 {
+  224 [label="SUB_99",color=black,fontcolor=black];
+  225 [label="personalhygiene",color=black,fontcolor=black];
+  224 -> 225 [label="mealpreperation__personalhygiene",color=black,fontcolor=black];
+  label="SUB_101";
+}
+221 -> 224 [ltail=cluster_SUB_99,lhead=cluster_SUB_101];
+
+subgraph cluster_SUB_102 {
+  226 [label="SUB_101",color=black,fontcolor=black];
+  227 [label="SUB_13",color=black,fontcolor=black];
+  226 -> 227 [label="personalhygiene__dress",color=black,fontcolor=black];
+  label="SUB_102";
+}
+225 -> 226 [ltail=cluster_SUB_101,lhead=cluster_SUB_102];
+39 -> 226 [ltail=cluster_SUB_13,lhead=cluster_SUB_102];
+
+subgraph cluster_SUB_103 {
+  228 [label="SUB_65",color=black,fontcolor=black];
+  229 [label="work",color=black,fontcolor=black];
+  228 -> 229 [label="toilet__work",color=black,fontcolor=black];
+  label="SUB_103";
+}
+153 -> 228 [ltail=cluster_SUB_65,lhead=cluster_SUB_103];
+
+subgraph cluster_SUB_104 {
+  230 [label="SUB_103",color=black,fontcolor=black];
+  231 [label="SUB_12",color=black,fontcolor=black];
+  230 -> 231 [label="work__personalhygiene",color=black,fontcolor=black];
+  label="SUB_104";
+}
+229 -> 230 [ltail=cluster_SUB_103,lhead=cluster_SUB_104];
+33 -> 230 [ltail=cluster_SUB_12,lhead=cluster_SUB_104];
+
+subgraph cluster_SUB_105 {
+  232 [label="SUB_104",color=black,fontcolor=black];
+  233 [label="personalhygiene",color=black,fontcolor=black];
+  232 -> 233 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_105";
+}
+231 -> 232 [ltail=cluster_SUB_104,lhead=cluster_SUB_105];
+
+subgraph cluster_SUB_106 {
+  234 [label="SUB_102",color=black,fontcolor=black];
+  235 [label="work",color=black,fontcolor=black];
+  234 -> 235 [label="relax__work",color=black,fontcolor=black];
+  label="SUB_106";
+}
+227 -> 234 [ltail=cluster_SUB_102,lhead=cluster_SUB_106];
+
+subgraph cluster_SUB_107 {
+  236 [label="SUB_106",color=black,fontcolor=black];
+  237 [label="SUB_23",color=black,fontcolor=black];
+  236 -> 237 [label="work__personalhygiene",color=black,fontcolor=black];
+  label="SUB_107";
+}
+235 -> 236 [ltail=cluster_SUB_106,lhead=cluster_SUB_107];
+68 -> 236 [ltail=cluster_SUB_23,lhead=cluster_SUB_107];
+
+subgraph cluster_SUB_108 {
+  238 [label="START",color=black,fontcolor=black];
+  239 [label="toilet",color=black,fontcolor=black];
+  238 -> 239 [label="START__toilet",color=black,fontcolor=black];
+  label="SUB_108";
+}
+
+subgraph cluster_SUB_109 {
+  240 [label="SUB_107",color=black,fontcolor=black];
+  241 [label="SUB_4",color=black,fontcolor=black];
+  240 -> 241 [label="snack__personalhygiene",color=black,fontcolor=black];
+  label="SUB_109";
+}
+237 -> 240 [ltail=cluster_SUB_107,lhead=cluster_SUB_109];
+13 -> 240 [ltail=cluster_SUB_4,lhead=cluster_SUB_109];
+
+subgraph cluster_SUB_110 {
+  242 [label="SUB_96",color=black,fontcolor=black];
+  243 [label="bathe",color=black,fontcolor=black];
+  242 -> 243 [label="groom__bathe",color=black,fontcolor=black];
+  label="SUB_110";
+}
+215 -> 242 [ltail=cluster_SUB_96,lhead=cluster_SUB_110];
+
+subgraph cluster_SUB_111 {
+  244 [label="SUB_95",color=black,fontcolor=black];
+  245 [label="groom",color=black,fontcolor=black];
+  244 -> 245 [label="dress__groom",color=black,fontcolor=black];
+  label="SUB_111";
+}
+213 -> 244 [ltail=cluster_SUB_95,lhead=cluster_SUB_111];
+
+subgraph cluster_SUB_112 {
+  246 [label="SUB_111",color=black,fontcolor=black];
+  247 [label="SUB_24",color=black,fontcolor=black];
+  246 -> 247 [label="groom__outdoors",color=black,fontcolor=black];
+  label="SUB_112";
+}
+245 -> 246 [ltail=cluster_SUB_111,lhead=cluster_SUB_112];
+70 -> 246 [ltail=cluster_SUB_24,lhead=cluster_SUB_112];
+
+subgraph cluster_SUB_113 {
+  248 [label="SUB_84",color=black,fontcolor=black];
+  249 [label="toilet",color=black,fontcolor=black];
+  249 -> 248 [label="toilet__snack",color=black,fontcolor=black];
+  label="SUB_113";
+}
+191 -> 248 [ltail=cluster_SUB_84,lhead=cluster_SUB_113];
+
+subgraph cluster_SUB_114 {
+  250 [label="SUB_113",color=black,fontcolor=black];
+  251 [label="SUB_22",color=black,fontcolor=black];
+  251 -> 250 [label="snack__toilet",color=black,fontcolor=black];
+  label="SUB_114";
+}
+249 -> 250 [ltail=cluster_SUB_113,lhead=cluster_SUB_114];
+66 -> 250 [ltail=cluster_SUB_22,lhead=cluster_SUB_114];
+
+subgraph cluster_SUB_115 {
+  252 [label="SUB_114",color=black,fontcolor=black];
+  253 [label="SUB_35",color=black,fontcolor=black];
+  253 -> 252 [label="outdoors__snack",color=black,fontcolor=black];
+  label="SUB_115";
+}
+251 -> 252 [ltail=cluster_SUB_114,lhead=cluster_SUB_115];
+92 -> 252 [ltail=cluster_SUB_35,lhead=cluster_SUB_115];
+
+subgraph cluster_SUB_116 {
+  254 [label="SUB_115",color=black,fontcolor=black];
+  255 [label="work",color=black,fontcolor=black];
+  255 -> 254 [label="work__snack",color=black,fontcolor=black];
+  label="SUB_116";
+}
+253 -> 254 [ltail=cluster_SUB_115,lhead=cluster_SUB_116];
+
+subgraph cluster_SUB_117 {
+  256 [label="SUB_81",color=black,fontcolor=black];
+  257 [label="groom",color=black,fontcolor=black];
+  257 -> 256 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_117";
+}
+185 -> 256 [ltail=cluster_SUB_81,lhead=cluster_SUB_117];
+
+subgraph cluster_SUB_118 {
+  258 [label="SUB_112",color=black,fontcolor=black];
+  259 [label="SUB_15",color=black,fontcolor=black];
+  258 -> 259 [label="toilet__outdoors",color=black,fontcolor=black];
+  label="SUB_118";
+}
+247 -> 258 [ltail=cluster_SUB_112,lhead=cluster_SUB_118];
+45 -> 258 [ltail=cluster_SUB_15,lhead=cluster_SUB_118];
+
+subgraph cluster_SUB_119 {
+  260 [label="SUB_51",color=black,fontcolor=black];
+  261 [label="relax",color=black,fontcolor=black];
+  261 -> 260 [label="relax__groom",color=black,fontcolor=black];
+  label="SUB_119";
+}
+125 -> 260 [ltail=cluster_SUB_51,lhead=cluster_SUB_119];
+
+subgraph cluster_SUB_120 {
+  262 [label="SUB_119",color=black,fontcolor=black];
+  263 [label="SUB_39",color=black,fontcolor=black];
+  263 -> 262 [label="groom__relax",color=black,fontcolor=black];
+  label="SUB_120";
+}
+261 -> 262 [ltail=cluster_SUB_119,lhead=cluster_SUB_120];
+100 -> 262 [ltail=cluster_SUB_39,lhead=cluster_SUB_120];
+
+subgraph cluster_SUB_121 {
+  264 [label="SUB_118",color=black,fontcolor=black];
+  265 [label="toilet",color=black,fontcolor=black];
+  264 -> 265 [label="outdoors__toilet",color=black,fontcolor=black];
+  label="SUB_121";
+}
+259 -> 264 [ltail=cluster_SUB_118,lhead=cluster_SUB_121];
+
+subgraph cluster_SUB_122 {
+  266 [label="SUB_121",color=black,fontcolor=black];
+  267 [label="SUB_2",color=black,fontcolor=black];
+  266 -> 267 [label="toilet__relax",color=black,fontcolor=black];
+  label="SUB_122";
+}
+265 -> 266 [ltail=cluster_SUB_121,lhead=cluster_SUB_122];
+8 -> 266 [ltail=cluster_SUB_2,lhead=cluster_SUB_122];
+
+subgraph cluster_SUB_123 {
+  268 [label="SUB_94",color=black,fontcolor=black];
+  269 [label="watchtv",color=black,fontcolor=black];
+  269 -> 268 [label="watchtv__outdoors",color=black,fontcolor=black];
+  label="SUB_123";
+}
+211 -> 268 [ltail=cluster_SUB_94,lhead=cluster_SUB_123];
+
+subgraph cluster_SUB_124 {
+  270 [label="SUB_123",color=black,fontcolor=black];
+  271 [label="personalhygiene",color=black,fontcolor=black];
+  271 -> 270 [label="personalhygiene__watchtv",color=black,fontcolor=black];
+  label="SUB_124";
+}
+269 -> 270 [ltail=cluster_SUB_123,lhead=cluster_SUB_124];
+
+subgraph cluster_SUB_125 {
+  272 [label="SUB_124",color=black,fontcolor=black];
+  273 [label="SUB_23",color=black,fontcolor=black];
+  273 -> 272 [label="snack__personalhygiene",color=black,fontcolor=black];
+  label="SUB_125";
+}
+271 -> 272 [ltail=cluster_SUB_124,lhead=cluster_SUB_125];
+68 -> 272 [ltail=cluster_SUB_23,lhead=cluster_SUB_125];
+
+subgraph cluster_SUB_126 {
+  274 [label="SUB_53",color=black,fontcolor=black];
+  275 [label="snack",color=black,fontcolor=black];
+  275 -> 274 [label="snack__relax",color=black,fontcolor=black];
+  label="SUB_126";
+}
+129 -> 274 [ltail=cluster_SUB_53,lhead=cluster_SUB_126];
+
+subgraph cluster_SUB_127 {
+  276 [label="SUB_125",color=black,fontcolor=black];
+  277 [label="toilet",color=black,fontcolor=black];
+  277 -> 276 [label="toilet__personalhygiene",color=black,fontcolor=black];
+  label="SUB_127";
+}
+273 -> 276 [ltail=cluster_SUB_125,lhead=cluster_SUB_127];
+
+subgraph cluster_SUB_128 {
+  278 [label="SUB_127",color=black,fontcolor=black];
+  279 [label="relax",color=black,fontcolor=black];
+  279 -> 278 [label="relax__toilet",color=black,fontcolor=black];
+  label="SUB_128";
+}
+277 -> 278 [ltail=cluster_SUB_127,lhead=cluster_SUB_128];
+
+subgraph cluster_SUB_129 {
+  280 [label="SUB_108",color=black,fontcolor=black];
+  281 [label="sleep",color=black,fontcolor=black];
+  280 -> 281 [label="toilet__sleep",color=black,fontcolor=black];
+  label="SUB_129";
+}
+239 -> 280 [ltail=cluster_SUB_108,lhead=cluster_SUB_129];
+
+subgraph cluster_SUB_130 {
+  282 [label="SUB_117",color=black,fontcolor=black];
+  283 [label="snack",color=black,fontcolor=black];
+  283 -> 282 [label="snack__groom",color=black,fontcolor=black];
+  label="SUB_130";
+}
+257 -> 282 [ltail=cluster_SUB_117,lhead=cluster_SUB_130];
+
+subgraph cluster_SUB_131 {
+  284 [label="SUB_122",color=black,fontcolor=black];
+  285 [label="outdoors",color=black,fontcolor=black];
+  284 -> 285 [label="eatingdrinking__outdoors",color=black,fontcolor=black];
+  label="SUB_131";
+}
+267 -> 284 [ltail=cluster_SUB_122,lhead=cluster_SUB_131];
+
+subgraph cluster_SUB_132 {
+  286 [label="SUB_130",color=black,fontcolor=black];
+  287 [label="SUB_10",color=black,fontcolor=black];
+  287 -> 286 [label="relax__snack",color=black,fontcolor=black];
+  label="SUB_132";
+}
+283 -> 286 [ltail=cluster_SUB_130,lhead=cluster_SUB_132];
+26 -> 286 [ltail=cluster_SUB_10,lhead=cluster_SUB_132];
+
+subgraph cluster_SUB_133 {
+  288 [label="SUB_132",color=black,fontcolor=black];
+  289 [label="snack",color=black,fontcolor=black];
+  289 -> 288 [label="snack__relax",color=black,fontcolor=black];
+  label="SUB_133";
+}
+287 -> 288 [ltail=cluster_SUB_132,lhead=cluster_SUB_133];
+
+subgraph cluster_SUB_134 {
+  290 [label="SUB_116",color=black,fontcolor=black];
+  291 [label="outdoors",color=black,fontcolor=black];
+  291 -> 290 [label="outdoors__work",color=black,fontcolor=black];
+  label="SUB_134";
+}
+255 -> 290 [ltail=cluster_SUB_116,lhead=cluster_SUB_134];
+
+subgraph cluster_SUB_135 {
+  292 [label="SUB_134",color=black,fontcolor=black];
+  293 [label="SUB_6",color=black,fontcolor=black];
+  293 -> 292 [label="toilet__outdoors",color=black,fontcolor=black];
+  label="SUB_135";
+}
+291 -> 292 [ltail=cluster_SUB_134,lhead=cluster_SUB_135];
+17 -> 292 [ltail=cluster_SUB_6,lhead=cluster_SUB_135];
+
+subgraph cluster_SUB_136 {
+  294 [label="SUB_63",color=black,fontcolor=black];
+  295 [label="watchtv",color=black,fontcolor=black];
+  295 -> 294 [label="watchtv__personalhygiene",color=black,fontcolor=black];
+  label="SUB_136";
+}
+149 -> 294 [ltail=cluster_SUB_63,lhead=cluster_SUB_136];
+
+subgraph cluster_SUB_137 {
+  296 [label="SUB_133",color=black,fontcolor=black];
+  297 [label="outdoors",color=black,fontcolor=black];
+  297 -> 296 [label="outdoors__snack",color=black,fontcolor=black];
+  label="SUB_137";
+}
+289 -> 296 [ltail=cluster_SUB_133,lhead=cluster_SUB_137];
+
+subgraph cluster_SUB_138 {
+  298 [label="personalhygiene",color=black,fontcolor=black];
+  299 [label="work",color=black,fontcolor=black];
+  298 -> 299 [label="personalhygiene__work",color=black,fontcolor=black];
+  label="SUB_138";
+}
+
+subgraph cluster_SUB_139 {
+  300 [label="SUB_109",color=black,fontcolor=black];
+  301 [label="SUB_9",color=black,fontcolor=black];
+  300 -> 301 [label="outdoors__mealpreperation",color=black,fontcolor=black];
+  label="SUB_139";
+}
+241 -> 300 [ltail=cluster_SUB_109,lhead=cluster_SUB_139];
+23 -> 300 [ltail=cluster_SUB_9,lhead=cluster_SUB_139];
+
+subgraph cluster_SUB_140 {
+  302 [label="bathe",color=black,fontcolor=black];
+  303 [label="groom",color=black,fontcolor=black];
+  302 -> 303 [label="bathe__groom",color=black,fontcolor=black];
+  label="SUB_140";
+}
+
+subgraph cluster_SUB_141 {
+  304 [label="SUB_15",color=black,fontcolor=black];
+  305 [label="SUB_3",color=black,fontcolor=black];
+  304 -> 305 [label="outdoors__personalhygiene",color=black,fontcolor=black];
+  label="SUB_141";
+}
+45 -> 304 [ltail=cluster_SUB_15,lhead=cluster_SUB_141];
+11 -> 304 [ltail=cluster_SUB_3,lhead=cluster_SUB_141];
+
+subgraph cluster_SUB_142 {
+  306 [label="SUB_42",color=black,fontcolor=black];
+  307 [label="SUB_14",color=black,fontcolor=black];
+  307 -> 306 [label="toilet__snack",color=black,fontcolor=black];
+  label="SUB_142";
+}
+107 -> 306 [ltail=cluster_SUB_42,lhead=cluster_SUB_142];
+42 -> 306 [ltail=cluster_SUB_14,lhead=cluster_SUB_142];
+
+subgraph cluster_SUB_143 {
+  308 [label="SUB_41",color=black,fontcolor=black];
+  309 [label="SUB_4",color=black,fontcolor=black];
+  308 -> 309 [label="dress__personalhygiene",color=black,fontcolor=black];
+  label="SUB_143";
+}
+105 -> 308 [ltail=cluster_SUB_41,lhead=cluster_SUB_143];
+13 -> 308 [ltail=cluster_SUB_4,lhead=cluster_SUB_143];
+
+subgraph cluster_SUB_144 {
+  310 [label="SUB_37",color=black,fontcolor=black];
+  311 [label="SUB_25",color=black,fontcolor=black];
+  311 -> 310 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_144";
+}
+96 -> 310 [ltail=cluster_SUB_37,lhead=cluster_SUB_144];
+72 -> 310 [ltail=cluster_SUB_25,lhead=cluster_SUB_144];
+
+subgraph cluster_SUB_145 {
+  312 [label="SUB_12",color=black,fontcolor=black];
+  313 [label="bathe",color=black,fontcolor=black];
+  313 -> 312 [label="bathe__personalhygiene",color=black,fontcolor=black];
+  label="SUB_145";
+}
+33 -> 312 [ltail=cluster_SUB_12,lhead=cluster_SUB_145];
+
+subgraph cluster_SUB_146 {
+  314 [label="SUB_48",color=black,fontcolor=black];
+  315 [label="relax",color=black,fontcolor=black];
+  315 -> 314 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_146";
+}
+119 -> 314 [ltail=cluster_SUB_48,lhead=cluster_SUB_146];
+
+subgraph cluster_SUB_147 {
+  316 [label="SUB_39",color=black,fontcolor=black];
+  317 [label="SUB_12",color=black,fontcolor=black];
+  316 -> 317 [label="groom__personalhygiene",color=black,fontcolor=black];
+  label="SUB_147";
+}
+100 -> 316 [ltail=cluster_SUB_39,lhead=cluster_SUB_147];
+33 -> 316 [ltail=cluster_SUB_12,lhead=cluster_SUB_147];
+
+subgraph cluster_SUB_148 {
+  318 [label="SUB_142",color=black,fontcolor=black];
+  319 [label="cleaning",color=black,fontcolor=black];
+  318 -> 319 [label="eatingdrinking__cleaning",color=black,fontcolor=black];
+  label="SUB_148";
+}
+307 -> 318 [ltail=cluster_SUB_142,lhead=cluster_SUB_148];
+
+subgraph cluster_SUB_149 {
+  320 [label="SUB_140",color=black,fontcolor=black];
+  321 [label="toilet",color=black,fontcolor=black];
+  320 -> 321 [label="groom__toilet",color=black,fontcolor=black];
+  label="SUB_149";
+}
+303 -> 320 [ltail=cluster_SUB_140,lhead=cluster_SUB_149];
+
+subgraph cluster_SUB_150 {
+  322 [label="SUB_7",color=black,fontcolor=black];
+  323 [label="SUB_5",color=black,fontcolor=black];
+  323 -> 322 [label="relax__personalhygiene",color=black,fontcolor=black];
+  label="SUB_150";
+}
+19 -> 322 [ltail=cluster_SUB_7,lhead=cluster_SUB_150];
+15 -> 322 [ltail=cluster_SUB_5,lhead=cluster_SUB_150];
+
+subgraph cluster_SUB_151 {
+  324 [label="SUB_139",color=black,fontcolor=black];
+  325 [label="cleaning",color=black,fontcolor=black];
+  324 -> 325 [label="mealpreperation__cleaning",color=black,fontcolor=black];
+  label="SUB_151";
+}
+301 -> 324 [ltail=cluster_SUB_139,lhead=cluster_SUB_151];
+
+subgraph cluster_SUB_152 {
+  326 [label="SUB_33",color=black,fontcolor=black];
+  327 [label="SUB_7",color=black,fontcolor=black];
+  326 -> 327 [label="snack__personalhygiene",color=black,fontcolor=black];
+  label="SUB_152";
+}
+88 -> 326 [ltail=cluster_SUB_33,lhead=cluster_SUB_152];
+19 -> 326 [ltail=cluster_SUB_7,lhead=cluster_SUB_152];
+
+subgraph cluster_SUB_153 {
+  328 [label="SUB_6",color=black,fontcolor=black];
+  329 [label="outdoors",color=black,fontcolor=black];
+  329 -> 328 [label="outdoors__sleep",color=black,fontcolor=black];
+  label="SUB_153";
+}
+17 -> 328 [ltail=cluster_SUB_6,lhead=cluster_SUB_153];
+
+subgraph cluster_SUB_154 {
+  330 [label="SUB_8",color=black,fontcolor=black];
+  331 [label="personalhygiene",color=black,fontcolor=black];
+  331 -> 330 [label="personalhygiene__toilet",color=black,fontcolor=black];
+  label="SUB_154";
+}
+21 -> 330 [ltail=cluster_SUB_8,lhead=cluster_SUB_154];
+
+subgraph cluster_SUB_155 {
+  332 [label="SUB_135",color=black,fontcolor=black];
+  333 [label="work",color=black,fontcolor=black];
+  333 -> 332 [label="work__sleep",color=black,fontcolor=black];
+  label="SUB_155";
+}
+293 -> 332 [ltail=cluster_SUB_135,lhead=cluster_SUB_155];
+
+subgraph cluster_SUB_156 {
+  334 [label="work",color=black,fontcolor=black];
+  335 [label="relax",color=black,fontcolor=black];
+  334 -> 335 [label="work__relax",color=black,fontcolor=black];
+  label="SUB_156";
+}
+
+subgraph cluster_SUB_157 {
+  336 [label="mealpreperation",color=black,fontcolor=black];
+  337 [label="relax",color=black,fontcolor=black];
+  336 -> 337 [label="mealpreperation__relax",color=black,fontcolor=black];
+  label="SUB_157";
+}
+
+subgraph cluster_SUB_158 {
+  338 [label="SUB_149",color=black,fontcolor=black];
+  339 [label="SUB_9",color=black,fontcolor=black];
+  338 -> 339 [label="toilet__mealpreperation",color=black,fontcolor=black];
+  label="SUB_158";
+}
+321 -> 338 [ltail=cluster_SUB_149,lhead=cluster_SUB_158];
+23 -> 338 [ltail=cluster_SUB_9,lhead=cluster_SUB_158];
+
+subgraph cluster_SUB_159 {
+  340 [label="cleaning",color=black,fontcolor=black];
+  label="SUB_159";
+}
+
+subgraph cluster_SUB_160 {
+  341 [label="SUB_159",color=black,fontcolor=black];
+  342 [label="SUB_155",color=black,fontcolor=black];
+  341 -> 342 [label="cleaning__work",color=black,fontcolor=black];
+  label="SUB_160";
+}
+340 -> 341 [ltail=cluster_SUB_159,lhead=cluster_SUB_160];
+333 -> 341 [ltail=cluster_SUB_155,lhead=cluster_SUB_160];
+
+subgraph cluster_SUB_161 {
+  343 [label="SUB_159",color=black,fontcolor=black];
+  344 [label="SUB_146",color=black,fontcolor=black];
+  343 -> 344 [label="cleaning__relax",color=black,fontcolor=black];
+  label="SUB_161";
+}
+340 -> 343 [ltail=cluster_SUB_159,lhead=cluster_SUB_161];
+315 -> 343 [ltail=cluster_SUB_146,lhead=cluster_SUB_161];
+
+subgraph cluster_SUB_162 {
+  345 [label="SUB_159",color=black,fontcolor=black];
+  346 [label="SUB_158",color=black,fontcolor=black];
+  346 -> 345 [label="mealpreperation__cleaning",color=black,fontcolor=black];
+  label="SUB_162";
+}
+340 -> 345 [ltail=cluster_SUB_159,lhead=cluster_SUB_162];
+339 -> 345 [ltail=cluster_SUB_158,lhead=cluster_SUB_162];
+
+}

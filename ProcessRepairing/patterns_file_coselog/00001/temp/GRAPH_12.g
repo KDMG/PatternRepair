@@ -1,0 +1,30 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T04Determineconfirmationofreceipt
+v 5 T05Printandsendconfirmationofreceipt
+v 6 T06Determinenecessityofstopadvice
+v 7 T07-3Draftinternadviceholdforaspect3
+v 8 T07-2Draftinternadviceaspect2
+v 9 T06Determinenecessityofstopadvice
+v 10 T07-3Draftinternadviceholdforaspect3
+v 11 T07-2Draftinternadviceaspect2
+v 12 T06Determinenecessityofstopadvice
+v 13 T07-3Draftinternadviceholdforaspect3
+v 14 T07-2Draftinternadviceaspect2
+v 15 T06Determinenecessityofstopadvice
+v 16 T10Determinenecessitytostopindication
+v 17 END
+e 1 2  START__Confirmationofreceipt
+e 2 3  Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 3 4  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 4 6  T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 5 6  T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 8 9  T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+e 11 12  T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+e 14 15  T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+e 15 16  T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+e 16 17  T10Determinenecessitytostopindication__END
+e 7 9  T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+e 10 12  T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+e 13 15  T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice

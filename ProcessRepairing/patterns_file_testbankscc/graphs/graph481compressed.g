@@ -1,0 +1,7 @@
+v 1 SUB_172
+v 2 SUB_540
+v 3 SUB_603
+
+e 2 3 SRPP__REPP
+e 3 1 LRIRV__LRRR
+

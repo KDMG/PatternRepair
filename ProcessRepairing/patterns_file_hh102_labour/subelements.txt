@@ -1,0 +1,2750 @@
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+d 1 2 START__toilet
+d 2 3 toilet__sleep
+d 3 4 sleep__toilet
+d 4 5 toilet__sleep
+ 
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+d 1 2 relax__mealpreperation
+d 2 3 mealpreperation__eatingdrinking
+ 
+S
+v 1 personalhygiene
+v 2 sleep
+v 3 END
+d 1 2 personalhygiene__sleep
+d 2 3 sleep__END
+ 
+S
+v 1 personalhygiene
+v 2 outdoors
+d 1 2 personalhygiene__outdoors
+ 
+S
+v 1 snack
+v 2 relax
+d 1 2 snack__relax
+ 
+S
+v 1 sleep
+v 2 toilet
+d 1 2 sleep__toilet
+ 
+S
+v 1 personalhygiene
+v 2 relax
+d 1 2 personalhygiene__relax
+ 
+S
+v 1 toilet
+v 2 relax
+d 1 2 toilet__relax
+ 
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+d 1 2 mealpreperation__eatingdrinking
+ 
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 cleaning
+v 5 relax
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 2 4 mealpreperation__cleaning
+ e 4 5 cleaning__relax
+ e 3 5 eatingdrinking__relax
+
+S
+v 1 sleep
+v 2 toilet
+v 3 medication
+v 4 START
+v 5 toilet
+v 6 sleep
+ e 1 2 sleep__toilet
+ e 3 1 medication__sleep
+ e 4 5 START__toilet
+ e 5 6 toilet__sleep
+ e 6 3 sleep__medication
+
+S
+v 1 personalhygiene
+v 2 groom
+d 1 2 personalhygiene__groom
+ 
+S
+v 1 personalhygiene
+v 2 outdoors
+v 3 eatingdrinking
+v 4 personalhygiene
+v 5 outdoors
+v 6 dress
+v 7 snack
+v 8 relax
+ e 1 2 personalhygiene__outdoors
+ e 3 1 eatingdrinking__personalhygiene
+ e 4 5 personalhygiene__outdoors
+ e 6 4 dress__personalhygiene
+ e 7 3 snack__eatingdrinking
+ e 5 7 outdoors__snack
+ e 2 8 outdoors__relax
+
+S
+v 1 mealpreperation
+v 2 relax
+v 3 toilet
+d 1 2 mealpreperation__relax
+d 2 3 relax__toilet
+ 
+S
+v 1 outdoors
+v 2 relax
+v 3 outdoors
+d 1 2 outdoors__relax
+d 2 3 relax__outdoors
+ 
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+
+S
+v 1 snack
+v 2 eatingdrinking
+v 3 cleaning
+v 4 relax
+d 2 4 eatingdrinking__relax
+d 3 4 cleaning__relax
+d 1 2 snack__eatingdrinking
+d 1 3 snack__cleaning
+ 
+S
+v 1 personalhygiene
+v 2 toilet
+d 1 2 personalhygiene__toilet
+ 
+S
+v 1 personalhygiene
+v 2 sleep
+v 3 END
+v 4 read
+ e 1 2 personalhygiene__sleep
+ e 2 3 sleep__END
+ e 4 1 read__personalhygiene
+
+S
+v 1 sleep
+v 2 END
+d 1 2 sleep__END
+ 
+S
+v 1 relax
+v 2 cleaning
+d 1 2 relax__cleaning
+ 
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 snack
+v 5 cleaning
+v 6 watchtv
+v 7 snack
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 4 1 snack__relax
+ e 5 6 cleaning__watchtv
+ e 6 7 watchtv__snack
+ e 2 5 mealpreperation__cleaning
+ e 3 6 eatingdrinking__watchtv
+
+S
+v 1 personalhygiene
+v 2 snack
+d 1 2 personalhygiene__snack
+ 
+S
+v 1 outdoors
+v 2 toilet
+d 1 2 outdoors__toilet
+ 
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 relax
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 3 4 eatingdrinking__relax
+
+S
+v 1 personalhygiene
+v 2 sleep
+v 3 END
+v 4 relax
+ e 1 2 personalhygiene__sleep
+ e 2 3 sleep__END
+ e 4 1 relax__personalhygiene
+
+S
+v 1 sleep
+v 2 toilet
+v 3 START
+ e 1 2 sleep__toilet
+ e 3 1 START__sleep
+
+S
+v 1 personalhygiene
+v 2 toilet
+v 3 outdoors
+ e 1 2 personalhygiene__toilet
+ e 2 3 toilet__outdoors
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 personalhygiene
+ e 1 2 mealpreperation__eatingdrinking
+ e 2 3 eatingdrinking__personalhygiene
+
+S
+v 1 toilet
+v 2 relax
+v 3 toilet
+ e 1 2 toilet__relax
+ e 2 3 relax__toilet
+
+S
+v 1 toilet
+v 2 relax
+v 3 snack
+v 4 relax
+ e 1 2 toilet__relax
+ e 2 3 relax__snack
+ e 3 4 snack__relax
+
+S
+v 1 toilet
+v 2 relax
+v 3 mealpreperation
+ e 1 2 toilet__relax
+ e 2 3 relax__mealpreperation
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 snack
+ e 1 2 personalhygiene__relax
+ e 2 3 relax__snack
+
+S
+v 1 snack
+v 2 relax
+v 3 mealpreperation
+ e 1 2 snack__relax
+ e 2 3 relax__mealpreperation
+
+S
+v 1 snack
+v 2 relax
+v 3 outdoors
+ e 1 2 snack__relax
+ e 2 3 relax__outdoors
+
+S
+v 1 snack
+v 2 relax
+v 3 cleaning
+ e 1 2 snack__relax
+ e 2 3 relax__cleaning
+
+S
+v 1 personalhygiene
+v 2 outdoors
+v 3 relax
+ e 1 2 personalhygiene__outdoors
+ e 2 3 outdoors__relax
+
+S
+v 1 sleep
+v 2 relax
+d 1 2 sleep__relax
+ 
+S
+v 1 work
+v 2 groom
+d 1 2 work__groom
+ 
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 cleaning
+v 4 relax
+ e 1 2 mealpreperation__eatingdrinking
+ e 1 3 mealpreperation__cleaning
+ e 3 4 cleaning__relax
+ e 2 4 eatingdrinking__relax
+
+S
+v 1 bathe
+v 2 dress
+d 1 2 bathe__dress
+ 
+S
+v 1 snack
+v 2 eatingdrinking
+d 1 2 snack__eatingdrinking
+ 
+S
+v 1 snack
+v 2 relax
+v 3 cleaning
+v 4 relax
+v 5 personalhygiene
+v 6 sleep
+v 7 END
+ e 1 2 snack__relax
+ e 2 3 relax__cleaning
+ e 3 4 cleaning__relax
+ e 4 5 relax__personalhygiene
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__END
+
+S
+v 1 toilet
+v 2 relax
+v 3 mealpreperation
+v 4 START
+ e 1 2 toilet__relax
+ e 2 3 relax__mealpreperation
+ e 4 1 START__toilet
+
+S
+v 1 outdoors
+v 2 toilet
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+ e 1 2 outdoors__toilet
+ e 2 3 toilet__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+
+S
+v 1 toilet
+v 2 relax
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+ e 1 2 toilet__relax
+ e 2 3 relax__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+ e 1 2 personalhygiene__relax
+ e 2 3 relax__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+
+S
+v 1 personalhygiene
+v 2 groom
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+ e 1 2 personalhygiene__groom
+ e 2 3 groom__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+
+S
+v 1 sleep
+v 2 END
+v 3 toilet
+v 4 personalhygiene
+ e 1 2 sleep__END
+ e 3 1 toilet__sleep
+ e 4 3 personalhygiene__toilet
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 personalhygiene
+v 4 sleep
+v 5 START
+v 6 toilet
+v 7 sleep
+v 8 toilet
+ e 1 2 mealpreperation__eatingdrinking
+ e 2 3 eatingdrinking__personalhygiene
+ e 4 1 sleep__mealpreperation
+ e 5 6 START__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__toilet
+ e 8 4 toilet__sleep
+
+S
+v 1 personalhygiene
+v 2 sleep
+v 3 END
+v 4 groom
+ e 1 2 personalhygiene__sleep
+ e 2 3 sleep__END
+ e 4 1 groom__personalhygiene
+
+S
+v 1 START
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 toilet
+ e 1 2 START__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__toilet
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 eatingdrinking
+v 7 relax
+v 8 mealpreperation
+ e 2 3 relax__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 1 2 personalhygiene__relax
+ e 6 1 eatingdrinking__personalhygiene
+ e 7 8 relax__mealpreperation
+ e 8 6 mealpreperation__eatingdrinking
+
+S
+v 1 sleep
+v 2 END
+v 3 read
+ e 1 2 sleep__END
+ e 3 1 read__sleep
+
+S
+v 1 read
+v 2 personalhygiene
+v 3 sleep
+v 4 END
+v 5 personalhygiene
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__END
+ e 1 2 read__personalhygiene
+ e 5 1 personalhygiene__read
+
+S
+v 1 personalhygiene
+v 2 read
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 cleaning
+v 7 relax
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 1 2 personalhygiene__read
+ e 2 3 read__personalhygiene
+ e 6 1 cleaning__personalhygiene
+ e 7 6 relax__cleaning
+
+S
+v 1 relax
+v 2 cleaning
+v 3 personalhygiene
+v 4 read
+v 5 personalhygiene
+v 6 sleep
+v 7 END
+v 8 mealpreperation
+v 9 snack
+v 10 relax
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__END
+ e 1 2 relax__cleaning
+ e 2 3 cleaning__personalhygiene
+ e 3 4 personalhygiene__read
+ e 4 5 read__personalhygiene
+ e 8 1 mealpreperation__relax
+ e 9 10 snack__relax
+ e 10 8 relax__mealpreperation
+
+S
+v 1 snack
+v 2 relax
+v 3 mealpreperation
+v 4 relax
+v 5 cleaning
+v 6 personalhygiene
+v 7 read
+v 8 personalhygiene
+v 9 sleep
+v 10 END
+v 11 toilet
+v 12 toilet
+v 13 relax
+ e 1 2 snack__relax
+ e 2 3 relax__mealpreperation
+ e 3 4 mealpreperation__relax
+ e 8 9 personalhygiene__sleep
+ e 9 10 sleep__END
+ e 4 5 relax__cleaning
+ e 5 6 cleaning__personalhygiene
+ e 6 7 personalhygiene__read
+ e 7 8 read__personalhygiene
+ e 11 1 toilet__snack
+ e 12 13 toilet__relax
+ e 13 11 relax__toilet
+
+S
+v 1 toilet
+v 2 relax
+v 3 toilet
+v 4 snack
+v 5 relax
+v 6 mealpreperation
+v 7 relax
+v 8 cleaning
+v 9 personalhygiene
+v 10 read
+v 11 personalhygiene
+v 12 sleep
+v 13 END
+v 14 outdoors
+v 15 personalhygiene
+v 16 toilet
+ e 1 2 toilet__relax
+ e 2 3 relax__toilet
+ e 3 4 toilet__snack
+ e 4 5 snack__relax
+ e 5 6 relax__mealpreperation
+ e 6 7 mealpreperation__relax
+ e 11 12 personalhygiene__sleep
+ e 12 13 sleep__END
+ e 7 8 relax__cleaning
+ e 8 9 cleaning__personalhygiene
+ e 9 10 personalhygiene__read
+ e 10 11 read__personalhygiene
+ e 14 1 outdoors__toilet
+ e 15 16 personalhygiene__toilet
+ e 16 14 toilet__outdoors
+
+S
+v 1 read
+v 2 personalhygiene
+v 3 sleep
+v 4 END
+v 5 snack
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__END
+ e 1 2 read__personalhygiene
+ e 5 1 snack__read
+
+S
+v 1 snack
+v 2 read
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 relax
+v 7 relax
+v 8 mealpreperation
+v 9 eatingdrinking
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 1 2 snack__read
+ e 2 3 read__personalhygiene
+ e 6 1 relax__snack
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__eatingdrinking
+ e 9 6 eatingdrinking__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+
+S
+v 1 read
+v 2 sleep
+v 3 END
+v 4 personalhygiene
+ e 2 3 sleep__END
+ e 1 2 read__sleep
+ e 4 1 personalhygiene__read
+
+S
+v 1 mealpreperation
+v 2 relax
+v 3 toilet
+v 4 toilet
+v 5 START
+v 6 toilet
+v 7 sleep
+v 8 medication
+v 9 sleep
+ e 1 2 mealpreperation__relax
+ e 2 3 relax__toilet
+ e 4 1 toilet__mealpreperation
+ e 5 6 START__toilet
+ e 6 7 toilet__sleep
+ e 9 4 sleep__toilet
+ e 7 8 sleep__medication
+ e 8 9 medication__sleep
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 relax
+v 11 toilet
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__relax
+ e 10 11 relax__toilet
+
+S
+v 1 sleep
+v 2 END
+v 3 toilet
+v 4 sleep
+ e 1 2 sleep__END
+ e 3 1 toilet__sleep
+ e 4 3 sleep__toilet
+
+S
+v 1 outdoors
+v 2 toilet
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 relax
+v 7 personalhygiene
+ e 1 2 outdoors__toilet
+ e 2 3 toilet__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 6 1 relax__outdoors
+ e 7 6 personalhygiene__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 medication
+v 5 sleep
+v 6 toilet
+v 7 personalhygiene
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 5 6 sleep__toilet
+ e 3 4 sleep__medication
+ e 4 5 medication__sleep
+ e 6 7 toilet__personalhygiene
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 outdoors
+v 4 toilet
+v 5 personalhygiene
+v 6 sleep
+v 7 END
+v 8 relax
+v 9 snack
+v 10 eatingdrinking
+v 11 cleaning
+ e 1 2 personalhygiene__relax
+ e 2 3 relax__outdoors
+ e 3 4 outdoors__toilet
+ e 4 5 toilet__personalhygiene
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__END
+ e 8 1 relax__personalhygiene
+ e 10 8 eatingdrinking__relax
+ e 11 8 cleaning__relax
+ e 9 10 snack__eatingdrinking
+ e 9 11 snack__cleaning
+
+S
+v 1 snack
+v 2 eatingdrinking
+v 3 cleaning
+v 4 relax
+v 5 personalhygiene
+v 6 relax
+v 7 outdoors
+v 8 toilet
+v 9 personalhygiene
+v 10 sleep
+v 11 END
+v 12 relax
+v 13 toilet
+v 14 relax
+v 15 snack
+ e 2 4 eatingdrinking__relax
+ e 3 4 cleaning__relax
+ e 4 5 relax__personalhygiene
+ e 5 6 personalhygiene__relax
+ e 6 7 relax__outdoors
+ e 7 8 outdoors__toilet
+ e 8 9 toilet__personalhygiene
+ e 9 10 personalhygiene__sleep
+ e 10 11 sleep__END
+ e 1 2 snack__eatingdrinking
+ e 1 3 snack__cleaning
+ e 12 1 relax__snack
+ e 13 14 toilet__relax
+ e 14 15 relax__snack
+ e 15 12 snack__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 medication
+v 5 sleep
+v 6 toilet
+v 7 personalhygiene
+v 8 relax
+v 9 mealpreperation
+v 10 eatingdrinking
+v 11 cleaning
+v 12 relax
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__personalhygiene
+ e 3 4 sleep__medication
+ e 4 5 medication__sleep
+ e 7 8 personalhygiene__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__eatingdrinking
+ e 9 11 mealpreperation__cleaning
+ e 10 12 eatingdrinking__relax
+ e 11 12 cleaning__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 medication
+v 5 sleep
+v 6 toilet
+v 7 personalhygiene
+v 8 relax
+v 9 mealpreperation
+v 10 eatingdrinking
+v 11 cleaning
+v 12 relax
+v 13 personalhygiene
+v 14 groom
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__personalhygiene
+ e 7 8 personalhygiene__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__eatingdrinking
+ e 9 11 mealpreperation__cleaning
+ e 10 12 eatingdrinking__relax
+ e 11 12 cleaning__relax
+ e 3 4 sleep__medication
+ e 4 5 medication__sleep
+ e 12 13 relax__personalhygiene
+ e 13 14 personalhygiene__groom
+
+S
+v 1 read
+v 2 personalhygiene
+v 3 sleep
+v 4 END
+v 5 relax
+v 6 snack
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__END
+ e 1 2 read__personalhygiene
+ e 5 1 relax__read
+ e 6 5 snack__relax
+
+S
+v 1 snack
+v 2 relax
+v 3 read
+v 4 personalhygiene
+v 5 sleep
+v 6 END
+v 7 relax
+v 8 mealpreperation
+v 9 eatingdrinking
+v 10 cleaning
+ e 1 2 snack__relax
+ e 4 5 personalhygiene__sleep
+ e 5 6 sleep__END
+ e 2 3 relax__read
+ e 3 4 read__personalhygiene
+ e 7 1 relax__snack
+ e 8 9 mealpreperation__eatingdrinking
+ e 8 10 mealpreperation__cleaning
+ e 9 7 eatingdrinking__relax
+ e 10 7 cleaning__relax
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 cleaning
+v 4 relax
+v 5 snack
+v 6 relax
+v 7 read
+v 8 personalhygiene
+v 9 sleep
+v 10 END
+v 11 snack
+v 12 personalhygiene
+v 13 relax
+ e 1 2 mealpreperation__eatingdrinking
+ e 1 3 mealpreperation__cleaning
+ e 2 4 eatingdrinking__relax
+ e 3 4 cleaning__relax
+ e 4 5 relax__snack
+ e 5 6 snack__relax
+ e 8 9 personalhygiene__sleep
+ e 9 10 sleep__END
+ e 6 7 relax__read
+ e 7 8 read__personalhygiene
+ e 11 1 snack__mealpreperation
+ e 12 13 personalhygiene__relax
+ e 13 11 relax__snack
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 snack
+v 4 mealpreperation
+v 5 eatingdrinking
+v 6 cleaning
+v 7 relax
+v 8 snack
+v 9 relax
+v 10 read
+v 11 personalhygiene
+v 12 sleep
+v 13 END
+v 14 relax
+v 15 sleep
+ e 1 2 personalhygiene__relax
+ e 2 3 relax__snack
+ e 3 4 snack__mealpreperation
+ e 4 5 mealpreperation__eatingdrinking
+ e 4 6 mealpreperation__cleaning
+ e 5 7 eatingdrinking__relax
+ e 6 7 cleaning__relax
+ e 7 8 relax__snack
+ e 8 9 snack__relax
+ e 11 12 personalhygiene__sleep
+ e 12 13 sleep__END
+ e 9 10 relax__read
+ e 10 11 read__personalhygiene
+ e 14 1 relax__personalhygiene
+ e 15 14 sleep__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 medication
+v 5 sleep
+v 6 toilet
+v 7 personalhygiene
+v 8 relax
+v 9 mealpreperation
+v 10 eatingdrinking
+v 11 cleaning
+v 12 relax
+v 13 personalhygiene
+v 14 groom
+v 15 personalhygiene
+v 16 relax
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__personalhygiene
+ e 7 8 personalhygiene__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__eatingdrinking
+ e 9 11 mealpreperation__cleaning
+ e 10 12 eatingdrinking__relax
+ e 11 12 cleaning__relax
+ e 12 13 relax__personalhygiene
+ e 13 14 personalhygiene__groom
+ e 3 4 sleep__medication
+ e 4 5 medication__sleep
+ e 14 15 groom__personalhygiene
+ e 15 16 personalhygiene__relax
+
+S
+v 1 relax
+v 2 personalhygiene
+v 3 sleep
+v 4 END
+v 5 read
+ e 1 2 relax__personalhygiene
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__END
+ e 5 1 read__relax
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 sleep
+v 4 START
+v 5 toilet
+v 6 sleep
+v 7 toilet
+ e 1 2 personalhygiene__relax
+ e 3 1 sleep__personalhygiene
+ e 4 5 START__toilet
+ e 5 6 toilet__sleep
+ e 6 7 sleep__toilet
+ e 7 3 toilet__sleep
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+
+S
+v 1 sleep
+v 2 toilet
+v 3 sleep
+v 4 END
+v 5 personalhygiene
+ e 1 2 sleep__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__END
+ e 5 1 personalhygiene__sleep
+
+S
+v 1 toilet
+v 2 relax
+v 3 snack
+v 4 relax
+v 5 snack
+v 6 eatingdrinking
+v 7 cleaning
+v 8 relax
+v 9 personalhygiene
+v 10 relax
+v 11 outdoors
+v 12 toilet
+v 13 personalhygiene
+v 14 sleep
+v 15 END
+v 16 relax
+v 17 snack
+ e 1 2 toilet__relax
+ e 2 3 relax__snack
+ e 3 4 snack__relax
+ e 4 5 relax__snack
+ e 6 8 eatingdrinking__relax
+ e 7 8 cleaning__relax
+ e 8 9 relax__personalhygiene
+ e 9 10 personalhygiene__relax
+ e 10 11 relax__outdoors
+ e 11 12 outdoors__toilet
+ e 12 13 toilet__personalhygiene
+ e 13 14 personalhygiene__sleep
+ e 14 15 sleep__END
+ e 5 6 snack__eatingdrinking
+ e 5 7 snack__cleaning
+ e 16 1 relax__toilet
+ e 17 16 snack__relax
+
+S
+v 1 START
+v 2 sleep
+v 3 toilet
+v 4 sleep
+ e 1 2 START__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+
+S
+v 1 toilet
+v 2 relax
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 snack
+ e 1 2 toilet__relax
+ e 2 3 relax__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 6 1 snack__toilet
+
+S
+v 1 START
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 toilet
+v 6 dress
+ e 1 2 START__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__toilet
+ e 5 6 toilet__dress
+
+S
+v 1 personalhygiene
+v 2 toilet
+v 3 outdoors
+v 4 toilet
+v 5 relax
+v 6 toilet
+v 7 snack
+v 8 relax
+v 9 mealpreperation
+v 10 relax
+v 11 cleaning
+v 12 personalhygiene
+v 13 read
+v 14 personalhygiene
+v 15 sleep
+v 16 END
+v 17 work
+ e 1 2 personalhygiene__toilet
+ e 2 3 toilet__outdoors
+ e 3 4 outdoors__toilet
+ e 4 5 toilet__relax
+ e 5 6 relax__toilet
+ e 6 7 toilet__snack
+ e 7 8 snack__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__relax
+ e 14 15 personalhygiene__sleep
+ e 15 16 sleep__END
+ e 10 11 relax__cleaning
+ e 11 12 cleaning__personalhygiene
+ e 12 13 personalhygiene__read
+ e 13 14 read__personalhygiene
+ e 17 1 work__personalhygiene
+
+S
+v 1 work
+v 2 personalhygiene
+v 3 toilet
+v 4 outdoors
+v 5 toilet
+v 6 relax
+v 7 toilet
+v 8 snack
+v 9 relax
+v 10 mealpreperation
+v 11 relax
+v 12 cleaning
+v 13 personalhygiene
+v 14 read
+v 15 personalhygiene
+v 16 sleep
+v 17 END
+v 18 mealpreperation
+ e 1 2 work__personalhygiene
+ e 2 3 personalhygiene__toilet
+ e 3 4 toilet__outdoors
+ e 4 5 outdoors__toilet
+ e 5 6 toilet__relax
+ e 6 7 relax__toilet
+ e 7 8 toilet__snack
+ e 8 9 snack__relax
+ e 9 10 relax__mealpreperation
+ e 10 11 mealpreperation__relax
+ e 15 16 personalhygiene__sleep
+ e 16 17 sleep__END
+ e 11 12 relax__cleaning
+ e 12 13 cleaning__personalhygiene
+ e 13 14 personalhygiene__read
+ e 14 15 read__personalhygiene
+ e 18 1 mealpreperation__work
+
+S
+v 1 snack
+v 2 relax
+v 3 cleaning
+v 4 relax
+v 5 personalhygiene
+v 6 sleep
+v 7 END
+v 8 outdoors
+v 9 personalhygiene
+ e 1 2 snack__relax
+ e 4 5 relax__personalhygiene
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__END
+ e 2 3 relax__cleaning
+ e 3 4 cleaning__relax
+ e 8 1 outdoors__snack
+ e 9 8 personalhygiene__outdoors
+
+S
+v 1 personalhygiene
+v 2 outdoors
+v 3 snack
+v 4 relax
+v 5 cleaning
+v 6 relax
+v 7 personalhygiene
+v 8 sleep
+v 9 END
+v 10 cleaning
+v 11 relax
+ e 1 2 personalhygiene__outdoors
+ e 2 3 outdoors__snack
+ e 3 4 snack__relax
+ e 6 7 relax__personalhygiene
+ e 7 8 personalhygiene__sleep
+ e 8 9 sleep__END
+ e 4 5 relax__cleaning
+ e 5 6 cleaning__relax
+ e 10 1 cleaning__personalhygiene
+ e 11 10 relax__cleaning
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 relax
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__relax
+
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 relax
+v 5 snack
+v 6 read
+v 7 personalhygiene
+v 8 sleep
+v 9 END
+v 10 outdoors
+v 11 personalhygiene
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 3 4 eatingdrinking__relax
+ e 4 5 relax__snack
+ e 7 8 personalhygiene__sleep
+ e 8 9 sleep__END
+ e 5 6 snack__read
+ e 6 7 read__personalhygiene
+ e 10 1 outdoors__relax
+ e 11 10 personalhygiene__outdoors
+
+S
+v 1 relax
+v 2 cleaning
+v 3 personalhygiene
+v 4 outdoors
+v 5 snack
+v 6 relax
+v 7 cleaning
+v 8 relax
+v 9 personalhygiene
+v 10 sleep
+v 11 END
+v 12 eatingdrinking
+v 13 mealpreperation
+ e 3 4 personalhygiene__outdoors
+ e 4 5 outdoors__snack
+ e 5 6 snack__relax
+ e 8 9 relax__personalhygiene
+ e 9 10 personalhygiene__sleep
+ e 10 11 sleep__END
+ e 1 2 relax__cleaning
+ e 2 3 cleaning__personalhygiene
+ e 6 7 relax__cleaning
+ e 7 8 cleaning__relax
+ e 12 1 eatingdrinking__relax
+ e 13 12 mealpreperation__eatingdrinking
+
+S
+v 1 START
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 toilet
+v 6 dress
+v 7 sleep
+v 8 toilet
+ e 1 2 START__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__toilet
+ e 5 6 toilet__dress
+ e 6 7 dress__sleep
+ e 7 8 sleep__toilet
+
+S
+v 1 mealpreperation
+v 2 eatingdrinking
+v 3 relax
+v 4 cleaning
+v 5 personalhygiene
+v 6 outdoors
+v 7 snack
+v 8 relax
+v 9 cleaning
+v 10 relax
+v 11 personalhygiene
+v 12 sleep
+v 13 END
+v 14 outdoors
+ e 1 2 mealpreperation__eatingdrinking
+ e 2 3 eatingdrinking__relax
+ e 5 6 personalhygiene__outdoors
+ e 6 7 outdoors__snack
+ e 7 8 snack__relax
+ e 10 11 relax__personalhygiene
+ e 11 12 personalhygiene__sleep
+ e 12 13 sleep__END
+ e 3 4 relax__cleaning
+ e 4 5 cleaning__personalhygiene
+ e 8 9 relax__cleaning
+ e 9 10 cleaning__relax
+ e 14 1 outdoors__mealpreperation
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 10 11 personalhygiene__dress
+
+S
+v 1 START
+v 2 toilet
+v 3 relax
+v 4 mealpreperation
+v 5 groom
+ e 1 2 START__toilet
+ e 2 3 toilet__relax
+ e 3 4 relax__mealpreperation
+ e 4 5 mealpreperation__groom
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 personalhygiene
+v 8 outdoors
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__personalhygiene
+ e 7 8 personalhygiene__outdoors
+
+S
+v 1 toilet
+v 2 relax
+v 3 mealpreperation
+v 4 sleep
+v 5 START
+v 6 toilet
+v 7 sleep
+v 8 toilet
+ e 1 2 toilet__relax
+ e 2 3 relax__mealpreperation
+ e 4 1 sleep__toilet
+ e 5 6 START__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__toilet
+ e 8 4 toilet__sleep
+
+S
+v 1 START
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 personalhygiene
+ e 1 2 START__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__personalhygiene
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 relax
+v 11 toilet
+v 12 work
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__relax
+ e 10 11 relax__toilet
+ e 11 12 toilet__work
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 relax
+v 11 toilet
+v 12 work
+v 13 personalhygiene
+v 14 groom
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__relax
+ e 10 11 relax__toilet
+ e 11 12 toilet__work
+ e 12 13 work__personalhygiene
+ e 13 14 personalhygiene__groom
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 relax
+v 11 toilet
+v 12 work
+v 13 personalhygiene
+v 14 groom
+v 15 personalhygiene
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__relax
+ e 10 11 relax__toilet
+ e 11 12 toilet__work
+ e 12 13 work__personalhygiene
+ e 13 14 personalhygiene__groom
+ e 14 15 groom__personalhygiene
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+v 18 work
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+ e 17 18 relax__work
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+v 18 work
+v 19 personalhygiene
+v 20 snack
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 17 18 relax__work
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+ e 18 19 work__personalhygiene
+ e 19 20 personalhygiene__snack
+
+S
+v 1 START
+v 2 toilet
+d 1 2 START__toilet
+ 
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+v 18 work
+v 19 personalhygiene
+v 20 snack
+v 21 personalhygiene
+v 22 outdoors
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 17 18 relax__work
+ e 18 19 work__personalhygiene
+ e 19 20 personalhygiene__snack
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+ e 20 21 snack__personalhygiene
+ e 21 22 personalhygiene__outdoors
+
+S
+v 1 START
+v 2 toilet
+v 3 relax
+v 4 mealpreperation
+v 5 groom
+v 6 bathe
+ e 1 2 START__toilet
+ e 2 3 toilet__relax
+ e 3 4 relax__mealpreperation
+ e 4 5 mealpreperation__groom
+ e 5 6 groom__bathe
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 11 12 dress__groom
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+v 13 outdoors
+v 14 toilet
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 11 12 dress__groom
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 12 13 groom__outdoors
+ e 13 14 outdoors__toilet
+
+S
+v 1 snack
+v 2 toilet
+v 3 relax
+v 4 personalhygiene
+v 5 sleep
+v 6 END
+v 7 toilet
+ e 1 2 snack__toilet
+ e 2 3 toilet__relax
+ e 3 4 relax__personalhygiene
+ e 4 5 personalhygiene__sleep
+ e 5 6 sleep__END
+ e 7 1 toilet__snack
+
+S
+v 1 toilet
+v 2 snack
+v 3 toilet
+v 4 relax
+v 5 personalhygiene
+v 6 sleep
+v 7 END
+v 8 snack
+v 9 snack
+v 10 relax
+v 11 mealpreperation
+v 12 eatingdrinking
+v 13 cleaning
+v 14 watchtv
+ e 1 2 toilet__snack
+ e 2 3 snack__toilet
+ e 3 4 toilet__relax
+ e 4 5 relax__personalhygiene
+ e 5 6 personalhygiene__sleep
+ e 6 7 sleep__END
+ e 8 1 snack__toilet
+ e 9 10 snack__relax
+ e 10 11 relax__mealpreperation
+ e 11 12 mealpreperation__eatingdrinking
+ e 11 13 mealpreperation__cleaning
+ e 13 14 cleaning__watchtv
+ e 12 14 eatingdrinking__watchtv
+ e 14 8 watchtv__snack
+
+S
+v 1 snack
+v 2 relax
+v 3 mealpreperation
+v 4 eatingdrinking
+v 5 cleaning
+v 6 watchtv
+v 7 snack
+v 8 toilet
+v 9 snack
+v 10 toilet
+v 11 relax
+v 12 personalhygiene
+v 13 sleep
+v 14 END
+v 15 outdoors
+v 16 snack
+v 17 relax
+ e 1 2 snack__relax
+ e 2 3 relax__mealpreperation
+ e 3 4 mealpreperation__eatingdrinking
+ e 3 5 mealpreperation__cleaning
+ e 7 8 snack__toilet
+ e 8 9 toilet__snack
+ e 9 10 snack__toilet
+ e 10 11 toilet__relax
+ e 11 12 relax__personalhygiene
+ e 12 13 personalhygiene__sleep
+ e 13 14 sleep__END
+ e 5 6 cleaning__watchtv
+ e 4 6 eatingdrinking__watchtv
+ e 6 7 watchtv__snack
+ e 15 1 outdoors__snack
+ e 16 17 snack__relax
+ e 17 15 relax__outdoors
+
+S
+v 1 snack
+v 2 relax
+v 3 outdoors
+v 4 snack
+v 5 relax
+v 6 mealpreperation
+v 7 eatingdrinking
+v 8 cleaning
+v 9 watchtv
+v 10 snack
+v 11 toilet
+v 12 snack
+v 13 toilet
+v 14 relax
+v 15 personalhygiene
+v 16 sleep
+v 17 END
+v 18 work
+ e 1 2 snack__relax
+ e 2 3 relax__outdoors
+ e 3 4 outdoors__snack
+ e 4 5 snack__relax
+ e 5 6 relax__mealpreperation
+ e 6 7 mealpreperation__eatingdrinking
+ e 6 8 mealpreperation__cleaning
+ e 10 11 snack__toilet
+ e 11 12 toilet__snack
+ e 12 13 snack__toilet
+ e 13 14 toilet__relax
+ e 14 15 relax__personalhygiene
+ e 15 16 personalhygiene__sleep
+ e 16 17 sleep__END
+ e 8 9 cleaning__watchtv
+ e 7 9 eatingdrinking__watchtv
+ e 9 10 watchtv__snack
+ e 18 1 work__snack
+
+S
+v 1 personalhygiene
+v 2 sleep
+v 3 toilet
+v 4 sleep
+v 5 END
+v 6 groom
+ e 1 2 personalhygiene__sleep
+ e 2 3 sleep__toilet
+ e 3 4 toilet__sleep
+ e 4 5 sleep__END
+ e 6 1 groom__personalhygiene
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+v 13 outdoors
+v 14 toilet
+v 15 outdoors
+v 16 relax
+v 17 outdoors
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 11 12 dress__groom
+ e 12 13 groom__outdoors
+ e 13 14 outdoors__toilet
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 14 15 toilet__outdoors
+ e 15 16 outdoors__relax
+ e 16 17 relax__outdoors
+
+S
+v 1 groom
+v 2 personalhygiene
+v 3 sleep
+v 4 END
+v 5 relax
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__END
+ e 1 2 groom__personalhygiene
+ e 5 1 relax__groom
+
+S
+v 1 relax
+v 2 groom
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 groom
+v 7 work
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 1 2 relax__groom
+ e 2 3 groom__personalhygiene
+ e 6 1 groom__relax
+ e 7 6 work__groom
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+v 13 outdoors
+v 14 toilet
+v 15 outdoors
+v 16 relax
+v 17 outdoors
+v 18 toilet
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 11 12 dress__groom
+ e 12 13 groom__outdoors
+ e 13 14 outdoors__toilet
+ e 14 15 toilet__outdoors
+ e 15 16 outdoors__relax
+ e 16 17 relax__outdoors
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 17 18 outdoors__toilet
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+v 13 outdoors
+v 14 toilet
+v 15 outdoors
+v 16 relax
+v 17 outdoors
+v 18 toilet
+v 19 relax
+v 20 mealpreperation
+v 21 eatingdrinking
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 11 12 dress__groom
+ e 12 13 groom__outdoors
+ e 13 14 outdoors__toilet
+ e 14 15 toilet__outdoors
+ e 15 16 outdoors__relax
+ e 16 17 relax__outdoors
+ e 17 18 outdoors__toilet
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 18 19 toilet__relax
+ e 19 20 relax__mealpreperation
+ e 20 21 mealpreperation__eatingdrinking
+
+S
+v 1 outdoors
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 relax
+v 5 cleaning
+v 6 personalhygiene
+v 7 outdoors
+v 8 snack
+v 9 relax
+v 10 cleaning
+v 11 relax
+v 12 personalhygiene
+v 13 sleep
+v 14 END
+v 15 watchtv
+ e 1 2 outdoors__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 3 4 eatingdrinking__relax
+ e 6 7 personalhygiene__outdoors
+ e 7 8 outdoors__snack
+ e 8 9 snack__relax
+ e 11 12 relax__personalhygiene
+ e 12 13 personalhygiene__sleep
+ e 13 14 sleep__END
+ e 4 5 relax__cleaning
+ e 5 6 cleaning__personalhygiene
+ e 9 10 relax__cleaning
+ e 10 11 cleaning__relax
+ e 15 1 watchtv__outdoors
+
+S
+v 1 watchtv
+v 2 outdoors
+v 3 mealpreperation
+v 4 eatingdrinking
+v 5 relax
+v 6 cleaning
+v 7 personalhygiene
+v 8 outdoors
+v 9 snack
+v 10 relax
+v 11 cleaning
+v 12 relax
+v 13 personalhygiene
+v 14 sleep
+v 15 END
+v 16 personalhygiene
+ e 2 3 outdoors__mealpreperation
+ e 3 4 mealpreperation__eatingdrinking
+ e 4 5 eatingdrinking__relax
+ e 7 8 personalhygiene__outdoors
+ e 8 9 outdoors__snack
+ e 9 10 snack__relax
+ e 12 13 relax__personalhygiene
+ e 13 14 personalhygiene__sleep
+ e 14 15 sleep__END
+ e 1 2 watchtv__outdoors
+ e 5 6 relax__cleaning
+ e 6 7 cleaning__personalhygiene
+ e 10 11 relax__cleaning
+ e 11 12 cleaning__relax
+ e 16 1 personalhygiene__watchtv
+
+S
+v 1 personalhygiene
+v 2 watchtv
+v 3 outdoors
+v 4 mealpreperation
+v 5 eatingdrinking
+v 6 relax
+v 7 cleaning
+v 8 personalhygiene
+v 9 outdoors
+v 10 snack
+v 11 relax
+v 12 cleaning
+v 13 relax
+v 14 personalhygiene
+v 15 sleep
+v 16 END
+v 17 snack
+v 18 personalhygiene
+ e 3 4 outdoors__mealpreperation
+ e 4 5 mealpreperation__eatingdrinking
+ e 5 6 eatingdrinking__relax
+ e 8 9 personalhygiene__outdoors
+ e 9 10 outdoors__snack
+ e 10 11 snack__relax
+ e 13 14 relax__personalhygiene
+ e 14 15 personalhygiene__sleep
+ e 15 16 sleep__END
+ e 1 2 personalhygiene__watchtv
+ e 2 3 watchtv__outdoors
+ e 6 7 relax__cleaning
+ e 7 8 cleaning__personalhygiene
+ e 11 12 relax__cleaning
+ e 12 13 cleaning__relax
+ e 17 1 snack__personalhygiene
+ e 18 17 personalhygiene__snack
+
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 personalhygiene
+v 5 relax
+v 6 personalhygiene
+v 7 sleep
+v 8 END
+v 9 snack
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 5 6 relax__personalhygiene
+ e 6 7 personalhygiene__sleep
+ e 7 8 sleep__END
+ e 3 4 eatingdrinking__personalhygiene
+ e 4 5 personalhygiene__relax
+ e 9 1 snack__relax
+
+S
+v 1 personalhygiene
+v 2 snack
+v 3 personalhygiene
+v 4 watchtv
+v 5 outdoors
+v 6 mealpreperation
+v 7 eatingdrinking
+v 8 relax
+v 9 cleaning
+v 10 personalhygiene
+v 11 outdoors
+v 12 snack
+v 13 relax
+v 14 cleaning
+v 15 relax
+v 16 personalhygiene
+v 17 sleep
+v 18 END
+v 19 toilet
+ e 1 2 personalhygiene__snack
+ e 2 3 snack__personalhygiene
+ e 5 6 outdoors__mealpreperation
+ e 6 7 mealpreperation__eatingdrinking
+ e 7 8 eatingdrinking__relax
+ e 10 11 personalhygiene__outdoors
+ e 11 12 outdoors__snack
+ e 12 13 snack__relax
+ e 15 16 relax__personalhygiene
+ e 16 17 personalhygiene__sleep
+ e 17 18 sleep__END
+ e 3 4 personalhygiene__watchtv
+ e 4 5 watchtv__outdoors
+ e 8 9 relax__cleaning
+ e 9 10 cleaning__personalhygiene
+ e 13 14 relax__cleaning
+ e 14 15 cleaning__relax
+ e 19 1 toilet__personalhygiene
+
+S
+v 1 toilet
+v 2 personalhygiene
+v 3 snack
+v 4 personalhygiene
+v 5 watchtv
+v 6 outdoors
+v 7 mealpreperation
+v 8 eatingdrinking
+v 9 relax
+v 10 cleaning
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 relax
+v 15 cleaning
+v 16 relax
+v 17 personalhygiene
+v 18 sleep
+v 19 END
+v 20 relax
+ e 1 2 toilet__personalhygiene
+ e 2 3 personalhygiene__snack
+ e 3 4 snack__personalhygiene
+ e 6 7 outdoors__mealpreperation
+ e 7 8 mealpreperation__eatingdrinking
+ e 8 9 eatingdrinking__relax
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 13 14 snack__relax
+ e 16 17 relax__personalhygiene
+ e 17 18 personalhygiene__sleep
+ e 18 19 sleep__END
+ e 4 5 personalhygiene__watchtv
+ e 5 6 watchtv__outdoors
+ e 9 10 relax__cleaning
+ e 10 11 cleaning__personalhygiene
+ e 14 15 relax__cleaning
+ e 15 16 cleaning__relax
+ e 20 1 relax__toilet
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+
+S
+v 1 groom
+v 2 personalhygiene
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 END
+v 7 snack
+ e 2 3 personalhygiene__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__END
+ e 1 2 groom__personalhygiene
+ e 7 1 snack__groom
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 sleep
+v 8 relax
+v 9 mealpreperation
+v 10 personalhygiene
+v 11 dress
+v 12 groom
+v 13 outdoors
+v 14 toilet
+v 15 outdoors
+v 16 relax
+v 17 outdoors
+v 18 toilet
+v 19 relax
+v 20 mealpreperation
+v 21 eatingdrinking
+v 22 outdoors
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__sleep
+ e 7 8 sleep__relax
+ e 10 11 personalhygiene__dress
+ e 11 12 dress__groom
+ e 12 13 groom__outdoors
+ e 13 14 outdoors__toilet
+ e 14 15 toilet__outdoors
+ e 15 16 outdoors__relax
+ e 16 17 relax__outdoors
+ e 17 18 outdoors__toilet
+ e 18 19 toilet__relax
+ e 19 20 relax__mealpreperation
+ e 20 21 mealpreperation__eatingdrinking
+ e 8 9 relax__mealpreperation
+ e 9 10 mealpreperation__personalhygiene
+ e 21 22 eatingdrinking__outdoors
+
+S
+v 1 snack
+v 2 groom
+v 3 personalhygiene
+v 4 sleep
+v 5 toilet
+v 6 sleep
+v 7 END
+v 8 relax
+v 9 relax
+v 10 mealpreperation
+v 11 eatingdrinking
+v 12 cleaning
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__toilet
+ e 5 6 toilet__sleep
+ e 6 7 sleep__END
+ e 1 2 snack__groom
+ e 2 3 groom__personalhygiene
+ e 8 1 relax__snack
+ e 9 10 relax__mealpreperation
+ e 10 11 mealpreperation__eatingdrinking
+ e 10 12 mealpreperation__cleaning
+ e 11 8 eatingdrinking__relax
+ e 12 8 cleaning__relax
+
+S
+v 1 relax
+v 2 mealpreperation
+v 3 eatingdrinking
+v 4 cleaning
+v 5 relax
+v 6 snack
+v 7 groom
+v 8 personalhygiene
+v 9 sleep
+v 10 toilet
+v 11 sleep
+v 12 END
+v 13 snack
+ e 1 2 relax__mealpreperation
+ e 2 3 mealpreperation__eatingdrinking
+ e 2 4 mealpreperation__cleaning
+ e 3 5 eatingdrinking__relax
+ e 4 5 cleaning__relax
+ e 5 6 relax__snack
+ e 8 9 personalhygiene__sleep
+ e 9 10 sleep__toilet
+ e 10 11 toilet__sleep
+ e 11 12 sleep__END
+ e 6 7 snack__groom
+ e 7 8 groom__personalhygiene
+ e 13 1 snack__relax
+
+S
+v 1 work
+v 2 snack
+v 3 relax
+v 4 outdoors
+v 5 snack
+v 6 relax
+v 7 mealpreperation
+v 8 eatingdrinking
+v 9 cleaning
+v 10 watchtv
+v 11 snack
+v 12 toilet
+v 13 snack
+v 14 toilet
+v 15 relax
+v 16 personalhygiene
+v 17 sleep
+v 18 END
+v 19 outdoors
+ e 1 2 work__snack
+ e 2 3 snack__relax
+ e 3 4 relax__outdoors
+ e 4 5 outdoors__snack
+ e 5 6 snack__relax
+ e 6 7 relax__mealpreperation
+ e 7 8 mealpreperation__eatingdrinking
+ e 7 9 mealpreperation__cleaning
+ e 11 12 snack__toilet
+ e 12 13 toilet__snack
+ e 13 14 snack__toilet
+ e 14 15 toilet__relax
+ e 15 16 relax__personalhygiene
+ e 16 17 personalhygiene__sleep
+ e 17 18 sleep__END
+ e 9 10 cleaning__watchtv
+ e 8 10 eatingdrinking__watchtv
+ e 10 11 watchtv__snack
+ e 19 1 outdoors__work
+
+S
+v 1 outdoors
+v 2 work
+v 3 snack
+v 4 relax
+v 5 outdoors
+v 6 snack
+v 7 relax
+v 8 mealpreperation
+v 9 eatingdrinking
+v 10 cleaning
+v 11 watchtv
+v 12 snack
+v 13 toilet
+v 14 snack
+v 15 toilet
+v 16 relax
+v 17 personalhygiene
+v 18 sleep
+v 19 END
+v 20 toilet
+v 21 sleep
+ e 1 2 outdoors__work
+ e 2 3 work__snack
+ e 3 4 snack__relax
+ e 4 5 relax__outdoors
+ e 5 6 outdoors__snack
+ e 6 7 snack__relax
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__eatingdrinking
+ e 8 10 mealpreperation__cleaning
+ e 12 13 snack__toilet
+ e 13 14 toilet__snack
+ e 14 15 snack__toilet
+ e 15 16 toilet__relax
+ e 16 17 relax__personalhygiene
+ e 17 18 personalhygiene__sleep
+ e 18 19 sleep__END
+ e 10 11 cleaning__watchtv
+ e 9 11 eatingdrinking__watchtv
+ e 11 12 watchtv__snack
+ e 20 1 toilet__outdoors
+ e 21 20 sleep__toilet
+
+S
+v 1 personalhygiene
+v 2 read
+v 3 sleep
+v 4 END
+v 5 watchtv
+ e 3 4 sleep__END
+ e 1 2 personalhygiene__read
+ e 2 3 read__sleep
+ e 5 1 watchtv__personalhygiene
+
+S
+v 1 snack
+v 2 relax
+v 3 mealpreperation
+v 4 eatingdrinking
+v 5 cleaning
+v 6 relax
+v 7 snack
+v 8 groom
+v 9 personalhygiene
+v 10 sleep
+v 11 toilet
+v 12 sleep
+v 13 END
+v 14 outdoors
+ e 1 2 snack__relax
+ e 2 3 relax__mealpreperation
+ e 3 4 mealpreperation__eatingdrinking
+ e 3 5 mealpreperation__cleaning
+ e 4 6 eatingdrinking__relax
+ e 5 6 cleaning__relax
+ e 6 7 relax__snack
+ e 9 10 personalhygiene__sleep
+ e 10 11 sleep__toilet
+ e 11 12 toilet__sleep
+ e 12 13 sleep__END
+ e 7 8 snack__groom
+ e 8 9 groom__personalhygiene
+ e 14 1 outdoors__snack
+
+S
+v 1 personalhygiene
+v 2 work
+d 1 2 personalhygiene__work
+ 
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+v 18 work
+v 19 personalhygiene
+v 20 snack
+v 21 personalhygiene
+v 22 outdoors
+v 23 mealpreperation
+v 24 eatingdrinking
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 17 18 relax__work
+ e 18 19 work__personalhygiene
+ e 19 20 personalhygiene__snack
+ e 20 21 snack__personalhygiene
+ e 21 22 personalhygiene__outdoors
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+ e 22 23 outdoors__mealpreperation
+ e 23 24 mealpreperation__eatingdrinking
+
+S
+v 1 bathe
+v 2 groom
+d 1 2 bathe__groom
+ 
+S
+v 1 outdoors
+v 2 relax
+v 3 outdoors
+v 4 personalhygiene
+v 5 sleep
+v 6 END
+ e 2 3 relax__outdoors
+ e 1 2 outdoors__relax
+ e 3 4 outdoors__personalhygiene
+ e 4 5 personalhygiene__sleep
+ e 5 6 sleep__END
+
+S
+v 1 snack
+v 2 eatingdrinking
+v 3 toilet
+v 4 mealpreperation
+v 5 relax
+ e 1 2 snack__eatingdrinking
+ e 3 1 toilet__snack
+ e 4 5 mealpreperation__relax
+ e 5 3 relax__toilet
+
+S
+v 1 bathe
+v 2 dress
+v 3 personalhygiene
+v 4 outdoors
+ e 1 2 bathe__dress
+ e 2 3 dress__personalhygiene
+ e 3 4 personalhygiene__outdoors
+
+S
+v 1 personalhygiene
+v 2 outdoors
+v 3 relax
+v 4 relax
+v 5 relax
+v 6 mealpreperation
+v 7 eatingdrinking
+ e 1 2 personalhygiene__outdoors
+ e 2 3 outdoors__relax
+ e 4 1 relax__personalhygiene
+ e 5 6 relax__mealpreperation
+ e 6 7 mealpreperation__eatingdrinking
+ e 7 4 eatingdrinking__relax
+
+S
+v 1 personalhygiene
+v 2 groom
+v 3 bathe
+ e 1 2 personalhygiene__groom
+ e 3 1 bathe__personalhygiene
+
+S
+v 1 personalhygiene
+v 2 groom
+v 3 personalhygiene
+v 4 sleep
+v 5 END
+v 6 relax
+ e 1 2 personalhygiene__groom
+ e 2 3 groom__personalhygiene
+ e 3 4 personalhygiene__sleep
+ e 4 5 sleep__END
+ e 6 1 relax__personalhygiene
+
+S
+v 1 work
+v 2 groom
+v 3 personalhygiene
+v 4 groom
+ e 1 2 work__groom
+ e 2 3 groom__personalhygiene
+ e 3 4 personalhygiene__groom
+
+S
+v 1 mealpreperation
+v 2 relax
+v 3 toilet
+v 4 snack
+v 5 eatingdrinking
+v 6 cleaning
+ e 1 2 mealpreperation__relax
+ e 2 3 relax__toilet
+ e 3 4 toilet__snack
+ e 4 5 snack__eatingdrinking
+ e 5 6 eatingdrinking__cleaning
+
+S
+v 1 bathe
+v 2 groom
+v 3 toilet
+ e 1 2 bathe__groom
+ e 2 3 groom__toilet
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 relax
+v 4 snack
+ e 1 2 personalhygiene__relax
+ e 3 1 relax__personalhygiene
+ e 4 3 snack__relax
+
+S
+v 1 START
+v 2 toilet
+v 3 sleep
+v 4 toilet
+v 5 sleep
+v 6 toilet
+v 7 relax
+v 8 mealpreperation
+v 9 personalhygiene
+v 10 dress
+v 11 personalhygiene
+v 12 outdoors
+v 13 snack
+v 14 eatingdrinking
+v 15 personalhygiene
+v 16 outdoors
+v 17 relax
+v 18 work
+v 19 personalhygiene
+v 20 snack
+v 21 personalhygiene
+v 22 outdoors
+v 23 mealpreperation
+v 24 eatingdrinking
+v 25 cleaning
+ e 1 2 START__toilet
+ e 2 3 toilet__sleep
+ e 3 4 sleep__toilet
+ e 4 5 toilet__sleep
+ e 5 6 sleep__toilet
+ e 6 7 toilet__relax
+ e 9 10 personalhygiene__dress
+ e 10 11 dress__personalhygiene
+ e 11 12 personalhygiene__outdoors
+ e 12 13 outdoors__snack
+ e 15 16 personalhygiene__outdoors
+ e 16 17 outdoors__relax
+ e 17 18 relax__work
+ e 18 19 work__personalhygiene
+ e 19 20 personalhygiene__snack
+ e 20 21 snack__personalhygiene
+ e 21 22 personalhygiene__outdoors
+ e 22 23 outdoors__mealpreperation
+ e 23 24 mealpreperation__eatingdrinking
+ e 7 8 relax__mealpreperation
+ e 8 9 mealpreperation__personalhygiene
+ e 13 14 snack__eatingdrinking
+ e 14 15 eatingdrinking__personalhygiene
+ e 23 25 mealpreperation__cleaning
+
+S
+v 1 personalhygiene
+v 2 relax
+v 3 snack
+v 4 personalhygiene
+v 5 relax
+ e 1 2 personalhygiene__relax
+ e 2 3 relax__snack
+ e 3 4 snack__personalhygiene
+ e 4 5 personalhygiene__relax
+
+S
+v 1 sleep
+v 2 toilet
+v 3 outdoors
+ e 1 2 sleep__toilet
+ e 3 1 outdoors__sleep
+
+S
+v 1 toilet
+v 2 relax
+v 3 personalhygiene
+ e 1 2 toilet__relax
+ e 3 1 personalhygiene__toilet
+
+S
+v 1 sleep
+v 2 toilet
+v 3 outdoors
+v 4 work
+v 5 snack
+v 6 relax
+v 7 outdoors
+v 8 snack
+v 9 relax
+v 10 mealpreperation
+v 11 eatingdrinking
+v 12 cleaning
+v 13 watchtv
+v 14 snack
+v 15 toilet
+v 16 snack
+v 17 toilet
+v 18 relax
+v 19 personalhygiene
+v 20 sleep
+v 21 END
+v 22 work
+ e 1 2 sleep__toilet
+ e 2 3 toilet__outdoors
+ e 3 4 outdoors__work
+ e 4 5 work__snack
+ e 5 6 snack__relax
+ e 6 7 relax__outdoors
+ e 7 8 outdoors__snack
+ e 8 9 snack__relax
+ e 9 10 relax__mealpreperation
+ e 10 11 mealpreperation__eatingdrinking
+ e 10 12 mealpreperation__cleaning
+ e 14 15 snack__toilet
+ e 15 16 toilet__snack
+ e 16 17 snack__toilet
+ e 17 18 toilet__relax
+ e 18 19 relax__personalhygiene
+ e 19 20 personalhygiene__sleep
+ e 20 21 sleep__END
+ e 12 13 cleaning__watchtv
+ e 11 13 eatingdrinking__watchtv
+ e 13 14 watchtv__snack
+ e 22 1 work__sleep
+
+S
+v 1 work
+v 2 relax
+d 1 2 work__relax
+ 
+S
+v 1 mealpreperation
+v 2 relax
+d 1 2 mealpreperation__relax
+ 
+S
+v 1 bathe
+v 2 groom
+v 3 toilet
+v 4 mealpreperation
+v 5 eatingdrinking
+ e 2 3 groom__toilet
+ e 1 2 bathe__groom
+ e 3 4 toilet__mealpreperation
+ e 4 5 mealpreperation__eatingdrinking

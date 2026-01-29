@@ -1,0 +1,3 @@
+v 1 SUB_2
+v 2 T06Determinenecessityofstopadvice
+d 2 1 T06Determinenecessityofstopadvice__T02Checkconfirmationofreceipt

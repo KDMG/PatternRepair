@@ -1,0 +1,116 @@
+Selected Pattern: 240
+Number of graphs in which the pattern occurs: 319
+Subgraph:  ['Instance', '1:', 'v', '5', 'A-Concept', 'v', '6', 'A-Accepted', 'v', '7', 'O-Create-Offer', 'v', '8', 'O-Created', 'v', '9', 'O-Sent-mail-and-online', 'd', '5', '6', 'A-Concept__A-Accepted', 'd', '6', '7', 'A-Accepted__O-Create-Offer', 'd', '7', '8', 'O-Create-Offer__O-Created', 'd', '7', '9', 'O-Create-Offer__O-Sent-mail-and-online', 'Found', '1', 'instances.']
+Repairing sub: 3
+Subgraph:  ['Instance', '1:', 'v', '5', 'A-Concept', 'v', '6', 'A-Accepted', 'v', '7', 'O-Create-Offer', 'v', '8', 'O-Created', 'v', '9', 'O-Sent-mail-and-online', 'd', '5', '6', 'A-Concept__A-Accepted', 'd', '6', '7', 'A-Accepted__O-Create-Offer', 'd', '7', '8', 'O-Create-Offer__O-Created', 'd', '7', '9', 'O-Create-Offer__O-Sent-mail-and-online', 'Found', '1', 'instances.']
+Initial sub:  ['A-Concept', 'A-Accepted', 'O-Create-Offer', 'O-Created', 'O-Sent-mail-and-online']
+Trace:  Application_288955533
+Alignment: ['[L/M]start', '[L/M]A-Create-Application', '[M-INVI]Inv1', '[M-INVI]Inv4', '[L/M]W-Complete-application-schedule', '[L/M]W-Complete-application-start', '[L/M]A-Concept', '[M-INVI]Inv5', '[M-INVI]Inv6', '[M-INVI]Inv8', '[L/M]A-Accepted', '[M-REAL]W-Complete-application-suspend', '[M-INVI]Inv10', '[M-INVI]Inv12', '[M-INVI]Inv9', '[M-INVI]Inv13', '[L/M]O-Create-Offer', '[M-INVI]Inv14', '[L/M]O-Created', '[L/M]O-Sent-mail-and-online', '[M-INVI]Inv15', '[L/M]W-Complete-application-complete', '[L/M]W-Call-after-offers-schedule', '[L/M]W-Call-after-offers-start', '[L/M]A-Complete', '[M-INVI]Inv16', '[L/M]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-resume', '[L]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-ate-abort', '[M-INVI]Inv17', '[M-INVI]Inv18', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L]O-Returned', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L/M]W-Validate-application-complete', '[M-INVI]Inv25', '[L]W-Assess-potential-fraud-schedule', '[L]W-Assess-potential-fraud-start', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Validate-application-schedule', '[L]W-Validate-application-start', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-complete', '[L/M]W-Call-incomplete-files-schedule', '[L/M]W-Call-incomplete-files-start', '[L/M]A-Incomplete', '[L/M]W-Call-incomplete-files-suspend', '[L/M]W-Call-incomplete-files-resume', '[L/M]W-Call-incomplete-files-suspend', '[M-INVI]Inv26', '[L/M]W-Call-incomplete-files-ate-abort', '[M-INVI]Inv28', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-start', '[L]A-Denied', '[L]O-Refused', '[L/M]W-Validate-application-complete', '[M-INVI]Inv29', '[L/M]end']
+Simplified subgraph:  ['Instance', '1:', 'v', '6', 'A-Accepted', 'v', '7', 'O-Create-Offer', 'd', '6', '7', 'A-Accepted__O-Create-Offer', 'Found', '1', 'instances.']
+Simplified sub:  ['A-Accepted', 'O-Create-Offer']
+Start:  6
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8263888888888888, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept')], 'reached_marking': ['n15:1', 'n17:1'], 'enabled_transitions_in_marking': {(n87, 'W-Shortened-completion-schedule'), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 8, 'remaining_tokens': 2, 'produced_tokens': 9}]
+Reached Marking:  ['n17', 'n15']
+End:  7
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.95, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept'), (n82, None), (n86, None), (n91, None), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend'), (n95, None), (n98, None), (n92, None), (n99, None), (n101, 'O-Create-Offer')], 'reached_marking': ['n30:1'], 'enabled_transitions_in_marking': {(n104, 'O-Created'), (n105, 'O-Sent-mail-and-online')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 20, 'remaining_tokens': 1, 'produced_tokens': 20}]
+Reached Marking:  ['n30']
+Added:  A-Accepted s1 --> n154
+Added:  n154 --> O-Create-Offer s2
+Added: n17 -- > (s1, 'A-Accepted') s1
+Added: n15 -- > (s1, 'A-Accepted') s1
+Added: (s2, 'O-Create-Offer') s2 -- > n30
+Subgraph:  ['Instance', '1:', 'v', '39', 'W-Validate-application-suspend', 'v', '40', 'W-Validate-application-resume', 'v', '41', 'W-Validate-application-suspend', 'v', '42', 'W-Validate-application-resume', 'd', '39', '40', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '40', '41', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '41', '42', 'W-Validate-application-suspend__W-Validate-application-resume', 'Instance', '2:', 'v', '24', 'W-Validate-application-suspend', 'v', '25', 'W-Validate-application-resume', 'v', '26', 'W-Validate-application-suspend', 'v', '27', 'W-Validate-application-resume', 'd', '24', '25', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '25', '26', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '26', '27', 'W-Validate-application-suspend__W-Validate-application-resume', 'Found', '2', 'instances.']
+Repairing sub: 42
+Subgraph:  ['Instance', '1:', 'v', '39', 'W-Validate-application-suspend', 'v', '40', 'W-Validate-application-resume', 'v', '41', 'W-Validate-application-suspend', 'v', '42', 'W-Validate-application-resume', 'd', '39', '40', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '40', '41', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '41', '42', 'W-Validate-application-suspend__W-Validate-application-resume', 'Instance', '2:', 'v', '24', 'W-Validate-application-suspend', 'v', '25', 'W-Validate-application-resume', 'v', '26', 'W-Validate-application-suspend', 'v', '27', 'W-Validate-application-resume', 'd', '24', '25', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '25', '26', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '26', '27', 'W-Validate-application-suspend__W-Validate-application-resume', 'Found', '2', 'instances.']
+Initial sub:  ['W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume']
+Trace:  Application_288955533
+Alignment: ['[L/M]start', '[L/M]A-Create-Application', '[M-INVI]Inv1', '[M-INVI]Inv4', '[L/M]W-Complete-application-schedule', '[L/M]W-Complete-application-start', '[L/M]A-Concept', '[M-INVI]Inv5', '[M-INVI]Inv6', '[M-INVI]Inv8', '[L/M]A-Accepted', '[M-REAL]W-Complete-application-suspend', '[M-INVI]Inv10', '[M-INVI]Inv12', '[M-INVI]Inv9', '[M-INVI]Inv13', '[L/M]O-Create-Offer', '[M-INVI]Inv14', '[L/M]O-Created', '[L/M]O-Sent-mail-and-online', '[M-INVI]Inv15', '[L/M]W-Complete-application-complete', '[L/M]W-Call-after-offers-schedule', '[L/M]W-Call-after-offers-start', '[L/M]A-Complete', '[M-INVI]Inv16', '[L/M]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-resume', '[L]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-ate-abort', '[M-INVI]Inv17', '[M-INVI]Inv18', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L]O-Returned', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L/M]W-Validate-application-complete', '[M-INVI]Inv25', '[L]W-Assess-potential-fraud-schedule', '[L]W-Assess-potential-fraud-start', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Validate-application-schedule', '[L]W-Validate-application-start', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-complete', '[L/M]W-Call-incomplete-files-schedule', '[L/M]W-Call-incomplete-files-start', '[L/M]A-Incomplete', '[L/M]W-Call-incomplete-files-suspend', '[L/M]W-Call-incomplete-files-resume', '[L/M]W-Call-incomplete-files-suspend', '[M-INVI]Inv26', '[L/M]W-Call-incomplete-files-ate-abort', '[M-INVI]Inv28', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-start', '[L]A-Denied', '[L]O-Refused', '[L/M]W-Validate-application-complete', '[M-INVI]Inv29', '[L/M]end']
+Simplified subgraph:  ['Instance', '1:', 'v', '39', 'W-Validate-application-suspend', 'v', '40', 'W-Validate-application-resume', 'v', '41', 'W-Validate-application-suspend', 'v', '42', 'W-Validate-application-resume', 'd', '39', '40', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '40', '41', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '41', '42', 'W-Validate-application-suspend__W-Validate-application-resume', 'Instance', '2:', 'v', '24', 'W-Validate-application-suspend', 'v', '25', 'W-Validate-application-resume', 'v', '26', 'W-Validate-application-suspend', 'v', '27', 'W-Validate-application-resume', 'd', '24', '25', 'W-Validate-application-suspend__W-Validate-application-resume', 'd', '25', '26', 'W-Validate-application-resume__W-Validate-application-suspend', 'd', '26', '27', 'W-Validate-application-suspend__W-Validate-application-resume', 'Found', '2', 'instances.']
+Simplified sub:  ['W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume', 'W-Validate-application-suspend', 'W-Validate-application-resume']
+Start:  24
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9648394241417497, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept'), (n82, None), (n86, None), (n91, None), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend'), (n95, None), (n98, None), (n92, None), (n99, None), (n101, 'O-Create-Offer'), (n102, None), (n104, 'O-Created'), (n105, 'O-Sent-mail-and-online'), (n103, None), (n107, 'W-Complete-application-complete'), (n108, 'W-Call-after-offers-schedule'), (n109, 'W-Call-after-offers-start'), (n110, 'A-Complete'), (n111, None), (n113, 'W-Call-after-offers-suspend'), (n114, 'W-Call-after-offers-resume'), (n115, 'W-Call-after-offers-ate-abort'), (n112, None), (n116, None), (n122, 'W-Validate-application-schedule'), (n124, 'W-Validate-application-start'), (n125, 'A-Validating'), (n127, None), (n129, 'W-Validate-application-suspend'), (n131, 'W-Validate-application-resume')], 'reached_marking': ['n54:1', 'n56:1'], 'enabled_transitions_in_marking': {(n133, 'W-Validate-application-ate-abort'), (n136, 'W-Call-incomplete-files-schedule'), (n134, 'W-Validate-application-complete'), (n153, 'end')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 42, 'remaining_tokens': 2, 'produced_tokens': 43}]
+Reached Marking:  ['n54', 'n56']
+End:  42
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9777777777777777, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept'), (n82, None), (n86, None), (n91, None), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend'), (n95, None), (n98, None), (n92, None), (n99, None), (n101, 'O-Create-Offer'), (n102, None), (n104, 'O-Created'), (n105, 'O-Sent-mail-and-online'), (n103, None), (n107, 'W-Complete-application-complete'), (n108, 'W-Call-after-offers-schedule'), (n109, 'W-Call-after-offers-start'), (n110, 'A-Complete'), (n111, None), (n113, 'W-Call-after-offers-suspend'), (n114, 'W-Call-after-offers-resume'), (n115, 'W-Call-after-offers-ate-abort'), (n112, None), (n116, None), (n122, 'W-Validate-application-schedule'), (n124, 'W-Validate-application-start'), (n125, 'A-Validating'), (n127, None), (n129, 'W-Validate-application-suspend'), (n131, 'W-Validate-application-resume'), (n128, None), (n134, 'W-Validate-application-complete')], 'reached_marking': ['n47:1'], 'enabled_transitions_in_marking': {(n136, 'W-Call-incomplete-files-schedule'), (n153, 'end')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 45, 'remaining_tokens': 1, 'produced_tokens': 45}]
+Reached Marking:  ['n47']
+Added:  W-Validate-application-suspend s3 --> n155
+Added:  n155 --> W-Validate-application-resume s4
+Added:  W-Validate-application-resume s4 --> n156
+Added:  n156 --> W-Validate-application-suspend s5
+Added:  W-Validate-application-suspend s5 --> n157
+Added:  n157 --> W-Validate-application-resume s6
+Added:  W-Validate-application-suspend s7 --> n158
+Added:  n158 --> W-Validate-application-resume s8
+Added:  W-Validate-application-resume s8 --> n159
+Added:  n159 --> W-Validate-application-suspend s9
+Added:  W-Validate-application-suspend s9 --> n160
+Added:  n160 --> W-Validate-application-resume s10
+Added: n54 -- > (h1, None) h1
+Added: n56 -- > (h1, None) h1
+Added:  (h1, None) h1 -- > n161
+Added: n161 -- > (s3, 'W-Validate-application-suspend') s3
+Added:  (h1, None) h1 -- > n162
+Added: n162 -- > (s7, 'W-Validate-application-suspend') s7
+Added: (h2, None) h2 --> n47
+Added: n163 -- > (h2, None)
+Added: (s6, 'W-Validate-application-resume') s6 -- > n163
+Added: n164 -- > (h2, None)
+Added: (s10, 'W-Validate-application-resume') s10 -- > n164
+Subgraph:  ['Instance', '1:', 'v', '17', 'W-Call-after-offers-ate-abort', 'v', '18', 'W-Validate-application-schedule', 'v', '19', 'W-Validate-application-start', 'v', '20', 'A-Validating', 'v', '21', 'O-Returned', 'd', '17', '18', 'W-Call-after-offers-ate-abort__W-Validate-application-schedule', 'd', '18', '19', 'W-Validate-application-schedule__W-Validate-application-start', 'd', '19', '20', 'W-Validate-application-start__A-Validating', 'd', '20', '21', 'A-Validating__O-Returned', 'Found', '1', 'instances.']
+Repairing sub: 92
+Subgraph:  ['Instance', '1:', 'v', '17', 'W-Call-after-offers-ate-abort', 'v', '18', 'W-Validate-application-schedule', 'v', '19', 'W-Validate-application-start', 'v', '20', 'A-Validating', 'v', '21', 'O-Returned', 'd', '17', '18', 'W-Call-after-offers-ate-abort__W-Validate-application-schedule', 'd', '18', '19', 'W-Validate-application-schedule__W-Validate-application-start', 'd', '19', '20', 'W-Validate-application-start__A-Validating', 'd', '20', '21', 'A-Validating__O-Returned', 'Found', '1', 'instances.']
+Initial sub:  ['W-Call-after-offers-ate-abort', 'W-Validate-application-schedule', 'W-Validate-application-start', 'A-Validating', 'O-Returned']
+Trace:  Application_288955533
+Alignment: ['[L/M]start', '[L/M]A-Create-Application', '[M-INVI]Inv1', '[M-INVI]Inv4', '[L/M]W-Complete-application-schedule', '[L/M]W-Complete-application-start', '[L/M]A-Concept', '[M-INVI]Inv5', '[M-INVI]Inv6', '[M-INVI]Inv8', '[L/M]A-Accepted', '[M-REAL]W-Complete-application-suspend', '[M-INVI]Inv10', '[M-INVI]Inv12', '[M-INVI]Inv9', '[M-INVI]Inv13', '[L/M]O-Create-Offer', '[M-INVI]Inv14', '[L/M]O-Created', '[L/M]O-Sent-mail-and-online', '[M-INVI]Inv15', '[L/M]W-Complete-application-complete', '[L/M]W-Call-after-offers-schedule', '[L/M]W-Call-after-offers-start', '[L/M]A-Complete', '[M-INVI]Inv16', '[L/M]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-resume', '[L]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-ate-abort', '[M-INVI]Inv17', '[M-INVI]Inv18', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L]O-Returned', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L/M]W-Validate-application-complete', '[M-INVI]Inv25', '[L]W-Assess-potential-fraud-schedule', '[L]W-Assess-potential-fraud-start', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Assess-potential-fraud-suspend', '[L]W-Assess-potential-fraud-resume', '[L]W-Validate-application-schedule', '[L]W-Validate-application-start', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-complete', '[L/M]W-Call-incomplete-files-schedule', '[L/M]W-Call-incomplete-files-start', '[L/M]A-Incomplete', '[L/M]W-Call-incomplete-files-suspend', '[L/M]W-Call-incomplete-files-resume', '[L/M]W-Call-incomplete-files-suspend', '[M-INVI]Inv26', '[L/M]W-Call-incomplete-files-ate-abort', '[M-INVI]Inv28', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-start', '[L]A-Denied', '[L]O-Refused', '[L/M]W-Validate-application-complete', '[M-INVI]Inv29', '[L/M]end']
+Simplified subgraph:  ['Instance', '1:', 'v', '18', 'W-Validate-application-schedule', 'v', '19', 'W-Validate-application-start', 'v', '20', 'A-Validating', 'v', '21', 'O-Returned', 'd', '18', '19', 'W-Validate-application-schedule__W-Validate-application-start', 'd', '19', '20', 'W-Validate-application-start__A-Validating', 'd', '20', '21', 'A-Validating__O-Returned', 'Found', '1', 'instances.']
+Simplified sub:  ['W-Validate-application-schedule', 'W-Validate-application-start', 'A-Validating', 'O-Returned']
+Start:  18
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9554367201426025, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept'), (n82, None), (n86, None), (n91, None), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend'), (n95, None), (n98, None), (n92, None), (n99, None), (n101, 'O-Create-Offer'), (n102, None), (n104, 'O-Created'), (n105, 'O-Sent-mail-and-online'), (n103, None), (n107, 'W-Complete-application-complete'), (n108, 'W-Call-after-offers-schedule'), (n109, 'W-Call-after-offers-start'), (n110, 'A-Complete'), (n111, None), (n113, 'W-Call-after-offers-suspend'), (n114, 'W-Call-after-offers-resume'), (n115, 'W-Call-after-offers-ate-abort')], 'reached_marking': ['n42:1', 'n44:1'], 'enabled_transitions_in_marking': {(n117, 'W-Call-after-offers-complete'), (n118, 'W-Call-after-offers-withdraw'), (n119, 'A-Denied'), (n121, 'O-Returned'), (n122, 'W-Validate-application-schedule')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 33, 'remaining_tokens': 2, 'produced_tokens': 34}]
+Reached Marking:  ['n42', 'n44']
+End:  21
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9743589743589743, 'activated_transitions': [(n68, 'start'), (n69, 'A-Create-Application'), (n70, None), (n81, None), (n84, 'W-Complete-application-schedule'), (n85, 'W-Complete-application-start'), (n83, 'A-Concept'), (n82, None), (n86, None), (n91, None), (n93, 'A-Accepted'), (n94, 'W-Complete-application-suspend'), (n95, None), (n98, None), (n92, None), (n99, None), (n101, 'O-Create-Offer'), (n102, None), (n104, 'O-Created'), (n105, 'O-Sent-mail-and-online'), (n103, None), (n107, 'W-Complete-application-complete'), (n108, 'W-Call-after-offers-schedule'), (n109, 'W-Call-after-offers-start'), (n110, 'A-Complete'), (n111, None), (n113, 'W-Call-after-offers-suspend'), (n114, 'W-Call-after-offers-resume'), (n115, 'W-Call-after-offers-ate-abort'), (n112, None), (n116, None), (n122, 'W-Validate-application-schedule'), (n124, 'W-Validate-application-start'), (n125, 'A-Validating')], 'reached_marking': ['n51:1'], 'enabled_transitions_in_marking': {(n133, 'W-Validate-application-ate-abort'), (n136, 'W-Call-incomplete-files-schedule'), (n131, 'W-Validate-application-resume'), (n134, 'W-Validate-application-complete'), (n129, 'W-Validate-application-suspend'), (n153, 'end')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 39, 'remaining_tokens': 1, 'produced_tokens': 39}]
+Reached Marking:  ['n51']
+Added:  W-Validate-application-schedule s11 --> n165
+Added:  n165 --> W-Validate-application-start s12
+Added:  W-Validate-application-start s12 --> n166
+Added:  n166 --> A-Validating s13
+Added:  A-Validating s13 --> n167
+Added:  n167 --> O-Returned s14
+Added: n42 -- > (s11, 'W-Validate-application-schedule') s11
+Added: n44 -- > (s11, 'W-Validate-application-schedule') s11
+Added: (s14, 'O-Returned') s14 -- > n51
+
+
+Start pattern repairing..
+No loop found in Sub_3
+No loop found in Sub_92
+No common loops found between Sub_3 and Sub_92
+In choice transitions of Sub_3: [(n91, None)]
+In choice transitions of Sub_92: [{(n112, None)}]
+Added:  n168
+Added:  (s2, 'O-Create-Offer') --> n168
+Added:  n168 --> (s11, 'W-Validate-application-schedule')
+Added:  [n169]
+Added:  (n91, None) --> n169
+No loop found in Sub_92
+Loop found in Sub_42 [((n47,), (n46,))].
+No common loops found between Sub_92 and Sub_42
+Added:  (h3, None)
+Added:  n170
+Added:  (h3, None) --> n170
+Added:  n171
+Added:  (h4, None)
+Added:  n171 --> (h4, None)
+Added:  n172
+Added:  (n117, 'W-Call-after-offers-complete') --> n172
+Added:  (n116, None) --> n172
+Added:  (n118, 'W-Call-after-offers-withdraw') --> n172
+Added:  (h4, None) --> n172
+Added:  n172 --> (n145, None)
+In choice transitions of Sub_92: [(n117, 'W-Call-after-offers-complete'), (n116, None), (n118, 'W-Call-after-offers-withdraw')]
+In choice transitions of Sub_42: []
+Added:  (s14, 'O-Returned') --> n170
+Added:  n170 --> (h1, None)
+Added:  (h2, None) --> n171
+Added:  n171 --> (h3, None)
+Added:  n169 --> (n112, None)

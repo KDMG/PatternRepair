@@ -1,0 +1,36 @@
+Selected Pattern: 105
+Number of graphs in which the pattern occurs: 190
+Subgraph:  ['Instance', '1:', 'v', '3', 'ERTriage', 'v', '4', 'ERSepsisTriage', 'd', '3', '4', 'ERTriage__ERSepsisTriage', 'Found', '1', 'instances.']
+Repairing sub: 22
+Subgraph:  ['Instance', '1:', 'v', '3', 'ERTriage', 'v', '4', 'ERSepsisTriage', 'd', '3', '4', 'ERTriage__ERSepsisTriage', 'Found', '1', 'instances.']
+Initial sub:  ['ERTriage', 'ERSepsisTriage']
+Trace:  J
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[L]ERSepsisTriage', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau split', '[L]LacticAcid', '[L]IVLiquid', '[L]IVAntibiotics', '[L/M]AdmissionNC', '[M-INVI]tau from tree', '[M-INVI]tau join', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '4', 'ERSepsisTriage', 'Found', '1', 'instances.']
+Simplified sub:  ['ERSepsisTriage']
+Start:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+End:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage')], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {(n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+Added: n7 -- > (s1, 'ERSepsisTriage') s1
+Added: (s1, 'ERSepsisTriage') s1 -- > n7
+Subgraph:  ['Instance', '1:', 'v', '6', 'Leucocytes', 'v', '7', 'LacticAcid', 'd', '6', '7', 'Leucocytes__LacticAcid', 'Found', '1', 'instances.']
+Repairing sub: 72
+Subgraph:  ['Instance', '1:', 'v', '6', 'Leucocytes', 'v', '7', 'LacticAcid', 'd', '6', '7', 'Leucocytes__LacticAcid', 'Found', '1', 'instances.']
+Initial sub:  ['Leucocytes', 'LacticAcid']
+Trace:  J
+Alignment: ['[L/M]START', '[L/M]ERRegistration', '[L/M]ERTriage', '[L]ERSepsisTriage', '[L/M]CRP', '[M-INVI]tau from tree', '[L/M]Leucocytes', '[M-INVI]tau from tree', '[M-INVI]tau split', '[L]LacticAcid', '[L]IVLiquid', '[L]IVAntibiotics', '[L/M]AdmissionNC', '[M-INVI]tau from tree', '[M-INVI]tau join', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]CRP', '[L]ReleaseA', '[L/M]END']
+Simplified subgraph:  ['Instance', '1:', 'v', '6', 'Leucocytes', 'v', '7', 'LacticAcid', 'd', '6', '7', 'Leucocytes__LacticAcid', 'Found', '1', 'instances.']
+Simplified sub:  ['Leucocytes', 'LacticAcid']
+Start:  6
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP')], 'reached_marking': ['n8:1'], 'enabled_transitions_in_marking': {(n30, 'ERSepsisTriage'), (n31, 'Leucocytes')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 5, 'remaining_tokens': 1, 'produced_tokens': 5}]
+Reached Marking:  ['n8']
+End:  7
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8571428571428572, 'activated_transitions': [(n23, 'START'), (n24, 'ERRegistration'), (n26, 'ERTriage'), (n28, 'CRP'), (n29, None), (n31, 'Leucocytes')], 'reached_marking': ['n11:1'], 'enabled_transitions_in_marking': {(n32, 'IVAntibiotics'), (n27, 'IVLiquid'), (n46, 'ReleaseA'), (n47, 'ReleaseC'), (n42, 'AdmissionNC'), (n48, 'ReleaseD'), (n44, 'ReleaseB'), (n26, 'ERTriage'), (n52, 'END'), (n28, 'CRP')}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 7, 'remaining_tokens': 1, 'produced_tokens': 7}]
+Reached Marking:  ['n11']
+Added:  Leucocytes s2 --> n53
+Added:  n53 --> LacticAcid s3
+Added: n8 -- > (s2, 'Leucocytes') s2
+Added: (s3, 'LacticAcid') s3 -- > n11

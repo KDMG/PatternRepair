@@ -1,0 +1,6 @@
+v 1 SUB_126
+v 2 SUB_30
+v 3 HRHA
+d 3 1 HRHA__HRRR
+d 2 1 HRRAN__HRRR
+d 2 3 FRP__HRHA

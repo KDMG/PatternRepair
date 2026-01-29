@@ -1,0 +1,2006 @@
+SUBDUE 5.2.2
+
+Parameters:
+  Input file..................... /var/www/html/ESub/GraphManager/browsing_workflow2/files/coselog_pattern_08/00001/coselog_pattern_08.g
+  Predefined substructure file... none
+  Output file.................... /var/www/html/ESub/GraphManager/browsing_workflow2/files/coselog_pattern_08/00001/coselog_pattern_08.subs
+  Beam width..................... 4
+  Compress....................... true
+  Evaluation method.............. MDL
+  'e' edges directed............. true
+  Incremental.................... false
+  Iterations..................... 59
+  Limit.......................... 316
+  Minimum size of substructures.. 1
+  Maximum size of substructures.. 681
+  Number of best substructures... 3
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+  Recursion...................... false
+
+Read 55 total positive graphs
+
+----- Iteration 1 -----
+
+55 positive graphs: 681 vertices, 633 edges, 16921 bits
+93 unique labels
+
+26 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.74233, pos instances = 25, neg instances = 0
+  Graph(12v,11e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    v 4 T04Determineconfirmationofreceipt
+    v 5 T05Printandsendconfirmationofreceipt
+    v 6 T06Determinenecessityofstopadvice
+    v 7 T10Determinenecessitytostopindication
+    v 8 T11CreatedocumentXrequestunlicensed
+    v 9 T12CheckdocumentXrequestunlicensed
+    v 10 T14DeterminedocumentXrequestunlicensed
+    v 11 T15PrintdocumentXrequestunlicensed
+    v 12 END
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+    d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+    d 4 6 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 5 6 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 6 7 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 9 10 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 10 11 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 11 12 T15PrintdocumentXrequestunlicensed__END
+    d 7 8 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+    d 8 9 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(2) Substructure: value = 1.66192, pos instances = 26, neg instances = 0
+  Graph(11v,10e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    v 4 T04Determineconfirmationofreceipt
+    v 5 T06Determinenecessityofstopadvice
+    v 6 T10Determinenecessitytostopindication
+    v 7 T11CreatedocumentXrequestunlicensed
+    v 8 T12CheckdocumentXrequestunlicensed
+    v 9 T14DeterminedocumentXrequestunlicensed
+    v 10 T15PrintdocumentXrequestunlicensed
+    v 11 END
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+    d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+    d 4 5 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 5 6 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 8 9 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 9 10 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 10 11 T15PrintdocumentXrequestunlicensed__END
+    d 6 7 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+    d 7 8 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(3) Substructure: value = 1.61997, pos instances = 25, neg instances = 0
+  Graph(11v,10e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    v 4 T04Determineconfirmationofreceipt
+    v 5 T05Printandsendconfirmationofreceipt
+    v 6 T06Determinenecessityofstopadvice
+    v 7 T10Determinenecessitytostopindication
+    v 8 T11CreatedocumentXrequestunlicensed
+    v 9 T12CheckdocumentXrequestunlicensed
+    v 10 T14DeterminedocumentXrequestunlicensed
+    v 11 T15PrintdocumentXrequestunlicensed
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+    d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+    d 4 6 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 5 6 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 6 7 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 9 10 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 10 11 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 7 8 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+    d 8 9 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+Elapsed time for iteration 1 = 0 seconds.
+
+----- Iteration 2 -----
+
+55 positive graphs: 406 vertices, 358 edges, 9494 bits
+94 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.29558, pos instances = 29, neg instances = 0
+  Graph(4v,3e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    v 4 T04Determineconfirmationofreceipt
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+    d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+(2) Substructure: value = 1.28283, pos instances = 28, neg instances = 0
+  Graph(4v,3e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    v 4 T04Determineconfirmationofreceipt
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+    d 3 4 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+(3) Substructure: value = 1.18306, pos instances = 30, neg instances = 0
+  Graph(3v,2e):
+    v 1 START
+    v 2 Confirmationofreceipt
+    v 3 T02Checkconfirmationofreceipt
+    d 1 2 START__Confirmationofreceipt
+    d 2 3 Confirmationofreceipt__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 2 = 0 seconds.
+
+----- Iteration 3 -----
+
+55 positive graphs: 319 vertices, 271 edges, 7202 bits
+95 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.16735, pos instances = 7, neg instances = 0
+  Graph(7v,7e):
+    v 1 T10Determinenecessitytostopindication
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T11CreatedocumentXrequestunlicensed
+    v 4 T12CheckdocumentXrequestunlicensed
+    v 5 T14DeterminedocumentXrequestunlicensed
+    v 6 T15PrintdocumentXrequestunlicensed
+    v 7 END
+    d 1 2 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 1 4 T10Determinenecessitytostopindication__T12CheckdocumentXrequestunlicensed
+    d 4 5 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 5 6 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 6 7 T15PrintdocumentXrequestunlicensed__END
+    d 3 5 T11CreatedocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 2 3 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+
+(2) Substructure: value = 1.16381, pos instances = 6, neg instances = 0
+  Graph(8v,8e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    v 3 T05Printandsendconfirmationofreceipt
+    v 4 T11CreatedocumentXrequestunlicensed
+    v 5 T12CheckdocumentXrequestunlicensed
+    v 6 T14DeterminedocumentXrequestunlicensed
+    v 7 T15PrintdocumentXrequestunlicensed
+    v 8 END
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 2 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 2 5 T10Determinenecessitytostopindication__T12CheckdocumentXrequestunlicensed
+    d 5 6 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 6 7 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 7 8 T15PrintdocumentXrequestunlicensed__END
+    d 4 6 T11CreatedocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 3 4 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+
+(3) Substructure: value = 1.15768, pos instances = 14, neg instances = 0
+  Graph(4v,3e):
+    v 1 T12CheckdocumentXrequestunlicensed
+    v 2 T14DeterminedocumentXrequestunlicensed
+    v 3 T15PrintdocumentXrequestunlicensed
+    v 4 END
+    d 1 2 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 2 3 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 3 4 T15PrintdocumentXrequestunlicensed__END
+
+Elapsed time for iteration 3 = 0 seconds.
+
+----- Iteration 4 -----
+
+55 positive graphs: 277 vertices, 222 edges, 5997 bits
+94 unique labels
+
+26 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.1153, pos instances = 5, neg instances = 0
+  Graph(7v,6e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    v 3 T11CreatedocumentXrequestunlicensed
+    v 4 T12CheckdocumentXrequestunlicensed
+    v 5 T14DeterminedocumentXrequestunlicensed
+    v 6 T15PrintdocumentXrequestunlicensed
+    v 7 END
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 5 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 5 6 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 6 7 T15PrintdocumentXrequestunlicensed__END
+    d 2 3 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+    d 3 4 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(2) Substructure: value = 1.09686, pos instances = 2, neg instances = 0
+  Graph(13v,14e):
+    v 1 SUB_2
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T10Determinenecessitytostopindication
+    v 5 T16Reportreasonstoholdrequest
+    v 6 T17CheckreportYtostopindication
+    v 7 T18AdjustreportYtostopindicition
+    v 8 T17CheckreportYtostopindication
+    v 9 T18AdjustreportYtostopindicition
+    v 10 T17CheckreportYtostopindication
+    v 11 T19DeterminereportYtostopindication
+    v 12 T20PrintreportYtostopindication
+    v 13 END
+    d 1 5 T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest
+    d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 3 4 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 13 T10Determinenecessitytostopindication__END
+    d 5 6 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 8 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 10 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 10 11 T17CheckreportYtostopindication__T19DeterminereportYtostopindication
+    d 11 12 T19DeterminereportYtostopindication__T20PrintreportYtostopindication
+    d 7 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 6 7 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+    d 9 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 8 9 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+(3) Substructure: value = 1.09136, pos instances = 5, neg instances = 0
+  Graph(6v,5e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    v 3 T11CreatedocumentXrequestunlicensed
+    v 4 T12CheckdocumentXrequestunlicensed
+    v 5 T14DeterminedocumentXrequestunlicensed
+    v 6 T15PrintdocumentXrequestunlicensed
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 5 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 5 6 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 2 3 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+    d 3 4 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+Elapsed time for iteration 4 = 0 seconds.
+
+----- Iteration 5 -----
+
+55 positive graphs: 247 vertices, 192 edges, 5230 bits
+95 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.12972, pos instances = 2, neg instances = 0
+  Graph(13v,14e):
+    v 1 SUB_2
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T10Determinenecessitytostopindication
+    v 5 T16Reportreasonstoholdrequest
+    v 6 T17CheckreportYtostopindication
+    v 7 T18AdjustreportYtostopindicition
+    v 8 T17CheckreportYtostopindication
+    v 9 T18AdjustreportYtostopindicition
+    v 10 T17CheckreportYtostopindication
+    v 11 T19DeterminereportYtostopindication
+    v 12 T20PrintreportYtostopindication
+    v 13 END
+    d 1 5 T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest
+    d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 3 4 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 13 T10Determinenecessitytostopindication__END
+    d 5 6 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 8 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 10 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 10 11 T17CheckreportYtostopindication__T19DeterminereportYtostopindication
+    d 11 12 T19DeterminereportYtostopindication__T20PrintreportYtostopindication
+    d 7 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 6 7 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+    d 9 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 8 9 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+(2) Substructure: value = 1.10079, pos instances = 2, neg instances = 0
+  Graph(13v,13e):
+    v 1 SUB_2
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T10Determinenecessitytostopindication
+    v 5 T16Reportreasonstoholdrequest
+    v 6 T17CheckreportYtostopindication
+    v 7 T18AdjustreportYtostopindicition
+    v 8 T17CheckreportYtostopindication
+    v 9 T18AdjustreportYtostopindicition
+    v 10 T17CheckreportYtostopindication
+    v 11 T19DeterminereportYtostopindication
+    v 12 T20PrintreportYtostopindication
+    v 13 END
+    d 1 5 T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest
+    d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 3 4 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 13 T10Determinenecessitytostopindication__END
+    d 5 8 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 10 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 10 11 T17CheckreportYtostopindication__T19DeterminereportYtostopindication
+    d 11 12 T19DeterminereportYtostopindication__T20PrintreportYtostopindication
+    d 7 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 6 7 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+    d 9 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 8 9 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+(3) Substructure: value = 1.09986, pos instances = 2, neg instances = 0
+  Graph(13v,13e):
+    v 1 SUB_2
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T10Determinenecessitytostopindication
+    v 5 T16Reportreasonstoholdrequest
+    v 6 T17CheckreportYtostopindication
+    v 7 T18AdjustreportYtostopindicition
+    v 8 T17CheckreportYtostopindication
+    v 9 T18AdjustreportYtostopindicition
+    v 10 T17CheckreportYtostopindication
+    v 11 T19DeterminereportYtostopindication
+    v 12 T20PrintreportYtostopindication
+    v 13 END
+    d 1 5 T02Checkconfirmationofreceipt__T16Reportreasonstoholdrequest
+    d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 3 4 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 4 13 T10Determinenecessitytostopindication__END
+    d 5 6 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 8 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 5 10 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+    d 10 11 T17CheckreportYtostopindication__T19DeterminereportYtostopindication
+    d 11 12 T19DeterminereportYtostopindication__T20PrintreportYtostopindication
+    d 7 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 9 11 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+    d 8 9 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+Elapsed time for iteration 5 = 0 seconds.
+
+----- Iteration 6 -----
+
+55 positive graphs: 223 vertices, 164 edges, 4307 bits
+90 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.08123, pos instances = 8, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_2
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T06Determinenecessityofstopadvice
+    d 1 3 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+    d 2 3 T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.06875, pos instances = 14, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 1.05379, pos instances = 6, neg instances = 0
+  Graph(3v,2e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    v 3 T05Printandsendconfirmationofreceipt
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 2 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+
+Elapsed time for iteration 6 = 0 seconds.
+
+----- Iteration 7 -----
+
+55 positive graphs: 207 vertices, 148 edges, 3918 bits
+90 unique labels
+
+26 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.06387, pos instances = 12, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 1.05912, pos instances = 6, neg instances = 0
+  Graph(3v,2e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T10Determinenecessitytostopindication
+    v 3 T05Printandsendconfirmationofreceipt
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 2 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+
+(3) Substructure: value = 1.05513, pos instances = 4, neg instances = 0
+  Graph(4v,3e):
+    v 1 SUB_2
+    v 2 T06Determinenecessityofstopadvice
+    v 3 T10Determinenecessitytostopindication
+    v 4 T05Printandsendconfirmationofreceipt
+    d 2 3 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 3 1 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+    d 3 4 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+
+Elapsed time for iteration 7 = 0 seconds.
+
+----- Iteration 8 -----
+
+55 positive graphs: 195 vertices, 136 edges, 3632 bits
+91 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.04132, pos instances = 3, neg instances = 0
+  Graph(4v,3e):
+    v 1 SUB_7
+    v 2 T05Printandsendconfirmationofreceipt
+    v 3 T11CreatedocumentXrequestunlicensed
+    v 4 END
+    d 1 2 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 2 3 T05Printandsendconfirmationofreceipt__T11CreatedocumentXrequestunlicensed
+    d 3 4 T11CreatedocumentXrequestunlicensed__END
+
+(2) Substructure: value = 1.04027, pos instances = 3, neg instances = 0
+  Graph(4v,3e):
+    v 1 SUB_7
+    v 2 SUB_2
+    v 3 T05Printandsendconfirmationofreceipt
+    v 4 END
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+    d 1 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 3 4 T05Printandsendconfirmationofreceipt__END
+
+(3) Substructure: value = 1.03721, pos instances = 2, neg instances = 0
+  Graph(6v,5e):
+    v 1 SUB_7
+    v 2 SUB_2
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T07-4Draftinternaladvicetoholdfortype4
+    v 5 T05Printandsendconfirmationofreceipt
+    v 6 END
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+    d 1 5 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 5 6 T05Printandsendconfirmationofreceipt__END
+    d 3 4 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+    d 4 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 8 = 0 seconds.
+
+----- Iteration 9 -----
+
+55 positive graphs: 186 vertices, 127 edges, 3415 bits
+91 unique labels
+
+28 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.04276, pos instances = 3, neg instances = 0
+  Graph(4v,3e):
+    v 1 SUB_7
+    v 2 SUB_2
+    v 3 T05Printandsendconfirmationofreceipt
+    v 4 END
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+    d 1 3 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 3 4 T05Printandsendconfirmationofreceipt__END
+
+(2) Substructure: value = 1.03946, pos instances = 2, neg instances = 0
+  Graph(6v,5e):
+    v 1 SUB_7
+    v 2 SUB_2
+    v 3 T06Determinenecessityofstopadvice
+    v 4 T07-4Draftinternaladvicetoholdfortype4
+    v 5 T05Printandsendconfirmationofreceipt
+    v 6 END
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+    d 1 5 T10Determinenecessitytostopindication__T05Printandsendconfirmationofreceipt
+    d 5 6 T05Printandsendconfirmationofreceipt__END
+    d 3 4 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+    d 4 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.0337, pos instances = 6, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_3
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 9 = 0 seconds.
+
+----- Iteration 10 -----
+
+55 positive graphs: 177 vertices, 118 edges, 3197 bits
+90 unique labels
+
+29 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.03592, pos instances = 6, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_3
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 1.03047, pos instances = 3, neg instances = 0
+  Graph(3v,2e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-2Draftinternadviceaspect2
+    v 3 T06Determinenecessityofstopadvice
+    d 2 3 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+    d 1 3 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.01942, pos instances = 4, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 END
+    d 1 2 T10Determinenecessitytostopindication__END
+
+Elapsed time for iteration 10 = 0 seconds.
+
+----- Iteration 11 -----
+
+55 positive graphs: 171 vertices, 112 edges, 3057 bits
+91 unique labels
+
+29 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.03267, pos instances = 2, neg instances = 0
+  Graph(5v,4e):
+    v 1 T11CreatedocumentXrequestunlicensed
+    v 2 T12CheckdocumentXrequestunlicensed
+    v 3 T14DeterminedocumentXrequestunlicensed
+    v 4 T15PrintdocumentXrequestunlicensed
+    v 5 END
+    d 2 3 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 3 4 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 4 5 T15PrintdocumentXrequestunlicensed__END
+    d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(2) Substructure: value = 1.03188, pos instances = 3, neg instances = 0
+  Graph(3v,2e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-2Draftinternadviceaspect2
+    v 3 T06Determinenecessityofstopadvice
+    d 2 3 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+    d 1 3 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.02199, pos instances = 2, neg instances = 0
+  Graph(4v,3e):
+    v 1 T11CreatedocumentXrequestunlicensed
+    v 2 T12CheckdocumentXrequestunlicensed
+    v 3 T14DeterminedocumentXrequestunlicensed
+    v 4 T15PrintdocumentXrequestunlicensed
+    d 2 3 T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+    d 3 4 T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+    d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+Elapsed time for iteration 11 = 0 seconds.
+
+----- Iteration 12 -----
+
+55 positive graphs: 163 vertices, 104 edges, 2850 bits
+87 unique labels
+
+28 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.03393, pos instances = 3, neg instances = 0
+  Graph(3v,2e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-2Draftinternadviceaspect2
+    v 3 T06Determinenecessityofstopadvice
+    d 2 3 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+    d 1 3 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.02162, pos instances = 4, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 END
+    d 1 2 T10Determinenecessitytostopindication__END
+
+(3) Substructure: value = 1.01586, pos instances = 2, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_7
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    v 3 END
+    d 1 3 T10Determinenecessitytostopindication__END
+    d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 12 = 0 seconds.
+
+----- Iteration 13 -----
+
+55 positive graphs: 157 vertices, 98 edges, 2712 bits
+88 unique labels
+
+29 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.02275, pos instances = 4, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 END
+    d 1 2 T10Determinenecessitytostopindication__END
+
+(2) Substructure: value = 1.01668, pos instances = 2, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_7
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    v 3 END
+    d 1 3 T10Determinenecessitytostopindication__END
+    d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.01607, pos instances = 2, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_7
+    v 2 T07-3Draftinternadviceholdforaspect3
+    v 3 END
+    d 1 3 T10Determinenecessitytostopindication__END
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 13 = 0 seconds.
+
+----- Iteration 14 -----
+
+55 positive graphs: 153 vertices, 94 edges, 2621 bits
+89 unique labels
+
+30 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00692, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_10
+    v 2 SUB_2
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+
+(2) Substructure: value = 1.00692, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_8
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.00615, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T12CheckdocumentXrequestunlicensed
+    d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 14 = 0 seconds.
+
+----- Iteration 15 -----
+
+55 positive graphs: 151 vertices, 92 edges, 2578 bits
+90 unique labels
+
+31 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00706, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_8
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.00628, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T03Adjustconfirmationofreceipt
+    v 2 T02Checkconfirmationofreceipt
+    d 1 2 T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+
+(3) Substructure: value = 1.00628, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T12CheckdocumentXrequestunlicensed
+    d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 15 = 0 seconds.
+
+----- Iteration 16 -----
+
+55 positive graphs: 149 vertices, 90 edges, 2534 bits
+91 unique labels
+
+31 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.01856, pos instances = 2, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_9
+    v 2 T06Determinenecessityofstopadvice
+    v 3 T07-4Draftinternaladvicetoholdfortype4
+    d 2 3 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+    d 3 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.00641, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T03Adjustconfirmationofreceipt
+    v 2 T02Checkconfirmationofreceipt
+    d 1 2 T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+
+(3) Substructure: value = 1.00641, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 16 = 0 seconds.
+
+----- Iteration 17 -----
+
+55 positive graphs: 145 vertices, 86 edges, 2443 bits
+92 unique labels
+
+31 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00668, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T03Adjustconfirmationofreceipt
+    v 2 T02Checkconfirmationofreceipt
+    d 1 2 T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+
+(2) Substructure: value = 1.00668, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.00668, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 17 = 0 seconds.
+
+----- Iteration 18 -----
+
+55 positive graphs: 143 vertices, 84 edges, 2392 bits
+91 unique labels
+
+30 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00681, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T02Checkconfirmationofreceipt
+
+(2) Substructure: value = 1.00681, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 1.00681, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 18 = 0 seconds.
+
+----- Iteration 19 -----
+
+55 positive graphs: 141 vertices, 82 edges, 2345 bits
+91 unique labels
+
+31 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00695, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 2 1 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.00695, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 1.00695, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T12CheckdocumentXrequestunlicensed
+    d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 19 = 0 seconds.
+
+----- Iteration 20 -----
+
+55 positive graphs: 139 vertices, 80 edges, 2301 bits
+92 unique labels
+
+32 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.0071, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 1.0071, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T12CheckdocumentXrequestunlicensed
+    d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+(3) Substructure: value = 1.00666, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T06Determinenecessityofstopadvice
+    d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 20 = 0 seconds.
+
+----- Iteration 21 -----
+
+55 positive graphs: 137 vertices, 78 edges, 2257 bits
+93 unique labels
+
+33 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00727, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_2
+    v 2 T12CheckdocumentXrequestunlicensed
+    d 2 1 T12CheckdocumentXrequestunlicensed__T02Checkconfirmationofreceipt
+
+(2) Substructure: value = 1.00682, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T06Determinenecessityofstopadvice
+    d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.00682, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 21 = 0 seconds.
+
+----- Iteration 22 -----
+
+55 positive graphs: 135 vertices, 76 edges, 2207 bits
+92 unique labels
+
+33 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00695, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T06Determinenecessityofstopadvice
+    d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.00695, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 1.00649, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T13AdjustdocumentXrequestunlicensed
+    d 1 2 T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed
+
+Elapsed time for iteration 22 = 0 seconds.
+
+----- Iteration 23 -----
+
+55 positive graphs: 133 vertices, 74 edges, 2163 bits
+93 unique labels
+
+34 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00712, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_13
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 1.00665, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T07-1Draftinternadviceaspect1
+    d 1 2 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+(3) Substructure: value = 1.00665, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T13AdjustdocumentXrequestunlicensed
+    d 1 2 T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed
+
+Elapsed time for iteration 23 = 0 seconds.
+
+----- Iteration 24 -----
+
+55 positive graphs: 131 vertices, 72 edges, 2116 bits
+93 unique labels
+
+34 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.0068, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T07-1Draftinternadviceaspect1
+    d 1 2 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+(2) Substructure: value = 1.0068, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T13AdjustdocumentXrequestunlicensed
+    d 1 2 T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed
+
+(3) Substructure: value = 1.0068, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T17CheckreportYtostopindication
+    v 2 T18AdjustreportYtostopindicition
+    d 1 2 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+Elapsed time for iteration 24 = 0 seconds.
+
+----- Iteration 25 -----
+
+55 positive graphs: 129 vertices, 70 edges, 2072 bits
+94 unique labels
+
+35 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00696, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T13AdjustdocumentXrequestunlicensed
+    d 1 2 T05Printandsendconfirmationofreceipt__T13AdjustdocumentXrequestunlicensed
+
+(2) Substructure: value = 1.00696, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T17CheckreportYtostopindication
+    v 2 T18AdjustreportYtostopindicition
+    d 1 2 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+(3) Substructure: value = 1.00647, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 1 2 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+
+Elapsed time for iteration 25 = 0 seconds.
+
+----- Iteration 26 -----
+
+55 positive graphs: 127 vertices, 68 edges, 2022 bits
+93 unique labels
+
+35 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00711, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 T17CheckreportYtostopindication
+    v 2 T18AdjustreportYtostopindicition
+    d 1 2 T17CheckreportYtostopindication__T18AdjustreportYtostopindicition
+
+(2) Substructure: value = 1.00661, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 0.999435, pos instances = 1, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_6
+    v 2 T10Determinenecessitytostopindication
+    v 3 T11CreatedocumentXrequestunlicensed
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 2 3 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+Elapsed time for iteration 26 = 0 seconds.
+
+----- Iteration 27 -----
+
+55 positive graphs: 125 vertices, 66 edges, 1969 bits
+91 unique labels
+
+34 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 1.00673, pos instances = 2, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 0.999401, pos instances = 1, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_6
+    v 2 T10Determinenecessitytostopindication
+    v 3 T11CreatedocumentXrequestunlicensed
+    d 1 2 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+    d 2 3 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(3) Substructure: value = 0.997796, pos instances = 1, neg instances = 0
+  Graph(3v,2e):
+    v 1 SUB_6
+    v 2 T07-2Draftinternadviceaspect2
+    v 3 T10Determinenecessitytostopindication
+    d 2 1 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+    d 1 3 T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 27 = 0 seconds.
+
+----- Iteration 28 -----
+
+55 positive graphs: 123 vertices, 64 edges, 1923 bits
+91 unique labels
+
+34 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997332, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_24
+    v 2 SUB_19
+    d 1 2 T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+
+(2) Substructure: value = 0.997332, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_23
+    v 2 T07-2Draftinternadviceaspect2
+    d 2 1 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 0.997332, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 SUB_16
+    d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 28 = 0 seconds.
+
+----- Iteration 29 -----
+
+55 positive graphs: 122 vertices, 63 edges, 1902 bits
+92 unique labels
+
+32 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997319, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 SUB_16
+    d 1 2 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.997319, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_18
+    v 2 SUB_3
+    d 1 2 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 0.997319, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_23
+    v 2 T07-2Draftinternadviceaspect2
+    d 2 1 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 29 = 0 seconds.
+
+----- Iteration 30 -----
+
+55 positive graphs: 121 vertices, 62 edges, 1882 bits
+93 unique labels
+
+30 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997305, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_10
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.997305, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+(3) Substructure: value = 0.997305, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_8
+    v 2 SUB_2
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+
+Elapsed time for iteration 30 = 0 seconds.
+
+----- Iteration 31 -----
+
+55 positive graphs: 120 vertices, 61 edges, 1861 bits
+94 unique labels
+
+30 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.99729, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_20
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 0.99729, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_20
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 0.99729, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_18
+    v 2 SUB_3
+    d 1 2 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 31 = 0 seconds.
+
+----- Iteration 32 -----
+
+55 positive graphs: 119 vertices, 60 edges, 1841 bits
+95 unique labels
+
+29 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997273, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_23
+    v 2 T07-2Draftinternadviceaspect2
+    d 2 1 T07-2Draftinternadviceaspect2__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.997273, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_18
+    v 2 SUB_3
+    d 1 2 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(3) Substructure: value = 0.997273, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+Elapsed time for iteration 32 = 0 seconds.
+
+----- Iteration 33 -----
+
+55 positive graphs: 118 vertices, 59 edges, 1820 bits
+96 unique labels
+
+28 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997256, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_8
+    v 2 SUB_2
+    d 1 2 T10Determinenecessitytostopindication__T02Checkconfirmationofreceipt
+
+(2) Substructure: value = 0.997256, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_20
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(3) Substructure: value = 0.997256, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+Elapsed time for iteration 33 = 0 seconds.
+
+----- Iteration 34 -----
+
+55 positive graphs: 117 vertices, 58 edges, 1794 bits
+95 unique labels
+
+28 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997216, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_18
+    v 2 SUB_3
+    d 1 2 T04Determineconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 0.997216, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+(3) Substructure: value = 0.997216, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_20
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 34 = 0 seconds.
+
+----- Iteration 35 -----
+
+55 positive graphs: 116 vertices, 57 edges, 1771 bits
+95 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997186, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_20
+    v 2 SUB_2
+    d 2 1 T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.997186, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+(3) Substructure: value = 0.996624, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+Elapsed time for iteration 35 = 0 seconds.
+
+----- Iteration 36 -----
+
+55 positive graphs: 115 vertices, 56 edges, 1745 bits
+94 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997144, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_19
+    v 2 SUB_6
+    d 2 1 T06Determinenecessityofstopadvice__T07-4Draftinternaladvicetoholdfortype4
+
+(2) Substructure: value = 0.996574, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+(3) Substructure: value = 0.996574, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_9
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 36 = 0 seconds.
+
+----- Iteration 37 -----
+
+55 positive graphs: 114 vertices, 55 edges, 1719 bits
+93 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996523, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T07-1Draftinternadviceaspect1
+    d 2 1 T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.996523, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_23
+    v 2 T07-2Draftinternadviceaspect2
+    d 2 1 T07-2Draftinternadviceaspect2__T07-3Draftinternadviceholdforaspect3
+
+(3) Substructure: value = 0.996523, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+Elapsed time for iteration 37 = 0 seconds.
+
+----- Iteration 38 -----
+
+55 positive graphs: 113 vertices, 54 edges, 1698 bits
+94 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996494, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_23
+    v 2 T07-2Draftinternadviceaspect2
+    d 2 1 T07-2Draftinternadviceaspect2__T07-3Draftinternadviceholdforaspect3
+
+(2) Substructure: value = 0.996494, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_37
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+(3) Substructure: value = 0.996494, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_9
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 2 1 T07-3Draftinternadviceholdforaspect3__T06Determinenecessityofstopadvice
+
+Elapsed time for iteration 38 = 0 seconds.
+
+----- Iteration 39 -----
+
+55 positive graphs: 112 vertices, 53 edges, 1673 bits
+93 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.997034, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_38
+    v 2 SUB_12
+    d 2 1 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+(2) Substructure: value = 0.99644, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_27
+    v 2 T11CreatedocumentXrequestunlicensed
+    d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(3) Substructure: value = 0.99644, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+Elapsed time for iteration 39 = 0 seconds.
+
+----- Iteration 40 -----
+
+55 positive graphs: 111 vertices, 52 edges, 1649 bits
+93 unique labels
+
+27 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996397, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_27
+    v 2 T11CreatedocumentXrequestunlicensed
+    d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(2) Substructure: value = 0.996397, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_25
+    v 2 END
+    d 1 2 T13AdjustdocumentXrequestunlicensed__END
+
+(3) Substructure: value = 0.996397, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T11CreatedocumentXrequestunlicensed
+    v 2 END
+    d 1 2 T11CreatedocumentXrequestunlicensed__END
+
+Elapsed time for iteration 40 = 0 seconds.
+
+----- Iteration 41 -----
+
+55 positive graphs: 110 vertices, 51 edges, 1629 bits
+94 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996974, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_40
+    v 2 END
+    d 1 2 T11CreatedocumentXrequestunlicensed__END
+
+(2) Substructure: value = 0.996364, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 1 2 T07-3Draftinternadviceholdforaspect3__T07-4Draftinternaladvicetoholdfortype4
+
+(3) Substructure: value = 0.996364, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+Elapsed time for iteration 41 = 0 seconds.
+
+----- Iteration 42 -----
+
+55 positive graphs: 109 vertices, 50 edges, 1603 bits
+93 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996307, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T06Determinenecessityofstopadvice
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T06Determinenecessityofstopadvice__T07-3Draftinternadviceholdforaspect3
+
+(2) Substructure: value = 0.996307, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 1 2 T07-3Draftinternadviceholdforaspect3__T07-4Draftinternaladvicetoholdfortype4
+
+(3) Substructure: value = 0.996307, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_37
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+Elapsed time for iteration 42 = 0 seconds.
+
+----- Iteration 43 -----
+
+55 positive graphs: 108 vertices, 49 edges, 1580 bits
+93 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996259, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_37
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+
+(2) Substructure: value = 0.996259, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_25
+    v 2 END
+    d 1 2 T13AdjustdocumentXrequestunlicensed__END
+
+(3) Substructure: value = 0.996259, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+Elapsed time for iteration 43 = 0 seconds.
+
+----- Iteration 44 -----
+
+55 positive graphs: 107 vertices, 48 edges, 1557 bits
+93 unique labels
+
+25 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996211, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T07-3Draftinternadviceholdforaspect3
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 1 2 T07-3Draftinternadviceholdforaspect3__T07-4Draftinternaladvicetoholdfortype4
+
+(2) Substructure: value = 0.996211, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_25
+    v 2 END
+    d 1 2 T13AdjustdocumentXrequestunlicensed__END
+
+(3) Substructure: value = 0.996211, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+Elapsed time for iteration 44 = 0 seconds.
+
+----- Iteration 45 -----
+
+55 positive graphs: 106 vertices, 47 edges, 1534 bits
+93 unique labels
+
+23 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.99616, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_25
+    v 2 END
+    d 1 2 T13AdjustdocumentXrequestunlicensed__END
+
+(2) Substructure: value = 0.99616, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_44
+    v 2 T07-5Draftinternadviceaspect5
+    d 2 1 T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3
+
+(3) Substructure: value = 0.99616, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+Elapsed time for iteration 45 = 0 seconds.
+
+----- Iteration 46 -----
+
+55 positive graphs: 105 vertices, 46 edges, 1511 bits
+93 unique labels
+
+22 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996108, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_22
+    v 2 END
+    d 1 2 T06Determinenecessityofstopadvice__END
+
+(2) Substructure: value = 0.996108, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_44
+    v 2 T07-5Draftinternadviceaspect5
+    d 2 1 T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3
+
+(3) Substructure: value = 0.995452, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_24
+    v 2 SUB_17
+    d 2 1 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+Elapsed time for iteration 46 = 0 seconds.
+
+----- Iteration 47 -----
+
+55 positive graphs: 104 vertices, 45 edges, 1486 bits
+92 unique labels
+
+21 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.996042, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_46
+    v 2 T06Determinenecessityofstopadvice
+    d 2 1 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+
+(2) Substructure: value = 0.996042, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_44
+    v 2 T07-5Draftinternadviceaspect5
+    d 2 1 T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3
+
+(3) Substructure: value = 0.995375, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 T11CreatedocumentXrequestunlicensed
+    d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+Elapsed time for iteration 47 = 0 seconds.
+
+----- Iteration 48 -----
+
+55 positive graphs: 103 vertices, 44 edges, 1460 bits
+91 unique labels
+
+20 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.995974, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_44
+    v 2 T07-5Draftinternadviceaspect5
+    d 2 1 T07-5Draftinternadviceaspect5__T07-3Draftinternadviceholdforaspect3
+
+(2) Substructure: value = 0.995295, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T07-5Draftinternadviceaspect5
+    v 2 T09-2Processorreceiveexternaladvicefromparty2
+    d 1 2 T07-5Draftinternadviceaspect5__T09-2Processorreceiveexternaladvicefromparty2
+
+(3) Substructure: value = 0.995295, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-1Processorreceiveexternaladvicefromparty1
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T09-1Processorreceiveexternaladvicefromparty1__T07-3Draftinternadviceholdforaspect3
+
+Elapsed time for iteration 48 = 0 seconds.
+
+----- Iteration 49 -----
+
+55 positive graphs: 102 vertices, 43 edges, 1435 bits
+90 unique labels
+
+19 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.995213, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_24
+    v 2 SUB_17
+    d 2 1 T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+
+(2) Substructure: value = 0.995213, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_11
+    v 2 T10Determinenecessitytostopindication
+    d 2 1 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(3) Substructure: value = 0.995213, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 T11CreatedocumentXrequestunlicensed
+    d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+Elapsed time for iteration 49 = 0 seconds.
+
+----- Iteration 50 -----
+
+55 positive graphs: 101 vertices, 42 edges, 1412 bits
+90 unique labels
+
+18 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.995143, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-1Processorreceiveexternaladvicefromparty1
+    v 2 T07-3Draftinternadviceholdforaspect3
+    d 1 2 T09-1Processorreceiveexternaladvicefromparty1__T07-3Draftinternadviceholdforaspect3
+
+(2) Substructure: value = 0.995143, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-4Processorreceiveexternaladvicefromparty4
+    v 2 T07-2Draftinternadviceaspect2
+    d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+(3) Substructure: value = 0.995143, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 50 = 0 seconds.
+
+----- Iteration 51 -----
+
+55 positive graphs: 100 vertices, 41 edges, 1387 bits
+89 unique labels
+
+17 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.995056, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_7
+    v 2 T11CreatedocumentXrequestunlicensed
+    d 1 2 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(2) Substructure: value = 0.995056, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T08Draftandsendrequestforadvice
+    d 1 2 T06Determinenecessityofstopadvice__T08Draftandsendrequestforadvice
+
+(3) Substructure: value = 0.995056, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed
+
+Elapsed time for iteration 51 = 0 seconds.
+
+----- Iteration 52 -----
+
+55 positive graphs: 99 vertices, 40 edges, 1364 bits
+89 unique labels
+
+16 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.99498, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_6
+    v 2 T08Draftandsendrequestforadvice
+    d 1 2 T06Determinenecessityofstopadvice__T08Draftandsendrequestforadvice
+
+(2) Substructure: value = 0.99498, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-4Processorreceiveexternaladvicefromparty4
+    v 2 T07-2Draftinternadviceaspect2
+    d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+(3) Substructure: value = 0.99498, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 52 = 0 seconds.
+
+----- Iteration 53 -----
+
+55 positive graphs: 98 vertices, 39 edges, 1342 bits
+89 unique labels
+
+15 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.994902, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T15PrintdocumentXrequestunlicensed
+
+(2) Substructure: value = 0.994902, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_4
+    v 2 T05Printandsendconfirmationofreceipt
+    d 1 2 T11CreatedocumentXrequestunlicensed__T05Printandsendconfirmationofreceipt
+
+(3) Substructure: value = 0.994902, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 53 = 0 seconds.
+
+----- Iteration 54 -----
+
+55 positive graphs: 97 vertices, 38 edges, 1319 bits
+89 unique labels
+
+14 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.994821, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_11
+    v 2 T10Determinenecessitytostopindication
+    d 2 1 T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+
+(2) Substructure: value = 0.994821, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_52
+    v 2 T07-1Draftinternadviceaspect1
+    d 1 2 T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1
+
+(3) Substructure: value = 0.994821, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T05Printandsendconfirmationofreceipt
+    v 2 T10Determinenecessitytostopindication
+    d 1 2 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+Elapsed time for iteration 54 = 0 seconds.
+
+----- Iteration 55 -----
+
+55 positive graphs: 96 vertices, 37 edges, 1294 bits
+88 unique labels
+
+13 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.995488, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_54
+    v 2 T05Printandsendconfirmationofreceipt
+    d 2 1 T05Printandsendconfirmationofreceipt__T10Determinenecessitytostopindication
+
+(2) Substructure: value = 0.994723, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-4Processorreceiveexternaladvicefromparty4
+    v 2 T07-2Draftinternadviceaspect2
+    d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+(3) Substructure: value = 0.994723, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_52
+    v 2 T07-1Draftinternadviceaspect1
+    d 1 2 T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1
+
+Elapsed time for iteration 55 = 0 seconds.
+
+----- Iteration 56 -----
+
+55 positive graphs: 95 vertices, 36 edges, 1269 bits
+87 unique labels
+
+12 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.99462, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_52
+    v 2 T07-1Draftinternadviceaspect1
+    d 1 2 T08Draftandsendrequestforadvice__T07-1Draftinternadviceaspect1
+
+(2) Substructure: value = 0.99462, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-4Processorreceiveexternaladvicefromparty4
+    v 2 T07-2Draftinternadviceaspect2
+    d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+(3) Substructure: value = 0.994608, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_51
+    v 2 SUB_21
+    d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+Elapsed time for iteration 56 = 0 seconds.
+
+----- Iteration 57 -----
+
+55 positive graphs: 94 vertices, 35 edges, 1244 bits
+86 unique labels
+
+11 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.994515, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T09-4Processorreceiveexternaladvicefromparty4
+    v 2 T07-2Draftinternadviceaspect2
+    d 1 2 T09-4Processorreceiveexternaladvicefromparty4__T07-2Draftinternadviceaspect2
+
+(2) Substructure: value = 0.994502, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_51
+    v 2 SUB_21
+    d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(3) Substructure: value = 0.99372, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 T07-2Draftinternadviceaspect2
+    v 2 T07-4Draftinternaladvicetoholdfortype4
+    d 1 2 T07-2Draftinternadviceaspect2__T07-4Draftinternaladvicetoholdfortype4
+
+Elapsed time for iteration 57 = 0 seconds.
+
+----- Iteration 58 -----
+
+55 positive graphs: 93 vertices, 34 edges, 1220 bits
+85 unique labels
+
+10 initial substructures
+
+Best 3 substructures:
+
+(1) Substructure: value = 0.994392, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_51
+    v 2 SUB_21
+    d 1 2 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(2) Substructure: value = 0.993582, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_21
+    v 2 SUB_4
+    d 2 1 T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed
+
+(3) Substructure: value = 0.992786, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_26
+    v 2 SUB_5
+    d 2 1 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+
+Elapsed time for iteration 58 = 0 seconds.
+
+----- Iteration 59 -----
+
+55 positive graphs: 92 vertices, 33 edges, 1198 bits
+85 unique labels
+
+9 initial substructures
+
+Best 2 substructures:
+
+(1) Substructure: value = 0.992664, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_26
+    v 2 SUB_5
+    d 2 1 T16Reportreasonstoholdrequest__T17CheckreportYtostopindication
+
+(2) Substructure: value = 0.992664, pos instances = 1, neg instances = 0
+  Graph(2v,1e):
+    v 1 SUB_26
+    v 2 SUB_5
+    d 1 2 T18AdjustreportYtostopindicition__T19DeterminereportYtostopindication
+
+Elapsed time for iteration 59 = 0 seconds.
+
+
+SUBDUE done (elapsed CPU time =    0.26 seconds).

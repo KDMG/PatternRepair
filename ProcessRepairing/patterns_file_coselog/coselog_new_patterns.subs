@@ -1,0 +1,44 @@
+S
+v 1 Sub_9
+
+S
+v 1 Sub_8
+
+S
+v 1 Sub_13
+
+S
+v 1 Sub_6
+v 2 Sub_13
+d 1 2 eventually
+
+S
+v 1 Sub_3
+
+S
+v 1 Sub_51
+
+S
+v 1 Sub_6
+v 2 Sub_51
+d 1 2 eventually
+
+S
+v 1 Sub_6
+v 2 Sub_11
+v 3 Sub_51
+d 1 2 eventually
+d 1 3 eventually
+d 2 3 eventually
+
+S
+v 1 Sub_11
+
+S
+v 1 Sub_6
+v 2 Sub_11
+d 1 2 eventually
+
+S
+v 1 Sub_6
+

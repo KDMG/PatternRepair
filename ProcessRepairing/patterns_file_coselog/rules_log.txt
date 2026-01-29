@@ -1,0 +1,190 @@
+generazione nuovi pattern terminata
+generazione nuovi pattern terminata
+generazione nuovi pattern terminata
+sub 5 and sub 12 in relation 2 in graph 10
+sub 5 and sub 12 in relation 2 in graph 12
+sub 5 and sub 12 in relation 2 in graph 23
+sub 5 and sub 12 in relation 2 in graph 38
+sub 5 and sub 12 in relation 2 in graph 44
+sub 5 and sub 12 in relation 2 in graph 5
+sub 5 and sub 12 in relation 2 in graph 54
+generazione nuovi pattern terminata
+riga pattern4 scritta 
+generazione nuovi pattern terminata
+generazione nuovi pattern terminata
+sub 5 and sub 50 in relation 2 in graph 1
+sub 5 and sub 50 in relation 2 in graph 15
+sub 5 and sub 50 in relation 2 in graph 17
+sub 5 and sub 50 in relation 2 in graph 18
+sub 5 and sub 50 in relation 2 in graph 2
+sub 5 and sub 50 in relation 2 in graph 20
+sub 5 and sub 50 in relation 2 in graph 22
+sub 5 and sub 50 in relation 2 in graph 24
+sub 5 and sub 50 in relation 2 in graph 25
+sub 5 and sub 50 in relation 2 in graph 26
+sub 5 and sub 50 in relation 2 in graph 28
+sub 5 and sub 50 in relation 2 in graph 29
+sub 5 and sub 50 in relation 2 in graph 3
+sub 5 and sub 50 in relation 2 in graph 30
+sub 5 and sub 50 in relation 2 in graph 31
+sub 5 and sub 50 in relation 2 in graph 33
+sub 5 and sub 50 in relation 2 in graph 34
+sub 5 and sub 50 in relation 2 in graph 36
+sub 5 and sub 50 in relation 2 in graph 37
+sub 5 and sub 50 in relation 2 in graph 39
+sub 5 and sub 50 in relation 2 in graph 40
+sub 5 and sub 50 in relation 2 in graph 42
+sub 5 and sub 50 in relation 2 in graph 43
+sub 5 and sub 50 in relation 2 in graph 48
+sub 5 and sub 50 in relation 2 in graph 49
+sub 5 and sub 50 in relation 2 in graph 51
+sub 5 and sub 50 in relation 2 in graph 52
+generazione nuovi pattern terminata
+riga pattern7 scritta 
+sub 10 and sub 50 in relation 2 in graph 1
+sub 10 and sub 50 in relation 2 in graph 15
+sub 10 and sub 50 in relation 2 in graph 16
+sub 10 and sub 50 in relation 2 in graph 17
+sub 10 and sub 50 in relation 2 in graph 18
+sub 10 and sub 50 in relation 2 in graph 19
+sub 10 and sub 50 in relation 2 in graph 20
+sub 10 and sub 50 in relation 2 in graph 22
+sub 10 and sub 50 in relation 2 in graph 24
+sub 10 and sub 50 in relation 2 in graph 25
+sub 10 and sub 50 in relation 2 in graph 26
+sub 10 and sub 50 in relation 2 in graph 28
+sub 10 and sub 50 in relation 2 in graph 29
+sub 10 and sub 50 in relation 2 in graph 3
+sub 10 and sub 50 in relation 2 in graph 30
+sub 10 and sub 50 in relation 2 in graph 31
+sub 10 and sub 50 in relation 2 in graph 33
+sub 10 and sub 50 in relation 2 in graph 34
+sub 10 and sub 50 in relation 2 in graph 36
+sub 10 and sub 50 in relation 2 in graph 37
+sub 10 and sub 50 in relation 2 in graph 39
+sub 10 and sub 50 in relation 2 in graph 40
+sub 10 and sub 50 in relation 2 in graph 42
+sub 10 and sub 50 in relation 2 in graph 43
+sub 10 and sub 50 in relation 2 in graph 48
+sub 10 and sub 50 in relation 2 in graph 49
+sub 10 and sub 50 in relation 2 in graph 51
+sub 10 and sub 50 in relation 2 in graph 52
+sub 10 and sub 50 in relation 2 in graph 55
+sub 10 and sub 50 in relation 2 in graph 8
+generazione nuovi pattern terminata
+riga pattern8 scritta 
+sub 5 and sub 10 in relation 2 in graph 1
+sub 5 and sub 50 in relation 2 in graph 1
+sub 10 and sub 50 in relation 2 in graph 1
+sub 5 and sub 10 in relation 2 in graph 15
+sub 5 and sub 50 in relation 2 in graph 15
+sub 10 and sub 50 in relation 2 in graph 15
+sub 5 and sub 10 in relation 2 in graph 17
+sub 5 and sub 50 in relation 2 in graph 17
+sub 10 and sub 50 in relation 2 in graph 17
+sub 5 and sub 10 in relation 2 in graph 18
+sub 5 and sub 50 in relation 2 in graph 18
+sub 10 and sub 50 in relation 2 in graph 18
+sub 5 and sub 10 in relation 2 in graph 20
+sub 5 and sub 50 in relation 2 in graph 20
+sub 10 and sub 50 in relation 2 in graph 20
+sub 5 and sub 10 in relation 2 in graph 22
+sub 5 and sub 50 in relation 2 in graph 22
+sub 10 and sub 50 in relation 2 in graph 22
+sub 5 and sub 10 in relation 2 in graph 24
+sub 5 and sub 50 in relation 2 in graph 24
+sub 10 and sub 50 in relation 2 in graph 24
+sub 5 and sub 10 in relation 2 in graph 25
+sub 5 and sub 50 in relation 2 in graph 25
+sub 10 and sub 50 in relation 2 in graph 25
+sub 5 and sub 10 in relation 2 in graph 26
+sub 5 and sub 50 in relation 2 in graph 26
+sub 10 and sub 50 in relation 2 in graph 26
+sub 5 and sub 10 in relation 2 in graph 28
+sub 5 and sub 50 in relation 2 in graph 28
+sub 10 and sub 50 in relation 2 in graph 28
+sub 5 and sub 10 in relation 2 in graph 29
+sub 5 and sub 50 in relation 2 in graph 29
+sub 10 and sub 50 in relation 2 in graph 29
+sub 5 and sub 10 in relation 2 in graph 3
+sub 5 and sub 50 in relation 2 in graph 3
+sub 10 and sub 50 in relation 2 in graph 3
+sub 5 and sub 10 in relation 2 in graph 30
+sub 5 and sub 50 in relation 2 in graph 30
+sub 10 and sub 50 in relation 2 in graph 30
+sub 5 and sub 10 in relation 2 in graph 31
+sub 5 and sub 50 in relation 2 in graph 31
+sub 10 and sub 50 in relation 2 in graph 31
+sub 5 and sub 10 in relation 2 in graph 33
+sub 5 and sub 50 in relation 2 in graph 33
+sub 10 and sub 50 in relation 2 in graph 33
+sub 5 and sub 10 in relation 2 in graph 34
+sub 5 and sub 50 in relation 2 in graph 34
+sub 10 and sub 50 in relation 2 in graph 34
+sub 5 and sub 10 in relation 2 in graph 36
+sub 5 and sub 50 in relation 2 in graph 36
+sub 10 and sub 50 in relation 2 in graph 36
+sub 5 and sub 10 in relation 2 in graph 37
+sub 5 and sub 50 in relation 2 in graph 37
+sub 10 and sub 50 in relation 2 in graph 37
+sub 5 and sub 10 in relation 2 in graph 39
+sub 5 and sub 50 in relation 2 in graph 39
+sub 10 and sub 50 in relation 2 in graph 39
+sub 5 and sub 10 in relation 2 in graph 40
+sub 5 and sub 50 in relation 2 in graph 40
+sub 10 and sub 50 in relation 2 in graph 40
+sub 5 and sub 10 in relation 2 in graph 42
+sub 5 and sub 50 in relation 2 in graph 42
+sub 10 and sub 50 in relation 2 in graph 42
+sub 5 and sub 10 in relation 2 in graph 43
+sub 5 and sub 50 in relation 2 in graph 43
+sub 10 and sub 50 in relation 2 in graph 43
+sub 5 and sub 10 in relation 2 in graph 48
+sub 5 and sub 50 in relation 2 in graph 48
+sub 10 and sub 50 in relation 2 in graph 48
+sub 5 and sub 10 in relation 2 in graph 49
+sub 5 and sub 50 in relation 2 in graph 49
+sub 10 and sub 50 in relation 2 in graph 49
+sub 5 and sub 10 in relation 2 in graph 51
+sub 5 and sub 50 in relation 2 in graph 51
+sub 10 and sub 50 in relation 2 in graph 51
+sub 5 and sub 10 in relation 2 in graph 52
+sub 5 and sub 50 in relation 2 in graph 52
+sub 10 and sub 50 in relation 2 in graph 52
+generazione nuovi pattern terminata
+riga pattern9 scritta 
+generazione nuovi pattern terminata
+sub 5 and sub 10 in relation 2 in graph 1
+sub 5 and sub 10 in relation 2 in graph 15
+sub 5 and sub 10 in relation 2 in graph 17
+sub 5 and sub 10 in relation 2 in graph 18
+sub 5 and sub 10 in relation 2 in graph 20
+sub 5 and sub 10 in relation 2 in graph 22
+sub 5 and sub 10 in relation 2 in graph 24
+sub 5 and sub 10 in relation 2 in graph 25
+sub 5 and sub 10 in relation 2 in graph 26
+sub 5 and sub 10 in relation 2 in graph 28
+sub 5 and sub 10 in relation 2 in graph 29
+sub 5 and sub 10 in relation 2 in graph 3
+sub 5 and sub 10 in relation 2 in graph 30
+sub 5 and sub 10 in relation 2 in graph 31
+sub 5 and sub 10 in relation 2 in graph 33
+sub 5 and sub 10 in relation 2 in graph 34
+sub 5 and sub 10 in relation 2 in graph 36
+sub 5 and sub 10 in relation 2 in graph 37
+sub 5 and sub 10 in relation 2 in graph 39
+sub 5 and sub 10 in relation 2 in graph 40
+sub 5 and sub 10 in relation 2 in graph 42
+sub 5 and sub 10 in relation 2 in graph 43
+sub 5 and sub 10 in relation 2 in graph 48
+sub 5 and sub 10 in relation 2 in graph 49
+sub 5 and sub 10 in relation 2 in graph 51
+sub 5 and sub 10 in relation 2 in graph 52
+generazione nuovi pattern terminata
+riga pattern11 scritta 
+generazione nuovi pattern terminata
+file nuovi patterns in chiusura
+file nuovi patterns chiuso
+generazione nuovi pattern terminata
+file dot dei nuovi patterns terminato
+patterns visualizzati

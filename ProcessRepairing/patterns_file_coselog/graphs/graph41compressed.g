@@ -1,0 +1,22 @@
+v 1 T09-3Processorreceiveexternaladvicefromparty3
+v 2 T07-5Draftinternadviceaspect5
+v 3 T09-2Processorreceiveexternaladvicefromparty2
+v 4 T07-4Draftinternaladvicetoholdfortype4
+v 5 T06Determinenecessityofstopadvice
+v 6 END
+v 7 SUB_22
+v 8 SUB_50
+v 9 SUB_56
+v 10 SUB_57
+
+e 9 1 T08Draftandsendrequestforadvice__T09-3Processorreceiveexternaladvicefromparty3
+e 7 5 T06Determinenecessityofstopadvice__T06Determinenecessityofstopadvice
+e 5 6 T06Determinenecessityofstopadvice__END
+e 1 8 T09-3Processorreceiveexternaladvicefromparty3__T07-3Draftinternadviceholdforaspect3
+e 8 2 T07-3Draftinternadviceholdforaspect3__T07-5Draftinternadviceaspect5
+e 2 3 T07-5Draftinternadviceaspect5__T09-2Processorreceiveexternaladvicefromparty2
+e 3 10 T09-2Processorreceiveexternaladvicefromparty2__T09-4Processorreceiveexternaladvicefromparty4
+e 10 4 T07-2Draftinternadviceaspect2__T07-4Draftinternaladvicetoholdfortype4
+e 9 4 T07-1Draftinternadviceaspect1__T07-4Draftinternaladvicetoholdfortype4
+e 4 7 T07-4Draftinternaladvicetoholdfortype4__T06Determinenecessityofstopadvice
+

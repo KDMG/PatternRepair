@@ -1,0 +1,8 @@
+v 1 RIBPC
+v 2 SUB_216
+v 3 SUB_693
+
+e 3 1 SRPP__RIBPC
+e 1 3 RIBPC__EPP
+e 2 3 REPP__REPP
+

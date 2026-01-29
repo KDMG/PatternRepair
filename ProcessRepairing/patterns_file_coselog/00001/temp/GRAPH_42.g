@@ -1,0 +1,39 @@
+v 1 START
+v 2 Confirmationofreceipt
+v 3 T02Checkconfirmationofreceipt
+v 4 T03Adjustconfirmationofreceipt
+v 5 T02Checkconfirmationofreceipt
+v 6 T03Adjustconfirmationofreceipt
+v 7 T02Checkconfirmationofreceipt
+v 8 T04Determineconfirmationofreceipt
+v 9 T05Printandsendconfirmationofreceipt
+v 10 T06Determinenecessityofstopadvice
+v 11 T07-1Draftinternadviceaspect1
+v 12 T06Determinenecessityofstopadvice
+v 13 T07-1Draftinternadviceaspect1
+v 14 T06Determinenecessityofstopadvice
+v 15 T10Determinenecessitytostopindication
+v 16 T11CreatedocumentXrequestunlicensed
+v 17 T12CheckdocumentXrequestunlicensed
+v 18 T14DeterminedocumentXrequestunlicensed
+v 19 T15PrintdocumentXrequestunlicensed
+v 20 END
+e 1 2  START__Confirmationofreceipt
+e 2 3  Confirmationofreceipt__T02Checkconfirmationofreceipt
+e 3 8  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 4 5  T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+e 5 8  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 6 7  T03Adjustconfirmationofreceipt__T02Checkconfirmationofreceipt
+e 7 8  T02Checkconfirmationofreceipt__T04Determineconfirmationofreceipt
+e 8 10  T04Determineconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 9 10  T05Printandsendconfirmationofreceipt__T06Determinenecessityofstopadvice
+e 10 11  T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+e 11 12  T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice
+e 12 13  T06Determinenecessityofstopadvice__T07-1Draftinternadviceaspect1
+e 13 14  T07-1Draftinternadviceaspect1__T06Determinenecessityofstopadvice
+e 14 15  T06Determinenecessityofstopadvice__T10Determinenecessitytostopindication
+e 17 18  T12CheckdocumentXrequestunlicensed__T14DeterminedocumentXrequestunlicensed
+e 18 19  T14DeterminedocumentXrequestunlicensed__T15PrintdocumentXrequestunlicensed
+e 19 20  T15PrintdocumentXrequestunlicensed__END
+e 15 16  T10Determinenecessitytostopindication__T11CreatedocumentXrequestunlicensed
+e 16 17  T11CreatedocumentXrequestunlicensed__T12CheckdocumentXrequestunlicensed

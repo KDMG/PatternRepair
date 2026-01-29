@@ -1,0 +1,8 @@
+v 1 SUB_22
+v 2 SUB_8
+v 3 HRHA
+v 4 HRRR
+d 2 1 FRPP__EPP
+d 1 3 SHRRP__HRHA
+d 1 4 HRRAN__HRRR
+d 3 4 HRHA__HRRR

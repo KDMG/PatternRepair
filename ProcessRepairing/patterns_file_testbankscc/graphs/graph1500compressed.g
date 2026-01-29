@@ -1,0 +1,13 @@
+v 1 FRP
+v 2 SUB_2
+v 3 SUB_8
+v 4 SUB_64
+v 5 SUB_171
+
+e 5 2 FRPP__EPP
+e 2 2 LRIRV__LRRR
+e 3 4 FRPP__SRPP
+e 4 5 REPP__REPP
+e 1 5 FRP__FRPP
+e 5 1 REPC__FRP
+

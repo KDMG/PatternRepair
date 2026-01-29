@@ -1,0 +1,7 @@
+v 1 HRHA
+v 2 HRRR
+v 3 FHRRP
+v 4 FRP
+d 1 2 HRHA__HRRR
+d 2 3 HRRR__FHRRP
+d 3 4 FHRRP__FRP
