@@ -36,11 +36,17 @@ If you use **MariaDB** instead of MySQL:
    sudo systemctl restart mariadb
 
 ## Reproduce results
+Import the database intp the 
+
 To run our program copy and paste the following command in your terminal:
 ```
-git clone https://github.com/KDMG/ReLIGn-tool/
-cd ReLIGn-tool
+git clone https://github.com/KDMG/PatternRepair/
+cd PatternRepair/scripts
 
-python ReLIGn.py
+python scripts/PatternRepair.py --dataset dataset_name --pattern pattern_id
 ```
-In the [`data`](https://github.com/KDMG/ReLIGn-tool/tree/main/data) folder you can find some data to test the tool.
+
+In the [`PatternRepair`](https://github.com/KDMG/PatternRepair) folder you can find some data to test the tool. 
+Before running the code, rename the directory to be used in 'patterns_file' by removing dataset name.
+Each dataset is associated with a .sql database. Make sure to import it before launching the code.
+
