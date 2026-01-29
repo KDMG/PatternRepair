@@ -1,7 +1,3 @@
-# TODO: risolvere transizioni parallele
-# TODO: eventually repairing da sistemare
-# TODO: e se un loop può essere raggiunto da più punti?
-
 import copy
 import os
 import re
@@ -2517,7 +2513,6 @@ def reachability(net, source_list, target_list):
 
 
 def reachability_rg(rg, source_list, target_list):
-    # TODO: fare due casi. uno raggiungibilità trans e uno per i place
     node_list = ['n' + m[:-1] for node in rg.nodes for m in node.split('n') if m != '']
     try:
         source_list = list(set.intersection({t.name for t in source_list}, set(node_list)))
@@ -2844,7 +2839,6 @@ def transitions_on_any_path(net,
 
 
 def reachability_in_loop(from_p, to_p, rg, common_loops):
-    # TODO: da controllare
     nodes_start = set()
     for comm in common_loops:
         start_loop = {c.name for c in comm[0]}
@@ -3164,7 +3158,6 @@ def find_all_loop_keys_containing(a, loops):
 
 
 def upstream_nonloop_transitions(t_start, transitions, target_loops, tendsub1, tstartsub1, loops, rg, net):
-    # TODO: mettere condizione che da quella transizoine non deve essere raggiungibile la start della sub1
     producers_index = {}
     for tr_id, tr in transitions.items():
         for p in tr.get("outputs", ()):
@@ -3239,7 +3232,6 @@ def downstream_nonloop_transitions(t_start,
                 reachability_rg(rg, [arc.target for arc in net.arcs if arc.source == t_next],
                                 pstartsub2) and not reachability_rg(rg, pendsub2,
                                                                     [arc.source for arc in net.arcs if arc.target == t_next])):
-                    # TODO: second control to remove? ragionarci un attimo
                     result.add(t_next)
                 else:
                     if t_next not in visited_loopy:
@@ -3432,15 +3424,7 @@ def repair_eventually_relations(net, hidden_transitions_subA_trans, hidden_trans
                             if arc_not_exists(net, t, p):
                                 utils.add_arc_from_to(t, p, net)
                                 write_outputfile("Added:  " + str(t) + " --> " + str(p), experiment, pattern, "a")
-                    # TODO: removed
-                    """
-                    for t in parallel1:
-                        if reachability_rg(rg, [arc.target for arc in net.arcs if arc.source == t],
-                                           [arc.source for arc in net.arcs if arc.target in group]):
-                            if arc_not_exists(net, t, p):
-                                utils.add_arc_from_to(t, p, net)
-                                write_outputfile("Added:  " + str(t) + " --> " + str(p), experiment, pattern, "a")
-                    """
+
                     if arc_not_exists(net, hidden_sub_c2, p):
                         utils.add_arc_from_to(hidden_sub_c2, p, net)
                         write_outputfile("Added:  " + str(hidden_sub_c2) + " --> " + str(p), experiment, pattern, "a")
@@ -3933,7 +3917,7 @@ def inner_inchoice(net, P_e, te, rg, added_trans, standard_rep_inloop, common_lo
                         for t2 in G:
                             path = reachability_in_loop([arc.source for arc in net.arcs if arc.target == t],
                                                                 [arc.target for arc in net.arcs if arc.source == t2], rg, common_loops)
-                            if t != t2 and not path: # TODO: to check second condition
+                            if t != t2 and not path:
                                 reach = True
                 if not reach:
                     count[t] += 1
@@ -4084,10 +4068,6 @@ def check_parallel_transitions(transitions, rg, net, have_common, initial_markin
         gr.add(t)
         groups.add(frozenset(gr))
 
-    # TODO: qui potrei anche eliminare i gruppi che sono raggiungibili da altre transizioni
-
-    # quelli che si trovano nello stesso gruppo condividono marking iniziale e marking finale.
-    # significa che posso eseguire prima uno e poi l'altro interscambiabilmente, -> definizione di parallelismo
     parallel_group = defaultdict(set)
     for g in groups:
         for tr in g:
@@ -4215,7 +4195,7 @@ def remove_reachable(transitions, tstartsub2, rg, net, common_loops, standard_re
                                    [arc.source for arc in net.arcs if arc.target == par2], sub_rg, common_loops)
                         if reach != set() and tstartsub2.name not in reach:
                             to_rem.append(par2)
-                    else: # TODO: aggiungere cond anche a quello sotto
+                    else:
                         if reachability_rg(rg, [arc.target for arc in net.arcs if arc.source == par],
                                    [arc.source for arc in net.arcs if arc.target == par2]):
                             to_rem.append(par2)
@@ -4273,14 +4253,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
     remaining_connections = []
     repaired_loops = {}
     for subA, subB, _ in links_in_pattern:
-        tstartsub1, tendsub1 = sub_info[subA]['start_end_name']
-        tstartsub2, tendsub2 = sub_info[subB]['start_end_name']
-        pstartsub1, pendsub1 = sub_info[subA]['reached_markings_start_end']
-        pstartsub2, pendsub2 = sub_info[subB]['reached_markings_start_end']
-        loops_subA = find_loops(loops, net, rg, pstartsub1, pendsub1, tstartsub1,
-                            tendsub1, tstartsub2, tendsub2, tstartsub1, sub_info[subA]['added_trans'])
-        loops_subB = find_loops(loops, net, rg, pstartsub2, pendsub2, tstartsub1,
-                                tendsub1, tstartsub2, tendsub2, tstartsub2, sub_info[subB]['added_trans'])
 
     for (subA, subB, relationType) in links_in_pattern:
         if relationType != 'interleaving' and (subA not in interleaving and subB not in interleaving):
@@ -4342,44 +4314,8 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
             else:
                 write_outputfile("No loop found in " + subB, experiment, pattern, "a")
 
-            """
-            # qui voglio controllare se posso andare a sub2 anche senza passare a sub1. questo è possibile solo se le sub
-            # si trovano all'interno dello stesso loop oppure se condividono almeno un place dei due loop
-            connection_from_start_to_sub2 = (reachability_rg_trans(rg, list(initial_marking.keys()),
-                                                            pendsub2, {t.name for t in sub_info[subA]['added_trans']})
-                                             or pstartsub1 != pstartsub2)
-            if not connection_from_start_to_sub2:
-                sub1_skipped = True
-
-            if common_loops:
-                min_common_loop = pick_max_loop(loops, common_loops)
-                write_outputfile("Common loop found between " + subA + " and " + subB, experiment, pattern, "a")
-                # se una delle due sub si trova comunque in un loop più interno bisogna riparare il loop lo stesso! 
-                if set.union(set(loops_subA), set(loops_subB)) != common_loops:
-                    if min_loopA is None and min_loopB is not None:
-                        min_loopA= min_common_loop
-                        repair_common = True
-                    elif min_loopA is not None and min_loopB is None:
-                        min_loopB = min_common_loop
-                        repair_common = True
-                elif sub1_skipped:
-                    min_loopA = min_common_loop
-                    min_loopB = min_common_loop
-
-            else:
-                write_outputfile("No common loops found between " + subA + " and " + subB, experiment, pattern, "a")
-            """
-
-
+            # can I reach sub2 without going through sub1?
             if common_loops and loop_all == '1':
-                # qui voglio controllare se posso andare a sub2 anche senza passare a sub1. questo è possibile solo se le sub
-                # si trovano all'interno dello stesso loop oppure se condividono almeno un place dei due loop
-
-                """
-                connection_from_start_to_sub2 = ((sorted(pstartsub1) == sorted(pstartsub2)) or not
-                                                 reachability_rg_trans_optimized(rg, list(initial_marking.keys()),
-                                                                                 pstartsub1, pendsub1, pstartsub2)) # TODO: to check
-                """
                 signal.alarm(TIMEOUT_SECONDS)
                 try:
                     connection_from_start_to_sub2 = ((sorted(pendsub2) == sorted(pstartsub1)) or
@@ -4397,30 +4333,12 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     sub1_skipped = True
                 min_common_loop = pick_max_loop(loops, common_loops)
                 write_outputfile("Common loop found between " + subA + " and " + subB, experiment, pattern, "a")
-                # se una delle due sub si trova comunque in un loop più interno bisogna riparare il loop lo stesso!
-                # questa condizione significa che loopA o loopB non convidono tutti i loop, ma ce ne
-                # sono altri non in comune tra le due sub
                 if set.union(set(loops_subA), set(loops_subB)) != common_loops:
-                    # solo loopB è coinvolto in un'altro loop non in comune con A
-                    """
-                    if min_loopA is None and min_loopB is not None:
-                        min_loopA= min_common_loop
-                        have_common = True
-                    elif min_loopA is not None and min_loopB is None:
-                        min_loopB = min_common_loop
-                        have_common = True
-                    elif sub1_skipped:
-                        min_loopA = min_common_loop
-                        min_loopB = min_common_loop
-                        have_common = True
-                    """
                 if sub1_skipped:
                     min_loopA = min_common_loop
                     min_loopB = min_common_loop
                     have_common = True
                 if min_loopA != min_common_loop and min_loopB != min_common_loop:
-                    # attenzione: se le eventually non appartengono al loop comune non posso fare la standard rep
-                    # -> devo riparare il loop comune
                     standard_rep_inloop = True
                     sources = set()
                     if min_loopA is not None:
@@ -4435,18 +4353,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     if repaired_loops[subA] in loops_subB:
                         min_loopB = repaired_loops[subA]
 
-                    """
-                    potential_eventually = [arc.target for arc in net.arcs if arc.source in sources]
-                    if potential_eventually:
-                        all_loops = [find_all_loop_keys_containing(t, loops) for t in potential_eventually]
-                        for loo in all_loops:
-                            if min_common_loop not in loo:
-                                standard_rep_inloop = False
-                                min_loopA = min_common_loop
-                                min_loopB = min_common_loop
-                                have_common = True
-                                break
-                    """
             elif common_loops and loop_all == '0':
                 min_common_loop = pick_max_loop(loops, common_loops)
                 write_outputfile("Common loop found between " + subA + " and " + subB + " " + str(min_common_loop),
@@ -4460,19 +4366,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
 
             repaired_loops[subA] = min_loopA
             repaired_loops[subB] = min_loopB
-            """
-            vecchia gestione dei loop in comune
-            if common_loops:
-                min_common_loop = pick_max_loop(loops, common_loops)
-                write_outputfile("Common loop found between " + subA + " and " + subB + " " + str(min_common_loop),
-                                 experiment, pattern, "a")
-                min_loopA = min_common_loop
-                min_loopB = min_common_loop
-                have_common = True
-
-            else:
-                write_outputfile("No common loops found between " + subA + " and " + subB, experiment, pattern, "a")
-            """
 
             sub_rg = rg.copy()
             if min_loopB and not (have_common or standard_rep_inloop):
@@ -4491,7 +4384,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     out_edges = {o for o in out_edges if o[2].name.split(',')[0].replace('(', '')
                                  in [tr.name for tr in k['within_loop']]}
                     sub_rg.remove_edges_from(tuple(out_edges))
-                    # TODO: removed but dunno
                     nodes_to_rem = nx.descendants(sub_rg, [node for node in list(sub_rg.nodes) if
                                         all(i + '1' in ['n' + e for e in node.split('n') if e] for i in
                                             pendsub1)][0])
@@ -4505,23 +4397,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                                                                                           tendsub1, common_loops)
                 parallel_transitions_sub1 = {trans for trans in parallel_transitions_sub1 if trans not in
                  flatten([s[1]['added_trans'] for s in sub_info.items() if 'added_trans' in s[1]])}
-                """
-                parallel1 = parallel_transitions_sub1.copy()
-                to_replace = set()
-                to_remove = set()
-                for lop in parallel1:
-                    if set(find_all_loop_keys_containing(lop, loops)) != set(
-                            loops_subA) and find_all_loop_keys_containing(lop, loops) != []:
-                        result = upstream_nonloop_transitions(lop, transitions, loops_subA, tendsub1, tstartsub1, loops,
-                                                              rg, net)
-                        to_replace.update(result)
-                        to_remove.add(lop)
 
-                parallel1 = set.difference(parallel1, to_remove)
-                parallel1.update(to_replace)
-                """
-
-                # ragionamento: in questo caso, le transizioni che partono da pstart non vengono individuate
                 parallel_transitions_sub1 = set.difference(set(parallel_transitions_sub1), set(path1))
 
                 if min_loopB == []:
@@ -4539,7 +4415,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                                                                    pendsub2)])
                         sub_rg.remove_edges_from(tuple(nodes_to_rem))
                     parallel_transitions_sub1 = {t for t in parallel_transitions_sub1 if
-                                             reachability_rg_trans(rg, # TODO: was sub_rg
+                                             reachability_rg_trans(rg,
                                                                    [arc.source for arc in net.arcs if arc.target == t],
                                                                    pstartsub2, {t.name})}
                 elif min_loopB != [] and not (have_common or standard_rep_inloop):
@@ -4548,12 +4424,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                                                                        [arc.source for arc in net.arcs if
                                                                         arc.target == t],
                                                                        list(min_loopB[0]), {t.name})}
-                """
-                parallel_transitions_sub1 = {t for t in parallel_transitions_sub1 if
-                                         reachability_rg(rg,
-                                                         [arc.source for arc in net.arcs if arc.target == t],
-                                                         pstartsub2)}
-                """
 
             new_dataA = pd.DataFrame([{'dataset': dataset,
                                        'pattern_id': pattern,
@@ -4622,11 +4492,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                                         str(sorted([p.name for p in min_loopA[1]]))]['trans'])
                 p_c = hidden_transitions[subA]['place'][0]
             else:
-                try:
-                    avoid = set.union(loops[min_loopB]['within_loop'], loops[min_loopB]['in_loop'])
-                except:
-                    avoid = set()
-                # TODO: deleted the avoid
                 in_choice1 = inner_inchoice(net, pendsub1, tendsub1, sub_rg,
                                             [t.name for t in sub_info[subA]['added_trans']],
                                             standard_rep_inloop, common_loops, [])
@@ -4641,7 +4506,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
 
             parallel_transitions_sub1 = set.difference(parallel_transitions_sub1, to_remove)
 
-            for lop in parallel_transitions_sub1: # TODO: qui modificare
+            for lop in parallel_transitions_sub1:
                 if not set(find_all_loop_keys_containing(lop, loops)).issubset(set(
                             loops_subA)) and find_all_loop_keys_containing(lop, loops) != []:
                     result = upstream_nonloop_transitions(lop, transitions, loops_subA, tendsub1, tstartsub1, loops, rg,
@@ -4665,7 +4530,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                 except:
                     eventually_parallel1 = {'trans': remove_reachable(parallel_transitions_sub1, tstartsub2, rg, net,
                                                                  common_loops, standard_rep_inloop)}
-                    # was: eventually_parallel1 = {'trans': parallel_transitions_sub1}
                 eventually_trans2, p_m, _ = repair_eventually_relations(net, hidden_transitions[subB]['hidden_sub'],
                                                                         eventually_parallel1,
                                                                         loops, tendsub2, pendsub2, min_loopB,
@@ -4679,15 +4543,11 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                                                                         hidden_transitions, subA, sub_info, subB,
                                                                         created_eventually_for, common_loops)
                 p_c = hidden_transitions[subB]['place2'][0]
-                # parallel_transitions_sub2 = {hidden_transitions[str(sorted(min_loopB[0]))
-                #                                                 + str(sorted(min_loopB[1]))]['trans']}
             else:
-                # TODO: qui c'è da sistemare un attimo la situa con le parallele/in_choice
                 in_choice2 = outer_inchoice(net, pstartsub2, tstartsub2, rg,
                                             added_trans=[t.name for t in sub_info[subA]['added_trans']])
                 parallel_transitions_sub2.update(in_choice2)
 
-            # outer transitions of p_c
             outgoing_p_c_trans = [tstartsub2]
             trans_other_branch = parallel_transitions_sub2.copy()
 
@@ -4695,14 +4555,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                 trans_path = {tstartsub2}
                 p_start = [p for p in net.places if p.name in pendsub1]
                 p_end = [p for p in net.places if p.name in pstartsub2]
-                # if min_loopA and not min_loopB:
-                #     p_start = [arc.target for arc in net.arcs if arc.source in trans]
-                # elif min_loopA:
-                #     if sorted(pstartsub1) != sorted(pendsub1):
-                #         p_start = p_start + [hidden_transitions[str(sorted(min_loopA[0]))
-                #                                                 + str(sorted(min_loopA[1]))]['place_start']]
 
-                # if sorted(pendsub1) != sorted(pstartsub2):
                 if min_loopA != [] and not (have_common or standard_rep_inloop):
                     in_edges = sub_rg.in_edges({node for node in list(rg.nodes) if
                                         all(i + '1' in ['n' + e for e in node.split('n') if e] for i in
@@ -4722,8 +4575,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
 
                 p_b, t_o_b, t_p = backward_search_and_detect_branches(p_start, p_end, net, loop_transitions, sub_rg,
                                                                       pstartsub2, tstartsub2, common_loops)
-                # else:
-                #   p_b, t_o_b, t_p = [], [], []
+
                 if p_b != [] or t_o_b != [] or t_p != []:
                     trans_other_branch.update(set(t_o_b))
                     trans_path.update(set(t_p))
@@ -4739,7 +4591,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
 
                 trans_other_branch = set(list(set.difference(set(trans_other_branch), removed)))
 
-                # deccomentato ma non so se va
                 trans_other_branch = set.difference(trans_other_branch, set([hidden_transitions[k]['hidden_sub'] for
                                                                              k in hidden_transitions.keys() if 'hidden_sub' in hidden_transitions[k]]))
                 trans_path.update(outgoing_p_c_trans)
@@ -4748,8 +4599,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                 if eventually_trans2:
                     trans_other_branch = set.difference(set(trans_other_branch), eventually_trans2)
 
-                # if loopB_repairing and not common_loops:
-                #    trans_other_branch = set.intersection(trans_other_branch, trans_other_branch)
                 trans_other_branch = {t for t in trans_other_branch if t not in
                                       set(flatten([s['added_trans'] for s in sub_info.values() if 'added_trans' in s]))}
                 if min_loopB and not common_loops:
@@ -4760,7 +4609,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     trans_other_branch = set.difference(trans_other_branch, parallel_transitions_sub1)
 
                 if common_loops and not standard_rep_inloop:
-                    # caso strictly on cui c'è loops subB
                     trans_other_branch = set.difference(trans_other_branch,
                                                         set(flatten(
                                                             [set.union(loops[cl]['in_loop'], loops[cl]['in_loop']) for
@@ -4768,7 +4616,7 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
 
                 to_replace = set()
                 to_remove = set()
-                for lop in trans_other_branch: # TODO: qui non è così il controllo!!!!!
+                for lop in trans_other_branch:
                     if not set(find_all_loop_keys_containing(lop, loops)).issubset(set(
                             loops_subB)) and find_all_loop_keys_containing(lop, loops) != []:
                         result = downstream_nonloop_transitions(lop, transitions, loops_subB, pendsub2, tendsub2, loops,
@@ -4796,12 +4644,11 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
             write_outputfile("In choice transitions of " + subB + ": " + str(trans_other_branch),
                              experiment, pattern, "a")
 
-            # serve per gestire il caso in cui una parallela alla sub2 sia reachable da una parallela alla sub1
             to_connect = set()
             to_connect2 = defaultdict(set)
             if trans_other_branch is not None:
                 flat_t_o_b = [item for group in trans_other_branch for item in group]
-                if standard_rep_inloop == False: # TODO: check later
+                if standard_rep_inloop == False:
                     for t in flat_t_o_b:
                         if (reachability_rg(rg, [a.target for a in net.arcs if a.source == tstartsub2],
                                             [a.source for a in net.arcs if a.target == t]) or
@@ -4835,8 +4682,6 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                 utils.add_arc_from_to(p_c, tstartsub2, net)
                 write_outputfile("Added:  " + str(p_c) + " --> " + str(tstartsub2), experiment, pattern, "a")
 
-            # TODO: sistemare con check parallel e poi: chi te l'ha detto che p_m è unico.
-            # TODO: controllare anche in choice 2
 
             if parallel_transitions_sub1 and trans_other_branch:
                 for group in trans_other_branch:
@@ -4892,11 +4737,10 @@ def repair_pattern(sub_info, links_in_pattern, net, log, initial_marking, final_
                     for t in transitions_to_check:
                         if (not reachability_rg(rg, [arc.target for arc in net.arcs if arc.source ==
                                          sub_info[connections_to_current_sub]['start_end_name'][1]],
-                                    [arc.source for arc in net.arcs if arc.target == t])):
-                                # and not
-                        # reachability_rg(rg, [arc.target for arc in net.arcs if arc.source == t],
-                        #                 [arc.source for arc in net.arcs if arc.source ==
-                        #                  sub_info[connections_to_current_sub]['start_end_name'][1]])):
+                                    [arc.source for arc in net.arcs if arc.target == t])
+                                and not reachability_rg(rg, [arc.target for arc in net.arcs if arc.source == t],
+                                        [arc.source for arc in net.arcs if arc.source ==
+                                        sub_info[connections_to_current_sub]['start_end_name'][1]])):
                             if arc_not_exists(net, pl2.target, sub_info[connections_to_current_sub]['start_end_name'][0]):
                                 utils.add_arc_from_to(pl2.target, sub_info[connections_to_current_sub]['start_end_name'][0], net)
                                 write_outputfile("Added:  " + str(pl2.target) + " --> " +
@@ -4952,13 +4796,6 @@ def repair_all(graph_list, sub, log, net, initial_marking, final_marking, experi
     # print("Graph Selected: ", graph, " Matching Cost: ", dict_graph[1][1])
     start_repairing_sub = time.time()
     write_outputfile("Repairing sub: " + str(sub), experiment, pattern, "a")
-    # print("\nValutazione rete sub_" + str(x) + ":")
-    # evaluation of the log composed by only traces in which the sub occurs
-    # valutazione_rete(new_graph_list, log, dict_trace, net, initial_marking, final_marking, pattern, sub)
-    # evaluation on the complete log
-    # visualization of the net
-    # visualizza_rete_performance(log, net, initial_marking, final_marking)
-    # valutazione_rete_logcompleto(log, repaired_net, initial_marking, final_marking, experiment, pattern)
 
     # executes sgiso and returns the sub with the nodes w.r.t the graph
     subgraph = find_instances(sub, g, experiment)
@@ -5014,89 +4851,6 @@ def repair_all(graph_list, sub, log, net, initial_marking, final_marking, experi
     # print("Reached Marking: ", reached_marking_end)
     write_outputfile("Reached Marking:  " + str(reached_marking_end), experiment, pattern, "a")
 
-    """
-    reached_marking_start2 = None
-    if reached_marking_start == reached_marking_end:
-        reached_marking_start2, last_trans = dirk_marking_start(dataset, start, sub_label[0], text, trace,
-                                                   experiment, sub, sub_label[0])
-        if reached_marking_start == reached_marking_start2:
-            reached_marking_start2 = [str(arc.source.name) for arc in net.arcs if arc.target.name in [t.name for t in last_trans]]
-            out_trans = set([arc.target for arc in net.arcs if arc.source.name in reached_marking_start])
-            arcs_to_remove = [arc for arc in net.arcs if arc.source.name in reached_marking_start and arc.target in out_trans]
-            added_places = []
-            for p in range(0, len(reached_marking_start)):
-                n = places_name_available(net.places, net.transitions)
-                place = PetriNet.Place("n" + n)
-                net.places.add(place)
-                added_places.append(place)
-            for a in arcs_to_remove:
-                utils.remove_arc(net, a)
-
-            parallel_trans = transition_hidden_available(net.transitions)
-            trans = PetriNet.Transition("h" + parallel_trans, None)
-            net.transitions.add(trans)
-
-            parallel_trans_loop = transition_hidden_available(net.transitions)
-            trans_loop = PetriNet.Transition("h" + parallel_trans_loop, None)
-            net.transitions.add(trans_loop)
-
-            parallel_trans_no_loop = transition_hidden_available(net.transitions)
-            trans_no_loop = PetriNet.Transition("h" + parallel_trans_no_loop, None)
-            net.transitions.add(trans_no_loop)
-
-            for p in added_places:
-                utils.add_arc_from_to(p, trans_no_loop, net)
-
-            n = places_name_available(net.places, net.transitions)
-            place = PetriNet.Place("n" + n)
-            net.places.add(place)
-            added_places.append(place)
-
-            for o in out_trans:
-                utils.add_arc_from_to(place, o, net)
-
-            for places in [p for p in net.places if p.name in reached_marking_start]:
-                utils.add_arc_from_to(places, trans, net)
-                utils.add_arc_from_to(trans_loop, places, net)
-            for places in added_places:
-                utils.add_arc_from_to(trans, places, net)
-                utils.add_arc_from_to(places, trans_loop, net)
-
-            reached_marking_end = [p.name for p in added_places]
-
-            if duplicates == False:
-                start_end_name, net_repaired = repairing(new_subgraph, trace, net, initial_marking,
-                                                         final_marking, start, end, reached_marking_start,
-                                                         reached_marking_end, experiment, sub, repaired)
-                repaired[(sub, (tuple(reached_marking_start), tuple(reached_marking_end)))] = start_end_name
-
-            else:
-                start_end_name, net_repaired = repairing_duplicates(new_subgraph, trace, net, initial_marking,
-                                                                    final_marking, start, end, reached_marking_start,
-                                                                    reached_marking_end, experiment, sub)
-        else:
-            start_places = [p for p in net.places if p.name in reached_marking_start2]
-            end_places = [p for p in net.places if p.name in reached_marking_end]
-            reached_marking_start = [p.name for p in start_places if
-                                 any(arc.target.label == sub_label[0] for arc in p.out_arcs)]
-            reached_marking_end = [p.name for p in end_places if any(arc.source.label == sub_label[0] for arc in p.in_arcs)]
-            if reached_marking_start == reached_marking_end:
-                new_subgraph = get_subgraph(subgraphs[sub], start + [str(int(end[0]) + 1)])
-            else:
-                new_subgraph = get_subgraph(subgraphs[sub], [str(int(start[0]) - 1)] + end)
-            if duplicates == False:
-                start_end_name, net_repaired = repairing(new_subgraph, trace, net, initial_marking,
-                                                                final_marking, [str(int(start[0]) - 1)], end,
-                                                                reached_marking_start,
-                                                                reached_marking_end, experiment, sub, repaired)
-            else:
-                start_end_name, net_repaired = repairing_duplicates(new_subgraph, trace, net, initial_marking,
-                                                 final_marking, [str(int(start[0]) - 1)], end, reached_marking_start,
-                                                 reached_marking_end, experiment, sub)
-            repaired[(sub, (tuple(reached_marking_start), tuple(reached_marking_end)))] = start_end_name
-
-    else:
-    """
     if duplicates == False:
         start_end_name, net_repaired, added_trans = repairing(new_subgraph, trace, net, initial_marking,
                                                               final_marking, start, end, reached_marking_start,
@@ -5381,113 +5135,15 @@ def main(experiment, dataset, numpattern, loop_all):
     # Model
     net, initial_marking, final_marking = pnml_importer.apply(experiment + dataset + '_petriNet.pnml')
 
-    """
-    net, initial_marking, final_marking = pnml_importer.apply('/Users/chiaragobbi/Desktop/process-mining/ProcessRepairing/patterns_file/experiments/Pattern615/pattern/Untitled - 3.pnml')
-    for t in net.transitions:
-        t.label = t.name
+
+    # detecting cycles
     rg = pm4py.convert_to_reachability_graph(net, initial_marking, final_marking)
-    _, edg = build_edge_list(rg)
-    rg_g = nx.MultiDiGraph()
-    rg_g.add_edges_from(edg)
-    """
-
-    # net, initial_marking, final_marking = pnml_importer.apply(experiment + dataset + '_repaired_petriNet.pnml')
-
-    # net, initial_marking, final_marking = pnml_importer.apply(pattern + '/reti_Fahland/repaired_'+str(x)+'.pnml')
-
-    # given the pattern number, return the list of subs
-    # lista = list_sub_pattern(pattern + dataset + "_new_patterns_filtered.subs", 2)
-    # print("Pattern: ", lista)
-    # write_outputfile("Pattern:  " + str(lista), pattern, sub, "w")
-    rg = pm4py.convert_to_reachability_graph(net, initial_marking, final_marking)
-    # pm4py.view_transition_system(rg)
     edge_list, edge_list_labels = build_edge_list(rg)
 
     rg_nx = nx.MultiDiGraph()
     rg_nx.add_edges_from(edge_list_labels)
     G = nx.DiGraph()
     G.add_edges_from(edge_list)
-
-    """
-    cycles = []
-    if not os.path.exists(experiment + dataset + 'lista_di_liste.pkl'):
-        # cycles = list(find_cycles(edge_list))
-        for C in nx.strongly_connected_components(G):
-            nodes = set()
-            if len(C) > 1:
-                H = G.subgraph(C).copy()
-                c = nx.simple_cycles(H)
-                for cyc in c:
-                    nodes.update(cyc)
-                    cycles.append(cyc)
-                    if set.difference(set(H.nodes), nodes) == set():
-                        break
-        # cycles = [cyc for cyc in c]
-        with open(experiment + dataset + 'lista_di_liste.pkl', 'wb') as file:
-            pickle.dump(cycles, file)
-    else:
-        with open(experiment + dataset + 'lista_di_liste.pkl', 'rb') as file:
-            cycles = pickle.load(file)
-
-    roots = [n for n in G.nodes if G.in_degree(n) == 0]
-    levels = {}
-    for root in roots:
-        for node, length in nx.single_source_shortest_path_length(G, root).items():
-            levels[node] = min(levels.get(node, float('inf')), length)
-
-    def default_inner_dict():
-        return {'in_loop': set(), 'within_loop': set(), 'places': set()}
-
-    loops = defaultdict(default_inner_dict)
-    for c in cycles:
-        # c_names = ['n'+part[:-1] for s in c for part in s.split('n') if part]
-        # end_loop_places = min(c, key=lambda n: levels.get(n, -1))
-        end_loop_places = c[0]
-        end_loop_places_names = ['n' + s[:-1] for s in min(c, key=lambda n: levels.get(n, -1)).split('n') if s != '']
-        # start_loop_places = find_start_nodes(G, sorted(c, key=lambda k: levels[k], reverse=True))
-        start_loop_places = c[-1]
-        start_loop_places_names = ['n' + s[:-1] for s in
-                                   find_start_nodes(G, sorted(c, key=lambda k: levels[k], reverse=True)).split('n') if
-                                   s != '']
-        end_loop_places_net = [place for place in net.places if place.name in end_loop_places_names]
-        start_loop_places_net = [place for place in net.places if place.name in start_loop_places_names]
-        common = set.intersection(set(end_loop_places_net), set(start_loop_places_net))
-        for com in common:
-            start_loop_places_net.remove(com)
-            end_loop_places_net.remove(com)
-        # forbidden = forbidden_predecessors(start_loop_places, end_loop_places, levels)
-        # paths_in_loop = nodes_on_paths_nx(G, [start_loop_places], [end_loop_places], forbidden)
-        # paths_within_loop = nodes_on_paths_nx(G, [end_loop_places], [start_loop_places])
-        paths_in_loop = set(itertools.chain.from_iterable(
-          list(simple_paths_with_level_filter(G, start_loop_places, end_loop_places, end_loop_places, levels))))
-        paths_within_loop = set(itertools.chain.from_iterable(
-            list(nx.all_simple_paths(G, source=end_loop_places, target=start_loop_places))))
-        paths_in_loop = {'n' + p[:-1] for path in paths_in_loop for p in path.split('n') if p}
-        paths_within_loop = {'n' + p[:-1] for path in paths_within_loop for p in path.split('n') if p}
-
-        loop_trans = []
-        within_loop_trans = []
-
-        for t in net.transitions:
-            input_places = {arc.source for arc in net.arcs if
-                            arc.target == t and arc.source.__class__.__name__ == 'Place'}
-            output_places = {arc.target for arc in net.arcs if
-                             arc.source == t and arc.target.__class__.__name__ == 'Place'}
-
-            if any(p.name in paths_in_loop for p in input_places) and any(
-                    p.name in paths_in_loop for p in output_places):
-                if end_loop_places_net[0] not in input_places and start_loop_places_net[0] not in output_places:
-                    loop_trans.append(t)
-
-            if any(p.name in paths_within_loop for p in input_places) and any(
-                    p.name in paths_within_loop for p in output_places):
-                if end_loop_places_net[0] not in output_places and start_loop_places_net[0] not in input_places:
-                    within_loop_trans.append(t)
-
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['in_loop'].update(set(loop_trans))
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['within_loop'].update(set(within_loop_trans))
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['places'].update(set(c))
-    """
 
     def children_of_loops(pt_root, net):
         from pm4py.objects.process_tree.obj import Operator
@@ -5517,25 +5173,6 @@ def main(experiment, dataset, numpattern, loop_all):
     pm4py.view_process_tree(net_pt)
     cycles = children_of_loops(net_pt, net)
     for within in cycles:
-        """
-        CON RG
-        targets = {(f"({t.name}, None)" if t.label is None else f"({t.name}, '{t.label}')") for t in within}
-        c = flatten([(u, v) for u, v, data in rg_nx.edges if data.name in targets])
-        start_loop_places_names = find_start_nodes(rg_nx, c)
-        end_loop_places_names = find_end_nodes(rg_nx, c)
-        start_loop_places_names_net = [tok[:-1] for s in start_loop_places_names for tok in re.findall(r'n\d+', s)]
-        end_loop_places_names_net = [tok[:-1] for s in end_loop_places_names for tok in re.findall(r'n\d+', s)]
-        start_loop_places_net = [place for place in net.places if place.name in start_loop_places_names_net]
-        end_loop_places_net = [place for place in net.places if place.name in end_loop_places_names_net]
-        common = set.intersection(set(end_loop_places_net), set(start_loop_places_net))
-        for com in common:
-            start_loop_places_net.remove(com)
-            end_loop_places_net.remove(com)
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['in_loop'].update(within)
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['within_loop'].update(within)
-        loops[(tuple(start_loop_places_net), tuple(end_loop_places_net))]['places'].update(c)
-        """
-        # CON NET
         c = {(arc.target if arc.source in within else arc.source) for arc in net.arcs if (arc.source in within)
              or (arc.target in within)}
         start_loop_places_net = find_start_nodes_net(net, c, within)
@@ -5560,17 +5197,6 @@ def main(experiment, dataset, numpattern, loop_all):
     write_outputfile("Start repairing pattern: " + str(links_in_pattern), experiment, str(p), "a")
 
     create_subelements_file(dataset, experiment)
-
-    """
-    df = pd.read_csv(experiment + dataset + "_pattern_occurrence_matrix.csv", sep=',')
-    subs = flatten([[p[0].replace('_', ''), p[1].replace('_', '')] for p in links_in_pattern])
-    df_subs = pd.read_csv(experiment + dataset + "_table2_on_file.csv", sep=';')
-    grafo_is_one = df_subs[['grafo'] + subs].loc[(df_subs == 1).all(axis=1)]['grafo']
-    df['Pattern' + p] = 0
-    mask = df['grafo'].isin([grafo_is_one])
-    df['Pattern' + p][mask] = 1
-    df.to_csv(experiment + dataset + "_pattern_occurrence_matrix.csv", sep=',')
-    """
 
     repaired = defaultdict(list)
 
@@ -5633,9 +5259,7 @@ def main(experiment, dataset, numpattern, loop_all):
     gvz_single_subs.render(filename=folder_exp + '/single_subs/' + 'net', format='jpg', cleanup=True)
     pnml_exporter.apply(net, initial_marking, folder_exp + '/single_subs/' + 'net.pnml', final_marking=final_marking)
 
-    # if not os.path.exists(folder_exp + '/single_subs/output_results_complete_log.txt'):
 
-    """
     (fitness_ab_sub_complete, fitness_tb_sub_complete, precision_sub_complete, generalization_sub_complete,
      simplicity_sub_complete) = valutazione_rete_logcompleto(log, net, initial_marking, final_marking, folder_exp +
                                                              '/single_subs/', 'results_complete_log')
@@ -5679,7 +5303,6 @@ def main(experiment, dataset, numpattern, loop_all):
                       drop_duplicates(subset=['dataset', 'pattern_id', 'approach'], keep='last')
                       .sort_values(by=['dataset', 'pattern_id', 'approach'])
                       .reset_index(drop=True))
-    """
 
 
     g_pattern = nx.DiGraph()
