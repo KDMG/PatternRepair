@@ -41,6 +41,7 @@ Import the database intp the
 To run our program copy and paste the following command in your terminal:
 ```
 git clone https://github.com/KDMG/PatternRepair/
+cd PatternRepair/
 
 python ProcessRepairing/scripts/PatternRepair.py dataset_name pattern_id
 ```
