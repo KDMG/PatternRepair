@@ -43,7 +43,7 @@ To run our program copy and paste the following command in your terminal:
 git clone https://github.com/KDMG/PatternRepair/
 cd ProcessRepair/scripts
 
-python scripts/PatternRepair.py --dataset dataset_name --pattern pattern_id
+python ProcessRepairing/scripts/PatternRepair.py dataset_name pattern_id
 ```
 
 In the [`PatternRepair`](https://github.com/KDMG/PatternRepair) folder you can find some data to test the tool. 
