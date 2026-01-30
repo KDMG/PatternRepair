@@ -51,3 +51,8 @@ Before running the code, rename the directory to be used in 'patterns_file' by r
 Each dataset is associated with a .sql database. Make sure to import it before launching the code.
 The patterns for repair are available inside a .txt file inside each dataset folder.
 
+## Contact information
+| Contributor name | Contacts |
+| :-------- | :------- | 
+| `Chiara Gobbi`           | c.gobbi@pm.univpm.it   | 
+
