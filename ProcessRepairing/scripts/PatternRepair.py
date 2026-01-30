@@ -5407,7 +5407,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Model Repair Supported by Frequent Anomalous Local Instance Graphs")
     parser.add_argument("datasetname", type=str, help="Name of the dataset to analyse")
     parser.add_argument("numpattern", type=str, help="Number of the pattern with which the model is to be repaired")
-    parser.add_argument("loop_all", type=str, help="Loop mode repairing")
+    parser.add_argument("loop_all", nargs="?", type=str, default="1", help="Loop mode repairing")
     # parser.add_argument("common", type=str, help="Repair common loops with other ")
     args = parser.parse_args()
     main("ProcessRepairing/patterns_file/", args.datasetname,
