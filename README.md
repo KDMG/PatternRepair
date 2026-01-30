@@ -48,10 +48,12 @@ python ProcessRepairing/scripts/PatternRepair.py dataset_name pattern_id
 
 In the [`ProcessRepairing`](https://github.com/KDMG/PatternRepair/tree/main/ProcessRepairing) folder you can find some data to test the tool. 
 Before running the code, rename the directory to be used in 'patterns_file' by removing dataset name.
-Each dataset is associated with a .sql database. Make sure to import it before launching the code.
+Each dataset is associated with a .sql database. Make sure to import it before launching the code. The database must be called with the same name of the dataset name.
 The patterns for repair are available inside a .txt file inside each dataset folder.
 
-## Contact information
+## Contact
+
+For any information, please contact:
 | Contributor name | Contacts |
 | :-------- | :------- | 
 | `Chiara Gobbi`           | c.gobbi@pm.univpm.it   | 
