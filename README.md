@@ -41,12 +41,13 @@ Import the database intp the
 To run our program copy and paste the following command in your terminal:
 ```
 git clone https://github.com/KDMG/PatternRepair/
-cd PatternRepair/scripts
+cd PatternRepair/
 
-python scripts/PatternRepair.py --dataset dataset_name --pattern pattern_id
+python ProcessRepairing/scripts/PatternRepair.py dataset_name pattern_id
 ```
 
-In the [`PatternRepair`](https://github.com/KDMG/PatternRepair) folder you can find some data to test the tool. 
+In the [`ProcessRepairing`](https://github.com/KDMG/PatternRepair/tree/main/ProcessRepairing) folder you can find some data to test the tool. 
 Before running the code, rename the directory to be used in 'patterns_file' by removing dataset name.
 Each dataset is associated with a .sql database. Make sure to import it before launching the code.
+The patterns for repair are available inside a .txt file inside each dataset folder.
 
